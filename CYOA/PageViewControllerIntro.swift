@@ -8,9 +8,25 @@
 
 import UIKit
 
-class PageViewControllerIntro: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+class PageViewControllerIntro: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource{
+    var menuShowing = false
+    let viewController = ViewController()
     
-
+    
+    
+    @IBAction func showMenu(_ sender: Any) {
+   
+        if(menuShowing) {
+            viewController.leadingConstraint.constant = -160
+         
+        }
+        else {
+            viewController.leadingConstraint.constant = 0
+           
+        }
+        menuShowing = !menuShowing
+        }
+    
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers: [UIViewController] =
         {
@@ -21,7 +37,6 @@ class PageViewControllerIntro: UIPageViewController, UIPageViewControllerDelegat
     var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.dataSource = self
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: false, completion: nil)
