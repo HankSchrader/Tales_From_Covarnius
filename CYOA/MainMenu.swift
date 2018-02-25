@@ -18,7 +18,15 @@ class MainMenu: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let beginBtn = UIButton()
         MusicHelper.sharedHelper.playBackgroundMusic()
+        beginBtn.setTitle("Begin!", for: [])
+        beginBtn.translatesAutoresizingMaskIntoConstraints = false
+        beginBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        beginBtn.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        beginBtn.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        beginBtn.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
     }
     
 
@@ -36,8 +44,9 @@ class MainMenu: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
  
+    @IBOutlet weak var chapter1: UIButton!
+    
     
     /*
     // MARK: - Navigation

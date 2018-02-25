@@ -9,8 +9,6 @@
 import UIKit
 
 @IBDesignable class MainMenuButtons: UIButton {
-    var menuShowing = false
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         
