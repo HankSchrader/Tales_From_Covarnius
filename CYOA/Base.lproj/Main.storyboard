@@ -178,6 +178,7 @@
                                 <connections>
                                     <action selector="button:" destination="3wr-vM-bOP" eventType="touchUpInside" id="8TX-Bl-Xrq"/>
                                     <action selector="segue:" destination="3wr-vM-bOP" eventType="touchUpInside" id="Aos-Ed-DPU"/>
+                                    <segue destination="0y4-32-fR3" kind="custom" id="38n-PG-NnM"/>
                                 </connections>
                             </button>
                         </subviews>
