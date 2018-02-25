@@ -21,6 +21,7 @@
 		53C071A3202FB20B0089301B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C071A1202FB20B0089301B /* LaunchScreen.storyboard */; };
 		53C071AE202FB20B0089301B /* CYOATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C071AD202FB20B0089301B /* CYOATests.swift */; };
 		53C071B9202FB20B0089301B /* CYOAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C071B8202FB20B0089301B /* CYOAUITests.swift */; };
+		53E4778320435BBA000054A0 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4778220435BBA000054A0 /* MainMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		53C071B4202FB20B0089301B /* CYOAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYOAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C071B8202FB20B0089301B /* CYOAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYOAUITests.swift; sourceTree = "<group>"; };
 		53C071BA202FB20B0089301B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E4778220435BBA000054A0 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				538593D520408C5300F34E1D /* MainMenuSong.wav */,
+				53E4778220435BBA000054A0 /* MainMenuViewController.swift */,
 				53C07195202FB20A0089301B /* AppDelegate.swift */,
 				53C07197202FB20A0089301B /* ViewController.swift */,
 				538593D1203E05AF00F34E1D /* MainMenuButtons.swift */,
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E4778320435BBA000054A0 /* MainMenuViewController.swift in Sources */,
 				538593D2203E05B000F34E1D /* MainMenuButtons.swift in Sources */,
 				538593CC203B6E3A00F34E1D /* SecondViewController.swift in Sources */,
 				538593D0203DDBC300F34E1D /* MainMenu.swift in Sources */,
