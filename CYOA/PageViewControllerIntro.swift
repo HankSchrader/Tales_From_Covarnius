@@ -12,21 +12,6 @@ class PageViewControllerIntro: UIPageViewController, UIPageViewControllerDelegat
     var menuShowing = false
     let viewController = ViewController()
     
-    
-    
-    @IBAction func showMenu(_ sender: Any) {
-   
-        if(menuShowing) {
-            viewController.leadingConstraint.constant = -160
-         
-        }
-        else {
-            viewController.leadingConstraint.constant = 0
-           
-        }
-        menuShowing = !menuShowing
-        }
-    
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers: [UIViewController] =
         {
@@ -43,6 +28,7 @@ class PageViewControllerIntro: UIPageViewController, UIPageViewControllerDelegat
             //completion: nil. If I wanted code to be executed upon completion of swiping, I'd set it here.
         }
         self.delegate = self
+        
         configurePageControl()
 
         // Do any additional setup after loading the view.

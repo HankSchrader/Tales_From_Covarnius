@@ -9,40 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController{
-    
+    var menuShowing = false
     @IBOutlet var Valkyrie: UIImageView!
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    var x: CGFloat = 0.0
+    
+    @IBAction func showMenu(_ sender: Any) {
+        if(menuShowing) {
+            self.leadingConstraint.constant = -160
+        }
+        else {
+            self.leadingConstraint.constant = 0
+        }
+        menuShowing = !menuShowing
+    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        x = leadingConstraint.constant
-        print(x)
-        print("Right above is the leadingConstraint")
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func getLeadingConstraint() -> CGFloat {
-        return x
-    }
-    func setLeadingConstraint(new_constraint: CGFloat){
-        leadingConstraint.constant = new_constraint
-    }
-    var name: String {
-        get {
-            //code to execute
-            return self.name
-        }
-        set(new_name) {
-           self.name = new_name
-        }
-    }
-
-    
-
 }
 

@@ -12,6 +12,8 @@
         <!--Intro_1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="N8s-z4-AA2"/>
                 <viewController storyboardIdentifier="Intro_1" title="Intro_1" id="BYZ-38-t0r" customClass="ViewController" customModule="CYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xVM-5O-uyW"/>
@@ -21,6 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Valkyrie" translatesAutoresizingMaskIntoConstraints="NO" id="uzl-dz-o65">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gf-So-cD0">
                                 <rect key="frame" x="139" y="49" width="51" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -28,11 +35,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Valkyrie" translatesAutoresizingMaskIntoConstraints="NO" id="uzl-dz-o65">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="Walking down a blustery, empty road on a cold September day..." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtD-XZ-kzB">
                                 <rect key="frame" x="44" y="151" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,15 +65,21 @@
                             <outletCollection property="gestureRecognizers" destination="N8s-z4-AA2" appends="YES" id="mDd-yU-EoO"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="AWy-dq-dlE">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="0lF-dG-lnC">
+                            <connections>
+                                <action selector="showMenu:" destination="BYZ-38-t0r" id="Zb9-g3-AXg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Valkyrie" destination="uzl-dz-o65" id="akC-Py-PgH"/>
                         <outlet property="leadingConstraint" destination="XhU-ud-EHt" id="c3m-r6-7T2"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="N8s-z4-AA2"/>
+                <barButtonItem title="Item" id="hMc-3z-bNv"/>
             </objects>
-            <point key="canvasLocation" x="211.875" y="109.85915492957747"/>
+            <point key="canvasLocation" x="609.375" y="109.85915492957747"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="YGg-yl-XkZ">
@@ -95,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hU5-ZN-HuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.5" y="107.74647887323944"/>
+            <point key="canvasLocation" x="1395" y="107.74647887323944"/>
         </scene>
         <!--Page View Controller Intro-->
         <scene sceneID="RwS-Sp-MeZ">
@@ -105,12 +113,13 @@
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="fastForward" id="D2V-aZ-tNC">
                             <connections>
-                                <action selector="showMenu:" destination="0y4-32-fR3" id="VSN-ye-GWH"/>
+                                <action selector="showMenu:" destination="JwM-sn-cc9" id="Uak-hl-6Ox"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttk-hV-xMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JwM-sn-cc9" userLabel="Exit" sceneMemberID="exit"/>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xkm-f9-U6x">
                     <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -169,9 +178,6 @@
                                 <connections>
                                     <action selector="button:" destination="3wr-vM-bOP" eventType="touchUpInside" id="8TX-Bl-Xrq"/>
                                     <action selector="segue:" destination="3wr-vM-bOP" eventType="touchUpInside" id="Aos-Ed-DPU"/>
-                                    <segue destination="Yw4-K7-Zie" kind="popoverPresentation" popoverAnchorView="HKy-GU-A5A" id="SLz-Tu-fg1">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -224,22 +230,22 @@
             <point key="canvasLocation" x="212" y="-1351"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ZGB-aM-Duw">
+        <scene sceneID="epH-H0-uFV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yw4-K7-Zie" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qDV-qb-VEM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H8r-pe-0I5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="efS-yM-8f8">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0y4-32-fR3" kind="relationship" relationship="rootViewController" id="O6Z-Nb-yOs"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RT5-U6-G0u"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pBm-dD-Sw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Znm-3q-Baz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.5" y="-611.61971830985919"/>
+            <point key="canvasLocation" x="-227" y="108"/>
         </scene>
     </scenes>
     <resources>
