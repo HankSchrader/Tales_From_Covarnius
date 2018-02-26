@@ -18,6 +18,7 @@
 		5398423220446A6D00CCD93E /* Chapter1PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */; };
 		5398423420446B5100CCD93E /* Chapter1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398423320446B5100CCD93E /* Chapter1ViewController.swift */; };
 		539842362044713D00CCD93E /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539842352044713D00CCD93E /* MusicHelper.swift */; };
+		53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53A973732044A65D00ED4D9D /* MainMenuSong.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1PageViewController.swift; sourceTree = "<group>"; };
 		5398423320446B5100CCD93E /* Chapter1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1ViewController.swift; sourceTree = "<group>"; };
 		539842352044713D00CCD93E /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
+		53A973732044A65D00ED4D9D /* MainMenuSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMenuSong.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				5398420220439F3300CCD93E /* Main.storyboard */,
 				539842352044713D00CCD93E /* MusicHelper.swift */,
 				5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */,
+				53A973732044A65D00ED4D9D /* MainMenuSong.wav */,
 				5398422F204468AA00CCD93E /* MainMenuViewController.swift */,
 				5398423320446B5100CCD93E /* Chapter1ViewController.swift */,
 				5398420820439F3300CCD93E /* Assets.xcassets */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5398420C20439F3300CCD93E /* LaunchScreen.storyboard in Resources */,
+				53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */,
 				5398420920439F3300CCD93E /* Assets.xcassets in Resources */,
 				5398420420439F3300CCD93E /* Main.storyboard in Resources */,
 			);
