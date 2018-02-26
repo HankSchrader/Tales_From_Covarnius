@@ -14,8 +14,6 @@ class MusicHelper {
     var audioPlayer: AVAudioPlayer?
     
     func playBackgroundMusic() {
-        
-        print("AudioPlayer")
         let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "MainMenuSong", ofType: "wav")!)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
