@@ -8,28 +8,42 @@
 
 import UIKit
 
-class MainMenuViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        createBeginButton()
+      
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    let button = UIButton()
+    
+    //Start from beginning button. This will trigger entry to the last view
+    func createBeginButton() {
+        
+        button.setTitle("Start From The Beginning!", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .blue
+        button.frame = CGRect(x: view.frame.width/2 - 150, y: view.frame.height/1.25, width: 300, height: 36)
+        button.layer.borderWidth = 2
+        button.layer.cornerRadius = 18
+        print(view.frame.height)
+        view.addSubview(button)
+        button.addTarget(self, action: #selector(ViewController.goToChapter1(_:)), for: UIControlEvents.touchUpInside)
+        
+       
+        
     }
     
+    @IBAction func goToChapter1(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "Start From The Beginning!", sender: self)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    
+    
 }
+
+
