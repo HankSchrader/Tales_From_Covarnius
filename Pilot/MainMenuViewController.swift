@@ -10,11 +10,17 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    var menuShowing = false
+
+    @IBOutlet weak var menuView: UIView!
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createBeginButton()
         MusicHelper.sharedHelper.playBackgroundMusic(resource: "MainMenuSong")
+        menuView.layer.shadowOpacity = 1
+        menuView.layer.shadowRadius = 6
       
         
         
@@ -28,14 +34,23 @@ class ViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .blue
         button.frame = CGRect(x: view.frame.width/2 - 150, y: view.frame.height/1.25, width: 300, height: 36)
+    
         button.layer.borderWidth = 2
         button.layer.cornerRadius = 18
-        print(view.frame.height)
+        
         view.addSubview(button)
+        view.sendSubview(toBack: button)
         button.addTarget(self, action: #selector(ViewController.goToChapter1(_:)), for: UIControlEvents.touchUpInside)
-        
-       
-        
+    }
+    @IBAction func showMenu(_ sender: Any) {
+        print(leadingConstraint.constant)
+        if(menuShowing) {
+            leadingConstraint.constant = -165
+        }
+        else {
+            leadingConstraint.constant = 0
+        }
+        menuShowing = !menuShowing
     }
     
     @IBAction func goToChapter1(_ sender: UIButton) {
