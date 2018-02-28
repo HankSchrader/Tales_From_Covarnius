@@ -10,6 +10,12 @@ import UIKit
 
 class Chapter2ViewController: UIViewController {
 
+   
+    @IBAction func test(_ sender: Any) {
+            print("test")
+            performSegue(withIdentifier: "Chapter 3", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
