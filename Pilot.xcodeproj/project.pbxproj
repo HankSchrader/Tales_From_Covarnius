@@ -19,6 +19,11 @@
 		5398423420446B5100CCD93E /* Chapter1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398423320446B5100CCD93E /* Chapter1ViewController.swift */; };
 		539842362044713D00CCD93E /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539842352044713D00CCD93E /* MusicHelper.swift */; };
 		53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53A973732044A65D00ED4D9D /* MainMenuSong.wav */; };
+		53C77C6D2045ACDA003F7A97 /* SaveDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C77C6C2045ACDA003F7A97 /* SaveDataHelper.swift */; };
+		53F0959B2046D3E8002880D1 /* Chapter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0959A2046D3E8002880D1 /* Chapter2ViewController.swift */; };
+		53F0959D2046D47E002880D1 /* Chapter2PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */; };
+		53F095A320471477002880D1 /* Chapter3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F095A220471477002880D1 /* Chapter3ViewController.swift */; };
+		53F095A520471A8D002880D1 /* Chapter3PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F095A420471A8D002880D1 /* Chapter3PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		5398423320446B5100CCD93E /* Chapter1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1ViewController.swift; sourceTree = "<group>"; };
 		539842352044713D00CCD93E /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
 		53A973732044A65D00ED4D9D /* MainMenuSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMenuSong.wav; sourceTree = "<group>"; };
+		53C77C6C2045ACDA003F7A97 /* SaveDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataHelper.swift; sourceTree = "<group>"; };
+		53F0959A2046D3E8002880D1 /* Chapter2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2ViewController.swift; sourceTree = "<group>"; };
+		53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2PageViewController.swift; sourceTree = "<group>"; };
+		53F095A220471477002880D1 /* Chapter3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3ViewController.swift; sourceTree = "<group>"; };
+		53F095A420471A8D002880D1 /* Chapter3PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +119,16 @@
 			children = (
 				539841FE20439F3300CCD93E /* AppDelegate.swift */,
 				5398420220439F3300CCD93E /* Main.storyboard */,
+				53F095A220471477002880D1 /* Chapter3ViewController.swift */,
+				53F095A420471A8D002880D1 /* Chapter3PageViewController.swift */,
 				539842352044713D00CCD93E /* MusicHelper.swift */,
+				53C77C6C2045ACDA003F7A97 /* SaveDataHelper.swift */,
 				5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */,
+				53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */,
 				53A973732044A65D00ED4D9D /* MainMenuSong.wav */,
 				5398422F204468AA00CCD93E /* MainMenuViewController.swift */,
 				5398423320446B5100CCD93E /* Chapter1ViewController.swift */,
+				53F0959A2046D3E8002880D1 /* Chapter2ViewController.swift */,
 				5398420820439F3300CCD93E /* Assets.xcassets */,
 				5398420A20439F3300CCD93E /* LaunchScreen.storyboard */,
 				5398420D20439F3300CCD93E /* Info.plist */,
@@ -277,10 +292,15 @@
 			files = (
 				53984230204468AA00CCD93E /* MainMenuViewController.swift in Sources */,
 				5398420720439F3300CCD93E /* Pilot.xcdatamodeld in Sources */,
+				53C77C6D2045ACDA003F7A97 /* SaveDataHelper.swift in Sources */,
 				5398423220446A6D00CCD93E /* Chapter1PageViewController.swift in Sources */,
+				53F095A520471A8D002880D1 /* Chapter3PageViewController.swift in Sources */,
+				53F095A320471477002880D1 /* Chapter3ViewController.swift in Sources */,
+				53F0959D2046D47E002880D1 /* Chapter2PageViewController.swift in Sources */,
 				539842362044713D00CCD93E /* MusicHelper.swift in Sources */,
 				5398423420446B5100CCD93E /* Chapter1ViewController.swift in Sources */,
 				539841FF20439F3300CCD93E /* AppDelegate.swift in Sources */,
+				53F0959B2046D3E8002880D1 /* Chapter2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

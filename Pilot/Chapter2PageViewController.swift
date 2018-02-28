@@ -1,22 +1,23 @@
 //
-//  Chapter1PageViewController.swift
+//  Chapter2PageViewController.swift
 //  Pilot
 //
-//  Created by Erik Mikac on 2/26/18.
+//  Created by Erik Mikac on 2/28/18.
 //  Copyright © 2018 Erik Mikac. All rights reserved.
 //
 
 import UIKit
 
-class Chapter1PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource{
+class Chapter2PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource{
     var menuShowing = false
-    let viewController = Chapter1ViewController()
+    let viewController = ViewController()
     
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers: [UIViewController] =
         {
-            return [self.newVC(viewController: "Intro_1"),
-                    self.newVC(viewController: "Intro_2")]
+            return [self.newVC(viewController: "chap2_1"),
+                    self.newVC(viewController: "chap2_2"),
+                    self.newVC(viewController: "chap2_3")]
     }()
     
     var pageControl = UIPageControl()
@@ -99,6 +100,4 @@ class Chapter1PageViewController: UIPageViewController, UIPageViewControllerDele
         }
         return orderedViewControllers[nextIndex]
     }
-
-
 }

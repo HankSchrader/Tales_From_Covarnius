@@ -1,17 +1,18 @@
 //
-//  Chapter1ViewController.swift
+//  Chapter2ViewController.swift
 //  Pilot
 //
-//  Created by Erik Mikac on 2/26/18.
+//  Created by Erik Mikac on 2/28/18.
 //  Copyright © 2018 Erik Mikac. All rights reserved.
 //
 
 import UIKit
 
-class Chapter1ViewController: UIViewController {
+class Chapter2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         // Do any additional setup after loading the view.
     }
@@ -21,13 +22,7 @@ class Chapter1ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goToChapter2(_ sender: Any) {
 
-    }
-    
-    
-   
-    
     /*
     // MARK: - Navigation
 
@@ -38,4 +33,17 @@ class Chapter1ViewController: UIViewController {
     }
     */
 
+}
+class ReplaceControllerSegue: UIStoryboardSegue {
+    
+    override func perform() {
+        print("Hello")
+        if let navigationController = source.navigationController as UINavigationController? {
+            var controllers = navigationController.viewControllers
+            controllers.removeLast()
+            
+            controllers.append(destination)
+            navigationController.setViewControllers(controllers, animated: true)
+        }
+    }
 }

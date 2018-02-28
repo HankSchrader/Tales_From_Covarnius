@@ -1,14 +1,14 @@
 //
-//  Chapter1ViewController.swift
+//  Chapter3PageViewController.swift
 //  Pilot
 //
-//  Created by Erik Mikac on 2/26/18.
+//  Created by Erik Mikac on 2/28/18.
 //  Copyright © 2018 Erik Mikac. All rights reserved.
 //
 
 import UIKit
 
-class Chapter1ViewController: UIViewController {
+class Chapter3PageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +21,7 @@ class Chapter1ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goToChapter2(_ sender: Any) {
 
-    }
-    
-    
-   
-    
     /*
     // MARK: - Navigation
 

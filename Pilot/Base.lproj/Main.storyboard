@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chapter Select-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcL-3B-GhH">
-                                <rect key="frame" x="-165" y="64" width="160" height="603"/>
+                                <rect key="frame" x="-165" y="20" width="160" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VlF-Sw-Hh5" userLabel="Chapter 1">
                                         <rect key="frame" x="25" y="25" width="110" height="29.5"/>
@@ -74,7 +74,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7PC-I7-Qs5">
+                    <navigationItem key="navigationItem" title="Chapter Select" id="7PC-I7-Qs5">
+                        <barButtonItem key="backBarButtonItem" title="Main Menu" id="IZD-Ga-ECf"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="fastForward" id="Ska-kd-C8N">
                             <connections>
                                 <action selector="showMenu:" destination="BYZ-38-t0r" id="mK4-rl-Mby"/>
@@ -89,12 +90,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="32.833583208395808"/>
+            <point key="canvasLocation" x="-10" y="-98"/>
         </scene>
-        <!--Chapter1 Page View Controller-->
+        <!--Chapter 1-->
         <scene sceneID="fLG-Ff-mob">
             <objects>
-                <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="GYB-hd-9Im" customClass="Chapter1PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 1" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="GYB-hd-9Im" customClass="Chapter1PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykj-NV-NaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-9" y="737"/>
@@ -106,13 +107,136 @@
                     <view key="view" contentMode="scaleToFill" id="KwR-XL-HL0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="rDA-o8-n7m"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofe-Oz-Mr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10" y="1463"/>
+        </scene>
+        <!--Chapter 2-->
+        <scene sceneID="TDW-4k-dul">
+            <objects>
+                <pageViewController storyboardIdentifier="Chap2PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 2" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Txc-t6-P1L" customClass="Chapter2PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AeN-lz-5Yx">
+                        <barButtonItem key="leftBarButtonItem" title="Main Menu" id="nTi-sH-0Lh">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="eEh-7I-qgF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMA-AZ-sYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="2326"/>
+        </scene>
+        <!--Chapter2 View Controller-->
+        <scene sceneID="tdS-ZY-RE7">
+            <objects>
+                <viewController storyboardIdentifier="chap2_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XGW-ks-GFD" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OLJ-qV-ZFi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.64027235240000002" green="1" blue="0.50196081400000003" alpha="0.37818386129999998" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2pp-aB-JhN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="obb-z7-hCk">
+                        <barButtonItem key="leftBarButtonItem" title="Main Menu" id="dSf-NK-yNF"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zj5-tm-ZHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="3051"/>
+        </scene>
+        <!--Chapter 3-->
+        <scene sceneID="sBz-nz-mvo">
+            <objects>
+                <pageViewController restorationIdentifier="Chapter 3" storyboardIdentifier="Chapter 3" autoresizesArchivedViewToFullSize="NO" title="Chapter 3" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Sb9-Ax-R7V" customClass="Chapter3PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="H8w-7t-mxI">
+                        <barButtonItem key="leftBarButtonItem" title="Main Menu" id="ayH-wF-h7F">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="Wbe-Cs-9Cs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPr-ko-2F4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="3868"/>
+        </scene>
+        <!--Chapter3 View Controller-->
+        <scene sceneID="JQe-Im-zqn">
+            <objects>
+                <viewController storyboardIdentifier="chap3_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SmD-W7-v6L" customClass="Chapter3ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cxr-L7-GMu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UM5-xd-c8W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6M-8U-GKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="4642"/>
+        </scene>
+        <!--Chapter3 View Controller-->
+        <scene sceneID="MFT-bE-Bpi">
+            <objects>
+                <viewController storyboardIdentifier="chap3_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PA6-Fg-6rc" customClass="Chapter3ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Qt-Iv-OsY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="72U-CS-EjY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEG-3g-Zoo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="4641"/>
+        </scene>
+        <!--Chapter2 View Controller-->
+        <scene sceneID="DyA-cE-A8J">
+            <objects>
+                <viewController storyboardIdentifier="chap2_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WHb-EB-UXm" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Vv-FZ-sOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vTL-cc-mgg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qg0-sz-awl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="3051"/>
+        </scene>
+        <!--Chapter2 View Controller-->
+        <scene sceneID="93B-Uo-qWp">
+            <objects>
+                <viewController storyboardIdentifier="chap2_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w9C-kF-Sjv" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BVc-LT-w1V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-BI-sJi">
+                                <rect key="frame" x="304" y="617" width="59" height="30"/>
+                                <state key="normal" title="Option 2"/>
+                                <connections>
+                                    <segue destination="Sb9-Ax-R7V" kind="show" id="XhA-qp-eVA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="bottom" secondItem="0g6-BI-sJi" secondAttribute="bottom" constant="20" id="AyE-xE-d2Y"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="0g6-BI-sJi" secondAttribute="trailing" constant="12" id="hgj-aL-hD5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hmJ-8f-LlA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sK9-h6-zXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="3050.8245877061472"/>
         </scene>
         <!--Chapter1 View Controller-->
         <scene sceneID="cGq-fh-97v">
@@ -121,13 +245,40 @@
                     <view key="view" contentMode="scaleToFill" id="r2B-gF-hwR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24R-ZV-MEt">
+                                <rect key="frame" x="300" y="617" width="59" height="30"/>
+                                <state key="normal" title="Option 2">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-B2-dcB">
+                                <rect key="frame" x="302" y="579" width="57" height="30"/>
+                                <state key="normal" title="Option 1">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Txc-t6-P1L" kind="custom" customClass="ReplaceControllerSegue" customModule="Pilot" customModuleProvider="target" id="8QM-tN-22d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="24R-ZV-MEt" firstAttribute="top" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="8" id="FMP-HE-hNk"/>
+                            <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="24R-ZV-MEt" secondAttribute="trailing" constant="16" id="KgK-hr-Bmk"/>
+                            <constraint firstItem="24R-ZV-MEt" firstAttribute="top" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="8" id="UUU-X0-5n1"/>
+                            <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="3aV-B2-dcB" secondAttribute="trailing" constant="16" id="YZu-PH-tZz"/>
+                            <constraint firstItem="riD-mQ-to4" firstAttribute="bottom" secondItem="24R-ZV-MEt" secondAttribute="bottom" constant="20" id="gwf-lU-RpW"/>
+                            <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="3aV-B2-dcB" secondAttribute="trailing" constant="16" id="hkO-XJ-gVr"/>
+                            <constraint firstItem="24R-ZV-MEt" firstAttribute="top" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="8" id="zgL-Og-hS5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="riD-mQ-to4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jWB-Sp-nhY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dup-0H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="1462"/>
+            <point key="canvasLocation" x="829.60000000000002" y="1461.3193403298351"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VTI-70-isn">
@@ -145,10 +296,30 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGx-qD-ary" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433" y="33"/>
+            <point key="canvasLocation" x="-718" y="-99"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xMY-Ni-3nA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4ad-e2-Epz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XJZ-cm-oSc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Txc-t6-P1L" kind="relationship" relationship="rootViewController" id="hes-oX-mLP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gZ-KP-Iqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="2326"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="8QM-tN-22d"/>
         <segue reference="ijG-Ma-eQD"/>
+        <segue reference="Wbe-Cs-9Cs"/>
     </inferredMetricsTieBreakers>
 </document>
