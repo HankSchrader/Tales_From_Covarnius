@@ -27,15 +27,6 @@ class ChapterSelectViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func deleteAllData() {
-        let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
-        if let result = try? PersistanceService.context.fetch(fetchRequest) {
-            for object in result {
-                PersistanceService.context.delete(object)
-            }
-        }
-        ChapterSelectViewController.chapterSelect.tableView?.reloadData()
-    }
     func onChapterFound(ChapterName: String!) {
         
             let chapter = Chapter(context: PersistanceService.context)
@@ -46,8 +37,43 @@ class ChapterSelectViewController: UIViewController {
             
         
     }
+    
+    func isChapterThere(chapterName: String!) -> Bool {
+        var isThere = false
+        for chapters in self.chapters {
+            if(chapterName == chapters.name) {
+                print("Found it!")
+                isThere = true
+            }
+        }
+        return isThere
+    }
+    
+    func saveChapter(chapterName: String!) {
+        onChapterFound(ChapterName: chapterName)
+    }
+    func deleteAllData() {
+        // Initialize Fetch Request
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chapter")
+        
+        // Configure Fetch Request
+        fetchRequest.includesPropertyValues = false
+        
+        do {
+            let items = try PersistanceService.context.fetch(fetchRequest) as! [NSManagedObject]
+            
+            for item in items {
+                PersistanceService.context.delete(item)
+            }
+            
+            // Save Changes
+            try PersistanceService.context.save()
+            print("Delete Successful")
+        } catch {
+            print("Delete failed")
+        }
+    }
 }
-
 extension ChapterSelectViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -63,20 +89,6 @@ extension ChapterSelectViewController: UITableViewDataSource {
         return cell
     }
     
-    func isChapterThere(chapterName: String!) -> Bool {
-        var isThere = false
-        for chapters in self.chapters {
-            if(chapterName == chapters.name) {
-                print("Found it!")
-                isThere = true
-            }
-        }
-          return isThere
-    }
-    
-    func saveChapter(chapterName: String!) {
-        onChapterFound(ChapterName: chapterName)
-    }
 }
 
 

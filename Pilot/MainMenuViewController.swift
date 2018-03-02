@@ -24,15 +24,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
-        do {
-            let chapters = try PersistanceService.context.fetch(fetchRequest)
-             ChapterSelectViewController.chapterSelect.chapters = chapters
-             ChapterSelectViewController.chapterSelect.tableView?.reloadData()
-        } catch
-        {
-            print("fetch failed!")
-        }
         createBeginButton()
         createDeleteButton()
         createCreditsButton()
