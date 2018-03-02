@@ -18,5 +18,5 @@ extension Chapter {
     }
 
     @NSManaged public var name: String?
-
+    @NSManaged public var order: Int16
 }

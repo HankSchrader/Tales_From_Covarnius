@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class ChapterSelectViewController: UIViewController {
-    
+    static var chapterSelect = ChapterSelectViewController()
     var chapters = [Chapter]()
     @IBOutlet weak var tableView: UITableView?
     override func viewDidLoad() {
@@ -27,27 +27,24 @@ class ChapterSelectViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onChapterFound() {
-        let alert = UIAlertController(title: "You've Unlocked a new section!", message: nil, preferredStyle: .alert)
-        alert.addTextField{ (textField) in
-            textField.placeholder = "Chapter Name"
-            
+    func deleteAllData() {
+        let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
+        if let result = try? PersistanceService.context.fetch(fetchRequest) {
+            for object in result {
+                PersistanceService.context.delete(object)
+            }
         }
+        ChapterSelectViewController.chapterSelect.tableView?.reloadData()
+    }
+    func onChapterFound(ChapterName: String!) {
         
-        let action = UIAlertAction(title: "POST", style: .default) { (_) in
-            let name = alert.textFields?.first?.text
-            print(name ?? "None Found")
             let chapter = Chapter(context: PersistanceService.context)
-            chapter.name = name
+            chapter.name = ChapterName
             PersistanceService.saveContext()
             self.chapters.append(chapter)
             self.tableView?.reloadData()
             
-        }
         
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-
     }
 }
 
@@ -65,5 +62,21 @@ extension ChapterSelectViewController: UITableViewDataSource {
         cell.textLabel?.text = chapters[indexPath.row].name
         return cell
     }
+    
+    func isChapterThere(chapterName: String!) -> Bool {
+        var isThere = false
+        for chapters in self.chapters {
+            if(chapterName == chapters.name) {
+                print("Found it!")
+                isThere = true
+            }
+        }
+          return isThere
+    }
+    
+    func saveChapter(chapterName: String!) {
+        onChapterFound(ChapterName: chapterName)
+    }
 }
+
 
