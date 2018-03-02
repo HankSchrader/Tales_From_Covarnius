@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5317FA9920499BD400CC30EE /* ChapterSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */; };
+		5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */; };
+		5317FA9E2049AF3E00CC30EE /* Chapter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */; };
+		5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */; };
 		538F51DB204723FA0051F1C1 /* Chapter3PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */; };
 		539841FF20439F3300CCD93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539841FE20439F3300CCD93E /* AppDelegate.swift */; };
 		5398420420439F3300CCD93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5398420220439F3300CCD93E /* Main.storyboard */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSelectViewController.swift; sourceTree = "<group>"; };
+		5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
+		5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3PageViewController.swift; sourceTree = "<group>"; };
 		539841FB20439F3300CCD93E /* Pilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539841FE20439F3300CCD93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,8 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				539841FE20439F3300CCD93E /* AppDelegate.swift */,
+				5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */,
+				5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */,
+				5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */,
 				538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */,
 				5398420220439F3300CCD93E /* Main.storyboard */,
+				5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */,
 				539842352044713D00CCD93E /* MusicHelper.swift */,
 				53C77C6C2045ACDA003F7A97 /* SaveDataHelper.swift */,
 				5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */,
@@ -288,6 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				53984230204468AA00CCD93E /* MainMenuViewController.swift in Sources */,
+				5317FA9E2049AF3E00CC30EE /* Chapter+CoreDataClass.swift in Sources */,
+				5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */,
+				5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */,
 				5398420720439F3300CCD93E /* Pilot.xcdatamodeld in Sources */,
 				53C77C6D2045ACDA003F7A97 /* SaveDataHelper.swift in Sources */,
 				5398423220446A6D00CCD93E /* Chapter1PageViewController.swift in Sources */,
@@ -297,6 +312,7 @@
 				5398423420446B5100CCD93E /* Chapter1ViewController.swift in Sources */,
 				539841FF20439F3300CCD93E /* AppDelegate.swift in Sources */,
 				53F0959B2046D3E8002880D1 /* Chapter2ViewController.swift in Sources */,
+				5317FA9920499BD400CC30EE /* ChapterSelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

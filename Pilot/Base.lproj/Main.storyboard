@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Efz-uf-jtQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="epm-LR-xz1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -86,6 +86,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="chapter1Button" destination="VlF-Sw-Hh5" id="Ouu-VN-0eb"/>
+                        <outlet property="chapter2Button" destination="Kps-9u-vu6" id="GYp-pE-uur"/>
                         <outlet property="leadingConstraint" destination="ebb-ZI-Zbx" id="JKd-VG-nKv"/>
                         <outlet property="menuView" destination="NcL-3B-GhH" id="kGe-at-Wb8"/>
                         <segue destination="GYB-hd-9Im" kind="show" identifier="Start From The Beginning!" id="ijG-Ma-eQD"/>
@@ -94,6 +96,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10" y="72"/>
+        </scene>
+        <!--Chapter Select View Controller-->
+        <scene sceneID="UbU-d0-5y0">
+            <objects>
+                <viewController id="epm-LR-xz1" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XTx-h4-hbC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABl-2I-jlu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Chapter Select" id="dgj-Dq-hLM">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bdP-JE-WSi">
+                                            <connections>
+                                                <action selector="onChapterFound" destination="epm-LR-xz1" id="tvS-s3-MsG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9RF-UE-Vzd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="epm-LR-xz1" id="2mU-Rg-iwI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9RF-UE-Vzd" firstAttribute="top" secondItem="ABl-2I-jlu" secondAttribute="bottom" id="1Mk-HD-BF2"/>
+                            <constraint firstAttribute="bottom" secondItem="9RF-UE-Vzd" secondAttribute="bottom" id="7wd-Yz-uYG"/>
+                            <constraint firstItem="9RF-UE-Vzd" firstAttribute="trailing" secondItem="5fn-yO-zHO" secondAttribute="trailing" id="ASb-ch-1nn"/>
+                            <constraint firstItem="9RF-UE-Vzd" firstAttribute="leading" secondItem="5fn-yO-zHO" secondAttribute="leading" id="AkQ-x3-Z72"/>
+                            <constraint firstItem="ABl-2I-jlu" firstAttribute="top" secondItem="XTx-h4-hbC" secondAttribute="top" id="NDM-HU-sVF"/>
+                            <constraint firstItem="ABl-2I-jlu" firstAttribute="leading" secondItem="5fn-yO-zHO" secondAttribute="leading" id="R6Q-dy-Inw"/>
+                            <constraint firstItem="9RF-UE-Vzd" firstAttribute="trailing" secondItem="5fn-yO-zHO" secondAttribute="trailing" id="RuZ-x6-5mu"/>
+                            <constraint firstItem="9RF-UE-Vzd" firstAttribute="leading" secondItem="5fn-yO-zHO" secondAttribute="leading" id="Wad-1B-r6p"/>
+                            <constraint firstItem="ABl-2I-jlu" firstAttribute="trailing" secondItem="5fn-yO-zHO" secondAttribute="trailing" id="fD0-Ah-nkq"/>
+                            <constraint firstItem="9RF-UE-Vzd" firstAttribute="top" secondItem="ABl-2I-jlu" secondAttribute="bottom" id="giB-Ue-vyF"/>
+                            <constraint firstItem="9RF-UE-Vzd" firstAttribute="top" secondItem="ABl-2I-jlu" secondAttribute="bottom" id="rSW-KS-Mi5"/>
+                            <constraint firstAttribute="bottom" secondItem="9RF-UE-Vzd" secondAttribute="bottom" id="vIM-aB-DUw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5fn-yO-zHO"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="9RF-UE-Vzd" id="fzp-nV-rST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXH-ll-hLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402.4000000000001" y="175.86206896551727"/>
         </scene>
         <!--Chapter 1-->
         <scene sceneID="fLG-Ff-mob">
@@ -110,13 +167,45 @@
                     <view key="view" contentMode="scaleToFill" id="KwR-XL-HL0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd8-Gz-uDC">
+                                <rect key="frame" x="25" y="60" width="325" height="153.5"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="School had just let out, and crun">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="Baskerville"/>
+                                            <font key="NSOriginalFont" size="18" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="chy">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> leaves scattered across the desolate street as you sauntered back home. Wake up, go to school, homework, that is the routine all the way until Summer. And it is only September!</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="Baskerville"/>
+                                            <font key="NSOriginalFont" size="18" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bd8-Gz-uDC" firstAttribute="top" secondItem="rDA-o8-n7m" secondAttribute="top" constant="40" id="BzG-in-mp6"/>
+                            <constraint firstItem="rDA-o8-n7m" firstAttribute="trailing" secondItem="bd8-Gz-uDC" secondAttribute="trailing" constant="25" id="Dfx-RP-K9l"/>
+                            <constraint firstItem="bd8-Gz-uDC" firstAttribute="leading" secondItem="rDA-o8-n7m" secondAttribute="leading" constant="25" id="lYi-fM-ndI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rDA-o8-n7m"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofe-Oz-Mr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="1463"/>
+            <point key="canvasLocation" x="-10.4" y="1462.2188905547227"/>
         </scene>
         <!--Chapter 2-->
         <scene sceneID="TDW-4k-dul">
@@ -303,7 +392,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGx-qD-ary" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-719" y="72"/>
+            <point key="canvasLocation" x="-720" y="25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xMY-Ni-3nA">

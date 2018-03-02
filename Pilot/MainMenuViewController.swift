@@ -11,9 +11,14 @@ import UIKit
 
 class ViewController: UIViewController {
     var menuShowing = false
+    var completedChapter2 = false
+    static let sharedHelper = ViewController()
 
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var chapter2Button: UIButton!
+    
+    @IBOutlet weak var chapter1Button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +26,14 @@ class ViewController: UIViewController {
         MusicHelper.sharedHelper.playBackgroundMusic(resource: "MainMenuSong")
         menuView.layer.shadowOpacity = 1
         menuView.layer.shadowRadius = 6
-      
-        
+        if(completedChapter2) {
+            chapter2Button.isHidden = false
+            chapter2Button.isEnabled = true
+        }
+        else {
+            chapter2Button.isHidden = true
+            chapter2Button.isEnabled = false
+        }
         
     }
     let button = UIButton()

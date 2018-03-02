@@ -22,16 +22,20 @@ class Chapter2PageViewController: UIPageViewController, UIPageViewControllerDele
     
     var pageControl = UIPageControl()
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         self.dataSource = self
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: false, completion: nil)
             //completion: nil. If I wanted code to be executed upon completion of swiping, I'd set it here.
         }
+        
+        
         self.delegate = self
         
         configurePageControl()
-        
+        ViewController.sharedHelper.completedChapter2 = true
         // Do any additional setup after loading the view.
     }
     
