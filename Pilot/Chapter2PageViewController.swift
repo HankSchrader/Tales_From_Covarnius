@@ -11,7 +11,6 @@ import UIKit
 class Chapter2PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource{
     var menuShowing = false
     let viewController = ViewController()
-    final let chapter_name = "Onto Covarnius!"
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers: [UIViewController] =
         {
@@ -22,31 +21,22 @@ class Chapter2PageViewController: UIPageViewController, UIPageViewControllerDele
     
     var pageControl = UIPageControl()
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
-        
         self.dataSource = self
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: false, completion: nil)
             //completion: nil. If I wanted code to be executed upon completion of swiping, I'd set it here.
         }
-        
-        
         self.delegate = self
-        
         configurePageControl()
-        ViewController.sharedHelper.completedChapter2 = true
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool){
          super.viewDidAppear(animated)
-        if(ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: chapter_name) == false) {
-            
-            print("Made it past the check.")
-            let newChapterAlert = UIAlertController(title: "You Just Unlocked a Chapter!", message: chapter_name, preferredStyle: UIAlertControllerStyle.alert)
-            newChapterAlert.addAction(UIAlertAction(title: "Great!", style: UIAlertActionStyle.default, handler: nil))
-            ChapterSelectViewController.chapterSelect.saveChapter(chapterName: chapter_name)
+        if(ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: Constants.LANDED_ON_COVARNIUS ) == false) {
+            let newChapterAlert = UIAlertController(title: Constants.CHAPTER_UNLOCK_MESSAGE, message: Constants.LANDED_ON_COVARNIUS, preferredStyle: UIAlertControllerStyle.alert)
+            newChapterAlert.addAction(UIAlertAction(title: Constants.SUBMIT, style: UIAlertActionStyle.default, handler: nil))
+            ChapterSelectViewController.chapterSelect.saveChapter(chapterName: Constants.LANDED_ON_COVARNIUS)
             self.present(newChapterAlert, animated: true, completion: nil)
             
         }

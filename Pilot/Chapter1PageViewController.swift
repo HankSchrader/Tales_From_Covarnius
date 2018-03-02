@@ -30,8 +30,19 @@ class Chapter1PageViewController: UIPageViewController, UIPageViewControllerDele
         self.delegate = self
         
         configurePageControl()
+    
         
         // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
+        if(ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: Constants.INTRO ) == false) {
+            let newChapterAlert = UIAlertController(title: Constants.CHAPTER_UNLOCK_MESSAGE, message: Constants.INTRO, preferredStyle: UIAlertControllerStyle.alert)
+            newChapterAlert.addAction(UIAlertAction(title: Constants.SUBMIT, style: UIAlertActionStyle.default, handler: nil))
+            ChapterSelectViewController.chapterSelect.saveChapter(chapterName: Constants.INTRO)
+            self.present(newChapterAlert, animated: true, completion: nil)
+            
+        }
     }
     
     func configurePageControl() {
