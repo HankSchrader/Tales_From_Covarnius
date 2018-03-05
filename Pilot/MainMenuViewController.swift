@@ -15,23 +15,39 @@ class ViewController: UIViewController {
     var completedChapter2 = false
     static let sharedHelper = ViewController()
 
-    @IBOutlet weak var menuView: UIView!
-    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var chapter2Button: UIButton!
     
-    @IBOutlet weak var chapter1Button: UIButton!
-    
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
     override func viewDidLoad() {
         
         super.viewDidLoad()
         createBeginButton()
         createDeleteButton()
         createCreditsButton()
-        MusicHelper.sharedHelper.playBackgroundMusic(resource: "MainMenuSong")
-        menuView.layer.shadowOpacity = 1
-        menuView.layer.shadowRadius = 6
-
         
+        MusicHelper.sharedHelper.playBackgroundMusic(resource: "MainMenuSong")
+       
+        
+    }
+    //MARK: viewWillAppear is always used for animation.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set the top label's animation alpha
+        self.topLabel.alpha = 0
+        self.bottomLabel.alpha = 0
+        animateLabelTransition()
+        
+        
+        
+    }
+    
+    func animateLabelTransition() {
+        // animate the alpha
+        UIView.animate(withDuration: 4, animations: {self.topLabel.alpha = 1;
+            self.bottomLabel.alpha = 1
+        })
+       
     }
    
     
@@ -102,7 +118,9 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
         
     }
-    @IBAction func showMenu(_ sender: Any) {
+    
+    //Method used to showMenu, when the chpaters used to be here. Keeping functionality for referenceh
+  /*  @IBAction func showMenu(_ sender: Any) {
         print(leadingConstraint.constant)
         if(menuShowing) {
             leadingConstraint.constant = -165
@@ -111,7 +129,8 @@ class ViewController: UIViewController {
             leadingConstraint.constant = 0
         }
         menuShowing = !menuShowing
-    }
+    }*/
+    
     
     @IBAction func goToChapter1(_ sender: UIButton) {
         //reload the chapters
