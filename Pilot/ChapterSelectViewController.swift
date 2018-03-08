@@ -22,27 +22,23 @@ class ChapterSelectViewController: UIViewController {
         self.tableView?.reloadData()
         } catch
         {
-            print("fetch failed!")
+            NSLog("FETCH FAILED")
         }
         // Do any additional setup after loading the view.
     }
     
     func onChapterFound(ChapterName: String!) {
-        
             let chapter = Chapter(context: PersistanceService.context)
             chapter.name = ChapterName
             PersistanceService.saveContext()
             self.chapters.append(chapter)
             self.tableView?.reloadData()
-            
-        
     }
     
     func isChapterThere(chapterName: String!) -> Bool {
         var isThere = false
         for chapters in self.chapters {
             if(chapterName == chapters.name) {
-                print("Found it!")
                 isThere = true
             }
         }
@@ -68,9 +64,8 @@ class ChapterSelectViewController: UIViewController {
             
             // Save Changes
             try PersistanceService.context.save()
-            print("Delete Successful")
         } catch {
-            print("Delete failed")
+            NSLog("Delete Failed")
         }
     }
 }
