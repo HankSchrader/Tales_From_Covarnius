@@ -69,6 +69,7 @@
                         <outlet property="bottomLabel" destination="sXB-1E-p2b" id="VnE-RO-oE3"/>
                         <outlet property="topLabel" destination="DH5-4b-1cb" id="E8h-OW-PXn"/>
                         <segue destination="GYB-hd-9Im" kind="show" identifier="Start From The Beginning!" id="ijG-Ma-eQD"/>
+                        <segue destination="cx7-q2-roP" kind="show" identifier="toCredits" id="hw1-xZ-B8C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,7 +85,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0w-Wd-rTf">
-                                <rect key="frame" x="128" y="45" width="119" height="30"/>
+                                <rect key="frame" x="128" y="89" width="119" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rRd-UY-2WN"/>
                                 </constraints>
@@ -93,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyU-Eh-OGq">
-                                <rect key="frame" x="128" y="100" width="118" height="30"/>
+                                <rect key="frame" x="128" y="144" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mZv-aI-Oa9"/>
                                 </constraints>
@@ -102,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Illustrated By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APg-1F-19y">
-                                <rect key="frame" x="128" y="170" width="118" height="30"/>
+                                <rect key="frame" x="128" y="214" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="h9F-bl-64d"/>
                                 </constraints>
@@ -111,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-uk-f3w">
-                                <rect key="frame" x="128" y="225" width="118" height="30"/>
+                                <rect key="frame" x="128" y="269" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="G4b-ki-LK2"/>
                                 </constraints>
@@ -120,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-H5-pEs">
-                                <rect key="frame" x="128" y="295" width="118" height="30"/>
+                                <rect key="frame" x="128" y="339" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ffD-NZ-RDs"/>
                                 </constraints>
@@ -129,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erik Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6O-gb-2F3">
-                                <rect key="frame" x="128" y="350" width="118" height="30"/>
+                                <rect key="frame" x="128" y="394" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Nka-uQ-jjS"/>
                                 </constraints>
@@ -138,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbx-d5-1m9">
-                                <rect key="frame" x="128" y="420" width="119" height="30"/>
+                                <rect key="frame" x="128" y="464" width="119" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mme-c2-n3W"/>
                                 </constraints>
@@ -147,7 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erik Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKJ-BP-DHR">
-                                <rect key="frame" x="128" y="475" width="118" height="30"/>
+                                <rect key="frame" x="128" y="519" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YRf-nF-qmZ"/>
                                 </constraints>
@@ -249,10 +250,10 @@
             </objects>
             <point key="canvasLocation" x="-10" y="743"/>
         </scene>
-        <!--Chapter1 View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="oeQ-En-i0d">
             <objects>
-                <viewController storyboardIdentifier="Intro_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tJQ-xk-63E" customClass="Chapter1ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Intro_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tJQ-xk-63E" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KwR-XL-HL0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="-10" y="2326"/>
         </scene>
-        <!--Chapter2 View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="tdS-ZY-RE7">
             <objects>
-                <viewController storyboardIdentifier="chap2_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XGW-ks-GFD" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap2_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XGW-ks-GFD" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OLJ-qV-ZFi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -346,10 +347,10 @@
             </objects>
             <point key="canvasLocation" x="-10" y="3849"/>
         </scene>
-        <!--Chapter1 View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="JQe-Im-zqn">
             <objects>
-                <viewController storyboardIdentifier="chap3_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SmD-W7-v6L" customClass="Chapter1ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap3_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SmD-W7-v6L" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cxr-L7-GMu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -361,10 +362,10 @@
             </objects>
             <point key="canvasLocation" x="-10" y="4639"/>
         </scene>
-        <!--Chapter1 View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="MFT-bE-Bpi">
             <objects>
-                <viewController storyboardIdentifier="chap3_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PA6-Fg-6rc" customClass="Chapter1ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap3_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PA6-Fg-6rc" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Qt-Iv-OsY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,10 +377,10 @@
             </objects>
             <point key="canvasLocation" x="654" y="4639"/>
         </scene>
-        <!--Chapter2 View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="DyA-cE-A8J">
             <objects>
-                <viewController storyboardIdentifier="chap2_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WHb-EB-UXm" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap2_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WHb-EB-UXm" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Vv-FZ-sOZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,10 +392,10 @@
             </objects>
             <point key="canvasLocation" x="655" y="3051"/>
         </scene>
-        <!--Chapter2 View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="93B-Uo-qWp">
             <objects>
-                <viewController storyboardIdentifier="chap2_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w9C-kF-Sjv" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap2_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w9C-kF-Sjv" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BVc-LT-w1V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -416,10 +417,10 @@
             </objects>
             <point key="canvasLocation" x="1300" y="3051"/>
         </scene>
-        <!--Chapter1 View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="cGq-fh-97v">
             <objects>
-                <viewController storyboardIdentifier="Intro_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zkK-fz-oVo" customClass="Chapter1ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Intro_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zkK-fz-oVo" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2B-gF-hwR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -514,7 +515,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MHJ-84-zax"/>
+        <segue reference="zQr-YD-vVy"/>
         <segue reference="KYf-bL-oLj"/>
         <segue reference="GtB-kj-bBf"/>
     </inferredMetricsTieBreakers>

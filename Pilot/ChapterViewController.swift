@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Chapter1ViewController: UIViewController {
+class ChapterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,19 @@ class Chapter1ViewController: UIViewController {
 
     }
     
-    
+    //Not sure if I'll ever need to use this function. It allows the user to go back TWO views on the push of a button.
+    class ReplaceControllerSegue: UIStoryboardSegue {
+        
+        override func perform() {
+            
+            if let navigationController = source.navigationController as UINavigationController? {
+                var controllers = navigationController.viewControllers
+                controllers.removeLast()
+                
+                controllers.append(destination)
+                navigationController.setViewControllers(controllers, animated: true)
+            }
+        }
    
     
     /*
@@ -38,4 +50,5 @@ class Chapter1ViewController: UIViewController {
     }
     */
 
+    }
 }

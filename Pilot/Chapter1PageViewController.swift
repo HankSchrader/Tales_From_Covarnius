@@ -10,7 +10,7 @@ import UIKit
 
 class Chapter1PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource{
     var menuShowing = false
-    let viewController = Chapter1ViewController()
+    let viewController = ChapterViewController()
     
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers: [UIViewController] =

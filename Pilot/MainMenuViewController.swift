@@ -19,16 +19,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         createBeginButton()
         createDeleteButton()
         createCreditsButton()
         
-        MusicHelper.sharedHelper.playBackgroundMusic(resource: "MainMenuSong")
+        MusicHelper.sharedHelper.initiateBackgroundMusic(resource: Constants.MAIN_MENU_SONG)
        
         
+        
     }
+    
     //MARK: viewWillAppear is always used for animation.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -36,11 +37,14 @@ class ViewController: UIViewController {
         // Set the top label's animation alpha
         self.topLabel.alpha = 0
         self.bottomLabel.alpha = 0
+        
         animateLabelTransition()
+        MusicHelper.sharedHelper.fadeInBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: Constants.STANDARD_FADE_TIME)
         
         
         
     }
+   
     
     func animateLabelTransition() {
         // animate the alpha
@@ -50,7 +54,7 @@ class ViewController: UIViewController {
        
     }
    
-    
+    //MARK: Begin button
     //Start from beginning button. This will trigger entry to the last view
     func createBeginButton() {
          let button = UIButton()
@@ -65,8 +69,10 @@ class ViewController: UIViewController {
         view.addSubview(button)
         view.sendSubview(toBack: button)
         button.addTarget(self, action: #selector(ViewController.goToChapter1(_:)), for: UIControlEvents.touchUpInside)
+        
     }
     
+    //MARK: Delete button
     func createDeleteButton() {
         let button = UIButton()
         button.setTitle("Delete Data", for: .normal)
@@ -82,6 +88,7 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(ViewController.alertForDelete(_:)), for: UIControlEvents.touchUpInside)
     }
     
+    //MARK: Credits button
     func createCreditsButton() {
         let button = UIButton()
         button.setTitle("Credits", for: .normal)
@@ -94,19 +101,22 @@ class ViewController: UIViewController {
         
         view.addSubview(button)
         view.sendSubview(toBack: button)
-        button.addTarget(self, action: #selector(ViewController.alertForDelete(_:)), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(ViewController.goToCredits(_:)), for: UIControlEvents.touchUpInside)
     }
     
+    //MARK: Alert For Delete button
     @IBAction func alertForDelete(_ sender: UIButton) {
         let alertController = UIAlertController(title: "Are You Sure?", message: "All Progress Wil Be Gone!", preferredStyle: .alert)
-        
+        MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: 1.5)
         // Create the actions
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
             ChapterSelectViewController.chapterSelect.deleteAllData()
+            MusicHelper.sharedHelper.fadeInBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: 1.5)
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) {
             UIAlertAction in
+            MusicHelper.sharedHelper.fadeInBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: 1.5)
             NSLog("Cancel Pressed")
         }
         
@@ -119,19 +129,6 @@ class ViewController: UIViewController {
         
     }
     
-    //Method used to showMenu, when the chpaters used to be here. Keeping functionality for referenceh
-  /*  @IBAction func showMenu(_ sender: Any) {
-        print(leadingConstraint.constant)
-        if(menuShowing) {
-            leadingConstraint.constant = -165
-        }
-        else {
-            leadingConstraint.constant = 0
-        }
-        menuShowing = !menuShowing
-    }*/
-    
-    
     @IBAction func goToChapter1(_ sender: UIButton) {
         //reload the chapters
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
@@ -143,11 +140,18 @@ class ViewController: UIViewController {
         {
             print("fetch failed!")
         }
+        MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: Constants.STANDARD_FADE_TIME)
         //segue to chapter 1
         performSegue(withIdentifier: "Start From The Beginning!", sender: self)
 
     }
     
+    @IBAction func goToCredits(_ sender: UIButton) {
+        print("Inside Go to Credits")
+        MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: Constants.STANDARD_FADE_TIME)
+        performSegue(withIdentifier: "toCredits", sender: self)
+        
+    }
     
 }
 
