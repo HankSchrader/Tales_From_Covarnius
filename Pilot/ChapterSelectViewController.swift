@@ -24,10 +24,13 @@ class ChapterSelectViewController: UIViewController {
         {
             NSLog("FETCH FAILED")
         }
-        // Do any additional setup after loading the view.
+        tableView?.dataSource = self
+        tableView?.delegate = self
+
     }
     
-    func onChapterFound(ChapterName: String!) {
+    
+    func saveChapter(ChapterName: String!) {
             let chapter = Chapter(context: PersistanceService.context)
             chapter.name = ChapterName
             PersistanceService.saveContext()
@@ -45,9 +48,6 @@ class ChapterSelectViewController: UIViewController {
         return isThere
     }
     
-    func saveChapter(chapterName: String!) {
-        onChapterFound(ChapterName: chapterName)
-    }
     func deleteAllData() {
         // Initialize Fetch Request
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chapter")
@@ -68,8 +68,30 @@ class ChapterSelectViewController: UIViewController {
             NSLog("Delete Failed")
         }
     }
+    
+    
+    
+    func goToChapter(chapter: String!) {
+        //reload the chapters
+        let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
+        do {
+            let chapters = try PersistanceService.context.fetch(fetchRequest)
+            ChapterSelectViewController.chapterSelect.chapters = chapters
+            ChapterSelectViewController.chapterSelect.tableView?.reloadData()
+        } catch
+        {
+            print("fetch failed!")
+        }
+     
+        self.performSegue(withIdentifier: chapter, sender: self)
+        
+    }
+
+
 }
-extension ChapterSelectViewController: UITableViewDataSource {
+extension ChapterSelectViewController: UITableViewDataSource, UITableViewDelegate{
+    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -83,7 +105,28 @@ extension ChapterSelectViewController: UITableViewDataSource {
         cell.textLabel?.text = chapters[indexPath.row].name
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
+        do {
+            let chapters = try PersistanceService.context.fetch(fetchRequest)
+            ChapterSelectViewController.chapterSelect.chapters = chapters
+            ChapterSelectViewController.chapterSelect.tableView?.reloadData()
+            for chapter in chapters {
+                print(chapter.name)
+            }
+        } catch
+        {
+            print("fetch failed!")
+        }
+
+        let cell = chapters[indexPath.row].name
+        self.performSegue(withIdentifier: cell!, sender: self)
+        
+    }
     
+    
+
 }
 
 

@@ -21,10 +21,6 @@ class ChapterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goToChapter2(_ sender: Any) {
-
-    }
-    
     //Not sure if I'll ever need to use this function. It allows the user to go back TWO views on the push of a button.
     class ReplaceControllerSegue: UIStoryboardSegue {
         

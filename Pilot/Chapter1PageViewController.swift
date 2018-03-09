@@ -36,10 +36,11 @@ class Chapter1PageViewController: UIPageViewController, UIPageViewControllerDele
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
+        ChapterSelectViewController.chapterSelect.tableView?.reloadData()
         if(ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: Constants.INTRO ) == false) {
             let newChapterAlert = UIAlertController(title: Constants.CHAPTER_UNLOCK_MESSAGE, message: Constants.INTRO, preferredStyle: UIAlertControllerStyle.alert)
             newChapterAlert.addAction(UIAlertAction(title: Constants.SUBMIT, style: UIAlertActionStyle.default, handler: nil))
-            ChapterSelectViewController.chapterSelect.saveChapter(chapterName: Constants.INTRO)
+            ChapterSelectViewController.chapterSelect.saveChapter(ChapterName: Constants.INTRO)
             self.present(newChapterAlert, animated: true, completion: nil)
             
         }

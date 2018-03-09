@@ -33,10 +33,11 @@ class Chapter2PageViewController: UIPageViewController, UIPageViewControllerDele
     }
     override func viewDidAppear(_ animated: Bool){
          super.viewDidAppear(animated)
-        if(ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: Constants.LANDED_ON_COVARNIUS ) == false) {
-            let newChapterAlert = UIAlertController(title: Constants.CHAPTER_UNLOCK_MESSAGE, message: Constants.LANDED_ON_COVARNIUS, preferredStyle: UIAlertControllerStyle.alert)
+        
+        if(ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: Constants.ONTO_COVARNIUS) == false) {
+            let newChapterAlert = UIAlertController(title: Constants.CHAPTER_UNLOCK_MESSAGE, message: Constants.ONTO_COVARNIUS, preferredStyle: UIAlertControllerStyle.alert)
             newChapterAlert.addAction(UIAlertAction(title: Constants.SUBMIT, style: UIAlertActionStyle.default, handler: nil))
-            ChapterSelectViewController.chapterSelect.saveChapter(chapterName: Constants.LANDED_ON_COVARNIUS)
+            ChapterSelectViewController.chapterSelect.saveChapter(ChapterName: Constants.ONTO_COVARNIUS)
             self.present(newChapterAlert, animated: true, completion: nil)
             
         }

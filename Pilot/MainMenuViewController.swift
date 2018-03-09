@@ -14,11 +14,13 @@ class ViewController: UIViewController {
     var menuShowing = false
     var completedChapter2 = false
     static let sharedHelper = ViewController()
-
+    weak var delegate: DisplayViewIDDelegate?
+    var currentChapter: UILabel!
     
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     override func viewDidLoad() {
+
         super.viewDidLoad()
         createBeginButton()
         createDeleteButton()
@@ -147,11 +149,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goToCredits(_ sender: UIButton) {
-        print("Inside Go to Credits")
+        
         MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: Constants.STANDARD_FADE_TIME)
         performSegue(withIdentifier: "toCredits", sender: self)
         
     }
+    
+}
+
+// MARK: delegate protocol to display the current chapter on the manin menu screen.
+
+protocol DisplayViewIDDelegate: class {
+    func displayPageViewID(_ name : String?)
     
 }
 

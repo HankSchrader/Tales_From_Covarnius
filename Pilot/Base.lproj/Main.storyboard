@@ -13,13 +13,13 @@
         <!--Main Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
-                                <rect key="frame" x="108" y="126" width="159" height="29"/>
+                                <rect key="frame" x="108" y="82" width="159" height="29"/>
                                 <attributedString key="attributedText">
                                     <fragment content="COVARNIUS">
                                         <attributes>
@@ -33,7 +33,7 @@
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
-                                <rect key="frame" x="127" y="97" width="121" height="20"/>
+                                <rect key="frame" x="127" y="53" width="121" height="20"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TALES FROM">
                                         <attributes>
@@ -85,7 +85,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0w-Wd-rTf">
-                                <rect key="frame" x="128" y="89" width="119" height="30"/>
+                                <rect key="frame" x="128" y="45" width="119" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rRd-UY-2WN"/>
                                 </constraints>
@@ -94,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyU-Eh-OGq">
-                                <rect key="frame" x="128" y="144" width="118" height="30"/>
+                                <rect key="frame" x="128" y="100" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mZv-aI-Oa9"/>
                                 </constraints>
@@ -103,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Illustrated By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APg-1F-19y">
-                                <rect key="frame" x="128" y="214" width="118" height="30"/>
+                                <rect key="frame" x="128" y="170" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="h9F-bl-64d"/>
                                 </constraints>
@@ -112,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-uk-f3w">
-                                <rect key="frame" x="128" y="269" width="118" height="30"/>
+                                <rect key="frame" x="128" y="225" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="G4b-ki-LK2"/>
                                 </constraints>
@@ -121,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-H5-pEs">
-                                <rect key="frame" x="128" y="339" width="118" height="30"/>
+                                <rect key="frame" x="128" y="295" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ffD-NZ-RDs"/>
                                 </constraints>
@@ -130,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erik Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6O-gb-2F3">
-                                <rect key="frame" x="128" y="394" width="118" height="30"/>
+                                <rect key="frame" x="128" y="350" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Nka-uQ-jjS"/>
                                 </constraints>
@@ -139,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbx-d5-1m9">
-                                <rect key="frame" x="128" y="464" width="119" height="30"/>
+                                <rect key="frame" x="128" y="420" width="119" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mme-c2-n3W"/>
                                 </constraints>
@@ -148,7 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erik Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKJ-BP-DHR">
-                                <rect key="frame" x="128" y="519" width="118" height="30"/>
+                                <rect key="frame" x="128" y="475" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YRf-nF-qmZ"/>
                                 </constraints>
@@ -195,13 +195,13 @@
         <!--Chapter Select View Controller-->
         <scene sceneID="UbU-d0-5y0">
             <objects>
-                <viewController id="epm-LR-xz1" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Landed On Covarnius" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epm-LR-xz1" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XTx-h4-hbC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9RF-UE-Vzd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Kf-HP-DJy">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
@@ -236,6 +236,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="9RF-UE-Vzd" id="fzp-nV-rST"/>
+                        <segue destination="GYB-hd-9Im" kind="show" identifier="Introduction" id="At9-Gc-gCd"/>
+                        <segue destination="Txc-t6-P1L" kind="show" identifier="Onto Covarnius" id="9UT-y7-3Sz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXH-ll-hLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -516,7 +518,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="zQr-YD-vVy"/>
-        <segue reference="KYf-bL-oLj"/>
-        <segue reference="GtB-kj-bBf"/>
+        <segue reference="9UT-y7-3Sz"/>
+        <segue reference="At9-Gc-gCd"/>
+        <segue reference="eEh-7I-qgF"/>
     </inferredMetricsTieBreakers>
 </document>
