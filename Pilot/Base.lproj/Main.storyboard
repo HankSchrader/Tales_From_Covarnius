@@ -247,57 +247,10 @@
         <!--Chapter 1-->
         <scene sceneID="fLG-Ff-mob">
             <objects>
-                <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 1" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="GYB-hd-9Im" customClass="Chapter1PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 1" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="GYB-hd-9Im" customClass="IntroPageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykj-NV-NaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10" y="743"/>
-        </scene>
-        <!--Chapter View Controller-->
-        <scene sceneID="oeQ-En-i0d">
-            <objects>
-                <viewController storyboardIdentifier="Intro_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tJQ-xk-63E" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KwR-XL-HL0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd8-Gz-uDC">
-                                <rect key="frame" x="25" y="60" width="325" height="153.5"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="School had just let out, and crun">
-                                        <attributes>
-                                            <font key="NSFont" size="20" name="Baskerville"/>
-                                            <font key="NSOriginalFont" size="18" name="Baskerville"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="chy">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="Baskerville"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> leaves scattered across the desolate street as you sauntered back home. Wake up, go to school, homework, that is the routine all the way until Summer. And it is only September!</string>
-                                        <attributes>
-                                            <font key="NSFont" size="20" name="Baskerville"/>
-                                            <font key="NSOriginalFont" size="18" name="Baskerville"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="bd8-Gz-uDC" firstAttribute="top" secondItem="rDA-o8-n7m" secondAttribute="top" constant="40" id="BzG-in-mp6"/>
-                            <constraint firstItem="rDA-o8-n7m" firstAttribute="trailing" secondItem="bd8-Gz-uDC" secondAttribute="trailing" constant="25" id="Dfx-RP-K9l"/>
-                            <constraint firstItem="bd8-Gz-uDC" firstAttribute="leading" secondItem="rDA-o8-n7m" secondAttribute="leading" constant="25" id="lYi-fM-ndI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="rDA-o8-n7m"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ofe-Oz-Mr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-10" y="1461"/>
         </scene>
         <!--Chapter 2-->
         <scene sceneID="TDW-4k-dul">
@@ -313,7 +266,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMA-AZ-sYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="2326"/>
+            <point key="canvasLocation" x="1081" y="1401"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="tdS-ZY-RE7">
@@ -331,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zj5-tm-ZHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="3051"/>
+            <point key="canvasLocation" x="1902" y="1434"/>
         </scene>
         <!--Chapter3 Page View Controller-->
         <scene sceneID="aSJ-qq-VF4">
@@ -392,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg0-sz-awl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="3051"/>
+            <point key="canvasLocation" x="2780" y="1434"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="93B-Uo-qWp">
@@ -417,36 +370,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sK9-h6-zXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="3051"/>
+            <point key="canvasLocation" x="3742" y="1434"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fQI-ga-mRP">
+            <objects>
+                <viewController id="aiZ-Oh-mhX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="97i-9b-ZzH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="m9O-t6-yk6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gta-Sb-zNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2436" y="1434"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="I4i-xz-e7Y">
+            <objects>
+                <viewController id="8WA-VM-b7Q" customClass="ChapterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c9O-Jk-YRK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YeS-VX-7ah"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEu-W2-8D0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1495" y="1434"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="fAa-L3-52S">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="yze-4Z-JnP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EQt-hk-QKf"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbO-2J-FC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607.20000000000005" y="1432.5337331334333"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="cGq-fh-97v">
             <objects>
-                <viewController storyboardIdentifier="Intro_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zkK-fz-oVo" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Intro_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zkK-fz-oVo" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2B-gF-hwR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24R-ZV-MEt">
-                                <rect key="frame" x="300" y="617" width="59" height="30"/>
-                                <state key="normal" title="Option 2">
+                                <rect key="frame" x="163" y="617" width="196" height="30"/>
+                                <state key="normal" title="Run away as fast as you can.">
                                     <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yze-4Z-JnP" kind="show" id="pBG-2N-p2i"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-B2-dcB">
-                                <rect key="frame" x="302" y="579" width="57" height="30"/>
-                                <state key="normal" title="Option 1">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-B2-dcB">
+                                <rect key="frame" x="159" y="579" width="204" height="30"/>
+                                <state key="normal" title="Stop to see what is in the sky.">
                                     <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Txc-t6-P1L" kind="show" id="KYf-bL-oLj"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Xl-I0i">
+                                <rect key="frame" x="16" y="46" width="343" height="393"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
+
+The only sounds to be heard are the rustling of leaves on the concrete and Luna’s overly enthusiastic sniffing.
+
+Just as you are about to circle back home, a strange shape emerges from the sky. It’s large and shaped like a saucer. Bulbous multi-colored lights blink rapidly all over the aircraft, making it look like a strangely shaped Christmas tree. Your first instinct is to run away, but you also want to see what the strange object is. 
+
+Do you:
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0qd-Xl-I0i" firstAttribute="top" secondItem="riD-mQ-to4" secondAttribute="top" constant="26" id="C7y-C0-785"/>
+                            <constraint firstItem="0qd-Xl-I0i" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="16" id="ED8-dd-gHG"/>
                             <constraint firstItem="24R-ZV-MEt" firstAttribute="top" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="8" id="FMP-HE-hNk"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="24R-ZV-MEt" secondAttribute="trailing" constant="16" id="KgK-hr-Bmk"/>
+                            <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="0qd-Xl-I0i" secondAttribute="trailing" constant="16" id="L0c-aO-Wvg"/>
                             <constraint firstItem="24R-ZV-MEt" firstAttribute="top" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="8" id="UUU-X0-5n1"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="3aV-B2-dcB" secondAttribute="trailing" constant="16" id="YZu-PH-tZz"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="bottom" secondItem="24R-ZV-MEt" secondAttribute="bottom" constant="20" id="gwf-lU-RpW"/>
@@ -459,7 +472,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dup-0H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="1460"/>
+            <point key="canvasLocation" x="328.80000000000001" y="1434.3328335832084"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VTI-70-isn">
@@ -495,7 +508,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gZ-KP-Iqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-945" y="2326"/>
+            <point key="canvasLocation" x="1081" y="2090"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vjw-Eb-BI4">
@@ -515,10 +528,29 @@
             </objects>
             <point key="canvasLocation" x="-946" y="3849"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zae-EG-hDw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2oC-k4-BzZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="anH-B8-x3c">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yze-4Z-JnP" kind="relationship" relationship="rootViewController" id="jyW-sj-np8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3C7-6P-LI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607" y="2089"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="pBG-2N-p2i"/>
         <segue reference="zQr-YD-vVy"/>
-        <segue reference="9UT-y7-3Sz"/>
+        <segue reference="KYf-bL-oLj"/>
         <segue reference="At9-Gc-gCd"/>
         <segue reference="eEh-7I-qgF"/>
     </inferredMetricsTieBreakers>

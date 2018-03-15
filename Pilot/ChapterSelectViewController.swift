@@ -112,9 +112,6 @@ extension ChapterSelectViewController: UITableViewDataSource, UITableViewDelegat
             let chapters = try PersistanceService.context.fetch(fetchRequest)
             ChapterSelectViewController.chapterSelect.chapters = chapters
             ChapterSelectViewController.chapterSelect.tableView?.reloadData()
-            for chapter in chapters {
-                print(chapter.name)
-            }
         } catch
         {
             print("fetch failed!")

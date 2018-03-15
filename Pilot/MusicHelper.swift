@@ -13,11 +13,11 @@ class MusicHelper {
     static let sharedHelper = MusicHelper()
     var audioPlayer: AVAudioPlayer?
     
-    func initiateBackgroundMusic(resource: String!){
+    func initiateBackgroundMusic(resource: String!,numberOfLoops: Int!){
         let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: resource, ofType: "wav")!)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
-            audioPlayer!.numberOfLoops = -1
+            audioPlayer!.numberOfLoops = numberOfLoops
             audioPlayer!.prepareToPlay()
             audioPlayer!.play()
         } catch {

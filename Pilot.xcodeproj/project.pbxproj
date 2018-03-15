@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5317725020555C870005F3DB /* New Chapter Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5317724F20555C860005F3DB /* New Chapter Sound.wav */; };
 		5317FA9920499BD400CC30EE /* ChapterSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */; };
 		5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */; };
 		5317FA9E2049AF3E00CC30EE /* Chapter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */; };
 		5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */; };
 		533B40992049EA0000D61D80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B40982049EA0000D61D80 /* Constants.swift */; };
+		53796AFA205B28F500C6B7F8 /* GenericPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */; };
+		53796AFC205B331B00C6B7F8 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */; };
 		538F51DB204723FA0051F1C1 /* Chapter3PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */; };
 		539841FF20439F3300CCD93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539841FE20439F3300CCD93E /* AppDelegate.swift */; };
 		5398420420439F3300CCD93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5398420220439F3300CCD93E /* Main.storyboard */; };
@@ -21,8 +24,7 @@
 		5398421720439F3300CCD93E /* PilotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398421620439F3300CCD93E /* PilotTests.swift */; };
 		5398422220439F3400CCD93E /* PilotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398422120439F3400CCD93E /* PilotUITests.swift */; };
 		53984230204468AA00CCD93E /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398422F204468AA00CCD93E /* MainMenuViewController.swift */; };
-		5398423220446A6D00CCD93E /* Chapter1PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */; };
-		5398423420446B5100CCD93E /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398423320446B5100CCD93E /* ChapterViewController.swift */; };
+		5398423220446A6D00CCD93E /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398423120446A6D00CCD93E /* IntroPageViewController.swift */; };
 		539842362044713D00CCD93E /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539842352044713D00CCD93E /* MusicHelper.swift */; };
 		53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53A973732044A65D00ED4D9D /* MainMenuSong.wav */; };
 		53F0959D2046D47E002880D1 /* Chapter2PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */; };
@@ -46,11 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5317724F20555C860005F3DB /* New Chapter Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "New Chapter Sound.wav"; sourceTree = "<group>"; };
 		5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSelectViewController.swift; sourceTree = "<group>"; };
 		5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
 		5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		533B40982049EA0000D61D80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPageViewController.swift; sourceTree = "<group>"; };
+		53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
 		538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3PageViewController.swift; sourceTree = "<group>"; };
 		539841FB20439F3300CCD93E /* Pilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539841FE20439F3300CCD93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +71,7 @@
 		5398422120439F3400CCD93E /* PilotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotUITests.swift; sourceTree = "<group>"; };
 		5398422320439F3400CCD93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5398422F204468AA00CCD93E /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1PageViewController.swift; sourceTree = "<group>"; };
-		5398423320446B5100CCD93E /* ChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
+		5398423120446A6D00CCD93E /* IntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 		539842352044713D00CCD93E /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
 		53A973732044A65D00ED4D9D /* MainMenuSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMenuSong.wav; sourceTree = "<group>"; };
 		53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2PageViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53796AFD205B338F00C6B7F8 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
 		539841F220439F3300CCD93E = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +132,7 @@
 		539841FD20439F3300CCD93E /* Pilot */ = {
 			isa = PBXGroup;
 			children = (
+				53796AFD205B338F00C6B7F8 /* PageView */,
 				539841FE20439F3300CCD93E /* AppDelegate.swift */,
 				5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */,
 				5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */,
@@ -129,10 +141,12 @@
 				5398420220439F3300CCD93E /* Main.storyboard */,
 				5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */,
 				539842352044713D00CCD93E /* MusicHelper.swift */,
-				5398423120446A6D00CCD93E /* Chapter1PageViewController.swift */,
+				5317724F20555C860005F3DB /* New Chapter Sound.wav */,
+				5398423120446A6D00CCD93E /* IntroPageViewController.swift */,
+				53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */,
 				53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */,
+				53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */,
 				533B40982049EA0000D61D80 /* Constants.swift */,
-				5398423320446B5100CCD93E /* ChapterViewController.swift */,
 				5398420820439F3300CCD93E /* Assets.xcassets */,
 				5398420A20439F3300CCD93E /* LaunchScreen.storyboard */,
 				5398420D20439F3300CCD93E /* Info.plist */,
@@ -269,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5398420C20439F3300CCD93E /* LaunchScreen.storyboard in Resources */,
+				5317725020555C870005F3DB /* New Chapter Sound.wav in Resources */,
 				53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */,
 				5398420920439F3300CCD93E /* Assets.xcassets in Resources */,
 				5398420420439F3300CCD93E /* Main.storyboard in Resources */,
@@ -301,12 +316,13 @@
 				5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */,
 				5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */,
 				5398420720439F3300CCD93E /* Pilot.xcdatamodeld in Sources */,
-				5398423220446A6D00CCD93E /* Chapter1PageViewController.swift in Sources */,
+				5398423220446A6D00CCD93E /* IntroPageViewController.swift in Sources */,
 				538F51DB204723FA0051F1C1 /* Chapter3PageViewController.swift in Sources */,
 				53F0959D2046D47E002880D1 /* Chapter2PageViewController.swift in Sources */,
 				539842362044713D00CCD93E /* MusicHelper.swift in Sources */,
+				53796AFA205B28F500C6B7F8 /* GenericPageViewController.swift in Sources */,
+				53796AFC205B331B00C6B7F8 /* ChapterViewController.swift in Sources */,
 				533B40992049EA0000D61D80 /* Constants.swift in Sources */,
-				5398423420446B5100CCD93E /* ChapterViewController.swift in Sources */,
 				539841FF20439F3300CCD93E /* AppDelegate.swift in Sources */,
 				5317FA9920499BD400CC30EE /* ChapterSelectViewController.swift in Sources */,
 			);

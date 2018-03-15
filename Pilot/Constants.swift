@@ -14,5 +14,8 @@ struct Constants {
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
     static let SUBMIT = "Great!"
     static let MAIN_MENU_SONG = "MainMenuSong"
+    static let NEW_CHAPTER_SOUND = "New Chapter Sound"
     static let STANDARD_FADE_TIME: TimeInterval! = 4
+    static let MAIN_MUSIC_LOOP_COUNT = 3
+    static let NEW_CHAPTER_LOOP_COUNT = 0
 }

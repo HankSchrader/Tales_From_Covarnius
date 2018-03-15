@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         createDeleteButton()
         createCreditsButton()
         
-        MusicHelper.sharedHelper.initiateBackgroundMusic(resource: Constants.MAIN_MENU_SONG)
+        MusicHelper.sharedHelper.initiateBackgroundMusic(resource: Constants.MAIN_MENU_SONG, numberOfLoops: 3)
        
         
         
