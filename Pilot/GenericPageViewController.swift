@@ -11,7 +11,7 @@ import UIKit
 class GenericPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource
  {
     
-    private init() {}
+
     var menuShowing = false
     let viewController = ViewController()
     

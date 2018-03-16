@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     //MARK: Begin button
     //Start from beginning button. This will trigger entry to the last view
     func createBeginButton() {
-         let button = UIButton()
+        let button = UIButton()
         button.setTitle("Start From The Beginning!", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .blue
