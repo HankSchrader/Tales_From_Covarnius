@@ -269,6 +269,38 @@
             <point key="canvasLocation" x="1420" y="1432.5337331334333"/>
         </scene>
         <!--Chapter View Controller-->
+        <scene sceneID="aUU-cS-MFf">
+            <objects>
+                <viewController storyboardIdentifier="chap2_0" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VVR-bj-50f" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OgD-Qq-YNK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dah-E1-w86">
+                                <rect key="frame" x="16" y="20" width="343" height="166.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">“We could be missing out on a chance of a lifetime!” you say to Luna. She wags her tail playfully and barks in agreement.
+
+Could it be military? Or an alien? Or an extra dimensional being? It could be anything, and there is only one way to find out! Without further ado, you sprint back to the object in the sky. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dah-E1-w86" firstAttribute="leading" secondItem="Nlt-sW-WVA" secondAttribute="leading" constant="16" id="YfR-Zq-ycc"/>
+                            <constraint firstItem="dah-E1-w86" firstAttribute="top" secondItem="Nlt-sW-WVA" secondAttribute="top" constant="16" id="dwP-qn-zDb"/>
+                            <constraint firstItem="Nlt-sW-WVA" firstAttribute="trailing" secondItem="dah-E1-w86" secondAttribute="trailing" constant="16" id="uaP-TG-AXB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nlt-sW-WVA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbp-Ok-auN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2242.4000000000001" y="747.9760119940031"/>
+        </scene>
+        <!--Chapter View Controller-->
         <scene sceneID="tdS-ZY-RE7">
             <objects>
                 <viewController storyboardIdentifier="chap2_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XGW-ks-GFD" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
@@ -384,14 +416,14 @@
                                 <rect key="frame" x="16" y="20" width="343" height="384"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">You decided to keep going home. Let the aliens abduct someone else for their experiments. After catching your breath, you jog the rest of the way home with Luna. Bursting through the front door, you turn on the news to see if there is any update on an alien invasion. The man on the tv is reporting about a kitten that was just rescued from a tree. Nothing about an invasion. 
+                                <string key="text">You decided to keep going home. Let the aliens abduct someone else for their experiments. After catching your breath, you jog the rest of the way home with Luna. Bursting through the front door, you turn on the news to see if there is any update on an alien invasion. The man on the tv is reporting about a kitten that was just rescued from a tree. Nothing about an invasion. 
 
 You make a snack for you and Luna and keep watching but nothing ever happens. Eventually you switch the channel over to cartoons and begin to wonder if you even really saw a spaceship. 
 
 You know what you saw though and can’t help but wonder what the aliens wanted. As you head up to bed you wonder if you should have headed back after all. 
 
 You can’t help but think perhaps you missed out on the opportunity of a lifetime...
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -415,7 +447,7 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
         <!--Run Away!-->
         <scene sceneID="I4i-xz-e7Y">
             <objects>
-                <viewController storyboardIdentifier="run_as_fast_as_you_can_1" title="Run Away!" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8WA-VM-b7Q" customClass="ChapterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="run_as_fast_as_you_can_1" title="Run Away!" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8WA-VM-b7Q" customClass="TurnBackChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c9O-Jk-YRK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -426,7 +458,7 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                                 <constraints>
                                     <constraint firstAttribute="height" constant="450" id="8cb-30-yui"/>
                                 </constraints>
-                                <mutableString key="text">You started to run away as fast as you could. You don’t need a closer look to know that aliens have just invaded Earth!
+                                <string key="text">You started to run away as fast as you could. You don’t need a closer look to know that aliens have just invaded Earth!
 
 Veering off the sidewalk, you cut through Mrs. Hill’s garden and run as fast as you can for home. Luna seems to be enjoying the run. The wind blows her golden fur back and her tongue hangs out to one side. 
 
@@ -435,39 +467,50 @@ You keep running, faster than you’ve ever ran before. You run past the big whi
 Slowing down to catch your breath, you turn around and see the ship in the distance. You can’t believe aliens are really landing on Earth! You wonder what they want. Are they friendly? 
 
 Maybe you should go back. You can’t help but be curious. You’re probably the first person to have ever seen an alien spaceship! On the other hand, they could be hostile. Maybe you should just keep heading home. 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeV-lR-wlk">
-                                <rect key="frame" x="294" y="617" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCH-bg-8aq">
+                                <rect key="frame" x="294" y="577" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KGD-Ri-Nh6"/>
+                                </constraints>
                                 <state key="normal" title="Turn Back"/>
+                                <connections>
+                                    <segue destination="Txc-t6-P1L" kind="show" identifier="to_main_quest" id="UT2-He-dFh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwX-EO-gGP">
-                                <rect key="frame" x="298" y="579" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0f-Kc-Ivo">
+                                <rect key="frame" x="294" y="527" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GaQ-QQ-Txu"/>
+                                </constraints>
                                 <state key="normal" title="Go Home"/>
                                 <connections>
-                                    <segue destination="aiZ-Oh-mhX" kind="show" id="hYh-tD-0sk"/>
+                                    <segue destination="aiZ-Oh-mhX" kind="show" id="gMW-Td-Em0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="YeS-VX-7ah" firstAttribute="bottom" secondItem="RCH-bg-8aq" secondAttribute="bottom" constant="60" id="08G-Hz-IrV"/>
                             <constraint firstItem="PBd-Os-aiw" firstAttribute="top" secondItem="YeS-VX-7ah" secondAttribute="top" id="1cf-bM-hoh"/>
-                            <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="UwX-EO-gGP" secondAttribute="trailing" constant="12" id="H9f-CQ-gbf"/>
-                            <constraint firstItem="YeS-VX-7ah" firstAttribute="bottom" secondItem="LeV-lR-wlk" secondAttribute="bottom" constant="20" id="dgZ-Xi-XJ1"/>
-                            <constraint firstItem="YeS-VX-7ah" firstAttribute="bottom" secondItem="LeV-lR-wlk" secondAttribute="bottom" constant="20" id="dzw-Fc-WhQ"/>
-                            <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="LeV-lR-wlk" secondAttribute="trailing" constant="12" id="hnC-6t-Ama"/>
-                            <constraint firstItem="LeV-lR-wlk" firstAttribute="top" secondItem="UwX-EO-gGP" secondAttribute="bottom" constant="8" id="jcY-Cf-53y"/>
+                            <constraint firstItem="RCH-bg-8aq" firstAttribute="top" secondItem="r0f-Kc-Ivo" secondAttribute="bottom" constant="20" id="bkH-Q9-1Kf"/>
+                            <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="RCH-bg-8aq" secondAttribute="trailing" constant="12" id="g4y-ZJ-mbV"/>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="PBd-Os-aiw" secondAttribute="trailing" constant="16" id="nkX-3e-R4I"/>
                             <constraint firstItem="PBd-Os-aiw" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="16" id="uGR-W6-3b7"/>
+                            <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="r0f-Kc-Ivo" secondAttribute="trailing" constant="16" id="vBz-Wm-avM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YeS-VX-7ah"/>
                     </view>
+                    <connections>
+                        <outlet property="turnBackButton" destination="RCH-bg-8aq" id="KBh-0c-dQw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEu-W2-8D0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1313" y="1433"/>
+            <point key="canvasLocation" x="-1313.5" y="1432.5"/>
         </scene>
         <!--Run As Fast As You Can Page View Controller-->
         <scene sceneID="fAa-L3-52S">
@@ -477,7 +520,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DbO-2J-FC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="-516" y="1433"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="cGq-fh-97v">
@@ -490,14 +533,14 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Xl-I0i">
                                 <rect key="frame" x="16" y="46" width="343" height="393"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
+                                <string key="text">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
 
 The only sounds to be heard are the rustling of leaves on the concrete and Luna’s overly enthusiastic sniffing.
 
 Just as you are about to circle back home, a strange shape emerges from the sky. It’s large and shaped like a saucer. Bulbous multi-colored lights blink rapidly all over the aircraft, making it look like a strangely shaped Christmas tree. Your first instinct is to run away, but you also want to see what the strange object is. 
 
 Do you:
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -545,7 +588,7 @@ Do you:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dup-0H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328.80000000000001" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="446" y="1422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VTI-70-isn">
@@ -621,8 +664,8 @@ Do you:
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="zQr-YD-vVy"/>
-        <segue reference="KYf-bL-oLj"/>
-        <segue reference="At9-Gc-gCd"/>
-        <segue reference="uuZ-rN-ipF"/>
+        <segue reference="UT2-He-dFh"/>
+        <segue reference="ijG-Ma-eQD"/>
+        <segue reference="eEh-7I-qgF"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,12 +11,13 @@ import UIKit
 class GenericPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource
  {
     
-
+    
     var menuShowing = false
     let viewController = ViewController()
     
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers = [UIViewController]()
+
     var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
