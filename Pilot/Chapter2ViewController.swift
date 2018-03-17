@@ -8,11 +8,12 @@
 
 import UIKit
 
-class Chapter2ViewController: UIViewController {
+class Chapter2ViewController: ChapterViewController {
 
     var segueID = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         
         // Do any additional setup after loading the view.
     }
@@ -23,7 +24,7 @@ class Chapter2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func back_to_main_quest(_ sender: Any) {
+    @IBAction func goToMainQuestAction(_ sender: Any) {
        dissectBrains.addTarget(self, action: #selector(self.goToMainQuest(_:segue:)), for: UIControlEvents.touchUpInside)
     }
     

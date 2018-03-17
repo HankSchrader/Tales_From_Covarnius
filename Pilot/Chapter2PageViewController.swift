@@ -39,7 +39,7 @@ class Chapter2PageViewController: GenericPageViewController{
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.INTRO)
+        super.checkNewChapter(chapterName: Constants.ONTO_COVARNIUS)
     }
     
 }

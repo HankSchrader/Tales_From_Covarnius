@@ -13,6 +13,8 @@ class ChapterSelectViewController: UIViewController {
     static var chapterSelect = ChapterSelectViewController()
     var chapters = [Chapter]()
     @IBOutlet weak var tableView: UITableView?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
@@ -27,6 +29,18 @@ class ChapterSelectViewController: UIViewController {
         tableView?.dataSource = self
         tableView?.delegate = self
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG, fadeDuration: Constants.STANDARD_FADE_TIME)
     }
     
     

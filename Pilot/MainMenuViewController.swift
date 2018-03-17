@@ -12,10 +12,8 @@ import CoreData
 
 class ViewController: UIViewController {
     var menuShowing = false
-    var completedChapter2 = false
     static let sharedHelper = ViewController()
     weak var delegate: DisplayViewIDDelegate?
-    var currentChapter: UILabel!
     
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
@@ -42,9 +40,11 @@ class ViewController: UIViewController {
         
         animateLabelTransition()
         MusicHelper.sharedHelper.fadeInBackgroundMusic(resource: Constants.MAIN_MENU_SONG,fadeDuration: Constants.STANDARD_FADE_TIME)
-        
-        
-        
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
    
     

@@ -17,7 +17,6 @@ class Chapter3PageViewController:  GenericPageViewController{
     
     override func viewDidLoad() {
         self.orderedViewControllers =  {
-            print("old ID \(self.segueID)")
             if self.segueID == "Dissect" {
                 return [self.newVC(viewController: "chap3_0"),
                         self.newVC(viewController: "chap3_1"),
@@ -30,8 +29,6 @@ class Chapter3PageViewController:  GenericPageViewController{
             }
         }()
         super.viewDidLoad()
-        print("Inside ViewDidLoad \(self.segueID)")
-        print("Amount of VC's: \(self.orderedViewControllers.count)")
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool){

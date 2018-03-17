@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baskerville.ttc">
+            <string>Baskerville</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main Menu-->
         <scene sceneID="tne-QT-ifu">
@@ -192,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="654" y="-1400"/>
         </scene>
-        <!--Chapter Select View Controller-->
+        <!--Chapter Menu-->
         <scene sceneID="UbU-d0-5y0">
             <objects>
-                <viewController storyboardIdentifier="Landed On Covarnius" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epm-LR-xz1" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chapter Select" title="Chapter Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epm-LR-xz1" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XTx-h4-hbC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,6 +243,9 @@
                         <outlet property="tableView" destination="9RF-UE-Vzd" id="fzp-nV-rST"/>
                         <segue destination="GYB-hd-9Im" kind="show" identifier="Introduction" id="At9-Gc-gCd"/>
                         <segue destination="Txc-t6-P1L" kind="show" identifier="Onto Covarnius" id="9UT-y7-3Sz"/>
+                        <segue destination="Vlv-wC-eax" kind="show" identifier="Landed On Covarnius" id="TfN-Qd-HdO"/>
+                        <segue destination="2G9-hX-PrL" kind="show" identifier="Earth's Greatest Scientist" id="sAp-zm-trV"/>
+                        <segue destination="9te-Ml-u1s" kind="show" identifier="Cowboys of Katonia" id="44a-Dl-z7T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXH-ll-hLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,8 +255,12 @@
         <!--Chapter 1-->
         <scene sceneID="fLG-Ff-mob">
             <objects>
-                <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 1" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="GYB-hd-9Im" customClass="IntroPageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 1" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="GYB-hd-9Im" customClass="IntroPageViewController" customModule="Pilot" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykj-NV-NaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NeA-SO-MkN" customClass="NavButton" customModule="Pilot" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
             </objects>
             <point key="canvasLocation" x="-10" y="517"/>
         </scene>
@@ -256,6 +268,7 @@
         <scene sceneID="TDW-4k-dul">
             <objects>
                 <pageViewController storyboardIdentifier="Chap2PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 2" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Txc-t6-P1L" customClass="Chapter2PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="AeN-lz-5Yx">
                         <barButtonItem key="leftBarButtonItem" title="Main Menu" id="nTi-sH-0Lh">
                             <connections>
@@ -263,8 +276,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMA-AZ-sYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iYQ-YG-xVi" customClass="NavButton" customModule="Pilot" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </button>
             </objects>
             <point key="canvasLocation" x="1526" y="1299"/>
         </scene>
@@ -276,35 +294,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bIZ-1v-KuY">
-                                <rect key="frame" x="16" y="36" width="343" height="220"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIZ-1v-KuY">
+                                <rect key="frame" x="25" y="70" width="325" height="220"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="8ur-DI-5Id"/>
+                                    <constraint firstAttribute="height" constant="220" id="3Es-dj-GFL"/>
                                 </constraints>
-                                <string key="text">“We could be missing out on a chance of a lifetime!” you say to Luna. She wags her tail playfully and barks in agreement.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">“We could be missing out on a chance of a lifetime!” you say to Luna. She wags her tail playfully and barks in agreement.
 
 Could it be military? Or an alien? Or an extra dimensional being? It could be anything, and there is only one way to find out! Without further ado, you sprint back to the object in the sky. 
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="leading" secondItem="Nlt-sW-WVA" secondAttribute="leading" constant="16" id="19c-j8-bsB"/>
-                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="top" secondItem="Nlt-sW-WVA" secondAttribute="top" constant="26" id="7Uj-YG-Cwn"/>
-                            <constraint firstItem="Nlt-sW-WVA" firstAttribute="trailing" secondItem="bIZ-1v-KuY" secondAttribute="trailing" constant="16" id="a8F-gg-UEs"/>
-                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="top" secondItem="Nlt-sW-WVA" secondAttribute="top" constant="16" id="hVp-DS-SrD"/>
-                            <constraint firstItem="Nlt-sW-WVA" firstAttribute="trailing" secondItem="bIZ-1v-KuY" secondAttribute="trailing" constant="16" id="kAW-Jz-oSx"/>
-                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="leading" secondItem="Nlt-sW-WVA" secondAttribute="leading" constant="16" id="lrw-9c-EGs"/>
+                            <constraint firstItem="Nlt-sW-WVA" firstAttribute="trailing" secondItem="bIZ-1v-KuY" secondAttribute="trailing" constant="25" id="g1G-93-1RL"/>
+                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="leading" secondItem="Nlt-sW-WVA" secondAttribute="leading" constant="25" id="ryo-qw-kum"/>
+                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="top" secondItem="Nlt-sW-WVA" secondAttribute="top" constant="50" id="uAD-h1-SVF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nlt-sW-WVA"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbp-Ok-auN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2246" y="1300"/>
+            <point key="canvasLocation" x="2246" y="1299"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="tdS-ZY-RE7">
@@ -314,27 +335,33 @@ Could it be military? Or an alien? Or an extra dimensional being? It could be an
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FWW-Jm-yLg">
-                                <rect key="frame" x="16" y="36" width="343" height="220"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWW-Jm-yLg">
+                                <rect key="frame" x="25" y="70" width="325" height="220"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="sqj-xd-IAH"/>
+                                    <constraint firstAttribute="height" constant="220" id="mVk-fn-8wc"/>
                                 </constraints>
-                                <string key="text">Run away? No way, this is too good to miss!
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Run away? No way, this is too good to miss!
 
 You stop and observe the strange object as it makes a slow descent from the sky. As it gets closer, you see a strange creature inside, just behind the bulbous glass encasing. His complexion is green and he has two antennae protruding from his head.
 
 Butterflies fill your stomach. Maybe you should have ran while you had the chance...
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="BigCaslon-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.64027235240000002" green="1" blue="0.50196081400000003" alpha="0.37818386129999998" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="FWW-Jm-yLg" firstAttribute="leading" secondItem="2pp-aB-JhN" secondAttribute="leading" constant="16" id="Fto-gw-I8G"/>
-                            <constraint firstItem="FWW-Jm-yLg" firstAttribute="top" secondItem="2pp-aB-JhN" secondAttribute="top" constant="16" id="GvT-6H-Poo"/>
-                            <constraint firstItem="2pp-aB-JhN" firstAttribute="trailing" secondItem="FWW-Jm-yLg" secondAttribute="trailing" constant="16" id="pno-sY-n6g"/>
+                            <constraint firstItem="FWW-Jm-yLg" firstAttribute="top" secondItem="2pp-aB-JhN" secondAttribute="top" constant="50" id="6ET-XA-o2I"/>
+                            <constraint firstItem="FWW-Jm-yLg" firstAttribute="leading" secondItem="2pp-aB-JhN" secondAttribute="leading" constant="25" id="dg1-9W-uro"/>
+                            <constraint firstItem="2pp-aB-JhN" firstAttribute="trailing" secondItem="FWW-Jm-yLg" secondAttribute="trailing" constant="25" id="uyY-RE-TGD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2pp-aB-JhN"/>
                     </view>
@@ -349,7 +376,7 @@ Butterflies fill your stomach. Maybe you should have ran while you had the chanc
         <!--Chapter3 Page View Controller-->
         <scene sceneID="aSJ-qq-VF4">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Vlv-wC-eax" customClass="Chapter3PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="Chap3PVC" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Vlv-wC-eax" customClass="Chapter3PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RdK-wQ-ziA">
                         <barButtonItem key="leftBarButtonItem" title="Main Menu" id="UYB-Uv-G1e">
                             <connections>
@@ -362,19 +389,19 @@ Butterflies fill your stomach. Maybe you should have ran while you had the chanc
             </objects>
             <point key="canvasLocation" x="1526" y="2074"/>
         </scene>
-        <!--View Controller-->
+        <!--Chapter Select View Controller-->
         <scene sceneID="11N-Vk-mri">
             <objects>
-                <viewController storyboardIdentifier="chap3_0" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4uO-yK-EXf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap3_0" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4uO-yK-EXf" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mo-T1-ZkA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-Sd-bNf">
-                                <rect key="frame" x="16" y="36" width="343" height="550"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-Sd-bNf">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="550" id="tQA-XR-xM6"/>
+                                    <constraint firstAttribute="height" constant="400" id="B2g-w4-Q1S"/>
                                 </constraints>
                                 <mutableString key="text">Thoughts of examination tables and scalpels suddenly fill your head. The last thing you want to be the test subject in an alien experiment!
 
@@ -396,12 +423,9 @@ The sound clearly distresses the alien who looks back at his ship with impatienc
                         </subviews>
                         <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="S8I-2G-HAb" firstAttribute="trailing" secondItem="kfx-Sd-bNf" secondAttribute="trailing" constant="16" id="1m8-eA-uQF"/>
-                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="top" secondItem="S8I-2G-HAb" secondAttribute="top" constant="16" id="8PX-nO-n7h"/>
-                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="top" secondItem="S8I-2G-HAb" secondAttribute="top" constant="16" id="Jd4-Tf-iSs"/>
-                            <constraint firstItem="S8I-2G-HAb" firstAttribute="trailing" secondItem="kfx-Sd-bNf" secondAttribute="trailing" constant="16" id="PsF-Zo-WmV"/>
-                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="leading" secondItem="S8I-2G-HAb" secondAttribute="leading" constant="16" id="Tfy-Yn-x7c"/>
-                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="leading" secondItem="S8I-2G-HAb" secondAttribute="leading" constant="16" id="ZJV-EK-Zno"/>
+                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="top" secondItem="S8I-2G-HAb" secondAttribute="top" constant="50" id="Uox-BT-ROO"/>
+                            <constraint firstItem="S8I-2G-HAb" firstAttribute="trailing" secondItem="kfx-Sd-bNf" secondAttribute="trailing" constant="25" id="VuQ-RH-YCY"/>
+                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="leading" secondItem="S8I-2G-HAb" secondAttribute="leading" constant="25" id="kpc-nn-kB9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S8I-2G-HAb"/>
                     </view>
@@ -410,19 +434,19 @@ The sound clearly distresses the alien who looks back at his ship with impatienc
             </objects>
             <point key="canvasLocation" x="2246" y="2074"/>
         </scene>
-        <!--View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="ymb-Cv-OVx">
             <objects>
-                <viewController storyboardIdentifier="chap3_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v1U-4C-VIO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap3_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v1U-4C-VIO" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KZW-Sj-N8s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9PT-Je-Ld6">
-                                <rect key="frame" x="16" y="36" width="343" height="468"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9PT-Je-Ld6">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="468" id="B9f-Ta-Sxs"/>
+                                    <constraint firstAttribute="height" constant="400" id="QH4-SQ-GPm"/>
                                 </constraints>
                                 <mutableString key="text">After careful consideration, you decide the alien is probably not going to dissect your brain. The pleaful look in his eyes and clearly frightened demeanor give the impression that he does indeed need help.
 
@@ -442,16 +466,16 @@ You stare definitely at the alien and say, “If I’m going back to Covarnius w
                         </subviews>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9PT-Je-Ld6" firstAttribute="top" secondItem="CnT-e8-Nlp" secondAttribute="top" constant="16" id="H3g-5i-ZUb"/>
-                            <constraint firstItem="CnT-e8-Nlp" firstAttribute="trailing" secondItem="9PT-Je-Ld6" secondAttribute="trailing" constant="16" id="QTS-Xm-MbI"/>
-                            <constraint firstItem="9PT-Je-Ld6" firstAttribute="leading" secondItem="CnT-e8-Nlp" secondAttribute="leading" constant="16" id="asZ-qt-YY0"/>
+                            <constraint firstItem="9PT-Je-Ld6" firstAttribute="top" secondItem="CnT-e8-Nlp" secondAttribute="top" constant="50" id="1LG-9o-vl0"/>
+                            <constraint firstItem="CnT-e8-Nlp" firstAttribute="trailing" secondItem="9PT-Je-Ld6" secondAttribute="trailing" constant="25" id="dHe-eL-j3K"/>
+                            <constraint firstItem="9PT-Je-Ld6" firstAttribute="leading" secondItem="CnT-e8-Nlp" secondAttribute="leading" constant="25" id="iYK-c3-SOZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CnT-e8-Nlp"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un0-Eo-bBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2925.5999999999999" y="2073.913043478261"/>
+            <point key="canvasLocation" x="2926" y="2074"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="JQe-Im-zqn">
@@ -462,12 +486,12 @@ You stare definitely at the alien and say, “If I’m going back to Covarnius w
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LcY-Vi-3wc">
-                                <rect key="frame" x="16" y="16" width="343" height="550"/>
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="550" id="LEF-bD-Ue0"/>
+                                    <constraint firstAttribute="height" constant="400" id="3er-qx-yQi"/>
                                 </constraints>
-                                <mutableString key="text">“My name is Chrono and as I have said, my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
+                                <string key="text">“My name is Chrono and as I have said, my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
 
 “And what does any of this have to do with me?” You question skeptically. You watch out the window as the spacecraft ascends upwards leaving the Earth behind. The houses below quickly become tiny dots. This is becoming too real.
 
@@ -476,16 +500,16 @@ You stare definitely at the alien and say, “If I’m going back to Covarnius w
 Leaning back in your seat you mull over what Chrono just told you. Your research for the recent science fair had definitely been A+ material, but you didn’t see how it could save an alien planet. 
 
 And where is Covarnius located anyway? If it was close to Earth, wouldn’t we know of it existence? And if it was far… You seem to recall your science teacher informing your class that it would take thousands of years just to travel one light year. 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UM5-xd-c8W" firstAttribute="trailing" secondItem="LcY-Vi-3wc" secondAttribute="trailing" constant="16" id="060-lg-j0X"/>
-                            <constraint firstItem="LcY-Vi-3wc" firstAttribute="leading" secondItem="UM5-xd-c8W" secondAttribute="leading" constant="16" id="aWV-v7-s3p"/>
-                            <constraint firstItem="LcY-Vi-3wc" firstAttribute="top" secondItem="Cxr-L7-GMu" secondAttribute="top" constant="16" id="pRR-eM-g5k"/>
+                            <constraint firstItem="LcY-Vi-3wc" firstAttribute="leading" secondItem="UM5-xd-c8W" secondAttribute="leading" constant="25" id="Cye-6F-0aR"/>
+                            <constraint firstItem="UM5-xd-c8W" firstAttribute="trailing" secondItem="LcY-Vi-3wc" secondAttribute="trailing" constant="25" id="GHh-Vo-nXt"/>
+                            <constraint firstItem="LcY-Vi-3wc" firstAttribute="top" secondItem="UM5-xd-c8W" secondAttribute="top" constant="50" id="Svn-i7-MB6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UM5-xd-c8W"/>
                     </view>
@@ -494,21 +518,23 @@ And where is Covarnius located anyway? If it was close to Earth, wouldn’t we k
             </objects>
             <point key="canvasLocation" x="3641" y="2074"/>
         </scene>
-        <!--Chapter View Controller-->
+        <!--Chapter3 View Controller-->
         <scene sceneID="MFT-bE-Bpi">
             <objects>
-                <viewController storyboardIdentifier="chap3_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PA6-Fg-6rc" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap3_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PA6-Fg-6rc" customClass="Chapter3ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Qt-Iv-OsY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-ZY-568">
-                                <rect key="frame" x="16" y="36" width="343" height="430"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-ZY-568">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="430" id="JUh-Qg-fv4"/>
+                                    <constraint firstAttribute="height" constant="400" id="6xg-ia-yPe"/>
                                 </constraints>
-                                <mutableString key="text">“So how far away is this Covarnius?” You inquire with skepticism, afraid of what the answer may be.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">“So how far away is this Covarnius?” You inquire with skepticism, afraid of what the answer may be.
 
 The gravity of the situation you have found yourself in is beginning to sink in.
 
@@ -517,20 +543,24 @@ The gravity of the situation you have found yourself in is beginning to sink in.
 Chrono turns to you with a look of confusion, “Covarnius is located in the next star system, approximately 4.5 light years away or about 7 earthling days.” Then the alien then turns to you with one eyebrow raised sternly, “Besides, you can’t back out now. You already agreed to help.”
 
 Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was bad enough but at least it wasn’t going to be thousands of years. But still, you start to wonder if you made the right decision to travel to Covarnius. Your parents and your room back at home… it’s all back on Earth. You start to feel a little homesick. What should you do?</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-pq-VjW">
-                                <rect key="frame" x="170" y="629" width="189" height="30"/>
+                                <rect key="frame" x="107" y="577" width="252" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="wNj-Jw-1gG"/>
+                                    <constraint firstAttribute="height" constant="30" id="jkg-az-q1C"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Tell Chrono To take you back to Earth.">
                                             <attributes>
                                                 <color key="NSColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="12" name="Times-Roman"/>
+                                                <font key="NSFont" size="16" name="Times-Roman"/>
                                                 <real key="NSKern" value="0.0"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                     <tabStops/>
@@ -541,35 +571,38 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="9te-Ml-u1s" kind="show" identifier="Pit Stop At Katonia" id="wuX-KR-O0k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxt-vP-Vov">
-                                <rect key="frame" x="29" y="591" width="330" height="30"/>
+                                <rect key="frame" x="29" y="539" width="330" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="l1Y-vi-iIl"/>
+                                    <constraint firstAttribute="height" constant="30" id="IpR-TA-lxe"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Keep Going, Chrono said you're the only one who can help">
+                                        <fragment content="Chrono said you're the only one who can help">
                                             <attributes>
-                                                <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                                <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="2G9-hX-PrL" kind="show" identifier="keep going" id="vUV-Ay-okI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="YtN-pq-VjW" secondAttribute="trailing" constant="16" id="1c9-jg-Tgh"/>
-                            <constraint firstItem="72U-CS-EjY" firstAttribute="bottom" secondItem="YtN-pq-VjW" secondAttribute="bottom" constant="8" id="5SD-H5-RRz"/>
-                            <constraint firstItem="hnT-ZY-568" firstAttribute="top" secondItem="72U-CS-EjY" secondAttribute="top" constant="16" id="5cr-M9-LYJ"/>
-                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="hnT-ZY-568" secondAttribute="trailing" constant="16" id="8JI-x2-CbJ"/>
-                            <constraint firstItem="hnT-ZY-568" firstAttribute="leading" secondItem="72U-CS-EjY" secondAttribute="leading" constant="16" id="F45-wJ-G2g"/>
-                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="hnT-ZY-568" secondAttribute="trailing" constant="16" id="R55-jF-5Qh"/>
-                            <constraint firstItem="YtN-pq-VjW" firstAttribute="top" secondItem="zxt-vP-Vov" secondAttribute="bottom" constant="8" id="YeE-O1-ZDr"/>
-                            <constraint firstItem="hnT-ZY-568" firstAttribute="leading" secondItem="72U-CS-EjY" secondAttribute="leading" constant="16" id="pC8-Ly-SfU"/>
-                            <constraint firstItem="hnT-ZY-568" firstAttribute="top" secondItem="72U-CS-EjY" secondAttribute="top" constant="16" id="vFu-w4-MfL"/>
-                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="zxt-vP-Vov" secondAttribute="trailing" constant="16" id="vpH-Gq-b2R"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="hnT-ZY-568" secondAttribute="trailing" constant="25" id="483-zC-pLZ"/>
+                            <constraint firstItem="hnT-ZY-568" firstAttribute="top" secondItem="72U-CS-EjY" secondAttribute="top" constant="50" id="8zC-wY-yel"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="bottom" secondItem="YtN-pq-VjW" secondAttribute="bottom" constant="60" id="JBU-p8-drP"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="zxt-vP-Vov" secondAttribute="trailing" constant="16" id="NOd-DJ-StD"/>
+                            <constraint firstItem="hnT-ZY-568" firstAttribute="leading" secondItem="72U-CS-EjY" secondAttribute="leading" constant="25" id="ccR-2j-NOV"/>
+                            <constraint firstItem="YtN-pq-VjW" firstAttribute="top" secondItem="zxt-vP-Vov" secondAttribute="bottom" constant="8" id="iU5-3L-JQs"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="YtN-pq-VjW" secondAttribute="trailing" constant="16" id="rbf-Fo-krf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="72U-CS-EjY"/>
                     </view>
@@ -577,6 +610,761 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEG-3g-Zoo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4372" y="2074"/>
+        </scene>
+        <!--Chapter4 Page View Controller-->
+        <scene sceneID="1Rv-Y8-w4B">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2G9-hX-PrL" customClass="Chapter4PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="epm-LR-xz1" kind="show" identifier="Made It To Covarnius" id="cSf-RQ-ef6"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmt-dH-mHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="VLn-6X-0oI">
+            <objects>
+                <viewController storyboardIdentifier="chap4_1" id="r2X-12-yGv" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="NND-Y7-CMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oio-qT-V0Y">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Qh8-c7-rYV"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Chrono grins at you, brimming with hope. A weight appears to have been lifted off his shoulders.
+
+“You’ll help me? That’s great! So if you have no further questions, I will engage hypersleep now.” Chrono says glancing in your direction. 
+
+“Hyper what?” you ask incredulously. “What is that?”
+
+“Hypersleep,” Chrono repeats. “The only way to pass a 4.5 light year journey such as this.” 
+
+“But if we’re both sleeping, who is going to fly this ship?” You ask with trepidation.
+
+Chrono looks down dejectedly. “The ship has been pre-programmed to take us back to Covarnius. I’m not allowed to pilot the ships by myself anymore.” Manual piloting must be a privilege where he is from, you think to yourself.
+
+“Why not?” You ask Chrono. “Did you crash one or something? Just how superior are these aliens anyhow? You begin to wonder. After all, they’re relying on you to save their planet. 
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BlU-9L-Ni6" firstAttribute="trailing" secondItem="Oio-qT-V0Y" secondAttribute="trailing" constant="25" id="OEN-tB-VJD"/>
+                            <constraint firstItem="Oio-qT-V0Y" firstAttribute="top" secondItem="BlU-9L-Ni6" secondAttribute="top" constant="50" id="Q2n-qa-Fv8"/>
+                            <constraint firstItem="Oio-qT-V0Y" firstAttribute="leading" secondItem="BlU-9L-Ni6" secondAttribute="leading" constant="25" id="Xef-LB-D98"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BlU-9L-Ni6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jda-xk-33s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="3E6-Mj-1kM">
+            <objects>
+                <viewController storyboardIdentifier="chap4_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PTg-Kq-oz0" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ppZ-9A-l4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1x-ww-7qE">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Oja-24-DHO"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">“There may have been a slight...incident,” Chrono says shifting in his seat, eyes cast downward. Suddenly, his mood shifts. He snaps his head up and looks at you brightly. “But once I get Earth’s greatest scientist back to Covarnius, they’ll all see I’m smarter than they think. Now if you’re ready, I’m going to engage hypersleep.” 
+
+Earth’s greatest scientist? I sure hope he’s not talking about me, you think worriedly. 
+
+Chrono leads you to what appears to be one of two large comfy sofas at the back of the tiny spaceship. It looks like the kind of couch that would be found in a psychologist’s office. You hesitantly lay down and instantly sink into the warm, cushiony lining.
+
+“These couches impart a sleeping agent into your skin upon contact,” Chrono explains. “That’s why you’re getting so tired. Do me a favor and count to ten.”
+
+“Sure,” you reply groggily. “One...two…”
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h1x-ww-7qE" firstAttribute="top" secondItem="SQ0-ML-SUv" secondAttribute="top" constant="50" id="5iB-Gf-3VG"/>
+                            <constraint firstItem="SQ0-ML-SUv" firstAttribute="trailing" secondItem="h1x-ww-7qE" secondAttribute="trailing" constant="25" id="NFk-Da-DRp"/>
+                            <constraint firstItem="h1x-ww-7qE" firstAttribute="leading" secondItem="SQ0-ML-SUv" secondAttribute="leading" constant="25" id="j7l-NZ-bec"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SQ0-ML-SUv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnO-qY-PPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="PsU-vY-Koo">
+            <objects>
+                <viewController storyboardIdentifier="chap4_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KW4-ex-IGs" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ud-pj-Zzc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjE-FG-Mdj">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="2dL-0H-KKS"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The next thing you know, you wake up with a loud yawn. A strange dream occupied your mind while you slept, something about an alien and a spaceship… You glance frantically at your surroundings and it all starts coming back.
+
+Chrono, your alien companion, is waking up as well. “Ah, we’re finally here!” He announces, stretching out his long tentacle arms. 
+
+The ship quietly descends on a planet that looks somewhat similar to Earth. More aliens that look like Chrono surround the ship as the top opens and the air lock’s decompression sequence fills the air once again. 
+
+“Bonjour!” One of the aliens bellows as he steps closer to the ship. He seems to be the one in charge. Or at least, that’s what you assume based on the large crown worn atop his head. 
+
+“You’re going to need to adjust your translators,” Chrono says with a yawn. “This Frenchman doesn’t speak French.” 
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WjE-FG-Mdj" firstAttribute="leading" secondItem="sVc-91-USm" secondAttribute="leading" constant="25" id="LQ8-Vp-nMf"/>
+                            <constraint firstItem="WjE-FG-Mdj" firstAttribute="top" secondItem="sVc-91-USm" secondAttribute="top" constant="50" id="gcC-i7-DK0"/>
+                            <constraint firstItem="sVc-91-USm" firstAttribute="trailing" secondItem="WjE-FG-Mdj" secondAttribute="trailing" constant="25" id="vP9-QQ-c02"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sVc-91-USm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDm-Qs-bGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3641" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="E0h-qD-hVh">
+            <objects>
+                <viewController storyboardIdentifier="chap4_4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nfB-42-JOj" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A4W-6D-cS7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eji-h6-T2T">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="K40-xC-BEU"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">“Who are you calling French?” You ask, looking from Chrono to the crown clad extraterrestrial.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">“Why, you of course,” the regal alien states with certainty. “Welcome! And I am the King of Covarnius. You may call me Zanarq.”
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Feelings of anxiety bloom in the pit of your stomach. If these aliens think you’re French, then clearly they have the wrong person. If you tell them the truth now, who know how they’ll react? 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">You’ve seen the movies, you know this makes you expendable. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">On the other hand, you’re not some super genius scientist. How are you going to help?
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Several tall Covarnians in official looking garb help you out of the ship. “My guards will now take you to your new lab and brief you on your mission.” Zanarq informs you. You swallow hard and tell him: 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eji-h6-T2T" firstAttribute="leading" secondItem="ymu-0g-P1w" secondAttribute="leading" constant="25" id="EE6-aO-hcn"/>
+                            <constraint firstItem="ymu-0g-P1w" firstAttribute="trailing" secondItem="eji-h6-T2T" secondAttribute="trailing" constant="25" id="aiN-A4-h3h"/>
+                            <constraint firstItem="eji-h6-T2T" firstAttribute="top" secondItem="ymu-0g-P1w" secondAttribute="top" constant="50" id="bqp-Iv-vMm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ymu-0g-P1w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrM-PH-rdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4372" y="2791"/>
+        </scene>
+        <!--Chapter4 Page View Controller-->
+        <scene sceneID="nFD-s2-rIE">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="9te-Ml-u1s" customClass="Chapter4PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbu-X3-ncE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5140" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="ofW-YK-b6J">
+            <objects>
+                <viewController storyboardIdentifier="katonian_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MEq-Dm-4Mg" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bo3-oq-JMD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kea-UW-soe">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="laL-5u-s3f"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">This is just too much, too soon. The vastness of space is terrifying, and feelings of homesickness weigh heavily upon you.
+
+“Take me back to earth!” you shout panicked at Chrono.
+
+“I’m afraid that’s not possible.” he replies, sighing. “You see, the course has already been set for Covarnius. I can’t undo it.” 
+
+“There’s got to be something we can do,” you say desperately. You begin to hit buttons and switches on the control console in front of you. 
+
+“No, don’t do that!” Chrono shouts with horror. “This is a very delicate piece of machinery.”
+
+The lights in the ship begin to flicker on and off. A static sound emanates through the air. Perhaps you shouldn’t have messed with the controls after all. 
+
+The monitors on the console display a message in bright red letters. “Experiencing Technical difficulties.” 
+
+You and Chrono exchange a glance, unsure what to expect next. 
+
+The message on the monitor changes and you read it aloud, “Making emergency landing on next habitable planet.” 
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kea-UW-soe" firstAttribute="leading" secondItem="jBR-T4-nOZ" secondAttribute="leading" constant="25" id="0mM-Et-yzx"/>
+                            <constraint firstItem="jBR-T4-nOZ" firstAttribute="trailing" secondItem="kea-UW-soe" secondAttribute="trailing" constant="25" id="EaL-yP-AVj"/>
+                            <constraint firstItem="kea-UW-soe" firstAttribute="top" secondItem="jBR-T4-nOZ" secondAttribute="top" constant="50" id="Jbf-l6-Owg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jBR-T4-nOZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2n-pj-Ijp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5967" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="aB2-0w-9Lf">
+            <objects>
+                <viewController storyboardIdentifier="katonian_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2qo-KN-jPb" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vd7-CH-sBR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qX4-BB-dfy">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="yBR-Ha-muh"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Before you know it, a huge earth like object appears in your line of sight. The spaceship shoots through its atmosphere and begins a clumsy descent.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">The ship shakily lands on a dusty terrain and then all the lights go out. Chrono tries to restart the ship to no avail. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">“Where are we?” you ask looking through the glass at the strange planet.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Chrono stops trying to restart the ship and looks out as well. “Based on the rocky desert terrain and low lying shrubbery… I’d have to say, I have no idea!” Chrono shouts with panic. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">“How are we going to get out of here?” You ask, your own panic matching Chrono’s. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">“Don’t ask me,” Chrono says as he opens the ship and hops out. “You’re the one that made the ship malfunction.”
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">You hop out of the ship and Luna follows. “Yeah but it’s your ship. Don’t you know how to reset it or something?” 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">“Markloo Gurble Gur?” you hear a friendly sounding voice say from behind you. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qX4-BB-dfy" firstAttribute="leading" secondItem="9kr-OV-mYF" secondAttribute="leading" constant="25" id="U5F-HT-NgX"/>
+                            <constraint firstItem="9kr-OV-mYF" firstAttribute="trailing" secondItem="qX4-BB-dfy" secondAttribute="trailing" constant="25" id="UVL-n6-Y7g"/>
+                            <constraint firstItem="qX4-BB-dfy" firstAttribute="top" secondItem="9kr-OV-mYF" secondAttribute="top" constant="50" id="Wnb-IF-5bv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9kr-OV-mYF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZu-eH-FZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6700" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="Em8-Yz-Dcs">
+            <objects>
+                <viewController storyboardIdentifier="katonian_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="igg-pD-uys" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7FH-yv-3QR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOK-sM-Bln">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="1OG-br-S78"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The alien babbles in a language that you have never heard.
+
+“I’m sorry, but I don’t understand,” you say politely, shrugging your shoulders.
+
+The alien looks at you, as if he is straining to hear. Then he nods his head vigorously and pushes a button on his belt.
+
+“Howdy, you folks having some trouble?” His voice is now in English, he must have the same device as Chrono!
+
+You whip around and see a large muscular alien stands before you. In fact, he looks a bit like Chrono. Unlike Chrono though, this being has pale orange skin and an extra eye in the middle of his forehead. He seems friendly but you know that could all just be a ploy. Maybe he is the one who will dissect your brain!
+
+With a broken down ship, you don’t have many options. The way you see it, you can either trust the space cowboy and hope he is as friendly as he seems. Or, you can make a run for it. You mull over the situation for a moment and decide to:  
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6S-6s-KoB">
+                                <rect key="frame" x="187" y="539" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HQO-hc-ziN"/>
+                                </constraints>
+                                <state key="normal" title="Trust The Space Cowboy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhG-i9-iPg">
+                                <rect key="frame" x="240" y="577" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sd9-BG-UnA"/>
+                                </constraints>
+                                <state key="normal" title="Make a Run For It"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="bottom" secondItem="JhG-i9-iPg" secondAttribute="bottom" constant="60" id="Gqs-3x-JbY"/>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="JhG-i9-iPg" secondAttribute="trailing" constant="16" id="PDz-32-aOw"/>
+                            <constraint firstItem="JhG-i9-iPg" firstAttribute="top" secondItem="R6S-6s-KoB" secondAttribute="bottom" constant="8" id="Xsi-Yg-Uvy"/>
+                            <constraint firstItem="WOK-sM-Bln" firstAttribute="leading" secondItem="3Le-Se-QNK" secondAttribute="leading" constant="25" id="liM-wO-lyD"/>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="WOK-sM-Bln" secondAttribute="trailing" constant="25" id="qzA-jZ-Giq"/>
+                            <constraint firstItem="WOK-sM-Bln" firstAttribute="top" secondItem="3Le-Se-QNK" secondAttribute="top" constant="50" id="r08-ll-w5f"/>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="R6S-6s-KoB" secondAttribute="trailing" constant="16" id="zJ3-2a-WTt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Le-Se-QNK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2CO-bE-0e2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7450" y="2791"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vEk-U9-lUJ">
+            <objects>
+                <viewController id="lKp-GB-6nR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XRK-WO-fwT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-w6-GJV">
+                                <rect key="frame" x="67" y="86" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zxy-uf-I5m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7a-MZ-BeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8314" y="2791"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="DyA-cE-A8J">
@@ -586,25 +1374,31 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gcb-NQ-bcN">
-                                <rect key="frame" x="16" y="36" width="343" height="220"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcb-NQ-bcN">
+                                <rect key="frame" x="25" y="70" width="325" height="220"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="KzL-oV-YZ4"/>
+                                    <constraint firstAttribute="height" constant="220" id="wtB-XJ-tPI"/>
                                 </constraints>
-                                <string key="text">Luna’s head is tilted to the left, she is staring at the object in puzzlement as well. Could the two of you be staring at a UFO? It doesn’t seem possible, you don’t even believe in aliens. But the oddly shaped green creature makes you start to think otherwise. You hear a loud hissing sound like the decompressing of air. The top of what appears to be an alien spaceship opens. 
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Luna’s head is tilted to the left, she is staring at the object in puzzlement as well. Could the two of you be staring at a UFO? It doesn’t seem possible, you don’t even believe in aliens. But the oddly shaped green creature makes you start to think otherwise. You hear a loud hissing sound like the decompressing of air. The top of what appears to be an alien spaceship opens. 
 
 Yup, definitely an alien!
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gcb-NQ-bcN" firstAttribute="top" secondItem="vTL-cc-mgg" secondAttribute="top" constant="16" id="kvC-Ar-wha"/>
-                            <constraint firstItem="gcb-NQ-bcN" firstAttribute="leading" secondItem="vTL-cc-mgg" secondAttribute="leading" constant="16" id="nSZ-t9-hLY"/>
-                            <constraint firstItem="vTL-cc-mgg" firstAttribute="trailing" secondItem="gcb-NQ-bcN" secondAttribute="trailing" constant="16" id="v8M-Qs-BVa"/>
+                            <constraint firstItem="gcb-NQ-bcN" firstAttribute="leading" secondItem="vTL-cc-mgg" secondAttribute="leading" constant="25" id="FRE-Ky-VTr"/>
+                            <constraint firstItem="gcb-NQ-bcN" firstAttribute="top" secondItem="vTL-cc-mgg" secondAttribute="top" constant="50" id="Lv3-Vk-2rw"/>
+                            <constraint firstItem="vTL-cc-mgg" firstAttribute="trailing" secondItem="gcb-NQ-bcN" secondAttribute="trailing" constant="25" id="cOd-pJ-7yi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vTL-cc-mgg"/>
                     </view>
@@ -613,35 +1407,41 @@ Yup, definitely an alien!
             </objects>
             <point key="canvasLocation" x="3641" y="1299"/>
         </scene>
-        <!--View Controller-->
+        <!--Chapter2 View Controller-->
         <scene sceneID="6y8-1q-BD9">
             <objects>
-                <viewController storyboardIdentifier="chap2_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NnD-Fc-ncf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap2_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NnD-Fc-ncf" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qmn-q7-aLO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XuW-9A-kqh">
-                                <rect key="frame" x="16" y="36" width="343" height="440"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuW-9A-kqh">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="440" id="0Cu-bp-xau"/>
+                                    <constraint firstAttribute="height" constant="400" id="GQj-ND-8As"/>
                                 </constraints>
-                                <mutableString key="text">The creature inside hops out of the aircraft, which is hovers about 2 feet off the ground. His body is long and slender; he appears frantic and in a great hurry.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">The creature inside hops out of the aircraft, which is hovers about 2 feet off the ground. His body is long and slender; he appears frantic and in a great hurry.
 
 The creature looks directly at you with his large bulbous eyes. He scans you, head to toe, silence for a moment, like a boxer sizing up an opponent. The alien is about your height. Maybe you could take him on?
 
 All the scary alien movies you’ve ever watched come flooding back to you. What if he wants to dissect your brain? Or Worse! The alien begins to move closer to where you are standing. His awkward shuffling give you the creeps. His movements are akin to a zombie’s. Luna lets out a bark as a warning to the strange being. 
 </mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XuW-9A-kqh" firstAttribute="leading" secondItem="q6u-Ka-vwF" secondAttribute="leading" constant="16" id="OB3-fU-SpN"/>
-                            <constraint firstItem="q6u-Ka-vwF" firstAttribute="trailing" secondItem="XuW-9A-kqh" secondAttribute="trailing" constant="16" id="nBb-nI-zgN"/>
-                            <constraint firstItem="XuW-9A-kqh" firstAttribute="top" secondItem="q6u-Ka-vwF" secondAttribute="top" constant="16" id="vZi-AN-roW"/>
+                            <constraint firstItem="q6u-Ka-vwF" firstAttribute="trailing" secondItem="XuW-9A-kqh" secondAttribute="trailing" constant="25" id="UUd-Ho-3l0"/>
+                            <constraint firstItem="XuW-9A-kqh" firstAttribute="leading" secondItem="q6u-Ka-vwF" secondAttribute="leading" constant="25" id="qvj-tk-AWh"/>
+                            <constraint firstItem="XuW-9A-kqh" firstAttribute="top" secondItem="q6u-Ka-vwF" secondAttribute="top" constant="50" id="uX8-2o-mt1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q6u-Ka-vwF"/>
                     </view>
@@ -658,27 +1458,6 @@ All the scary alien movies you’ve ever watched come flooding back to you. What
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m8L-Wx-Dgx">
-                                <rect key="frame" x="16" y="36" width="343" height="370"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="370" id="pMg-cX-rsD"/>
-                                </constraints>
-                                <mutableString key="text">“Bonjour,” the alien says slowly with a wave of his long slender arm. You look at him slack jawed with confusion. The alien speaks French? 
-
-“Je m’appelle Chrono,” he continues with a bow, his eyes never leaving your face. 
-
-You shake your head. “Do you speak English by chance?” you ask the alien hesitantly.
-
-The creature hits a button located on his belt and says, “Sorry for the confusion. I just assumed…”
-
-You can’t imagine why he would assume you speak French, but it doesn’t matter anyway. “What do you want?” you ask him, hoping the answer is not world domination. 
-
-“I need you to come with me right away!” The alien declares with alarm in his voice. What should you say to the alien?
-</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzM-iX-ugb">
                                 <rect key="frame" x="128" y="577" width="231" height="30"/>
                                 <constraints>
@@ -703,25 +1482,44 @@ You can’t imagine why he would assume you speak French, but it doesn’t matte
                                     <segue destination="Vlv-wC-eax" kind="show" identifier="I'll Help" id="Rlm-ND-bdU"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8L-Wx-Dgx">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="I3V-V2-SLI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="zl2-Ql-p74"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">“Bonjour,” the alien says slowly with a wave of his long slender arm. You look at him slack jawed with confusion. The alien speaks French? 
+
+“Je m’appelle Chrono,” he continues with a bow, his eyes never leaving your face. 
+
+You shake your head. “Do you speak English by chance?” you ask the alien hesitantly.
+
+The creature hits a button located on his belt and says, “Sorry for the confusion. I just assumed…”
+
+You can’t imagine why he would assume you speak French, but it doesn’t matter anyway. “What do you want?” you ask him, hoping the answer is not world domination. 
+
+“I need you to come with me right away!” The alien declares with alarm in his voice. What should you say to the alien?
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="6Rh-eE-Hr4"/>
                             <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="1dY-6q-Fy4" secondAttribute="trailing" constant="16" id="74J-56-gcw"/>
-                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="8wV-1X-0a2"/>
                             <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="PzM-iX-ugb" secondAttribute="trailing" constant="16" id="DV0-bF-J9O"/>
-                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="Li2-vp-9ZS"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="Mgp-j2-NDo"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="Nvh-mn-ow2"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="Pbj-N9-Qip"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="25" id="Hph-Sn-htd"/>
                             <constraint firstItem="PzM-iX-ugb" firstAttribute="top" secondItem="1dY-6q-Fy4" secondAttribute="bottom" constant="8" id="RsH-4w-k27"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="S5e-Zh-Rsi"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="Ylh-Nh-7lf"/>
                             <constraint firstItem="hmJ-8f-LlA" firstAttribute="bottom" secondItem="PzM-iX-ugb" secondAttribute="bottom" constant="60" id="agt-c2-Qdj"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="byf-H9-9tI"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="bzz-RF-YQ9"/>
-                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="gaz-k6-Nah"/>
-                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="q7m-kQ-L4o"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="25" id="eb8-5y-vvs"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="50" id="vGh-4m-Z8I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hmJ-8f-LlA"/>
                     </view>
@@ -854,29 +1652,36 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
         <!--Chapter View Controller-->
         <scene sceneID="cGq-fh-97v">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dup-0H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Intro_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zkK-fz-oVo" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2B-gF-hwR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Xl-I0i">
-                                <rect key="frame" x="16" y="46" width="343" height="400"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Xl-I0i">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="45Z-Xh-1vL"/>
+                                    <constraint firstAttribute="height" constant="400" id="irN-cQ-3of"/>
                                 </constraints>
-                                <string key="text">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The wind whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
 
 The only sounds to be heard are the rustling of leaves on the concrete and Luna’s overly enthusiastic sniffing.
 
 Just as you are about to circle back home, a strange shape emerges from the sky. It’s large and shaped like a saucer. Bulbous multi-colored lights blink rapidly all over the aircraft, making it look like a strangely shaped Christmas tree. Your first instinct is to run away, but you also want to see what the strange object is. 
 
 Do you:
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-te-M5G">
@@ -906,22 +1711,21 @@ Do you:
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0qd-Xl-I0i" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="25" id="1YK-dd-xNc"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="3aV-B2-dcB" secondAttribute="trailing" constant="16" id="9zG-8i-eBC"/>
-                            <constraint firstItem="0qd-Xl-I0i" firstAttribute="top" secondItem="riD-mQ-to4" secondAttribute="top" constant="26" id="C7y-C0-785"/>
-                            <constraint firstItem="0qd-Xl-I0i" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="16" id="ED8-dd-gHG"/>
                             <constraint firstItem="3aV-B2-dcB" firstAttribute="top" secondItem="0kp-te-M5G" secondAttribute="bottom" constant="8" id="Gw3-dr-Qky"/>
-                            <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="0qd-Xl-I0i" secondAttribute="trailing" constant="16" id="L0c-aO-Wvg"/>
+                            <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="0qd-Xl-I0i" secondAttribute="trailing" constant="25" id="OaA-K9-pZ0"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="bottom" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="60" id="Y9B-Ls-SnJ"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="3aV-B2-dcB" secondAttribute="trailing" constant="16" id="YZu-PH-tZz"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="3aV-B2-dcB" secondAttribute="trailing" constant="16" id="hkO-XJ-gVr"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="0kp-te-M5G" secondAttribute="trailing" constant="12" id="l5k-Jp-X96"/>
                             <constraint firstItem="3aV-B2-dcB" firstAttribute="top" secondItem="0kp-te-M5G" secondAttribute="bottom" constant="8" id="m2W-cC-mWU"/>
+                            <constraint firstItem="0qd-Xl-I0i" firstAttribute="top" secondItem="riD-mQ-to4" secondAttribute="top" constant="50" id="yCP-px-hAI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="riD-mQ-to4"/>
                     </view>
                     <navigationItem key="navigationItem" id="jWB-Sp-nhY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dup-0H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="753" y="517"/>
         </scene>
@@ -930,11 +1734,15 @@ Do you:
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Efz-uf-jtQ" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SAR-TL-9dv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D86-bi-rEt">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GtB-kj-bBf"/>
                     </connections>
@@ -943,65 +1751,14 @@ Do you:
             </objects>
             <point key="canvasLocation" x="-1095" y="-278"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xMY-Ni-3nA">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4ad-e2-Epz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XJZ-cm-oSc">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Txc-t6-P1L" kind="relationship" relationship="rootViewController" id="hes-oX-mLP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4gZ-KP-Iqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2201" y="517"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Vjw-Eb-BI4">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UYY-wN-X4w" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="07k-zF-xPm">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Vlv-wC-eax" kind="relationship" relationship="rootViewController" id="MHJ-84-zax"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YuG-rA-hsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="753" y="2074"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GmZ-p4-IaB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="VoZ-lf-qAe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oxu-HX-9zx">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="yze-4Z-JnP" kind="relationship" relationship="rootViewController" id="yd2-Mh-4Rp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uoH-CV-AzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-782" y="2074"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l1a-O8-eGy"/>
-        <segue reference="IZ4-ah-DFk"/>
+        <segue reference="wuX-KR-O0k"/>
+        <segue reference="vUV-Ay-okI"/>
+        <segue reference="Rlm-ND-bdU"/>
         <segue reference="KYf-bL-oLj"/>
         <segue reference="At9-Gc-gCd"/>
+        <segue reference="cSf-RQ-ef6"/>
         <segue reference="4Qs-px-yhn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,4 +18,6 @@ struct Constants {
     static let STANDARD_FADE_TIME: TimeInterval! = 4
     static let MAIN_MUSIC_LOOP_COUNT = 3
     static let NEW_CHAPTER_LOOP_COUNT = 0
+    static let EARTHS_GREATEST_SCIENTIST = "Earth's Greatest Scientist"
+    static let COWBOYS_OF_KATONIA = "Cowboys of Katonia"
 }

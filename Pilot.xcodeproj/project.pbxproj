@@ -12,6 +12,9 @@
 		5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */; };
 		5317FA9E2049AF3E00CC30EE /* Chapter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */; };
 		5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */; };
+		5336A422205D2DB4002802C7 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336A421205D2DB3002802C7 /* NavButton.swift */; };
+		5336A424205D6DAA002802C7 /* Chapter4PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336A423205D6DAA002802C7 /* Chapter4PageViewController.swift */; };
+		5336A426205D9090002802C7 /* Chapter3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336A425205D9090002802C7 /* Chapter3ViewController.swift */; };
 		533B40992049EA0000D61D80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B40982049EA0000D61D80 /* Constants.swift */; };
 		53796AFA205B28F500C6B7F8 /* GenericPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */; };
 		53796AFC205B331B00C6B7F8 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */; };
@@ -56,6 +59,9 @@
 		5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
 		5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5336A421205D2DB3002802C7 /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
+		5336A423205D6DAA002802C7 /* Chapter4PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4PageViewController.swift; sourceTree = "<group>"; };
+		5336A425205D9090002802C7 /* Chapter3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3ViewController.swift; sourceTree = "<group>"; };
 		533B40982049EA0000D61D80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPageViewController.swift; sourceTree = "<group>"; };
 		53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
@@ -140,22 +146,25 @@
 			children = (
 				53796AFD205B338F00C6B7F8 /* PageView */,
 				539841FE20439F3300CCD93E /* AppDelegate.swift */,
+				5398420220439F3300CCD93E /* Main.storyboard */,
+				53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */,
 				53796B08205B460200C6B7F8 /* Run_As_Fast_As_You_Can_PageViewController.swift */,
 				5317FA9D2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift */,
 				5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */,
 				5317FA9C2049AF3E00CC30EE /* Chapter+CoreDataClass.swift */,
-				538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */,
-				5398420220439F3300CCD93E /* Main.storyboard */,
+				533B40982049EA0000D61D80 /* Constants.swift */,
 				5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */,
+				5336A421205D2DB3002802C7 /* NavButton.swift */,
 				539842352044713D00CCD93E /* MusicHelper.swift */,
 				5317724F20555C860005F3DB /* New Chapter Sound.wav */,
 				5398423120446A6D00CCD93E /* IntroPageViewController.swift */,
-				53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */,
 				53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */,
-				53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */,
 				53796B0C205C886C00C6B7F8 /* Chapter2ViewController.swift */,
+				538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */,
+				5336A425205D9090002802C7 /* Chapter3ViewController.swift */,
+				5336A423205D6DAA002802C7 /* Chapter4PageViewController.swift */,
+				53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */,
 				53796B0A205C4B6000C6B7F8 /* TurnBackChapterViewController.swift */,
-				533B40982049EA0000D61D80 /* Constants.swift */,
 				5398420820439F3300CCD93E /* Assets.xcassets */,
 				5398420A20439F3300CCD93E /* LaunchScreen.storyboard */,
 				5398420D20439F3300CCD93E /* Info.plist */,
@@ -324,15 +333,18 @@
 				53984230204468AA00CCD93E /* MainMenuViewController.swift in Sources */,
 				5317FA9E2049AF3E00CC30EE /* Chapter+CoreDataClass.swift in Sources */,
 				5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */,
+				5336A426205D9090002802C7 /* Chapter3ViewController.swift in Sources */,
 				5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */,
 				5398420720439F3300CCD93E /* Pilot.xcdatamodeld in Sources */,
 				5398423220446A6D00CCD93E /* IntroPageViewController.swift in Sources */,
 				538F51DB204723FA0051F1C1 /* Chapter3PageViewController.swift in Sources */,
 				53F0959D2046D47E002880D1 /* Chapter2PageViewController.swift in Sources */,
+				5336A422205D2DB4002802C7 /* NavButton.swift in Sources */,
 				539842362044713D00CCD93E /* MusicHelper.swift in Sources */,
 				53796AFA205B28F500C6B7F8 /* GenericPageViewController.swift in Sources */,
 				53796AFC205B331B00C6B7F8 /* ChapterViewController.swift in Sources */,
 				533B40992049EA0000D61D80 /* Constants.swift in Sources */,
+				5336A424205D6DAA002802C7 /* Chapter4PageViewController.swift in Sources */,
 				539841FF20439F3300CCD93E /* AppDelegate.swift in Sources */,
 				5317FA9920499BD400CC30EE /* ChapterSelectViewController.swift in Sources */,
 				53796B0B205C4B6000C6B7F8 /* TurnBackChapterViewController.swift in Sources */,

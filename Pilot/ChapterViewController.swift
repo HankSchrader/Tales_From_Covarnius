@@ -12,7 +12,8 @@ class ChapterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        goToChapterSelectAction()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +22,28 @@ class ChapterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func goToChapterSelectAction() {
+        let button = NavButton()
+        // let button = CustomButton(value: 100) // also works
+        button.setTitle(nil, for: .normal)
+        
+        // auto layout
+        // button.translatesAutoresizingMaskIntoConstraints = false
+        button.frame = CGRect(x: -100, y: 30, width: 300, height: 40)
+        view.addSubview(button)
+        button.addTarget(self, action: #selector(self.goToChapterSelect(_:)), for: UIControlEvents.touchUpInside)
     }
-    */
+    
+    @IBAction func goToChapterSelect(_ sender: Any?) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Chapter Select")
+        self.show(vc, sender: self)
+    }
+    
 
+    
+    
+    
+    
 }

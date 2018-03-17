@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TurnBackChapterViewController: UIViewController {
+class TurnBackChapterViewController: ChapterViewController {
     var previousRID = ""
     override func viewDidLoad() {
         super.viewDidLoad()
