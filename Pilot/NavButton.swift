@@ -20,7 +20,7 @@ class NavButton: UIButton {
         let lineLenght:CGFloat = min(bounds.width, bounds.height) * 0.8
         
         // color of your line
-        let lineColor: UIColor = UIColor.white
+        let lineColor: UIColor = UIColor.black
         
         // this will add small padding from button border to your first line and other lines
         let marginGap: CGFloat = 5.0

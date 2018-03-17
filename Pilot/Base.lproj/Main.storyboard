@@ -264,10 +264,10 @@
             </objects>
             <point key="canvasLocation" x="-10" y="517"/>
         </scene>
-        <!--Chapter 2-->
+        <!--Onto Covarnius-->
         <scene sceneID="TDW-4k-dul">
             <objects>
-                <pageViewController storyboardIdentifier="Chap2PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 2" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Txc-t6-P1L" customClass="Chapter2PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="Chap2PVC" autoresizesArchivedViewToFullSize="NO" title="Onto Covarnius" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Txc-t6-P1L" customClass="Chapter2PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="AeN-lz-5Yx">
                         <barButtonItem key="leftBarButtonItem" title="Main Menu" id="nTi-sH-0Lh">
@@ -373,10 +373,10 @@ Butterflies fill your stomach. Maybe you should have ran while you had the chanc
             </objects>
             <point key="canvasLocation" x="2927" y="1299"/>
         </scene>
-        <!--Chapter3 Page View Controller-->
+        <!--Landed On Covarnius-->
         <scene sceneID="aSJ-qq-VF4">
             <objects>
-                <pageViewController storyboardIdentifier="Chap3PVC" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Vlv-wC-eax" customClass="Chapter3PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="Chap3PVC" autoresizesArchivedViewToFullSize="NO" title="Landed On Covarnius" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Vlv-wC-eax" customClass="Chapter3PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RdK-wQ-ziA">
                         <barButtonItem key="leftBarButtonItem" title="Main Menu" id="UYB-Uv-G1e">
                             <connections>
@@ -611,10 +611,10 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
             </objects>
             <point key="canvasLocation" x="4372" y="2074"/>
         </scene>
-        <!--Chapter4 Page View Controller-->
+        <!--Eath's Greatest Scientist-->
         <scene sceneID="1Rv-Y8-w4B">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2G9-hX-PrL" customClass="Chapter4PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Eath's Greatest Scientist" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2G9-hX-PrL" customClass="Chapter4PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="epm-LR-xz1" kind="show" identifier="Made It To Covarnius" id="cSf-RQ-ef6"/>
                     </connections>
@@ -961,10 +961,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="4372" y="2791"/>
         </scene>
-        <!--Chapter4 Page View Controller-->
+        <!--Cowboys of Katonia-->
         <scene sceneID="nFD-s2-rIE">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="9te-Ml-u1s" customClass="Chapter4PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Cowboys of Katonia" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="9te-Ml-u1s" customClass="Chapter4PageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wbu-X3-ncE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5140" y="2791"/>
@@ -1539,23 +1539,31 @@ You can’t imagine why he would assume you speak French, but it doesn’t matte
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xZW-bu-DNB">
-                                <rect key="frame" x="16" y="20" width="343" height="384"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZW-bu-DNB">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">You decided to keep going home. Let the aliens abduct someone else for their experiments. After catching your breath, you jog the rest of the way home with Luna. Bursting through the front door, you turn on the news to see if there is any update on an alien invasion. The man on the tv is reporting about a kitten that was just rescued from a tree. Nothing about an invasion. 
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="T5v-U8-LBJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">You decided to keep going home. Let the aliens abduct someone else for their experiments. After catching your breath, you jog the rest of the way home with Luna. Bursting through the front door, you turn on the news to see if there is any update on an alien invasion. The man on the tv is reporting about a kitten that was just rescued from a tree. Nothing about an invasion. 
 
 You make a snack for you and Luna and keep watching but nothing ever happens. Eventually you switch the channel over to cartoons and begin to wonder if you even really saw a spaceship. 
 
 You know what you saw though and can’t help but wonder what the aliens wanted. As you head up to bed you wonder if you should have headed back after all. 
 
 You can’t help but think perhaps you missed out on the opportunity of a lifetime...
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-pQ-A6m">
-                                <rect key="frame" x="74" y="441" width="224" height="30"/>
+                                <rect key="frame" x="75" y="559" width="224" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="THE END "/>
                                 <connections>
@@ -1564,6 +1572,11 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xZW-bu-DNB" firstAttribute="top" secondItem="m9O-t6-yk6" secondAttribute="top" constant="50" id="CpM-bI-B0W"/>
+                            <constraint firstItem="xZW-bu-DNB" firstAttribute="leading" secondItem="m9O-t6-yk6" secondAttribute="leading" constant="25" id="R1m-ap-pW4"/>
+                            <constraint firstItem="m9O-t6-yk6" firstAttribute="trailing" secondItem="xZW-bu-DNB" secondAttribute="trailing" constant="25" id="sRK-8T-kPd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m9O-t6-yk6"/>
                     </view>
                 </viewController>
@@ -1579,13 +1592,15 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PBd-Os-aiw">
-                                <rect key="frame" x="16" y="20" width="343" height="450.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBd-Os-aiw">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="8cb-30-yui"/>
+                                    <constraint firstAttribute="height" constant="400" id="t57-Wg-pfJ"/>
                                 </constraints>
-                                <string key="text">You started to run away as fast as you could. You don’t need a closer look to know that aliens have just invaded Earth!
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">You started to run away as fast as you could. You don’t need a closer look to know that aliens have just invaded Earth!
 
 Veering off the sidewalk, you cut through Mrs. Hill’s garden and run as fast as you can for home. Luna seems to be enjoying the run. The wind blows her golden fur back and her tongue hangs out to one side. 
 
@@ -1594,8 +1609,12 @@ You keep running, faster than you’ve ever ran before. You run past the big whi
 Slowing down to catch your breath, you turn around and see the ship in the distance. You can’t believe aliens are really landing on Earth! You wonder what they want. Are they friendly? 
 
 Maybe you should go back. You can’t help but be curious. You’re probably the first person to have ever seen an alien spaceship! On the other hand, they could be hostile. Maybe you should just keep heading home. 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCH-bg-8aq">
@@ -1622,11 +1641,11 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="bottom" secondItem="RCH-bg-8aq" secondAttribute="bottom" constant="60" id="08G-Hz-IrV"/>
-                            <constraint firstItem="PBd-Os-aiw" firstAttribute="top" secondItem="YeS-VX-7ah" secondAttribute="top" id="1cf-bM-hoh"/>
+                            <constraint firstItem="PBd-Os-aiw" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="25" id="1jm-K0-FvR"/>
+                            <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="PBd-Os-aiw" secondAttribute="trailing" constant="25" id="61H-Ra-w9p"/>
+                            <constraint firstItem="PBd-Os-aiw" firstAttribute="top" secondItem="YeS-VX-7ah" secondAttribute="top" constant="50" id="C16-zo-f3Q"/>
                             <constraint firstItem="RCH-bg-8aq" firstAttribute="top" secondItem="r0f-Kc-Ivo" secondAttribute="bottom" constant="20" id="bkH-Q9-1Kf"/>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="RCH-bg-8aq" secondAttribute="trailing" constant="12" id="g4y-ZJ-mbV"/>
-                            <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="PBd-Os-aiw" secondAttribute="trailing" constant="16" id="nkX-3e-R4I"/>
-                            <constraint firstItem="PBd-Os-aiw" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="16" id="uGR-W6-3b7"/>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="r0f-Kc-Ivo" secondAttribute="trailing" constant="16" id="vBz-Wm-avM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YeS-VX-7ah"/>
@@ -1755,7 +1774,7 @@ Do you:
     <inferredMetricsTieBreakers>
         <segue reference="wuX-KR-O0k"/>
         <segue reference="vUV-Ay-okI"/>
-        <segue reference="Rlm-ND-bdU"/>
+        <segue reference="TfN-Qd-HdO"/>
         <segue reference="KYf-bL-oLj"/>
         <segue reference="At9-Gc-gCd"/>
         <segue reference="cSf-RQ-ef6"/>
