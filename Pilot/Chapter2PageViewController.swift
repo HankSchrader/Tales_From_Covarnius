@@ -23,11 +23,13 @@ class Chapter2PageViewController: GenericPageViewController{
                 return [self.newVC(viewController: "chap2_0"),
                         self.newVC(viewController: "chap2_1"),
                         self.newVC(viewController: "chap2_2"),
-                        self.newVC(viewController: "chap2_3")]
+                        self.newVC(viewController: "chap2_3"),
+                        self.newVC(viewController: "chap2_4")]
             } else {
                 return [self.newVC(viewController: "chap2_1"),
                         self.newVC(viewController: "chap2_2"),
-                        self.newVC(viewController: "chap2_3")]
+                        self.newVC(viewController: "chap2_3"),
+                        self.newVC(viewController: "chap2_4")]
             }
         }()
         super.viewDidLoad()

@@ -17,6 +17,7 @@
 		53796AFC205B331B00C6B7F8 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */; };
 		53796B09205B460200C6B7F8 /* Run_As_Fast_As_You_Can_PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796B08205B460200C6B7F8 /* Run_As_Fast_As_You_Can_PageViewController.swift */; };
 		53796B0B205C4B6000C6B7F8 /* TurnBackChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796B0A205C4B6000C6B7F8 /* TurnBackChapterViewController.swift */; };
+		53796B0D205C886C00C6B7F8 /* Chapter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53796B0C205C886C00C6B7F8 /* Chapter2ViewController.swift */; };
 		538F51DB204723FA0051F1C1 /* Chapter3PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */; };
 		539841FF20439F3300CCD93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539841FE20439F3300CCD93E /* AppDelegate.swift */; };
 		5398420420439F3300CCD93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5398420220439F3300CCD93E /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
 		53796B08205B460200C6B7F8 /* Run_As_Fast_As_You_Can_PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_As_Fast_As_You_Can_PageViewController.swift; sourceTree = "<group>"; };
 		53796B0A205C4B6000C6B7F8 /* TurnBackChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnBackChapterViewController.swift; sourceTree = "<group>"; };
+		53796B0C205C886C00C6B7F8 /* Chapter2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2ViewController.swift; sourceTree = "<group>"; };
 		538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3PageViewController.swift; sourceTree = "<group>"; };
 		539841FB20439F3300CCD93E /* Pilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539841FE20439F3300CCD93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */,
 				53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */,
 				53796AFB205B331B00C6B7F8 /* ChapterViewController.swift */,
+				53796B0C205C886C00C6B7F8 /* Chapter2ViewController.swift */,
 				53796B0A205C4B6000C6B7F8 /* TurnBackChapterViewController.swift */,
 				533B40982049EA0000D61D80 /* Constants.swift */,
 				5398420820439F3300CCD93E /* Assets.xcassets */,
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53796B0D205C886C00C6B7F8 /* Chapter2ViewController.swift in Sources */,
 				53984230204468AA00CCD93E /* MainMenuViewController.swift in Sources */,
 				5317FA9E2049AF3E00CC30EE /* Chapter+CoreDataClass.swift in Sources */,
 				5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */,

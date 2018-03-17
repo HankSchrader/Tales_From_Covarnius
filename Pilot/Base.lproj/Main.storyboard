@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="-61"/>
+            <point key="canvasLocation" x="-10" y="-277"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mFr-ct-7jt">
@@ -190,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4d-xU-iKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="-868.51574212893559"/>
+            <point key="canvasLocation" x="654" y="-1400"/>
         </scene>
         <!--Chapter Select View Controller-->
         <scene sceneID="UbU-d0-5y0">
@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXH-ll-hLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="-63"/>
+            <point key="canvasLocation" x="1239" y="-278"/>
         </scene>
         <!--Chapter 1-->
         <scene sceneID="fLG-Ff-mob">
@@ -250,7 +250,7 @@
                 <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 1" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="GYB-hd-9Im" customClass="IntroPageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykj-NV-NaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="743"/>
+            <point key="canvasLocation" x="-10" y="517"/>
         </scene>
         <!--Chapter 2-->
         <scene sceneID="TDW-4k-dul">
@@ -266,7 +266,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMA-AZ-sYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1420" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="1526" y="1299"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="aUU-cS-MFf">
@@ -276,9 +276,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dah-E1-w86">
-                                <rect key="frame" x="16" y="20" width="343" height="166.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bIZ-1v-KuY">
+                                <rect key="frame" x="16" y="36" width="343" height="220"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="8ur-DI-5Id"/>
+                                </constraints>
                                 <string key="text">“We could be missing out on a chance of a lifetime!” you say to Luna. She wags her tail playfully and barks in agreement.
 
 Could it be military? Or an alien? Or an extra dimensional being? It could be anything, and there is only one way to find out! Without further ado, you sprint back to the object in the sky. 
@@ -287,18 +290,21 @@ Could it be military? Or an alien? Or an extra dimensional being? It could be an
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dah-E1-w86" firstAttribute="leading" secondItem="Nlt-sW-WVA" secondAttribute="leading" constant="16" id="YfR-Zq-ycc"/>
-                            <constraint firstItem="dah-E1-w86" firstAttribute="top" secondItem="Nlt-sW-WVA" secondAttribute="top" constant="16" id="dwP-qn-zDb"/>
-                            <constraint firstItem="Nlt-sW-WVA" firstAttribute="trailing" secondItem="dah-E1-w86" secondAttribute="trailing" constant="16" id="uaP-TG-AXB"/>
+                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="leading" secondItem="Nlt-sW-WVA" secondAttribute="leading" constant="16" id="19c-j8-bsB"/>
+                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="top" secondItem="Nlt-sW-WVA" secondAttribute="top" constant="26" id="7Uj-YG-Cwn"/>
+                            <constraint firstItem="Nlt-sW-WVA" firstAttribute="trailing" secondItem="bIZ-1v-KuY" secondAttribute="trailing" constant="16" id="a8F-gg-UEs"/>
+                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="top" secondItem="Nlt-sW-WVA" secondAttribute="top" constant="16" id="hVp-DS-SrD"/>
+                            <constraint firstItem="Nlt-sW-WVA" firstAttribute="trailing" secondItem="bIZ-1v-KuY" secondAttribute="trailing" constant="16" id="kAW-Jz-oSx"/>
+                            <constraint firstItem="bIZ-1v-KuY" firstAttribute="leading" secondItem="Nlt-sW-WVA" secondAttribute="leading" constant="16" id="lrw-9c-EGs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nlt-sW-WVA"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbp-Ok-auN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2242.4000000000001" y="747.9760119940031"/>
+            <point key="canvasLocation" x="2246" y="1300"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="tdS-ZY-RE7">
@@ -307,7 +313,29 @@ Could it be military? Or an alien? Or an extra dimensional being? It could be an
                     <view key="view" contentMode="scaleToFill" id="OLJ-qV-ZFi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FWW-Jm-yLg">
+                                <rect key="frame" x="16" y="36" width="343" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="sqj-xd-IAH"/>
+                                </constraints>
+                                <string key="text">Run away? No way, this is too good to miss!
+
+You stop and observe the strange object as it makes a slow descent from the sky. As it gets closer, you see a strange creature inside, just behind the bulbous glass encasing. His complexion is green and he has two antennae protruding from his head.
+
+Butterflies fill your stomach. Maybe you should have ran while you had the chance...
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.64027235240000002" green="1" blue="0.50196081400000003" alpha="0.37818386129999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FWW-Jm-yLg" firstAttribute="leading" secondItem="2pp-aB-JhN" secondAttribute="leading" constant="16" id="Fto-gw-I8G"/>
+                            <constraint firstItem="FWW-Jm-yLg" firstAttribute="top" secondItem="2pp-aB-JhN" secondAttribute="top" constant="16" id="GvT-6H-Poo"/>
+                            <constraint firstItem="2pp-aB-JhN" firstAttribute="trailing" secondItem="FWW-Jm-yLg" secondAttribute="trailing" constant="16" id="pno-sY-n6g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2pp-aB-JhN"/>
                     </view>
                     <navigationItem key="navigationItem" id="obb-z7-hCk">
@@ -316,7 +344,7 @@ Could it be military? Or an alien? Or an extra dimensional being? It could be an
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zj5-tm-ZHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240.8000000000002" y="1433.433283358321"/>
+            <point key="canvasLocation" x="2927" y="1299"/>
         </scene>
         <!--Chapter3 Page View Controller-->
         <scene sceneID="aSJ-qq-VF4">
@@ -332,37 +360,223 @@ Could it be military? Or an alien? Or an extra dimensional being? It could be an
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pz-cS-26i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="3849"/>
+            <point key="canvasLocation" x="1526" y="2074"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="11N-Vk-mri">
+            <objects>
+                <viewController storyboardIdentifier="chap3_0" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4uO-yK-EXf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2mo-T1-ZkA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-Sd-bNf">
+                                <rect key="frame" x="16" y="36" width="343" height="550"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="550" id="tQA-XR-xM6"/>
+                                </constraints>
+                                <mutableString key="text">Thoughts of examination tables and scalpels suddenly fill your head. The last thing you want to be the test subject in an alien experiment!
+
+You tell the alien that you won’t go with him. “How do I know you won’t just dissect my brain?” you ask accusingly. Your fists are clenched with anger and fright. So this is what the fight or flight mechanism you learned about in school must feel like.
+
+The alien stares at you as if you are completely crazy. 
+
+“Why on Covarnius would I do a thing like that?” The alien asks with confusion and disgust. “Do you have any idea how messy that would be?” 
+
+You put your hands on your hip and gaze at him suspiciously, hoping to find a sign that he’s not being entirely truthful.
+
+“Then why do I need to go with you?” You question him. A sound starts to emanate from the spacecraft a few yards away. It sounds like a cross between a wind chime and a howling dog. 
+
+The sound clearly distresses the alien who looks back at his ship with impatience. “Covarnius—my home planet—is in trouble. Hurry the ship is ready to take off! And you’re the only person in the universe who can help.” 
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S8I-2G-HAb" firstAttribute="trailing" secondItem="kfx-Sd-bNf" secondAttribute="trailing" constant="16" id="1m8-eA-uQF"/>
+                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="top" secondItem="S8I-2G-HAb" secondAttribute="top" constant="16" id="8PX-nO-n7h"/>
+                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="top" secondItem="S8I-2G-HAb" secondAttribute="top" constant="16" id="Jd4-Tf-iSs"/>
+                            <constraint firstItem="S8I-2G-HAb" firstAttribute="trailing" secondItem="kfx-Sd-bNf" secondAttribute="trailing" constant="16" id="PsF-Zo-WmV"/>
+                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="leading" secondItem="S8I-2G-HAb" secondAttribute="leading" constant="16" id="Tfy-Yn-x7c"/>
+                            <constraint firstItem="kfx-Sd-bNf" firstAttribute="leading" secondItem="S8I-2G-HAb" secondAttribute="leading" constant="16" id="ZJV-EK-Zno"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S8I-2G-HAb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUP-yO-aR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="2074"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ymb-Cv-OVx">
+            <objects>
+                <viewController storyboardIdentifier="chap3_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v1U-4C-VIO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KZW-Sj-N8s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9PT-Je-Ld6">
+                                <rect key="frame" x="16" y="36" width="343" height="468"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="468" id="B9f-Ta-Sxs"/>
+                                </constraints>
+                                <mutableString key="text">After careful consideration, you decide the alien is probably not going to dissect your brain. The pleaful look in his eyes and clearly frightened demeanor give the impression that he does indeed need help.
+
+At the very least you’ll get out of all the math homework your teacher assigned today. You cautiously approach with the green hued creature. Before you know it, he is insisting you enter the spaceship.
+
+“Quickly, quickly,” the alien commands. “Covarnius can’t hold out much longer.” He jumps back into the ship and you stumble into the seat next to his. 
+
+Luna is on your heels and follow you into the spaceship. At least you’re not going at it alone! She finds a cozy corner to lay down in. 
+
+Taking a quick peek at your surroundings , you notice that Switches, dials and knobs encompass the entire vessel.
+
+You stare definitely at the alien and say, “If I’m going back to Covarnius with you, at least tell me your name first,” 
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9PT-Je-Ld6" firstAttribute="top" secondItem="CnT-e8-Nlp" secondAttribute="top" constant="16" id="H3g-5i-ZUb"/>
+                            <constraint firstItem="CnT-e8-Nlp" firstAttribute="trailing" secondItem="9PT-Je-Ld6" secondAttribute="trailing" constant="16" id="QTS-Xm-MbI"/>
+                            <constraint firstItem="9PT-Je-Ld6" firstAttribute="leading" secondItem="CnT-e8-Nlp" secondAttribute="leading" constant="16" id="asZ-qt-YY0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CnT-e8-Nlp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="un0-Eo-bBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2925.5999999999999" y="2073.913043478261"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="JQe-Im-zqn">
             <objects>
-                <viewController storyboardIdentifier="chap3_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SmD-W7-v6L" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap3_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SmD-W7-v6L" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cxr-L7-GMu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LcY-Vi-3wc">
+                                <rect key="frame" x="16" y="16" width="343" height="550"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="550" id="LEF-bD-Ue0"/>
+                                </constraints>
+                                <mutableString key="text">“My name is Chrono and as I have said, my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
+
+“And what does any of this have to do with me?” You question skeptically. You watch out the window as the spacecraft ascends upwards leaving the Earth behind. The houses below quickly become tiny dots. This is becoming too real.
+
+“Your groundbreaking research,” Chrono starts as he continues flipping switches and dials on the control panel. “It’s absolutely brilliant. You are the only one who can save Covarnius now.”
+
+Leaning back in your seat you mull over what Chrono just told you. Your research for the recent science fair had definitely been A+ material, but you didn’t see how it could save an alien planet. 
+
+And where is Covarnius located anyway? If it was close to Earth, wouldn’t we know of it existence? And if it was far… You seem to recall your science teacher informing your class that it would take thousands of years just to travel one light year. 
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UM5-xd-c8W" firstAttribute="trailing" secondItem="LcY-Vi-3wc" secondAttribute="trailing" constant="16" id="060-lg-j0X"/>
+                            <constraint firstItem="LcY-Vi-3wc" firstAttribute="leading" secondItem="UM5-xd-c8W" secondAttribute="leading" constant="16" id="aWV-v7-s3p"/>
+                            <constraint firstItem="LcY-Vi-3wc" firstAttribute="top" secondItem="Cxr-L7-GMu" secondAttribute="top" constant="16" id="pRR-eM-g5k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UM5-xd-c8W"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6M-8U-GKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="4639"/>
+            <point key="canvasLocation" x="3641" y="2074"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="MFT-bE-Bpi">
             <objects>
-                <viewController storyboardIdentifier="chap3_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PA6-Fg-6rc" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap3_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PA6-Fg-6rc" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Qt-Iv-OsY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-ZY-568">
+                                <rect key="frame" x="16" y="36" width="343" height="430"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="430" id="JUh-Qg-fv4"/>
+                                </constraints>
+                                <mutableString key="text">“So how far away is this Covarnius?” You inquire with skepticism, afraid of what the answer may be.
+
+The gravity of the situation you have found yourself in is beginning to sink in.
+
+“Is it going to take us thousands of years to get there?” You question with growing panic. “I change my mind, I want to go back to Earth!” You shout, pressing your nose to the glass window. 
+
+Chrono turns to you with a look of confusion, “Covarnius is located in the next star system, approximately 4.5 light years away or about 7 earthling days.” Then the alien then turns to you with one eyebrow raised sternly, “Besides, you can’t back out now. You already agreed to help.”
+
+Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was bad enough but at least it wasn’t going to be thousands of years. But still, you start to wonder if you made the right decision to travel to Covarnius. Your parents and your room back at home… it’s all back on Earth. You start to feel a little homesick. What should you do?</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-pq-VjW">
+                                <rect key="frame" x="170" y="629" width="189" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wNj-Jw-1gG"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Tell Chrono To take you back to Earth.">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="12" name="Times-Roman"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxt-vP-Vov">
+                                <rect key="frame" x="29" y="591" width="330" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l1Y-vi-iIl"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Keep Going, Chrono said you're the only one who can help">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="YtN-pq-VjW" secondAttribute="trailing" constant="16" id="1c9-jg-Tgh"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="bottom" secondItem="YtN-pq-VjW" secondAttribute="bottom" constant="8" id="5SD-H5-RRz"/>
+                            <constraint firstItem="hnT-ZY-568" firstAttribute="top" secondItem="72U-CS-EjY" secondAttribute="top" constant="16" id="5cr-M9-LYJ"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="hnT-ZY-568" secondAttribute="trailing" constant="16" id="8JI-x2-CbJ"/>
+                            <constraint firstItem="hnT-ZY-568" firstAttribute="leading" secondItem="72U-CS-EjY" secondAttribute="leading" constant="16" id="F45-wJ-G2g"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="hnT-ZY-568" secondAttribute="trailing" constant="16" id="R55-jF-5Qh"/>
+                            <constraint firstItem="YtN-pq-VjW" firstAttribute="top" secondItem="zxt-vP-Vov" secondAttribute="bottom" constant="8" id="YeE-O1-ZDr"/>
+                            <constraint firstItem="hnT-ZY-568" firstAttribute="leading" secondItem="72U-CS-EjY" secondAttribute="leading" constant="16" id="pC8-Ly-SfU"/>
+                            <constraint firstItem="hnT-ZY-568" firstAttribute="top" secondItem="72U-CS-EjY" secondAttribute="top" constant="16" id="vFu-w4-MfL"/>
+                            <constraint firstItem="72U-CS-EjY" firstAttribute="trailing" secondItem="zxt-vP-Vov" secondAttribute="trailing" constant="16" id="vpH-Gq-b2R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="72U-CS-EjY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEG-3g-Zoo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="4639"/>
+            <point key="canvasLocation" x="4372" y="2074"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="DyA-cE-A8J">
@@ -371,38 +585,153 @@ Could it be military? Or an alien? Or an extra dimensional being? It could be an
                     <view key="view" contentMode="scaleToFill" id="8Vv-FZ-sOZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gcb-NQ-bcN">
+                                <rect key="frame" x="16" y="36" width="343" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="KzL-oV-YZ4"/>
+                                </constraints>
+                                <string key="text">Luna’s head is tilted to the left, she is staring at the object in puzzlement as well. Could the two of you be staring at a UFO? It doesn’t seem possible, you don’t even believe in aliens. But the oddly shaped green creature makes you start to think otherwise. You hear a loud hissing sound like the decompressing of air. The top of what appears to be an alien spaceship opens. 
+
+Yup, definitely an alien!
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gcb-NQ-bcN" firstAttribute="top" secondItem="vTL-cc-mgg" secondAttribute="top" constant="16" id="kvC-Ar-wha"/>
+                            <constraint firstItem="gcb-NQ-bcN" firstAttribute="leading" secondItem="vTL-cc-mgg" secondAttribute="leading" constant="16" id="nSZ-t9-hLY"/>
+                            <constraint firstItem="vTL-cc-mgg" firstAttribute="trailing" secondItem="gcb-NQ-bcN" secondAttribute="trailing" constant="16" id="v8M-Qs-BVa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vTL-cc-mgg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg0-sz-awl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3119.1999999999998" y="1433.433283358321"/>
+            <point key="canvasLocation" x="3641" y="1299"/>
         </scene>
-        <!--Chapter View Controller-->
+        <!--View Controller-->
+        <scene sceneID="6y8-1q-BD9">
+            <objects>
+                <viewController storyboardIdentifier="chap2_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NnD-Fc-ncf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qmn-q7-aLO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XuW-9A-kqh">
+                                <rect key="frame" x="16" y="36" width="343" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="440" id="0Cu-bp-xau"/>
+                                </constraints>
+                                <mutableString key="text">The creature inside hops out of the aircraft, which is hovers about 2 feet off the ground. His body is long and slender; he appears frantic and in a great hurry.
+
+The creature looks directly at you with his large bulbous eyes. He scans you, head to toe, silence for a moment, like a boxer sizing up an opponent. The alien is about your height. Maybe you could take him on?
+
+All the scary alien movies you’ve ever watched come flooding back to you. What if he wants to dissect your brain? Or Worse! The alien begins to move closer to where you are standing. His awkward shuffling give you the creeps. His movements are akin to a zombie’s. Luna lets out a bark as a warning to the strange being. 
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XuW-9A-kqh" firstAttribute="leading" secondItem="q6u-Ka-vwF" secondAttribute="leading" constant="16" id="OB3-fU-SpN"/>
+                            <constraint firstItem="q6u-Ka-vwF" firstAttribute="trailing" secondItem="XuW-9A-kqh" secondAttribute="trailing" constant="16" id="nBb-nI-zgN"/>
+                            <constraint firstItem="XuW-9A-kqh" firstAttribute="top" secondItem="q6u-Ka-vwF" secondAttribute="top" constant="16" id="vZi-AN-roW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q6u-Ka-vwF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVw-ig-wWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4372" y="1300"/>
+        </scene>
+        <!--Chapter2 View Controller-->
         <scene sceneID="93B-Uo-qWp">
             <objects>
-                <viewController storyboardIdentifier="chap2_3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w9C-kF-Sjv" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chap2_4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w9C-kF-Sjv" customClass="Chapter2ViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BVc-LT-w1V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-hx-p3k">
-                                <rect key="frame" x="311" y="617" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Option 2"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m8L-Wx-Dgx">
+                                <rect key="frame" x="16" y="36" width="343" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="pMg-cX-rsD"/>
+                                </constraints>
+                                <mutableString key="text">“Bonjour,” the alien says slowly with a wave of his long slender arm. You look at him slack jawed with confusion. The alien speaks French? 
+
+“Je m’appelle Chrono,” he continues with a bow, his eyes never leaving your face. 
+
+You shake your head. “Do you speak English by chance?” you ask the alien hesitantly.
+
+The creature hits a button located on his belt and says, “Sorry for the confusion. I just assumed…”
+
+You can’t imagine why he would assume you speak French, but it doesn’t matter anyway. “What do you want?” you ask him, hoping the answer is not world domination. 
+
+“I need you to come with me right away!” The alien declares with alarm in his voice. What should you say to the alien?
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzM-iX-ugb">
+                                <rect key="frame" x="128" y="577" width="231" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2SE-VJ-Yyg"/>
+                                </constraints>
+                                <state key="normal" title="&quot;No Way! You'll dissect my brain!&quot;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Vlv-wC-eax" kind="show" id="zQr-YD-vVy"/>
+                                    <segue destination="Vlv-wC-eax" kind="show" identifier="Dissect" id="IZ4-ah-DFk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dY-6q-Fy4">
+                                <rect key="frame" x="57" y="539" width="302" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l2d-UZ-Qwc"/>
+                                </constraints>
+                                <state key="normal" title="&quot;Sure! I'll help.&quot; (Remember, No Homework!)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Vlv-wC-eax" kind="show" identifier="I'll Help" id="Rlm-ND-bdU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="6Rh-eE-Hr4"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="1dY-6q-Fy4" secondAttribute="trailing" constant="16" id="74J-56-gcw"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="8wV-1X-0a2"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="PzM-iX-ugb" secondAttribute="trailing" constant="16" id="DV0-bF-J9O"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="Li2-vp-9ZS"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="Mgp-j2-NDo"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="Nvh-mn-ow2"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="Pbj-N9-Qip"/>
+                            <constraint firstItem="PzM-iX-ugb" firstAttribute="top" secondItem="1dY-6q-Fy4" secondAttribute="bottom" constant="8" id="RsH-4w-k27"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="S5e-Zh-Rsi"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="Ylh-Nh-7lf"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="bottom" secondItem="PzM-iX-ugb" secondAttribute="bottom" constant="60" id="agt-c2-Qdj"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="byf-H9-9tI"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="16" id="bzz-RF-YQ9"/>
+                            <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="16" id="gaz-k6-Nah"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="16" id="q7m-kQ-L4o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hmJ-8f-LlA"/>
                     </view>
+                    <connections>
+                        <outlet property="dissectBrains" destination="PzM-iX-ugb" id="WoW-GN-sfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sK9-h6-zXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4080.8000000000002" y="1433.433283358321"/>
+            <point key="canvasLocation" x="5140" y="1300"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fQI-ga-mRP">
@@ -442,7 +771,7 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gta-Sb-zNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2140" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="-1737" y="1299"/>
         </scene>
         <!--Run Away!-->
         <scene sceneID="I4i-xz-e7Y">
@@ -510,7 +839,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEu-W2-8D0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1313.5" y="1432.5"/>
+            <point key="canvasLocation" x="-858" y="1300"/>
         </scene>
         <!--Run As Fast As You Can Page View Controller-->
         <scene sceneID="fAa-L3-52S">
@@ -520,7 +849,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DbO-2J-FC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="1433"/>
+            <point key="canvasLocation" x="-10" y="1301"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="cGq-fh-97v">
@@ -530,9 +859,15 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Xl-I0i">
-                                <rect key="frame" x="16" y="46" width="343" height="393"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Xl-I0i">
+                                <rect key="frame" x="16" y="46" width="343" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="45Z-Xh-1vL"/>
+                                </constraints>
                                 <string key="text">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
 
 The only sounds to be heard are the rustling of leaves on the concrete and Luna’s overly enthusiastic sniffing.
@@ -553,7 +888,7 @@ Do you:
                                     <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VoZ-lf-qAe" kind="show" id="Hvj-e0-WGd"/>
+                                    <segue destination="yze-4Z-JnP" kind="show" id="l1a-O8-eGy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-B2-dcB">
@@ -588,7 +923,7 @@ Do you:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dup-0H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446" y="1422"/>
+            <point key="canvasLocation" x="753" y="517"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VTI-70-isn">
@@ -606,7 +941,7 @@ Do you:
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGx-qD-ary" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1154" y="-63"/>
+            <point key="canvasLocation" x="-1095" y="-278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xMY-Ni-3nA">
@@ -624,7 +959,7 @@ Do you:
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gZ-KP-Iqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081" y="2090"/>
+            <point key="canvasLocation" x="2201" y="517"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vjw-Eb-BI4">
@@ -642,7 +977,7 @@ Do you:
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YuG-rA-hsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-946" y="3849"/>
+            <point key="canvasLocation" x="753" y="2074"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GmZ-p4-IaB">
@@ -659,13 +994,14 @@ Do you:
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoH-CV-AzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="2176"/>
+            <point key="canvasLocation" x="-782" y="2074"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zQr-YD-vVy"/>
-        <segue reference="UT2-He-dFh"/>
-        <segue reference="ijG-Ma-eQD"/>
-        <segue reference="eEh-7I-qgF"/>
+        <segue reference="l1a-O8-eGy"/>
+        <segue reference="IZ4-ah-DFk"/>
+        <segue reference="KYf-bL-oLj"/>
+        <segue reference="At9-Gc-gCd"/>
+        <segue reference="4Qs-px-yhn"/>
     </inferredMetricsTieBreakers>
 </document>
