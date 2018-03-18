@@ -11,7 +11,7 @@ import UIKit
 class GenericPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource
  {
     
-    
+    var segueID: String? = nil
     var menuShowing = false
     let viewController = ViewController()
     

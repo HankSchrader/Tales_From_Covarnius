@@ -10,7 +10,7 @@ import Foundation
 struct Constants {
     static let INTRO = "Introduction"
     static let ONTO_COVARNIUS = "Onto Covarnius"
-    static let LANDED_ON_COVARNIUS = "Landed On Covarnius"
+    static let LANDED_ON_COVARNIUS = "Fork In The Road"
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
     static let SUBMIT = "Great!"
     static let MAIN_MENU_SONG = "MainMenuSong"
@@ -20,4 +20,5 @@ struct Constants {
     static let NEW_CHAPTER_LOOP_COUNT = 0
     static let EARTHS_GREATEST_SCIENTIST = "Earth's Greatest Scientist"
     static let COWBOYS_OF_KATONIA = "Cowboys of Katonia"
+    static let BACK_AT_THE_RANCH = "Back At The Ranch"
 }

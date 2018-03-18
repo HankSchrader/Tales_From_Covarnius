@@ -18,7 +18,6 @@ class Chapter2PageViewController: GenericPageViewController{
     
     override func viewDidLoad() {
         self.orderedViewControllers =  {
-            print("old ID \(self.previousRID)")
             if self.previousRID != nil {
                 return [self.newVC(viewController: "chap2_0"),
                         self.newVC(viewController: "chap2_1"),
@@ -33,13 +32,10 @@ class Chapter2PageViewController: GenericPageViewController{
             }
         }()
         super.viewDidLoad()
-        print("Inside ViewDidLoad \(self.previousRID)")
-        print("Amount of VC's: \(self.orderedViewControllers.count)")
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.ONTO_COVARNIUS)
     }
     
 }

@@ -9,12 +9,6 @@
 import UIKit
 
 class Chapter4PageViewController: GenericPageViewController {
-    var segueID: String? = nil
-    
-    
-    //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
-    
-    
     override func viewDidLoad() {
         self.orderedViewControllers =  {
             if self.segueID == "keep going" {
