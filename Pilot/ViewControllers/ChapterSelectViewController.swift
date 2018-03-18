@@ -34,6 +34,7 @@ class ChapterSelectViewController: Chapter3ViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
          self.navigationController?.isNavigationBarHidden = false
     }
     
@@ -100,21 +101,26 @@ class ChapterSelectViewController: Chapter3ViewController {
     }
     
     func getById(id: String?) -> Chapter? {
-        let chapter = get(withPredicate: NSPredicate(format: "name = %@", id!))
-        return chapter[0]
+        var chapter: Chapter? = nil
+        if(isChapterThere(chapterName: id)) {
+            let gotChapter = get(withPredicate: NSPredicate(format: "name = %@", id!))
+            chapter = gotChapter[0]
+        }
+        return chapter
     }
     
     func deleteById(id: String?) {
-        do {
-            let chapter = getById(id: id)
-            PersistanceService.context.delete(chapter!)
-            try PersistanceService.context.save()
-        }
-        catch {
-             NSLog("Delete of record Failed")
-        }
-    
+        if(isChapterThere(chapterName: id)) {
+            do {
+                let chapter = getById(id: id)
+                PersistanceService.context.delete(chapter!)
+                try PersistanceService.context.save()
+            }
+            catch {
+                 NSLog("Delete of record Failed")
+            }
         
+        }
     }
 
     func deleteAllData() {

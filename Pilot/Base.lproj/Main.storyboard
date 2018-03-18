@@ -61,7 +61,7 @@
                         <barButtonItem key="backBarButtonItem" title="Main Menu" id="IZD-Ga-ECf"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="Duw-uU-zfV">
                             <connections>
-                                <segue destination="epm-LR-xz1" kind="show" id="5Vr-zP-NTi"/>
+                                <segue destination="epm-LR-xz1" kind="show" identifier="fromMainMenu" id="5Vr-zP-NTi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -3947,7 +3947,7 @@ Do you:
         <segue reference="Bqg-K4-ZeW"/>
         <segue reference="TfN-Qd-HdO"/>
         <segue reference="KYf-bL-oLj"/>
-        <segue reference="cSf-RQ-ef6"/>
+        <segue reference="5Vr-zP-NTi"/>
         <segue reference="WKD-KN-cYJ"/>
     </inferredMetricsTieBreakers>
 </document>
