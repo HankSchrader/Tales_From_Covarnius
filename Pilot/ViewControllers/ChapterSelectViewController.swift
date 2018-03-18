@@ -18,6 +18,7 @@ class ChapterSelectViewController: Chapter3ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
         do {
         let chapters = try PersistanceService.context.fetch(fetchRequest)
@@ -60,21 +61,18 @@ class ChapterSelectViewController: Chapter3ViewController {
             self.tableView?.reloadData()
     }
     
-    func deleteChapter(chapterName: String!) {
-        if isChapterThere(chapterName: chapterName) {
-            let i = self.chapters.count
-            let index = 0
-            while index < i {
-                if self.chapters[i].name == chapterName {
-                    self.chapters.remove(at: i)
-                    
-                }
+    func getIndex(chapterName: String!) -> Int{
+        var i = 0
+        for chapters in self.chapters {
+            if(chapterName == chapters.name) {
+               return i
             }
+            i = i + 1
         }
-        print("Chapter Not Found")
-       
+        return -1
     }
     
+
     func isChapterThere(chapterName: String!) -> Bool {
         var isThere = false
         for chapters in self.chapters {
@@ -85,6 +83,40 @@ class ChapterSelectViewController: Chapter3ViewController {
         return isThere
     }
     
+    func get(withPredicate queryPredicate: NSPredicate) -> [Chapter]{
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chapter")
+        
+        fetchRequest.predicate = queryPredicate
+        
+        do {
+            let response = try PersistanceService.context.fetch(fetchRequest)
+            return response as! [Chapter]
+            
+        } catch let error as NSError {
+            // failure
+            print(error)
+            return [Chapter]()
+        }
+    }
+    
+    func getById(id: String?) -> Chapter? {
+        let chapter = get(withPredicate: NSPredicate(format: "name = %@", id!))
+        return chapter[0]
+    }
+    
+    func deleteById(id: String?) {
+        do {
+            let chapter = getById(id: id)
+            PersistanceService.context.delete(chapter!)
+            try PersistanceService.context.save()
+        }
+        catch {
+             NSLog("Delete of record Failed")
+        }
+    
+        
+    }
+
     func deleteAllData() {
         // Initialize Fetch Request
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chapter")
@@ -96,6 +128,7 @@ class ChapterSelectViewController: Chapter3ViewController {
             let items = try PersistanceService.context.fetch(fetchRequest) as! [NSManagedObject]
             
             for item in items {
+                print("The name of the chapter is \(item.value(forKey: "name"))")
                 PersistanceService.context.delete(item)
             }
             
@@ -128,7 +161,7 @@ class ChapterSelectViewController: Chapter3ViewController {
 }
 extension ChapterSelectViewController: UITableViewDataSource, UITableViewDelegate{
     
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
