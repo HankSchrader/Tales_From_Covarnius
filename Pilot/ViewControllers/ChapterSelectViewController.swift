@@ -21,13 +21,21 @@ class ChapterSelectViewController: Chapter3ViewController {
         
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
         do {
-        let chapters = try PersistanceService.context.fetch(fetchRequest)
+        var chapters = try PersistanceService.context.fetch(fetchRequest)
+        
         self.chapters = chapters
+        
+        for chapter in chapters {
+            print(chapter.order)
+            }
+            
         self.tableView?.reloadData()
         } catch
         {
             NSLog("FETCH FAILED")
         }
+        
+        //images.sorted(by: { $0.fileID > $1.fileID })
         tableView?.dataSource = self
         tableView?.delegate = self
 
@@ -52,26 +60,17 @@ class ChapterSelectViewController: Chapter3ViewController {
         
         MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG, fadeDuration: Constants.STANDARD_FADE_TIME)
     }
-    
 
-    func saveChapter(ChapterName: String!) {
+    
+    func saveChapter(ChapterName: String!, order: Int16!) {
             let chapter = Chapter(context: PersistanceService.context)
             chapter.name = ChapterName
-            PersistanceService.saveContext()
+            chapter.order = order
             self.chapters.append(chapter)
+            PersistanceService.saveContext()
             self.tableView?.reloadData()
     }
     
-    func getIndex(chapterName: String!) -> Int{
-        var i = 0
-        for chapters in self.chapters {
-            if(chapterName == chapters.name) {
-               return i
-            }
-            i = i + 1
-        }
-        return -1
-    }
     
 
     func isChapterThere(chapterName: String!) -> Bool {
@@ -134,7 +133,6 @@ class ChapterSelectViewController: Chapter3ViewController {
             let items = try PersistanceService.context.fetch(fetchRequest) as! [NSManagedObject]
             
             for item in items {
-                print("The name of the chapter is \(item.value(forKey: "name"))")
                 PersistanceService.context.delete(item)
             }
             
@@ -144,8 +142,6 @@ class ChapterSelectViewController: Chapter3ViewController {
             NSLog("Delete Failed")
         }
     }
-    
-    
     
     func goToChapter(chapter: String!) {
         //reload the chapters
@@ -181,6 +177,8 @@ extension ChapterSelectViewController: UITableViewDataSource, UITableViewDelegat
         cell.textLabel?.text = chapters[indexPath.row].name
         return cell
     }
+    
+  
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
@@ -192,7 +190,7 @@ extension ChapterSelectViewController: UITableViewDataSource, UITableViewDelegat
         {
             print("fetch failed!")
         }
-
+        
         let cell = chapters[indexPath.row].name
         self.performSegue(withIdentifier: cell!, sender: self)
         

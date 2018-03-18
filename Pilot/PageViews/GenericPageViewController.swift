@@ -40,7 +40,7 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
             MusicHelper.sharedHelper.initiateBackgroundMusic(resource: Constants.NEW_CHAPTER_SOUND, numberOfLoops: Constants.NEW_CHAPTER_LOOP_COUNT)
             let newChapterAlert = UIAlertController(title: Constants.CHAPTER_UNLOCK_MESSAGE, message: Constants.INTRO, preferredStyle: UIAlertControllerStyle.alert)
             newChapterAlert.addAction(UIAlertAction(title: Constants.SUBMIT, style: UIAlertActionStyle.default, handler: nil))
-            ChapterSelectViewController.chapterSelect.saveChapter(ChapterName: Constants.INTRO)
+            ChapterSelectViewController.chapterSelect.saveChapter(ChapterName: Constants.INTRO, order: 0)
             
             self.present(newChapterAlert, animated: true, completion: nil)
             
@@ -112,13 +112,13 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
         }
         return orderedViewControllers[nextIndex]
     }
-    func checkNewChapter(chapterName: String?) {
+    func checkNewChapter(chapterName: String?, order: Int16!) {
         ChapterSelectViewController.chapterSelect.tableView?.reloadData()
         if(ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: chapterName) == false) {
             MusicHelper.sharedHelper.initiateBackgroundMusic(resource: Constants.NEW_CHAPTER_SOUND, numberOfLoops: Constants.NEW_CHAPTER_LOOP_COUNT)
             let newChapterAlert = UIAlertController(title: Constants.CHAPTER_UNLOCK_MESSAGE, message: chapterName, preferredStyle: UIAlertControllerStyle.alert)
             newChapterAlert.addAction(UIAlertAction(title: Constants.SUBMIT, style: UIAlertActionStyle.default, handler: nil))
-            ChapterSelectViewController.chapterSelect.saveChapter(ChapterName: chapterName)
+            ChapterSelectViewController.chapterSelect.saveChapter(ChapterName: chapterName, order: order)
             
             self.present(newChapterAlert, animated: true, completion: nil)
     

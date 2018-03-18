@@ -32,6 +32,6 @@ class Chapter3PageViewController:  GenericPageViewController{
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.LANDED_ON_COVARNIUS)
+        super.checkNewChapter(chapterName: Constants.LANDED_ON_COVARNIUS, order: 1)
     }
 }
