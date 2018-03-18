@@ -8,9 +8,19 @@
 
 import Foundation
 struct Constants {
+    
+    //chapter names
     static let INTRO = "Introduction"
     static let ONTO_COVARNIUS = "Onto Covarnius"
+    static let YOU_LET_THE_HAPAL_DOWN = "You Let The Hapal Down..."
+    static let YOU_SAVED_THE_HAPAL = "You Saved The Hapal!!"
     static let LANDED_ON_COVARNIUS = "Fork In The Road"
+    static let EARTHS_GREATEST_SCIENTIST = "Earth's Greatest Scientist"
+    static let COWBOYS_OF_KATONIA = "Cowboys of Katonia"
+    static let BACK_AT_THE_RANCH = "Back At The Ranch"
+    static let BY_RANDOM_HAPAL_STANCE = "By Random Hapal Stance"
+    
+    //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
     static let SUBMIT = "Great!"
     static let MAIN_MENU_SONG = "MainMenuSong"
@@ -18,7 +28,5 @@ struct Constants {
     static let STANDARD_FADE_TIME: TimeInterval! = 4
     static let MAIN_MUSIC_LOOP_COUNT = 3
     static let NEW_CHAPTER_LOOP_COUNT = 0
-    static let EARTHS_GREATEST_SCIENTIST = "Earth's Greatest Scientist"
-    static let COWBOYS_OF_KATONIA = "Cowboys of Katonia"
-    static let BACK_AT_THE_RANCH = "Back At The Ranch"
+
 }

@@ -9,6 +9,7 @@
 import UIKit
 
 class Chapter4PageViewController: GenericPageViewController {
+   
     override func viewDidLoad() {
         self.orderedViewControllers =  {
             if self.segueID == "keep going" {
@@ -16,7 +17,20 @@ class Chapter4PageViewController: GenericPageViewController {
                         self.newVC(viewController: "chap4_2"),
                         self.newVC(viewController: "chap4_3"),
                         self.newVC(viewController: "chap4_4")]
-            } else {
+            } else if self.segueID == "You Didn't Help The Hapal" || segueID == "You Let The Hapal Down..." {
+                return [self.newVC(viewController: "Let Hapal Down"),
+                        self.newVC(viewController: "chap4_3"),
+                        self.newVC(viewController: "chap4_3"),
+                        self.newVC(viewController: "chap4_4")]
+            } else if self.segueID == "Help The Hapal" || self.segueID == "You Saved The Hapal!!" {
+                return [self.newVC(viewController: "Hapal Rescue 1"),
+                        self.newVC(viewController: "Hapal Rescue 2"),
+                        self.newVC(viewController: "Hapal Rescue 3"),
+                        self.newVC(viewController: "chap4_2"),
+                        self.newVC(viewController: "chap4_3"),
+                        self.newVC(viewController: "chap4_4")]
+            }
+            else {
                 return [self.newVC(viewController: "katonian_1"),
                         self.newVC(viewController: "katonian_2"),
                         self.newVC(viewController: "katonian_3")]
@@ -25,12 +39,21 @@ class Chapter4PageViewController: GenericPageViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
         if self.segueID == "keep going" {
             super.checkNewChapter(chapterName: Constants.EARTHS_GREATEST_SCIENTIST)
         }
-        else
+        else if self.segueID == "Help The Hapal" {
+            super.checkNewChapter(chapterName: Constants.YOU_SAVED_THE_HAPAL)
+            ChapterSelectViewController.chapterSelect.deleteChapter(chapterName: Constants.YOU_LET_THE_HAPAL_DOWN)
+        }
+        else if self.segueID == "You Didn't Help The Hapal" {
+            super.checkNewChapter(chapterName: Constants.YOU_SAVED_THE_HAPAL)
+            ChapterSelectViewController.chapterSelect.deleteChapter(chapterName: Constants.YOU_SAVED_THE_HAPAL)
+        } else
         {
             super.checkNewChapter(chapterName: Constants.COWBOYS_OF_KATONIA)
         }

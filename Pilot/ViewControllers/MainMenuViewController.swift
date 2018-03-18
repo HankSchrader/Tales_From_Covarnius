@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 
-class ViewController: UIViewController {
+class ViewController: ChapterViewController {
     var menuShowing = false
     static let sharedHelper = ViewController()
     weak var delegate: DisplayViewIDDelegate?
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     //MARK: viewWillAppear is always used for animation.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        self.navigationController?.isNavigationBarHidden = false
         // Set the top label's animation alpha
         self.topLabel.alpha = 0
         self.bottomLabel.alpha = 0

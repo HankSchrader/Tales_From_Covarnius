@@ -9,9 +9,10 @@
 import UIKit
 import CoreData
 
-class ChapterSelectViewController: UIViewController {
+class ChapterSelectViewController: Chapter3ViewController {
     static var chapterSelect = ChapterSelectViewController()
     var chapters = [Chapter]()
+  
     @IBOutlet weak var tableView: UITableView?
     
     
@@ -36,20 +37,42 @@ class ChapterSelectViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        
         self.navigationController?.isNavigationBarHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is Chapter4PageViewController
+        {
+            let vc = segue.destination as? Chapter4PageViewController
+            vc?.segueID = segue.identifier!
+        }
+        
         MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG, fadeDuration: Constants.STANDARD_FADE_TIME)
     }
     
-    
+
     func saveChapter(ChapterName: String!) {
             let chapter = Chapter(context: PersistanceService.context)
             chapter.name = ChapterName
             PersistanceService.saveContext()
             self.chapters.append(chapter)
             self.tableView?.reloadData()
+    }
+    
+    func deleteChapter(chapterName: String!) {
+        if isChapterThere(chapterName: chapterName) {
+            let i = self.chapters.count
+            let index = 0
+            while index < i {
+                if self.chapters[i].name == chapterName {
+                    self.chapters.remove(at: i)
+                    
+                }
+            }
+        }
+        print("Chapter Not Found")
+       
     }
     
     func isChapterThere(chapterName: String!) -> Bool {
@@ -136,6 +159,7 @@ extension ChapterSelectViewController: UITableViewDataSource, UITableViewDelegat
         
     }
     
+
     
 
 }

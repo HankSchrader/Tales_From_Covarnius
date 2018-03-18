@@ -16,11 +16,13 @@ class BackAtTheRanchPageViewController: GenericPageViewController  {
                 return [self.newVC(viewController: "at_the_ranch_run_choice_part_1"),
                         self.newVC(viewController: "at_the_ranch_run_choice_part_2"),
                         self.newVC(viewController: "at_the_ranch_2"),
-                        self.newVC(viewController: "at_the_ranch_3")]
+                        self.newVC(viewController: "at_the_ranch_3"),
+                        self.newVC(viewController: "at_the_ranch_4"),]
             } else {
                 return [self.newVC(viewController: "at_the_ranch_1"),
                         self.newVC(viewController: "at_the_ranch_2"),
-                        self.newVC(viewController: "at_the_ranch_3")]
+                        self.newVC(viewController: "at_the_ranch_3"),
+                        self.newVC(viewController: "at_the_ranch_4")]
             }
         }()
         super.viewDidLoad()
@@ -30,6 +32,7 @@ class BackAtTheRanchPageViewController: GenericPageViewController  {
     }
 
     override func viewDidAppear(_ animated: Bool){
+        
         super.viewDidAppear(animated)
     }
 
