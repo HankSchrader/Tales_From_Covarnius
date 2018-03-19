@@ -18,7 +18,7 @@ class ViewController: ChapterViewController {
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     override func viewDidLoad() {
-
+        navigationItem.hidesBackButton = true
         super.viewDidLoad()
         createBeginButton()
         createDeleteButton()

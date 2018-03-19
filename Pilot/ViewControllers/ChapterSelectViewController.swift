@@ -24,11 +24,7 @@ class ChapterSelectViewController: Chapter3ViewController {
         var chapters = try PersistanceService.context.fetch(fetchRequest)
         
         self.chapters = chapters
-        
-        for chapter in chapters {
-            print(chapter.order)
-            }
-            
+
         self.tableView?.reloadData()
         } catch
         {
@@ -42,8 +38,12 @@ class ChapterSelectViewController: Chapter3ViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
-         self.navigationController?.isNavigationBarHidden = false
+        if self.segueID == "fromMainMenu" {
+            navigationItem.hidesBackButton = false
+        } else {
+            navigationItem.hidesBackButton = true
+        }
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -66,8 +66,8 @@ class ChapterSelectViewController: Chapter3ViewController {
             let chapter = Chapter(context: PersistanceService.context)
             chapter.name = ChapterName
             chapter.order = order
-            self.chapters.append(chapter)
             PersistanceService.saveContext()
+            self.chapters.append(chapter)
             self.tableView?.reloadData()
     }
     
@@ -148,8 +148,8 @@ class ChapterSelectViewController: Chapter3ViewController {
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
         do {
             let chapters = try PersistanceService.context.fetch(fetchRequest)
-            ChapterSelectViewController.chapterSelect.chapters = chapters
-            ChapterSelectViewController.chapterSelect.tableView?.reloadData()
+            self.chapters = chapters
+            self.tableView?.reloadData()
         } catch
         {
             print("fetch failed!")
@@ -174,11 +174,10 @@ extension ChapterSelectViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        chapters.sort(by: {$0.order < $1.order})
         cell.textLabel?.text = chapters[indexPath.row].name
         return cell
     }
-    
-  
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()

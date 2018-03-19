@@ -203,20 +203,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9RF-UE-Vzd">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Kf-HP-DJy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <attributedString key="attributedText">
-                                        <fragment content="CHAPTERS UNLOCKED">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="17"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <connections>
                                     <outlet property="dataSource" destination="epm-LR-xz1" id="2mU-Rg-iwI"/>
                                 </connections>
@@ -232,7 +218,9 @@
                         <viewLayoutGuide key="safeArea" id="5fn-yO-zHO"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="hC3-vL-Yan"/>
+                    <navigationItem key="navigationItem" title="Chapters Unlocked" id="hC3-vL-Yan">
+                        <barButtonItem key="backBarButtonItem" title="&quot;&quot;" id="nRg-om-qGg"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="9RF-UE-Vzd" id="fzp-nV-rST"/>
@@ -248,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXH-ll-hLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="-278"/>
+            <point key="canvasLocation" x="1100" y="-278"/>
         </scene>
         <!--Chapter 1-->
         <scene sceneID="fLG-Ff-mob">
@@ -348,7 +336,7 @@ You stop and observe the strange object as it makes a slow descent from the sky.
 Butterflies fill your stomach. Maybe you should have ran while you had the chance...
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="BigCaslon-Medium"/>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -391,13 +379,15 @@ Butterflies fill your stomach. Maybe you should have ran while you had the chanc
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-Sd-bNf">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-Sd-bNf">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="B2g-w4-Q1S"/>
                                 </constraints>
-                                <string key="text">Thoughts of examination tables and scalpels suddenly fill your head. The last thing you want to be the test subject in an alien experiment!
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Thoughts of examination tables and scalpels suddenly fill your head. The last thing you want to be the test subject in an alien experiment!
 
 You tell the alien that you won’t go with him. “How do I know you won’t just dissect my brain?” you ask accusingly. Your fists are clenched with anger and fright. So this is what the fight or flight mechanism you learned about in school must feel like.
 
@@ -410,8 +400,12 @@ You put your hands on your hip and gaze at him suspiciously, hoping to find a si
 “Then why do I need to go with you?” You question him. A sound starts to emanate from the spacecraft a few yards away. It sounds like a cross between a wind chime and a howling dog. 
 
 The sound clearly distresses the alien who looks back at his ship with impatience. “Covarnius—my home planet—is in trouble. Hurry the ship is ready to take off! And you’re the only person in the universe who can help.” 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -436,13 +430,15 @@ The sound clearly distresses the alien who looks back at his ship with impatienc
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9PT-Je-Ld6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PT-Je-Ld6">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="QH4-SQ-GPm"/>
                                 </constraints>
-                                <string key="text">After careful consideration, you decide the alien is probably not going to dissect your brain. The pleaful look in his eyes and clearly frightened demeanor give the impression that he does indeed need help.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">After careful consideration, you decide the alien is probably not going to dissect your brain. The pleaful look in his eyes and clearly frightened demeanor give the impression that he does indeed need help.
 
 At the very least you’ll get out of all the math homework your teacher assigned today. You cautiously approach with the green hued creature. Before you know it, he is insisting you enter the spaceship.
 
@@ -453,8 +449,12 @@ Luna is on your heels and follow you into the spaceship. At least you’re not g
 Taking a quick peek at your surroundings , you notice that Switches, dials and knobs encompass the entire vessel.
 
 You stare definitely at the alien and say, “If I’m going back to Covarnius with you, at least tell me your name first,” 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -479,13 +479,15 @@ You stare definitely at the alien and say, “If I’m going back to Covarnius w
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LcY-Vi-3wc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcY-Vi-3wc">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="3er-qx-yQi"/>
                                 </constraints>
-                                <string key="text">“My name is Chrono and as I have said, my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">“My name is Chrono and as I have said, my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
 
 “And what does any of this have to do with me?” You question skeptically. You watch out the window as the spacecraft ascends upwards leaving the Earth behind. The houses below quickly become tiny dots. This is becoming too real.
 
@@ -494,8 +496,12 @@ You stare definitely at the alien and say, “If I’m going back to Covarnius w
 Leaning back in your seat you mull over what Chrono just told you. Your research for the recent science fair had definitely been A+ material, but you didn’t see how it could save an alien planet. 
 
 And where is Covarnius located anyway? If it was close to Earth, wouldn’t we know of it existence? And if it was far… You seem to recall your science teacher informing your class that it would take thousands of years just to travel one light year. 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -520,7 +526,7 @@ And where is Covarnius located anyway? If it was close to Earth, wouldn’t we k
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-ZY-568">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-ZY-568">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -5358,13 +5364,13 @@ Do you:
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qyY-c4-Pfi"/>
-        <segue reference="c8z-MZ-lCc"/>
+        <segue reference="EU2-bt-ued"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="44a-Dl-z7T"/>
-        <segue reference="sAp-zm-trV"/>
+        <segue reference="Bqg-K4-ZeW"/>
         <segue reference="TfN-Qd-HdO"/>
         <segue reference="KYf-bL-oLj"/>
-        <segue reference="cSf-RQ-ef6"/>
+        <segue reference="5Vr-zP-NTi"/>
         <segue reference="WKD-KN-cYJ"/>
     </inferredMetricsTieBreakers>
 </document>

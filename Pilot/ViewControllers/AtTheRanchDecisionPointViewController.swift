@@ -33,7 +33,7 @@ class AtTheRanchDecisionPointViewController: Chapter3ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is BackAtTheRanchPageViewController
         {
-            print(segue.identifier)
+
             let vc = segue.destination as? BackAtTheRanchPageViewController
             vc?.segueID = segue.identifier!
         }
