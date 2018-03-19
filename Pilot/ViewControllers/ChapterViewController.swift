@@ -9,7 +9,7 @@
 import UIKit
 
 class ChapterViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         goToChapterSelectAction()

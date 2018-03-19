@@ -56,7 +56,21 @@ class ChapterSelectViewController: Chapter3ViewController {
         {
             let vc = segue.destination as? Chapter4PageViewController
             vc?.segueID = segue.identifier!
+            vc?.previousRID = self.restorationIdentifier!
         }
+        else if segue.destination is FakeScientistArcPageViewController {
+            let vc = segue.destination as? FakeScientistArcPageViewController
+            vc?.segueID = segue.identifier!
+            vc?.previousRID = self.restorationIdentifier!
+            
+        }
+        else if segue.destination is Chapter5PageViewController {
+            let vc = segue.destination as? Chapter5PageViewController
+            vc?.segueID = segue.identifier!
+            vc?.previousRID = self.restorationIdentifier!
+        }
+        
+
         
         MusicHelper.sharedHelper.fadeOutBackgroundMusic(resource: Constants.MAIN_MENU_SONG, fadeDuration: Constants.STANDARD_FADE_TIME)
     }

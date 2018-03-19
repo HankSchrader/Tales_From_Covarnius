@@ -9,7 +9,7 @@
 import UIKit
 
 class Chapter2ViewController: ChapterViewController {
-
+    var previousRID = ""
     var segueID = ""
     override func viewDidLoad() {
         super.viewDidLoad()

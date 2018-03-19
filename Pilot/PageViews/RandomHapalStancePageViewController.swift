@@ -31,7 +31,7 @@ class RandomHapalStancePageViewController: GenericPageViewController {
     
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.BY_RANDOM_HAPAL_STANCE, order: 5)
+        super.checkNewChapter(chapterName: Constants.BY_RANDOM_HAPAL_STANCE, order: 3)
        
     }
 

@@ -21,6 +21,8 @@ struct Constants {
     static let BY_RANDOM_HAPAL_STANCE = "By Random Hapal Stance"
     static let FAKE_IT_TIL_YOU_MAKE_IT = "Fake It Til You Make It"
     static let MASTER_OF_DISGUISE_OR_LIES  = "The King and the Invasion"
+    static let SNEAK_ONTO_SHIP = "Where's Your Boarding Ticket?"
+    static let AMBASSADOR_ARC = "Diplomatic Immunity"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"

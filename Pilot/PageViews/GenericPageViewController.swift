@@ -14,6 +14,7 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
     var segueID: String? = nil
     var menuShowing = false
     let viewController = ViewController()
+    var previousRID: String? = nil
     
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers = [UIViewController]()

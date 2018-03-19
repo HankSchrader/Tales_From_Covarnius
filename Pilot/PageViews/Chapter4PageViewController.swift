@@ -9,7 +9,7 @@
 import UIKit
 
 class Chapter4PageViewController: GenericPageViewController {
-   
+    
     override func viewDidLoad() {
         self.orderedViewControllers =  {
             if self.segueID == "keep going" || self.segueID == "Earth's Greatest Scientist" {
@@ -44,20 +44,22 @@ class Chapter4PageViewController: GenericPageViewController {
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
         if self.segueID == "keep going" {
-            super.checkNewChapter(chapterName: Constants.EARTHS_GREATEST_SCIENTIST,order: 3)
+            super.checkNewChapter(chapterName: Constants.EARTHS_GREATEST_SCIENTIST,order: 5)
         }
         else if self.segueID == "Help The Hapal" {
-            super.checkNewChapter(chapterName: Constants.YOU_SAVED_THE_HAPAL, order: 2)
+            super.checkNewChapter(chapterName: Constants.YOU_SAVED_THE_HAPAL, order: 4)
             ChapterSelectViewController.chapterSelect.deleteById(id: "You Let The Hapal Down...")
           //  ChapterSelectViewController.chapterSelect.deleteRecord(chapterName: Constants.YOU_LET_THE_HAPAL_DOWN)
         }
         else if self.segueID == "You Didn't Help The Hapal" {
-            super.checkNewChapter(chapterName: Constants.YOU_LET_THE_HAPAL_DOWN, order: 2)
+            super.checkNewChapter(chapterName: Constants.YOU_LET_THE_HAPAL_DOWN, order: 4)
             ChapterSelectViewController.chapterSelect.deleteById(id: "You Saved The Hapal!!")
           //  ChapterSelectViewController.chapterSelect.deleteRecord(chapterName: Constants.YOU_SAVED_THE_HAPAL)
         } else
         {
-            super.checkNewChapter(chapterName: Constants.COWBOYS_OF_KATONIA, order: 4)
+            if self.previousRID != "Chapter Select" {
+            super.checkNewChapter(chapterName: Constants.COWBOYS_OF_KATONIA, order: 2)
+            }
         }
     }
 
