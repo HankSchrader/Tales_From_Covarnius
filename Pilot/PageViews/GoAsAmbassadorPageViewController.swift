@@ -16,17 +16,12 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
             switch segue {
                 
             case "ambassador arc"?:
-                return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
-            case "ram ship"?:
+                return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 2 Ambassador")]
+            case "sneak into storeroom"?:
                 return [self.newVC(viewController: "ram ship"),
                         self.newVC(viewController: "ram ship 2")]
-            case "fetch key"?:
+            case "borrow"?:
                 return [self.newVC(viewController: "fetch key"),
                         self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
@@ -35,19 +30,18 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
             default:
-                return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
-                
-                
-                
+                return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 2 Ambassador")]
+
             }
         }()
         super.viewDidLoad()
+        
+        
+    }
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
+        super.checkNewChapter(chapterName: Constants.AMBASSADOR_ARC,order: 7)
         
     }
 
