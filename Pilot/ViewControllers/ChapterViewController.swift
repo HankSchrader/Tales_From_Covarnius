@@ -9,12 +9,40 @@
 import UIKit
 
 class ChapterViewController: UIViewController {
-    
+    let textView = UITextView()
     override func viewDidLoad() {
         super.viewDidLoad()
         goToChapterSelectAction()
+        textView.setContentOffset(CGPoint.zero, animated: false)
+        self.textView.scrollRangeToVisible(NSMakeRange(0, 0))
+        self.textView.isScrollEnabled = false
         
         // Do any additional setup after loading the view.
+    }
+    
+    @IBOutlet weak var Chapter3_1: UITextView!
+    @IBOutlet weak var chapter2: UITextView!
+    @IBOutlet weak var chapter3: UITextView!
+    @IBOutlet weak var chapter4: UITextView!
+    @IBOutlet weak var chpater_5_1: UITextView!
+    
+    @IBOutlet weak var hapalStanceChapter: UITextView!
+    @IBOutlet weak var OnTheRanchChapter: UITextView!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.chapter2?.setContentOffset(CGPoint.zero, animated: false)
+        self.chapter2?.scrollRangeToVisible(NSMakeRange(0, 0))
+        self.chapter3?.setContentOffset(CGPoint.zero, animated: false)
+        self.chapter3?.scrollRangeToVisible(NSMakeRange(0, 0))
+        
+        self.Chapter3_1?.setContentOffset(CGPoint.zero, animated: false)
+        self.Chapter3_1?.scrollRangeToVisible(NSMakeRange(0, 0))
+        
+        self.OnTheRanchChapter?.setContentOffset(CGPoint.zero, animated: false)
+        self.OnTheRanchChapter?.scrollRangeToVisible(NSMakeRange(0, 0))
+        
+        self.hapalStanceChapter?.setContentOffset(CGPoint.zero, animated: false)
+        self.hapalStanceChapter?.scrollRangeToVisible(NSMakeRange(0, 0))
     }
 
     override func viewWillDisappear(_ animated: Bool) {

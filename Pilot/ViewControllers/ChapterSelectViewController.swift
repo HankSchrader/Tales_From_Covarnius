@@ -68,6 +68,10 @@ class ChapterSelectViewController: Chapter3ViewController {
             let vc = segue.destination as? Chapter5PageViewController
             vc?.segueID = segue.identifier!
             vc?.previousRID = self.restorationIdentifier!
+        } else if segue.destination is GoAsAmbassadorPageViewController {
+            let vc = segue.destination as? GoAsAmbassadorPageViewController
+            vc?.segueID = segue.identifier!
+            vc?.previousRID = self.restorationIdentifier
         }
         
 

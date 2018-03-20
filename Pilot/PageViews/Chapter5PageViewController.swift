@@ -13,7 +13,7 @@ class Chapter5PageViewController: GenericPageViewController {
    
     // Prints "The last letter of the alphabet"
     override func viewDidLoad() {
-        print(self.segueID)
+        
         let segue: String? = self.segueID
         self.orderedViewControllers =  {
             switch segue {

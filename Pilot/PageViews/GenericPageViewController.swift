@@ -15,10 +15,10 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
     var menuShowing = false
     let viewController = ViewController()
     var previousRID: String? = nil
-    
+
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     lazy var orderedViewControllers = [UIViewController]()
-
+    
     var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,12 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
             self.present(newChapterAlert, animated: true, completion: nil)
             
         }
+      
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
     }
     
     func configurePageControl() {

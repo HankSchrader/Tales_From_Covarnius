@@ -19,21 +19,63 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
             case "sneak into storeroom"?:
-                return [self.newVC(viewController: "ram ship"),
-                        self.newVC(viewController: "ram ship 2")]
+                return [self.newVC(viewController: "council chamber sneak"),
+                        self.newVC(viewController: "Chrono knows the layout")]
             case "borrow"?:
-                return [self.newVC(viewController: "fetch key"),
-                        self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
+                return [self.newVC(viewController: "break and enter?")]
+            case "break in"?:
+                // FILLER MUST CHANGE
+                return [self.newVC(viewController: "good growlics"),
+                        self.newVC(viewController: "snack or run")]
+            case "vicious growlics"?:
+                //FILLER MUST CHANGE
+                return [self.newVC(viewController: "They're Vicious. Run!"),
+                        self.newVC(viewController: "They're Vicious. Run! 2"),
+                        self.newVC(viewController: "council chamber sneak"),
+                        self.newVC(viewController: "Chrono knows the layout")]
+            case "snack time"?:
+                 //DONE
+                return [self.newVC(viewController: "what should they eat?"),]
+                
+            case "stinky meat"?:
+                return [self.newVC(viewController: "Phase One Complete"),
+                        self.newVC(viewController: "Chapter 6 3 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 4 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 5 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 6 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 7 Ambassador")]
+                
+            case "shady turn back"?:
+                 //FILLER MUST CHANGE
+                return [self.newVC(viewController: "council chamber sneak"),
+                        self.newVC(viewController: "Chrono knows the layout")]
+            case "no time for questions"?:
+                return [self.newVC(viewController: "do not ask")]
+            case "check window"?:
+                return [self.newVC(viewController: "check window"),
+                        self.newVC(viewController: "check door"),
+                        self.newVC(viewController: "Chapter 6 3 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 4 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 5 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 6 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 7 Ambassador") ]
+            case "check door"?:
+                return [self.newVC(viewController: "check door"),
+                        self.newVC(viewController: "Chapter 6 3 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 4 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 5 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 6 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 7 Ambassador")]
+            case "CCC"?:
+                return [self.newVC(viewController: "CCC explanation"),
+                        self.newVC(viewController: "do not ask")]
+
             default:
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
-
             }
+
+            
         }()
         super.viewDidLoad()
         
