@@ -21,24 +21,29 @@ class Chapter5PageViewController: GenericPageViewController {
                 return [self.newVC(viewController: "The Jig Is Up"),
                         self.newVC(viewController: "Chapter 5 1"),
                         self.newVC(viewController: "Chapter 5 1.5"),
+                        self.newVC(viewController: "Chapter 5 brefore2"),
                         self.newVC(viewController: "Chapter 5 2")]
             case "never give up"?:
                 return [
                     self.newVC(viewController: "never give up"),
                     self.newVC(viewController: "Chapter 5 3"),
                     self.newVC(viewController: "Chapter 5 4"),
+                    self.newVC(viewController: "Chapter 5 4.5"),
+                    self.newVC(viewController: "Chapter 5 before5"),
                     self.newVC(viewController: "Chapter 5 5")]
             
             case "we tried"?:
                 return [
                     self.newVC(viewController: "almost give up"),
                     self.newVC(viewController: "Chapter 5 6"),
+                    self.newVC(viewController: "Chapter 5 before7"),
                     self.newVC(viewController: "Chapter 5 7")
                     
                 ]
             case "great plan"?:
                 return [
                     self.newVC(viewController: "Chapter 5 6"),
+                    self.newVC(viewController: "Chapter 5 before7"),
                     self.newVC(viewController: "Chapter 5 7")
                     
                 ]
@@ -46,6 +51,7 @@ class Chapter5PageViewController: GenericPageViewController {
             default:
                 return [self.newVC(viewController: "Chapter 5 1"),
                         self.newVC(viewController: "Chapter 5 1.5"),
+                        self.newVC(viewController: "Chapter 5 brefore2"),
                 self.newVC(viewController: "Chapter 5 2")]
             }
         }()

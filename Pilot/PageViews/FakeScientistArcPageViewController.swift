@@ -14,12 +14,16 @@ class FakeScientistArcPageViewController: GenericPageViewController {
     override func viewDidLoad() {
         self.orderedViewControllers =  {
             if self.segueID == "I'm A Scientist" || self.segueID == "Fake It Til You Make It"{
-                return [self.newVC(viewController: "I'm Not A Scientist")]
+                
+                return [self.newVC(viewController: "I'm Not A Scientist 0.5"),
+                    self.newVC(viewController: "I'm Not A Scientist")]
             } else if self.segueID == "Fake Scientist" {
-                return [self.newVC(viewController: "The Jig Is Up")]
+                return [self.newVC(viewController: "The Jig Is Up"),
+                        self.newVC(viewController: "The Jig Is Up 1.5") ]
             } else
             {
-                return [self.newVC(viewController: "You Goofed")]
+                return [self.newVC(viewController: "You Goofed 0.5"),
+                    self.newVC(viewController: "You Goofed")]
             }
         }()
         super.viewDidLoad()

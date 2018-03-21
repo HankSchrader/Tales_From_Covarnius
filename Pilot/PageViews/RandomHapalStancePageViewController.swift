@@ -14,10 +14,12 @@ class RandomHapalStancePageViewController: GenericPageViewController {
         self.orderedViewControllers =  {
             if self.segueID == "Don't Trust" {
                 return [self.newVC(viewController: "No Trust_1"),
+                        self.newVC(viewController: "No Trust_1.5"),
                         self.newVC(viewController: "Hapal Stance 1"),
                         self.newVC(viewController: "Hapal Stance 2")]
             } else {
                 return [self.newVC(viewController: "Trust_1"),
+                        self.newVC(viewController: "Trust_1.5"),
                         self.newVC(viewController: "Hapal Stance 1"),
                         self.newVC(viewController: "Hapal Stance 2")
                         ]

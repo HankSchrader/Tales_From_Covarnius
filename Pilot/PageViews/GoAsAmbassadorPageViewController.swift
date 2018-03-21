@@ -17,12 +17,15 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                 
             case "ambassador arc"?:
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 1.5 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
             case "sneak into storeroom"?:
                 return [self.newVC(viewController: "council chamber sneak"),
+                        self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
             case "borrow"?:
-                return [self.newVC(viewController: "break and enter?")]
+                return [self.newVC(viewController: "break and enter 0.5?"),
+                        self.newVC(viewController: "break and enter?")]
             case "break in"?:
                 // FILLER MUST CHANGE
                 return [self.newVC(viewController: "good growlics"),
@@ -32,13 +35,18 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                 return [self.newVC(viewController: "They're Vicious. Run!"),
                         self.newVC(viewController: "They're Vicious. Run! 2"),
                         self.newVC(viewController: "council chamber sneak"),
+                        self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
             case "snack time"?:
                  //DONE
-                return [self.newVC(viewController: "what should they eat?"),]
+                return [
+                    self.newVC(viewController: "what should they eat? 0.5"),
+                    self.newVC(viewController: "what should they eat?")]
                 
             case "stinky meat"?:
-                return [self.newVC(viewController: "Phase One Complete"),
+                return [
+                        self.newVC(viewController: "Phase One Complete 0.5"),
+                        self.newVC(viewController: "Phase One Complete"),
                         self.newVC(viewController: "Chapter 6 3 Ambassador"),
                         self.newVC(viewController: "Chapter 6 4 Ambassador"),
                         self.newVC(viewController: "Chapter 6 5 Ambassador"),
@@ -46,8 +54,8 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chapter 6 7 Ambassador")]
                 
             case "shady turn back"?:
-                 //FILLER MUST CHANGE
                 return [self.newVC(viewController: "council chamber sneak"),
+                        self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
             case "no time for questions"?:
                 return [self.newVC(viewController: "do not ask")]
@@ -72,6 +80,7 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
 
             default:
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 1.5 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
             }
 
