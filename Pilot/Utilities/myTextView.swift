@@ -9,8 +9,10 @@
 import UIKit
 
 class myTextView: UITextView {
-    override func scrollRangeToVisible(_ range: NSRange) {
-    self.scrollRangeToVisible(NSRange("0")!)
-    self.setContentOffset(CGPoint.zero, animated: false)    }
+    @IBInspectable var borderColor: UIColor? {
+        didSet {
+            layer.backgroundColor = UIColor.green as! CGColor
+        }
+    }
 }
 

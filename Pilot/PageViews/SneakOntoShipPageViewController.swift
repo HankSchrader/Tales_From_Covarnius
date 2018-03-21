@@ -16,26 +16,43 @@ class SneakOntoShipPageViewController: GenericPageViewController {
 
             case "sneak arc"?:
                     return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
+                            self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),
                             self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
                             self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
+                            self.newVC(viewController: "Chapter 6 3.5 Sneak Arc"),
                             self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
+                            self.newVC(viewController: "Chapter 6 4.5 Sneak Arc"),
                             self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
                             self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
+                            self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
                             self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
             case "ram ship"?:
                 //Needs completing
                 return [self.newVC(viewController: "ram ship"),
-                        self.newVC(viewController: "ram ship 2")]
+                        self.newVC(viewController: "ram ship 2"),
+                        self.newVC(viewController: "ram ship 2.5")]
             case "fetch key"?:
                 //Needs Completing
-                return [self.newVC(viewController: "fetch key"),]
+                return [self.newVC(viewController: "fetch key"),
+                        self.newVC(viewController: "fetch key 2")]
+            case "not without Luna"?:
+                return [self.newVC(viewController: "not without Luna"),
+                        self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
+                        self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
+                        self.newVC(viewController: "Chapter 6 7 Sneak Arc")
+                
+                ]
             default:
                 return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
+                        self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
+                        self.newVC(viewController: "Chapter 6 3.5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
+                        self.newVC(viewController: "Chapter 6 4.5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
+                        self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
   
             }

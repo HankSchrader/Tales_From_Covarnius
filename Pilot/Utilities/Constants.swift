@@ -24,6 +24,7 @@ struct Constants {
     static let SNEAK_ONTO_SHIP = "Where's Your Boarding Ticket?"
     static let AMBASSADOR_ARC = "Diplomatic Immunity"
     static let THE_TWO_DIPLOMATS = "The Two Diplomats"
+    static let RAID_ON_COVARNIUS =  "Raid On Covarnius"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
