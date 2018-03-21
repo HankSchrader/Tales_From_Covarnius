@@ -33,6 +33,7 @@ class Chapter4PageViewController: GenericPageViewController {
             }
             else {
                 return [self.newVC(viewController: "katonian_1"),
+                        self.newVC(viewController: "katonian_1.5"),
                         self.newVC(viewController: "katonian_2"),
                         self.newVC(viewController: "katonian_2.5"),
                         self.newVC(viewController: "katonian_3")]

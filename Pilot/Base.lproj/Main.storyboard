@@ -397,16 +397,9 @@ You tell the alien that you won’t go with him. “How do I know you won’t ju
 
 The alien stares at you as if you are completely crazy. 
 
-“Why on Covarnius would I do a thing like that?” The alien asks with confusion and disgust. “Do you have any idea how messy that would be?” 
-
-You put your hands on your hip and gaze at him suspiciously, hoping to find a sign that he’s not being entirely truthful.
-
-“Then why do I need to go with you?” You question him. A sound starts to emanate from the spacecraft a few yards away. It sounds like a cross between a wind chime and a howling dog. 
-
-The sound clearly distresses the alien who looks back at his ship with impatience. “Covarnius—my home planet—is in trouble. Hurry the ship is ready to take off! And you’re the only person in the universe who can help.” 
-</mutableString>
+“Why on Covarnius would I do a thing like that?” The alien asks with confusion and disgust. “Do you have any idea how messy that would be?” </mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -425,6 +418,88 @@ The sound clearly distresses the alien who looks back at his ship with impatienc
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUP-yO-aR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2246" y="2074"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="pjK-Xg-8hy">
+            <objects>
+                <viewController storyboardIdentifier="chap3_0.5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DuD-Cs-cN9" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ety-ua-JaP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivO-R4-Vri">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="xtH-KF-mLj"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">You put your hands on your hip and gaze at him suspiciously, hoping to find a sign that he’s not being entirely truthful.
+
+“Then why do I need to go with you?” You question him. A sound starts to emanate from the spacecraft a few yards away. It sounds like a cross between a wind chime and a howling dog. 
+
+The sound clearly distresses the alien who looks back at his ship with impatience. “Covarnius—my home planet—is in trouble. Hurry the ship is ready to take off! And you’re the only person in the universe who can help."</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ivO-R4-Vri" firstAttribute="leading" secondItem="JL0-YR-iie" secondAttribute="leading" constant="25" id="Ajf-AI-DFa"/>
+                            <constraint firstItem="ivO-R4-Vri" firstAttribute="top" secondItem="JL0-YR-iie" secondAttribute="top" constant="50" id="pCx-YC-Iel"/>
+                            <constraint firstItem="JL0-YR-iie" firstAttribute="trailing" secondItem="ivO-R4-Vri" secondAttribute="trailing" constant="25" id="pzH-e8-pSG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JL0-YR-iie"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TtQ-5p-lK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="2785"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="ymb-Cv-OVx">
@@ -496,16 +571,9 @@ You stare definitely at the alien and say, “If I’m going back to Covarnius w
                                     <fragment>
                                         <mutableString key="content">“My name is Chrono and as I have said, my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
 
-“And what does any of this have to do with me?” You question skeptically. You watch out the window as the spacecraft ascends upwards leaving the Earth behind. The houses below quickly become tiny dots. This is becoming too real.
-
-“Your groundbreaking research,” Chrono starts as he continues flipping switches and dials on the control panel. “It’s absolutely brilliant. You are the only one who can save Covarnius now.”
-
-Leaning back in your seat you mull over what Chrono just told you. Your research for the recent science fair had definitely been A+ material, but you didn’t see how it could save an alien planet. 
-
-And where is Covarnius located anyway? If it was close to Earth, wouldn’t we know of it existence? And if it was far… You seem to recall your science teacher informing your class that it would take thousands of years just to travel one light year. 
-</mutableString>
+“And what does any of this have to do with me?” You question skeptically. You watch out the window as the spacecraft ascends upwards leaving the Earth behind. The houses below quickly become tiny dots. This is becoming too real.</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -528,6 +596,89 @@ And where is Covarnius located anyway? If it was close to Earth, wouldn’t we k
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6M-8U-GKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3641" y="2074"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="anh-8v-uuj">
+            <objects>
+                <viewController storyboardIdentifier="chap3_2.5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SYr-BO-6Y9" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hHk-tK-ecq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nV-H6-pTP">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="9uk-5N-uXc"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">“Your groundbreaking research,” Chrono starts as he continues flipping switches and dials on the control panel. “It’s absolutely brilliant. You are the only one who can save Covarnius now.”
+
+Leaning back in your seat you mull over what Chrono just told you. Your research for the recent science fair had definitely been A+ material, but you didn’t see how it could save an alien planet. 
+
+And where is Covarnius located anyway? If it was close to Earth, wouldn’t we know of it existence? And if it was far… You seem to recall your science teacher informing your class that it would take thousands of years just to travel one light year. 
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SLZ-4F-4SN" firstAttribute="trailing" secondItem="8nV-H6-pTP" secondAttribute="trailing" constant="25" id="8Rn-v8-nLw"/>
+                            <constraint firstItem="8nV-H6-pTP" firstAttribute="top" secondItem="SLZ-4F-4SN" secondAttribute="top" constant="50" id="tJs-p3-mV2"/>
+                            <constraint firstItem="8nV-H6-pTP" firstAttribute="leading" secondItem="SLZ-4F-4SN" secondAttribute="leading" constant="25" id="u0W-vv-pN4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SLZ-4F-4SN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xy9-GJ-i2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3641" y="2785"/>
         </scene>
         <!--Chapter3 View Controller-->
         <scene sceneID="MFT-bE-Bpi">
@@ -11878,6 +12029,89 @@ Cg
             <point key="canvasLocation" x="7374" y="3511"/>
         </scene>
         <!--Chapter View Controller-->
+        <scene sceneID="ADN-f2-uRW">
+            <objects>
+                <viewController storyboardIdentifier="katonian_1.5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nie-hL-pIf" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="asq-Bh-ozK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pz1-FU-qSq">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="AoZ-ly-sSj"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">
+The monitors on the console display a message in bright red letters. “Experiencing Technical difficulties.” 
+
+You and Chrono exchange a glance, unsure what to expect next. 
+
+The message on the monitor changes and you read it aloud, “Making emergency landing on next habitable planet.” </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pz1-FU-qSq" firstAttribute="top" secondItem="Cvt-UB-pwY" secondAttribute="top" constant="50" id="DNN-Ux-I4s"/>
+                            <constraint firstItem="Cvt-UB-pwY" firstAttribute="trailing" secondItem="pz1-FU-qSq" secondAttribute="trailing" constant="25" id="KFm-Rb-OiX"/>
+                            <constraint firstItem="pz1-FU-qSq" firstAttribute="leading" secondItem="Cvt-UB-pwY" secondAttribute="leading" constant="25" id="WLb-Km-jH0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cvt-UB-pwY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et5-Gd-WFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5933" y="2071"/>
+        </scene>
+        <!--Chapter View Controller-->
         <scene sceneID="ofW-YK-b6J">
             <objects>
                 <viewController storyboardIdentifier="katonian_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MEq-Dm-4Mg" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
@@ -11903,16 +12137,9 @@ Cg
 
 “No, don’t do that!” Chrono shouts with horror. “This is a very delicate piece of machinery.”
 
-The lights in the ship begin to flicker on and off. A static sound emanates through the air. Perhaps you shouldn’t have messed with the controls after all. 
-
-The monitors on the console display a message in bright red letters. “Experiencing Technical difficulties.” 
-
-You and Chrono exchange a glance, unsure what to expect next. 
-
-The message on the monitor changes and you read it aloud, “Making emergency landing on next habitable planet.” 
-</mutableString>
+The lights in the ship begin to flicker on and off. A static sound emanates through the air. Perhaps you shouldn’t have messed with the controls after all. </mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -13164,16 +13391,16 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The wind whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
+                                        <mutableString key="content">Bright red and yellow leaves—the hallmark of autumn–crunch underneath your sneakers. You walk your dog Luna down a neighborhood street, without a care in the world. The wind whips against your face and the streets are eerily empty. As much as you enjoy walking Luna, you’re still looking forward to getting back home, making a snack and watching T.V. 
 
 The only sounds to be heard are the rustling of leaves on the concrete and Luna’s overly enthusiastic sniffing.
 
 Just as you are about to circle back home, a strange shape emerges from the sky. It’s large and shaped like a saucer. Bulbous multi-colored lights blink rapidly all over the aircraft, making it look like a strangely shaped Christmas tree. Your first instinct is to run away, but you also want to see what the strange object is. 
 
 Do you:
-</string>
+</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="15" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -13270,7 +13497,7 @@ Do you:
         <segue reference="wuX-KR-O0k"/>
         <segue reference="dm8-JS-0k1"/>
         <segue reference="IZ4-ah-DFk"/>
-        <segue reference="UT2-He-dFh"/>
+        <segue reference="KYf-bL-oLj"/>
         <segue reference="cSf-RQ-ef6"/>
         <segue reference="xmK-hB-tW6"/>
     </inferredMetricsTieBreakers>
