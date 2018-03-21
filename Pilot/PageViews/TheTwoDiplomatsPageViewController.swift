@@ -9,42 +9,50 @@
 import UIKit
 
 class TheTwoDiplomatsPageViewController: GenericPageViewController {
-
+    var keyFlag: Bool = false
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     override func viewDidLoad() {
+        if self.segueID == "take key" {
+            self.keyFlag = true
+        } else {
+            self.keyFlag = false
+        }
         let segue: String? = self.segueID
+        
         self.orderedViewControllers =  {
             switch segue {
                 
             case "sensitive mission"?:
-                return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
+                return [self.newVC(viewController: "two diplomats 1"),
+                        self.newVC(viewController: "two diplomats 2")]
             case "don't mess with him"?:
                 //Needs completing
-                return [self.newVC(viewController: "ram ship"),
-                        self.newVC(viewController: "ram ship 2"),
-                        self.newVC(viewController: "ram ship 2.5")]
+                return [self.newVC(viewController: "two diplomats 1"),
+                        self.newVC(viewController: "two diplomats 2")]
+            case "take key"?:
+                return [self.newVC(viewController: "took the key"),
+                        self.newVC(viewController: "two diplomats 3"),
+                        self.newVC(viewController: "two diplomats 4")]
+            case "too risky"?:
+                return [self.newVC(viewController: "no key taken"),
+                        self.newVC(viewController: "two diplomats 3"),
+                        self.newVC(viewController: "two diplomats 4")]
+            case "anti-gravity"?:
+                return [self.newVC(viewController: "two diplomats 6"),
+                        self.newVC(viewController: "two diplomats 7"),
+                        self.newVC(viewController: "two diplomats 8"),
+                        self.newVC(viewController: "two diplomats 9"),
+                        self.newVC(viewController: "two diplomats 10"),
+                        self.newVC(viewController: "two diplomats 11"),
+                        self.newVC(viewController: "two diplomats 12"),
+                        self.newVC(viewController: "two diplomats 13"),
+                        self.newVC(viewController: "two diplomats 14")]
+
+                
+                
             default:
-                return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
+                // TODO:
+                return [self.newVC(viewController: "smart move")]
                 
             }
         }()
