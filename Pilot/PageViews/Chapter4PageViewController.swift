@@ -19,6 +19,7 @@ class Chapter4PageViewController: GenericPageViewController {
                         self.newVC(viewController: "chap4_4")]
             } else if self.segueID == "You Didn't Help The Hapal" || segueID == "You Let The Hapal Down..." {
                 return [self.newVC(viewController: "Let Hapal Down"),
+                        self.newVC(viewController: "Let Hapal Down 2"),
                         self.newVC(viewController: "chap4_3"),
                         self.newVC(viewController: "chap4_3"),
                         self.newVC(viewController: "chap4_4")]
@@ -33,6 +34,7 @@ class Chapter4PageViewController: GenericPageViewController {
             else {
                 return [self.newVC(viewController: "katonian_1"),
                         self.newVC(viewController: "katonian_2"),
+                        self.newVC(viewController: "katonian_2.5"),
                         self.newVC(viewController: "katonian_3")]
             }
         }()

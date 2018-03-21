@@ -20,6 +20,7 @@ class Chapter5PageViewController: GenericPageViewController {
             case "Fake Scientist"?:
                 return [self.newVC(viewController: "The Jig Is Up"),
                         self.newVC(viewController: "Chapter 5 1"),
+                        self.newVC(viewController: "Chapter 5 1.5"),
                         self.newVC(viewController: "Chapter 5 2")]
             case "never give up"?:
                 return [
@@ -44,6 +45,7 @@ class Chapter5PageViewController: GenericPageViewController {
                 
             default:
                 return [self.newVC(viewController: "Chapter 5 1"),
+                        self.newVC(viewController: "Chapter 5 1.5"),
                 self.newVC(viewController: "Chapter 5 2")]
             }
         }()

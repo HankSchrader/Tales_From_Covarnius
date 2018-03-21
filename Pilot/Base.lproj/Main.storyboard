@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
-                                <rect key="frame" x="108" y="126" width="159" height="29"/>
+                                <rect key="frame" x="108" y="82" width="159" height="29"/>
                                 <attributedString key="attributedText">
                                     <fragment content="COVARNIUS">
                                         <attributes>
@@ -33,7 +33,7 @@
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
-                                <rect key="frame" x="127" y="97" width="121" height="20"/>
+                                <rect key="frame" x="127" y="53" width="121" height="20"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TALES FROM">
                                         <attributes>
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0w-Wd-rTf">
-                                <rect key="frame" x="128" y="89" width="119" height="30"/>
+                                <rect key="frame" x="128" y="45" width="119" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rRd-UY-2WN"/>
                                 </constraints>
@@ -95,7 +95,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyU-Eh-OGq">
-                                <rect key="frame" x="128" y="144" width="118" height="30"/>
+                                <rect key="frame" x="128" y="100" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mZv-aI-Oa9"/>
                                 </constraints>
@@ -104,7 +104,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Illustrated By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APg-1F-19y">
-                                <rect key="frame" x="128" y="214" width="118" height="30"/>
+                                <rect key="frame" x="128" y="170" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="h9F-bl-64d"/>
                                 </constraints>
@@ -113,7 +113,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sara Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-uk-f3w">
-                                <rect key="frame" x="128" y="269" width="118" height="30"/>
+                                <rect key="frame" x="128" y="225" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="G4b-ki-LK2"/>
                                 </constraints>
@@ -122,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-H5-pEs">
-                                <rect key="frame" x="128" y="339" width="118" height="30"/>
+                                <rect key="frame" x="128" y="295" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ffD-NZ-RDs"/>
                                 </constraints>
@@ -131,7 +131,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erik Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6O-gb-2F3">
-                                <rect key="frame" x="128" y="394" width="118" height="30"/>
+                                <rect key="frame" x="128" y="350" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Nka-uQ-jjS"/>
                                 </constraints>
@@ -140,7 +140,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbx-d5-1m9">
-                                <rect key="frame" x="128" y="464" width="119" height="30"/>
+                                <rect key="frame" x="128" y="420" width="119" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mme-c2-n3W"/>
                                 </constraints>
@@ -149,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erik Mikac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKJ-BP-DHR">
-                                <rect key="frame" x="128" y="519" width="118" height="30"/>
+                                <rect key="frame" x="128" y="475" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YRf-nF-qmZ"/>
                                 </constraints>
@@ -406,7 +406,7 @@ You put your hands on your hip and gaze at him suspiciously, hoping to find a si
 The sound clearly distresses the alien who looks back at his ship with impatience. “Covarnius—my home planet—is in trouble. Hurry the ship is ready to take off! And you’re the only person in the universe who can help.” 
 </mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -455,7 +455,7 @@ Taking a quick peek at your surroundings , you notice that Switches, dials and k
 You stare definitely at the alien and say, “If I’m going back to Covarnius with you, at least tell me your name first,” 
 </mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -470,6 +470,9 @@ You stare definitely at the alien and say, “If I’m going back to Covarnius w
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CnT-e8-Nlp"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter3page2" destination="9PT-Je-Ld6" id="NWZ-4k-ReW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un0-Eo-bBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -502,7 +505,7 @@ Leaning back in your seat you mull over what Chrono just told you. Your research
 And where is Covarnius located anyway? If it was close to Earth, wouldn’t we know of it existence? And if it was far… You seem to recall your science teacher informing your class that it would take thousands of years just to travel one light year. 
 </mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -650,7 +653,7 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Chrono grins at you, brimming with hope. A weight appears to have been lifted off his shoulders.
+                                        <mutableString key="content">Chrono grins at you, brimming with hope. A weight appears to have been lifted off his shoulders.
 
 “You’ll help me? That’s great! So if you have no further questions, I will engage hypersleep now.” Chrono says glancing in your direction. 
 
@@ -663,9 +666,9 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
 Chrono looks down dejectedly. “The ship has been pre-programmed to take us back to Covarnius. I’m not allowed to pilot the ships by myself anymore.” Manual piloting must be a privilege where he is from, you think to yourself.
 
 “Why not?” You ask Chrono. “Did you crash one or something? Just how superior are these aliens anyhow? You begin to wonder. After all, they’re relying on you to save their planet. 
-</string>
+</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -680,6 +683,9 @@ Chrono looks down dejectedly. “The ship has been pre-programmed to take us bac
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BlU-9L-Ni6"/>
                     </view>
+                    <connections>
+                        <outlet property="EarthsGreatestScientist" destination="Oio-qT-V0Y" id="PGo-gu-qGf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jda-xk-33s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -701,7 +707,7 @@ Chrono looks down dejectedly. “The ship has been pre-programmed to take us bac
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“There may have been a slight...incident,” Chrono says shifting in his seat, eyes cast downward. Suddenly, his mood shifts. He snaps his head up and looks at you brightly. “But once I get Earth’s greatest scientist back to Covarnius, they’ll all see I’m smarter than they think. Now if you’re ready, I’m going to engage hypersleep.” 
+                                        <mutableString key="content">“There may have been a slight...incident,” Chrono says shifting in his seat, eyes cast downward. Suddenly, his mood shifts. He snaps his head up and looks at you brightly. “But once I get Earth’s greatest scientist back to Covarnius, they’ll all see I’m smarter than they think. Now if you’re ready, I’m going to engage hypersleep.” 
 
 Earth’s greatest scientist? I sure hope he’s not talking about me, you think worriedly. 
 
@@ -710,9 +716,9 @@ Chrono leads you to what appears to be one of two large comfy sofas at the back 
 “These couches impart a sleeping agent into your skin upon contact,” Chrono explains. “That’s why you’re getting so tired. Do me a favor and count to ten.”
 
 “Sure,” you reply groggily. “One...two…”
-</string>
+</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -728,6 +734,9 @@ Chrono leads you to what appears to be one of two large comfy sofas at the back 
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SQ0-ML-SUv"/>
                     </view>
+                    <connections>
+                        <outlet property="EarthsGreatestScientist2" destination="h1x-ww-7qE" id="heH-vw-hBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnO-qY-PPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -749,7 +758,7 @@ Chrono leads you to what appears to be one of two large comfy sofas at the back 
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">The next thing you know, you wake up with a loud yawn. A strange dream occupied your mind while you slept, something about an alien and a spaceship… You glance frantically at your surroundings and it all starts coming back.
+                                        <mutableString key="content">The next thing you know, you wake up with a loud yawn. A strange dream occupied your mind while you slept, something about an alien and a spaceship… You glance frantically at your surroundings and it all starts coming back.
 
 Chrono, your alien companion, is waking up as well. “Ah, we’re finally here!” He announces, stretching out his long tentacle arms. 
 
@@ -758,9 +767,9 @@ The ship quietly descends on a planet that looks somewhat similar to Earth. More
 “Bonjour!” One of the aliens bellows as he steps closer to the ship. He seems to be the one in charge. Or at least, that’s what you assume based on the large crown worn atop his head. 
 
 “You’re going to need to adjust your translators,” Chrono says with a yawn. “This Frenchman doesn’t speak French.” 
-</string>
+</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="14" name="Baskerville"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -776,6 +785,9 @@ The ship quietly descends on a planet that looks somewhat similar to Earth. More
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sVc-91-USm"/>
                     </view>
+                    <connections>
+                        <outlet property="earthsGreatestScientist3" destination="WjE-FG-Mdj" id="V1D-Xf-w4T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDm-Qs-bGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -790,10 +802,10 @@ The ship quietly descends on a planet that looks somewhat similar to Earth. More
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eji-h6-T2T">
-                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <rect key="frame" x="25" y="70" width="325" height="450"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="K40-xC-BEU"/>
+                                    <constraint firstAttribute="height" constant="450" id="pRU-VA-5xV"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -801,7 +813,7 @@ The ship quietly descends on a planet that looks somewhat similar to Earth. More
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -816,7 +828,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -830,7 +842,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -845,7 +857,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -859,7 +871,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -874,7 +886,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -888,7 +900,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -903,7 +915,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -917,7 +929,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -932,7 +944,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -946,7 +958,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -982,15 +994,18 @@ Cg
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kDW-nN-FRe" firstAttribute="top" secondItem="sO3-IX-7XY" secondAttribute="bottom" constant="8" id="5TE-cm-eK1"/>
-                            <constraint firstItem="eji-h6-T2T" firstAttribute="leading" secondItem="ymu-0g-P1w" secondAttribute="leading" constant="25" id="EE6-aO-hcn"/>
                             <constraint firstAttribute="trailing" secondItem="kDW-nN-FRe" secondAttribute="trailing" constant="16" id="G2V-mk-LFb"/>
-                            <constraint firstItem="ymu-0g-P1w" firstAttribute="trailing" secondItem="eji-h6-T2T" secondAttribute="trailing" constant="25" id="aiN-A4-h3h"/>
-                            <constraint firstItem="eji-h6-T2T" firstAttribute="top" secondItem="ymu-0g-P1w" secondAttribute="top" constant="50" id="bqp-Iv-vMm"/>
+                            <constraint firstItem="eji-h6-T2T" firstAttribute="leading" secondItem="ymu-0g-P1w" secondAttribute="leading" constant="25" id="eJE-WD-6SR"/>
                             <constraint firstAttribute="trailing" secondItem="sO3-IX-7XY" secondAttribute="trailing" constant="16" id="f1d-Og-g23"/>
                             <constraint firstItem="ymu-0g-P1w" firstAttribute="bottom" secondItem="kDW-nN-FRe" secondAttribute="bottom" constant="60" id="lNf-X8-Ez5"/>
+                            <constraint firstItem="ymu-0g-P1w" firstAttribute="trailing" secondItem="eji-h6-T2T" secondAttribute="trailing" constant="25" id="wGU-dP-fPC"/>
+                            <constraint firstItem="eji-h6-T2T" firstAttribute="top" secondItem="ymu-0g-P1w" secondAttribute="top" constant="50" id="zSj-1L-hfz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ymu-0g-P1w"/>
                     </view>
+                    <connections>
+                        <outlet property="someSortOfMistake" destination="eji-h6-T2T" id="DaD-RX-AX8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrM-PH-rdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1032,7 +1047,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -1047,7 +1062,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -1062,7 +1077,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -1077,7 +1092,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -1091,7 +1106,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -1106,81 +1121,9 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">You think about Kayo and Kina and how helpful they had been while you were stranded on their planet. Maybe you should have helped with the baby hapal after all? A feeling of sadness wells up in you, the problem seemed a lot more serious than a stubbed Hapal toe.
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">No use thinking about it now, at least you can try and help the Covarnians. 
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">You wonder what kind of issue the Covarnians are having as Chrono engages hypersleep. 
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1203,6 +1146,105 @@ Cg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNn-QI-9ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2246" y="5037"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="IUa-bL-umg">
+            <objects>
+                <viewController storyboardIdentifier="Let Hapal Down 2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="81c-Uu-mHe" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e2L-X0-mx1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuq-iB-lCn">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Xvu-1Y-VHf"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">You think about Kayo and Kina and how helpful they had been while you were stranded on their planet. Maybe you should have helped with the baby hapal after all? A feeling of sadness wells up in you, the problem seemed a lot more serious than a stubbed Hapal toe.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">No use thinking about it now, at least you can try and help the Covarnians. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">You wonder what kind of issue the Covarnians are having as Chrono engages hypersleep. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nuq-iB-lCn" firstAttribute="leading" secondItem="0ak-uo-SmY" secondAttribute="leading" constant="25" id="9I7-eO-dN4"/>
+                            <constraint firstItem="0ak-uo-SmY" firstAttribute="trailing" secondItem="nuq-iB-lCn" secondAttribute="trailing" constant="25" id="gtl-mq-DbS"/>
+                            <constraint firstItem="nuq-iB-lCn" firstAttribute="top" secondItem="0ak-uo-SmY" secondAttribute="top" constant="50" id="ydL-LL-3lc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ak-uo-SmY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLV-Pn-aOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926" y="5036"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Pxj-e0-K4c">
@@ -1674,6 +1716,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VcL-a2-1vp"/>
                     </view>
+                    <connections>
+                        <outlet property="fakeScientistVC" destination="hqe-ML-nZx" id="PCv-8v-Cox"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2W-ZX-pZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -9664,15 +9709,16 @@ Cg
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="sej-8d-Fft"/>
+                                    <constraint firstAttribute="height" constant="400" id="SqQ-hz-wFc"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">A stunned expression on the king’s face quickly turns to one of rage.
-</string>
+                                        <mutableString key="content">A stunned expression on the king’s face quickly turns to one of rage.
+“What do you mean you’re not a scientist?” Zanarq shouts in his deep booming voice. The other aliens in the surrounding area all grow quiet and grave looks of concern wash over their faces.
+</mutableString>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -9687,36 +9733,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">“What do you mean you’re not a scientist?” Zanarq shouts in his deep booming voice. The other aliens in the surrounding area all grow quiet and grave looks of concern wash over their faces.
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -9730,7 +9747,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -9745,7 +9762,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -9755,11 +9772,11 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“Chrono, what is the meaning of this?” Zanarq continues. Apparently, his wrath has turned to Chrono. “You mean to tell me that you messed up again? That you brought back the WRONG earthling?”
+                                        <string key="content">“Chrono, what is the meaning of this?” Zanarq continues. “You mean to tell me that you messed up again? That you brought back the WRONG earthling?”
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -9774,7 +9791,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -9783,71 +9800,10 @@ Cg
                                             <real key="NSStrokeWidth" value="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">“I, I um…” Chrono stumbles over his words. Silent tension fills the room. This is hard to watch.
-</string>
+                                    <fragment content="“I, I um…” Chrono stumbles over his words. Silent tension fills the room. This is hard to watch.">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <mutableString key="content">“Enough,” Zanarq says quietly, cutting off Chrono. “This was your last chance and you failed. The invasion is imminent and there is absolutely nothing we can do about it.” A grave look crosses Zanarq’s face. “Take the earthling to the shipping chamber for the next flight back to Earth.” Zanarq storms away followed by his Covarnian entourage. They leave you and Chrono standing forlornly at the base of the spaceship that you had arrived on. 
-</mutableString>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">You look at Chrono, who looks more miserable than ever. “What did he mean by invasion?” you question.  
-“It’s the Sinisterians.” Chrono says pitifully. “They are on their way to Covarnius as we speak.”
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -9862,9 +9818,9 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EbW-V6-ghr" firstAttribute="leading" secondItem="frS-dG-cfw" secondAttribute="leading" constant="25" id="PnZ-Xn-Ah9"/>
-                            <constraint firstItem="frS-dG-cfw" firstAttribute="trailing" secondItem="EbW-V6-ghr" secondAttribute="trailing" constant="25" id="nlx-o7-uiu"/>
-                            <constraint firstItem="EbW-V6-ghr" firstAttribute="top" secondItem="frS-dG-cfw" secondAttribute="top" constant="50" id="tOn-nV-Nmp"/>
+                            <constraint firstItem="EbW-V6-ghr" firstAttribute="top" secondItem="frS-dG-cfw" secondAttribute="top" constant="50" id="4zr-Ns-kns"/>
+                            <constraint firstItem="EbW-V6-ghr" firstAttribute="leading" secondItem="frS-dG-cfw" secondAttribute="leading" constant="25" id="cN4-nS-Zbv"/>
+                            <constraint firstItem="frS-dG-cfw" firstAttribute="trailing" secondItem="EbW-V6-ghr" secondAttribute="trailing" constant="25" id="gH5-Uq-QyU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="frS-dG-cfw"/>
                     </view>
@@ -9874,7 +9830,81 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gx5-6m-xKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2246" y="7254"/>
+            <point key="canvasLocation" x="1511" y="7272"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="sFS-vP-00y">
+            <objects>
+                <viewController storyboardIdentifier="Chapter 5 1.5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H8k-gf-ejR" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avd-E3-u1E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQz-ah-9op">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="hGF-By-k6J"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">“Enough,” Zanarq says quietly, cutting off Chrono. “This was your last chance and you failed. The invasion is imminent and there is absolutely nothing we can do about it.” A grave look crosses Zanarq’s face. “Take the earthling to the shipping chamber for the next flight back to Earth.” Zanarq storms away followed by his Covarnian entourage. They leave you and Chrono standing forlornly at the base of the spaceship that you had arrived on. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">You look at Chrono, who looks more miserable than ever. “What did he mean by invasion?” you question.
+“It’s the Sinisterians.” Chrono says pitifully. “They are on their way to Covarnius as we speak.”
+You look at Chrono, who looks more miserable than ever. “What did he mean by invasion?” you question.
+“It’s the Sinisterians.” Chrono says pitifully. “They are on their way to Covarnius as we speak.”</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WQz-ah-9op" firstAttribute="leading" secondItem="feh-sp-jO2" secondAttribute="leading" constant="25" id="M0Y-Xm-PpW"/>
+                            <constraint firstItem="WQz-ah-9op" firstAttribute="top" secondItem="feh-sp-jO2" secondAttribute="top" constant="50" id="PgY-Xp-dyc"/>
+                            <constraint firstItem="feh-sp-jO2" firstAttribute="trailing" secondItem="WQz-ah-9op" secondAttribute="trailing" constant="25" id="hTh-D0-ybP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="feh-sp-jO2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJj-ny-bol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="7272"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="4g0-QW-KbG">
@@ -10308,6 +10338,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OVq-Fi-qHZ"/>
                     </view>
+                    <connections>
+                        <outlet property="whichFizz" destination="3Lz-Vq-evZ" id="3E0-iD-FNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJE-6i-E8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -12041,7 +12074,7 @@ Cg
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">This is just too much, too soon. The vastness of space is terrifying, and feelings of homesickness weigh heavily upon you.
+                                        <mutableString key="content">This is just too much, too soon. The vastness of space is terrifying, and feelings of homesickness weigh heavily upon you.
 
 “Take me back to earth!” you shout panicked at Chrono.
 
@@ -12058,9 +12091,9 @@ The monitors on the console display a message in bright red letters. “Experien
 You and Chrono exchange a glance, unsure what to expect next. 
 
 The message on the monitor changes and you read it aloud, “Making emergency landing on next habitable planet.” 
-</string>
+</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="12" name="Baskerville"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -12103,7 +12136,7 @@ The message on the monitor changes and you read it aloud, “Making emergency la
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12118,7 +12151,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12132,7 +12165,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12147,7 +12180,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12161,7 +12194,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12176,7 +12209,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12190,7 +12223,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12205,7 +12238,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12219,7 +12252,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -12234,81 +12267,9 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">“Don’t ask me,” Chrono says as he opens the ship and hops out. “You’re the one that made the ship malfunction.”
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">You hop out of the ship and Luna follows. “Yeah but it’s your ship. Don’t you know how to reset it or something?” 
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">“Markloo Gurble Gur?” you hear a friendly sounding voice say from behind you. 
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12327,10 +12288,112 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9kr-OV-mYF"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter4Page2" destination="qX4-BB-dfy" id="NNg-X9-bsI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZu-eH-FZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6700" y="2791"/>
+        </scene>
+        <!--Chapter View Controller-->
+        <scene sceneID="mea-DC-H8k">
+            <objects>
+                <viewController storyboardIdentifier="katonian_2.5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="50W-bA-9i4" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aGd-5I-abw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTc-6f-4Xb">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Cjk-ih-emo"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">“Don’t ask me,” Chrono says as he opens the ship and hops out. “You’re the one that made the ship malfunction.”
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">You hop out of the ship and Luna follows. “Yeah but it’s your ship. Don’t you know how to reset it or something?” 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">“Markloo Gurble Gur?” you hear a friendly sounding voice say from behind you. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tTc-6f-4Xb" firstAttribute="leading" secondItem="76p-CX-Kwj" secondAttribute="leading" constant="25" id="HXp-X3-AyQ"/>
+                            <constraint firstItem="tTc-6f-4Xb" firstAttribute="top" secondItem="76p-CX-Kwj" secondAttribute="top" constant="50" id="hSC-Ry-uSf"/>
+                            <constraint firstItem="76p-CX-Kwj" firstAttribute="trailing" secondItem="tTc-6f-4Xb" secondAttribute="trailing" constant="25" id="wmg-RY-rus"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="76p-CX-Kwj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYz-R3-Tfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7374" y="2791"/>
         </scene>
         <!--At The Ranch Decision Point View Controller-->
         <scene sceneID="Em8-Yz-Dcs">
@@ -12348,7 +12411,7 @@ Cg
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">The alien babbles in a language that you have never heard.
+                                        <mutableString key="content">The alien babbles in a language that you have never heard.
 
 “I’m sorry, but I don’t understand,” you say politely, shrugging your shoulders.
 
@@ -12359,9 +12422,9 @@ The alien looks at you, as if he is straining to hear. Then he nods his head vig
 You whip around and see a large muscular alien stands before you. In fact, he looks a bit like Chrono. Unlike Chrono though, this being has pale orange skin and an extra eye in the middle of his forehead. He seems friendly but you know that could all just be a ploy. Maybe he is the one who will dissect your brain!
 
 With a broken down ship, you don’t have many options. The way you see it, you can either trust the space cowboy and hope he is as friendly as he seems. Or, you can make a run for it. You mull over the situation for a moment and decide to:  
-</string>
+</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <font key="NSFont" size="13" name="Baskerville"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -12409,7 +12472,7 @@ With a broken down ship, you don’t have many options. The way you see it, you 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CO-bE-0e2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7390" y="2791"/>
+            <point key="canvasLocation" x="8047" y="2785"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="vEk-U9-lUJ">
@@ -13369,14 +13432,14 @@ Do you:
         <segue reference="5pV-va-Uw0"/>
         <segue reference="DP0-Ef-V4N"/>
         <segue reference="0kr-bm-6Zm"/>
-        <segue reference="EU2-bt-ued"/>
-        <segue reference="3tM-1C-F1f"/>
+        <segue reference="7dg-rL-hhO"/>
+        <segue reference="h2w-MD-tXx"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="wuX-KR-O0k"/>
         <segue reference="vUV-Ay-okI"/>
         <segue reference="IZ4-ah-DFk"/>
         <segue reference="UT2-He-dFh"/>
         <segue reference="cSf-RQ-ef6"/>
-        <segue reference="GtB-kj-bBf"/>
+        <segue reference="pW4-6f-NYF"/>
     </inferredMetricsTieBreakers>
 </document>

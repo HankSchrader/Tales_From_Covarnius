@@ -46,13 +46,11 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
             self.present(newChapterAlert, animated: true, completion: nil)
             
         }
+        ChapterViewController.chapterVC.EarthsGreatestScientist?.setContentOffset(CGPoint.zero, animated: false)
+    
       
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-    }
     
     func configurePageControl() {
         pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width, height: 50))

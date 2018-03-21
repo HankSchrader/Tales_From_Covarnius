@@ -9,46 +9,58 @@
 import UIKit
 
 class ChapterViewController: UIViewController {
-    let textView = UITextView()
+    static let chapterVC = ChapterViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
         goToChapterSelectAction()
-        textView.setContentOffset(CGPoint.zero, animated: false)
-        self.textView.scrollRangeToVisible(NSMakeRange(0, 0))
-        self.textView.isScrollEnabled = false
-        
+        self.chapter4?.setContentOffset(CGPoint.zero, animated: true)
         // Do any additional setup after loading the view.
     }
+
     
+    @IBOutlet weak var chapter4Page2: UITextView!
+    @IBOutlet weak var earthsGreatestScientist3: UITextView!
+    @IBOutlet weak var EarthsGreatestScientist2: UITextView!
+    @IBOutlet weak var EarthsGreatestScientist: UITextView!
     @IBOutlet weak var Chapter3_1: UITextView!
     @IBOutlet weak var chapter2: UITextView!
     @IBOutlet weak var chapter3: UITextView!
     @IBOutlet weak var chapter4: UITextView!
     @IBOutlet weak var chpater_5_1: UITextView!
+    @IBOutlet weak var chapter3page2: UITextView!
     
+    @IBOutlet weak var whichFizz: UITextView!
     @IBOutlet weak var hapalStanceChapter: UITextView!
     @IBOutlet weak var OnTheRanchChapter: UITextView!
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
         self.chapter2?.setContentOffset(CGPoint.zero, animated: false)
-        self.chapter2?.scrollRangeToVisible(NSMakeRange(0, 0))
         self.chapter3?.setContentOffset(CGPoint.zero, animated: false)
-        self.chapter3?.scrollRangeToVisible(NSMakeRange(0, 0))
-        
         self.Chapter3_1?.setContentOffset(CGPoint.zero, animated: false)
-        self.Chapter3_1?.scrollRangeToVisible(NSMakeRange(0, 0))
-        
+        self.chapter3page2?.setContentOffset(CGPoint.zero, animated: false)
+        self.chapter4?.setContentOffset(CGPoint.zero, animated: true)
         self.OnTheRanchChapter?.setContentOffset(CGPoint.zero, animated: false)
-        self.OnTheRanchChapter?.scrollRangeToVisible(NSMakeRange(0, 0))
-        
         self.hapalStanceChapter?.setContentOffset(CGPoint.zero, animated: false)
-        self.hapalStanceChapter?.scrollRangeToVisible(NSMakeRange(0, 0))
+        self.EarthsGreatestScientist?.setContentOffset(CGPoint.zero, animated: false)
+        self.EarthsGreatestScientist2?.setContentOffset(CGPoint.zero, animated: false)
+        self.earthsGreatestScientist3?.setContentOffset(CGPoint.zero, animated: false)
+        self.whichFizz?.setContentOffset(CGPoint.zero, animated: false)
+        self.chapter4Page2?.setContentOffset(CGPoint.zero, animated: false)
+      
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         
         self.navigationController?.isNavigationBarHidden = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.chapter4?.setContentOffset(CGPoint.zero, animated: true)
+        
+    }
+
     
     func goToChapterSelectAction() {
         let button = NavButton()
