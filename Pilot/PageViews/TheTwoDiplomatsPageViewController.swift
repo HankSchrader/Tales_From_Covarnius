@@ -47,6 +47,15 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
                         self.newVC(viewController: "two diplomats 12"),
                         self.newVC(viewController: "two diplomats 13"),
                         self.newVC(viewController: "two diplomats 14")]
+            case "clog"?:
+                return [self.newVC(viewController: "clog 1"),
+                        self.newVC(viewController: "clog 2"),
+                        self.newVC(viewController: "clog 3"),
+                        self.newVC(viewController: "clog 4")]
+            case "failed diversion"?:
+                return [self.newVC(viewController: "failed diversion 1"),
+                        self.newVC(viewController: "YOU LOSE")]
+                
 
                 
                 
