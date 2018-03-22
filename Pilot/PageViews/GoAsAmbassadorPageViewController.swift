@@ -33,7 +33,9 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
             case "vicious growlics"?:
                 //FILLER MUST CHANGE
                 return [self.newVC(viewController: "They're Vicious. Run!"),
+                        self.newVC(viewController: "They're Vicious. Run! 1.5"),
                         self.newVC(viewController: "They're Vicious. Run! 2"),
+                        self.newVC(viewController: "They're Vicious. Run! 2.5"),
                         self.newVC(viewController: "council chamber sneak"),
                         self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]

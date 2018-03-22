@@ -25,6 +25,7 @@ struct Constants {
     static let AMBASSADOR_ARC = "Diplomatic Immunity"
     static let THE_TWO_DIPLOMATS = "The Two Diplomats"
     static let RAID_ON_COVARNIUS =  "Raid On Covarnius"
+    static let RISE_AND_SHINE = "Rise and Shine!"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"

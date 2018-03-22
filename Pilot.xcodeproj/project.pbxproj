@@ -47,6 +47,7 @@
 		5398423220446A6D00CCD93E /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398423120446A6D00CCD93E /* IntroPageViewController.swift */; };
 		539842362044713D00CCD93E /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539842352044713D00CCD93E /* MusicHelper.swift */; };
 		53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53A973732044A65D00ED4D9D /* MainMenuSong.wav */; };
+		53ED4E6D2063FA42005A271E /* RiseAndShinePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED4E6C2063FA41005A271E /* RiseAndShinePageViewController.swift */; };
 		53F0959D2046D47E002880D1 /* Chapter2PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		5398423120446A6D00CCD93E /* IntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 		539842352044713D00CCD93E /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
 		53A973732044A65D00ED4D9D /* MainMenuSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMenuSong.wav; sourceTree = "<group>"; };
+		53ED4E6C2063FA41005A271E /* RiseAndShinePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiseAndShinePageViewController.swift; sourceTree = "<group>"; };
 		53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				53796AF9205B28F500C6B7F8 /* GenericPageViewController.swift */,
+				53796B08205B460200C6B7F8 /* Run_As_Fast_As_You_Can_PageViewController.swift */,
 				5398423120446A6D00CCD93E /* IntroPageViewController.swift */,
 				53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */,
 				538F51DA204723FA0051F1C1 /* Chapter3PageViewController.swift */,
@@ -167,6 +170,7 @@
 				5365E3DB20602104009E481F /* GoAsAmbassadorPageViewController.swift */,
 				5365E3DD20602120009E481F /* SneakOntoShipPageViewController.swift */,
 				5365E3DF20614227009E481F /* TheTwoDiplomatsPageViewController.swift */,
+				53ED4E6C2063FA41005A271E /* RiseAndShinePageViewController.swift */,
 				5365E3E320628DC8009E481F /* RaidOnCovarniusPageViewController.swift */,
 			);
 			path = PageViews;
@@ -177,7 +181,6 @@
 			children = (
 				5398422F204468AA00CCD93E /* MainMenuViewController.swift */,
 				5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */,
-				53796B08205B460200C6B7F8 /* Run_As_Fast_As_You_Can_PageViewController.swift */,
 				53796B0A205C4B6000C6B7F8 /* TurnBackChapterViewController.swift */,
 				53796B0C205C886C00C6B7F8 /* Chapter2ViewController.swift */,
 				5336A425205D9090002802C7 /* Chapter3ViewController.swift */,
@@ -424,6 +427,7 @@
 				5365E3D0205EBC12009E481F /* HapalStanceDecisionPointViewController.swift in Sources */,
 				5365E3D4205EFE07009E481F /* ScientistOrNotViewController.swift in Sources */,
 				5365E3CC205EB87D009E481F /* RandomHapalStancePageViewController.swift in Sources */,
+				53ED4E6D2063FA42005A271E /* RiseAndShinePageViewController.swift in Sources */,
 				5365E3C8205E8BA9009E481F /* BackAtTheRanchPageViewController.swift in Sources */,
 				5365E3DE20602120009E481F /* SneakOntoShipPageViewController.swift in Sources */,
 				5365E3CE205EB94D009E481F /* SpaceShipRepairDecisionPointViewController.swift in Sources */,

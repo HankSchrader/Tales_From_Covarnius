@@ -10,16 +10,8 @@ import UIKit
 
 class TheTwoDiplomatsPageViewController: GenericPageViewController {
     var keyFlag: Bool = false
-    //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
-    override func viewDidLoad() {
-        if self.segueID == "take key" {
-            self.keyFlag = true
-        } else {
-            self.keyFlag = false
-        }
-        let segue: String? = self.segueID
-        
-        self.orderedViewControllers =  {
+    lazy override var orderedViewControllers: [UIViewController] = {
+            let segue: String? = self.segueID
             switch segue {
                 
             case "sensitive mission"?:
@@ -52,21 +44,25 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
                         self.newVC(viewController: "clog 2"),
                         self.newVC(viewController: "clog 3"),
                         self.newVC(viewController: "clog 4")]
+                
+            case "go back to toilet"?:
+                return [self.newVC(viewController: "clog 1"),
+                        self.newVC(viewController: "clog 2"),
+                        self.newVC(viewController: "clog 3"),
+                        self.newVC(viewController: "clog 4")]
             case "failed diversion"?:
-                return [self.newVC(viewController: "failed diversion 1"),
-                        self.newVC(viewController: "YOU LOSE")]
-                
-
-                
-                
+                return [self.newVC(viewController: "failed distraction 1"),
+                        self.newVC(viewController: "failed distraction 2")]
             default:
+                print("Something may have gone wrong. Segue should never be nil. Segue: \(String(describing: segue))")
                 // TODO:
                 return [self.newVC(viewController: "smart move")]
                 
             }
         }()
+    //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
