@@ -35,5 +35,11 @@ struct Constants {
     static let STANDARD_FADE_TIME: TimeInterval! = 4
     static let MAIN_MUSIC_LOOP_COUNT = 3
     static let NEW_CHAPTER_LOOP_COUNT = 0
+    
+    
+    //Text Boxes
+    
+    
+    
 
 }

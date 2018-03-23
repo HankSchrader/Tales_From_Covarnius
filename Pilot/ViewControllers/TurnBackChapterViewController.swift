@@ -16,6 +16,7 @@ class TurnBackChapterViewController: ChapterViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var TurnBack: UITextView!
     @IBOutlet weak var turnBackButton: UIButton!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

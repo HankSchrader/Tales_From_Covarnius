@@ -21,7 +21,7 @@ class ChapterSelectViewController: Chapter3ViewController {
         
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
         do {
-        var chapters = try PersistanceService.context.fetch(fetchRequest)
+        let chapters = try PersistanceService.context.fetch(fetchRequest)
         
         self.chapters = chapters
 

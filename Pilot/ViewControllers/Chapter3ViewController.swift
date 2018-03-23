@@ -10,8 +10,10 @@ import UIKit
 
 class Chapter3ViewController: Chapter2ViewController {
     
+    @IBOutlet weak var whatstheplan: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.whatstheplan?.setContentOffset(CGPoint.zero, animated: false)
 
         // Do any additional setup after loading the view.
     }
