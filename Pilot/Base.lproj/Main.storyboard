@@ -786,8 +786,7 @@ Chrono looks down dejectedly. “The ship has been pre-programmed to take us bac
                         <viewLayoutGuide key="safeArea" id="BlU-9L-Ni6"/>
                     </view>
                     <connections>
-                        <outlet property="EarthsGreatestScientist" destination="Oio-qT-V0Y" id="PGo-gu-qGf"/>
-                        <outlet property="chronoGrinsAtYou" destination="Oio-qT-V0Y" id="0PA-yg-ZAS"/>
+                        <outlet property="chap4_1TextBox" destination="Oio-qT-V0Y" id="qmD-L1-sAX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jda-xk-33s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -836,7 +835,7 @@ Chrono leads you to what appears to be one of two large comfy sofas at the back 
                         <viewLayoutGuide key="safeArea" id="SQ0-ML-SUv"/>
                     </view>
                     <connections>
-                        <outlet property="EarthsGreatestScientist2" destination="h1x-ww-7qE" id="heH-vw-hBP"/>
+                        <outlet property="chapt4_2TextBox" destination="h1x-ww-7qE" id="uzP-DF-7ug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnO-qY-PPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -885,7 +884,7 @@ The ship quietly descends on a planet that looks somewhat similar to Earth. More
                         <viewLayoutGuide key="safeArea" id="sVc-91-USm"/>
                     </view>
                     <connections>
-                        <outlet property="earthsGreatestScientist3" destination="WjE-FG-Mdj" id="V1D-Xf-w4T"/>
+                        <outlet property="chap4_3TextBox" destination="WjE-FG-Mdj" id="66Y-Mn-foc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDm-Qs-bGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1132,9 +1131,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr1-UI-QGZ">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="FIT-kx-IwA"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You squint into the direction that Kayo shot off in. There’s nothing you could have done anyway. He’s a professional after all, Kayo and his family can handle the distressed Hapal. Who knows? Maybe it just stubbed its toe. (Or hoof, or paw...or whatever.)
@@ -1230,16 +1226,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fr1-UI-QGZ" firstAttribute="top" secondItem="Q26-mU-PRp" secondAttribute="top" constant="50" id="M6B-MC-NyC"/>
-                            <constraint firstItem="fr1-UI-QGZ" firstAttribute="top" secondItem="Q26-mU-PRp" secondAttribute="top" constant="50" id="MxM-7j-JTD"/>
-                            <constraint firstItem="Q26-mU-PRp" firstAttribute="bottom" secondItem="fr1-UI-QGZ" secondAttribute="bottom" constant="197" id="Ppn-pI-hC2"/>
-                            <constraint firstItem="Q26-mU-PRp" firstAttribute="trailing" secondItem="fr1-UI-QGZ" secondAttribute="trailing" constant="25" id="YBM-I5-p04"/>
-                            <constraint firstItem="fr1-UI-QGZ" firstAttribute="leading" secondItem="Q26-mU-PRp" secondAttribute="leading" constant="25" id="aro-XC-OXY"/>
-                            <constraint firstItem="fr1-UI-QGZ" firstAttribute="leading" secondItem="Q26-mU-PRp" secondAttribute="leading" constant="25" id="khg-91-gzQ"/>
-                            <constraint firstItem="Q26-mU-PRp" firstAttribute="trailing" secondItem="fr1-UI-QGZ" secondAttribute="trailing" constant="25" id="weZ-bi-5oZ"/>
+                            <constraint firstItem="Q26-mU-PRp" firstAttribute="trailing" secondItem="fr1-UI-QGZ" secondAttribute="trailing" constant="25" id="ED8-SA-wuv"/>
+                            <constraint firstItem="fr1-UI-QGZ" firstAttribute="leading" secondItem="Q26-mU-PRp" secondAttribute="leading" constant="25" id="Vj1-5f-4PA"/>
+                            <constraint firstItem="fr1-UI-QGZ" firstAttribute="top" secondItem="Q26-mU-PRp" secondAttribute="top" constant="50" id="b1s-19-Ggs"/>
+                            <constraint firstItem="Q26-mU-PRp" firstAttribute="bottom" secondItem="fr1-UI-QGZ" secondAttribute="bottom" constant="197" id="cdP-bU-EwE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q26-mU-PRp"/>
                     </view>
+                    <connections>
+                        <outlet property="letHapalDownTextBox" destination="fr1-UI-QGZ" id="XkY-jl-T2K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNn-QI-9ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1337,6 +1333,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0ak-uo-SmY"/>
                     </view>
+                    <connections>
+                        <outlet property="letHapalDown2TextBox" destination="nuq-iB-lCn" id="kyx-r5-y43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLV-Pn-aOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1353,9 +1352,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ila-Wb-Mos">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="MTL-ac-hVb"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Kayo and Kina stand up and you can see the worried looks on their faces. “The baby hapal wandered into this cave and now he’s too afraid to come out,” Kayo explains. “The problem is, we’re all too big to get through this opening to retrieve him.”
@@ -1371,12 +1367,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ila-Wb-Mos" firstAttribute="top" secondItem="g1H-DA-7mm" secondAttribute="top" constant="50" id="Wgn-RA-GZC"/>
-                            <constraint firstItem="Ila-Wb-Mos" firstAttribute="leading" secondItem="g1H-DA-7mm" secondAttribute="leading" constant="25" id="u8A-hq-w4J"/>
-                            <constraint firstItem="g1H-DA-7mm" firstAttribute="trailing" secondItem="Ila-Wb-Mos" secondAttribute="trailing" constant="25" id="wdd-kb-16j"/>
+                            <constraint firstItem="Ila-Wb-Mos" firstAttribute="top" secondItem="g1H-DA-7mm" secondAttribute="top" constant="50" id="9xJ-XI-l6X"/>
+                            <constraint firstItem="g1H-DA-7mm" firstAttribute="bottom" secondItem="Ila-Wb-Mos" secondAttribute="bottom" constant="197" id="BXx-zv-b7N"/>
+                            <constraint firstItem="Ila-Wb-Mos" firstAttribute="leading" secondItem="g1H-DA-7mm" secondAttribute="leading" constant="25" id="Slb-1y-Pw4"/>
+                            <constraint firstItem="g1H-DA-7mm" firstAttribute="trailing" secondItem="Ila-Wb-Mos" secondAttribute="trailing" constant="25" id="Uje-Hf-fwA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g1H-DA-7mm"/>
                     </view>
+                    <connections>
+                        <outlet property="hapalRescue2TextBox" destination="Ila-Wb-Mos" id="IiD-Sk-bwT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TBq-Ay-scA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1393,9 +1393,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzf-eb-NpY">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="W0v-2T-tBl"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You hear the baby hapal let out another cry. It’s almost dark out now and even darker in the small cave.
@@ -1425,12 +1422,16 @@ You look at the opening in the cave. It’s small, but not too small for you. Wi
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nK3-cQ-ePP" firstAttribute="trailing" secondItem="Lzf-eb-NpY" secondAttribute="trailing" constant="25" id="6Dd-pf-voA"/>
-                            <constraint firstItem="Lzf-eb-NpY" firstAttribute="leading" secondItem="nK3-cQ-ePP" secondAttribute="leading" constant="25" id="DUf-qg-iWW"/>
-                            <constraint firstItem="Lzf-eb-NpY" firstAttribute="top" secondItem="nK3-cQ-ePP" secondAttribute="top" constant="50" id="YnY-Ny-mF3"/>
+                            <constraint firstItem="nK3-cQ-ePP" firstAttribute="bottom" secondItem="Lzf-eb-NpY" secondAttribute="bottom" constant="197" id="JYe-ep-CXx"/>
+                            <constraint firstItem="Lzf-eb-NpY" firstAttribute="top" secondItem="nK3-cQ-ePP" secondAttribute="top" constant="50" id="MDP-Qw-SSy"/>
+                            <constraint firstItem="nK3-cQ-ePP" firstAttribute="trailing" secondItem="Lzf-eb-NpY" secondAttribute="trailing" constant="25" id="W6U-Uw-aHU"/>
+                            <constraint firstItem="Lzf-eb-NpY" firstAttribute="leading" secondItem="nK3-cQ-ePP" secondAttribute="leading" constant="25" id="zmE-88-jpp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nK3-cQ-ePP"/>
                     </view>
+                    <connections>
+                        <outlet property="hapalRescue2AgainTextBox" destination="Lzf-eb-NpY" id="48b-p7-evw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xt-zg-MLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1447,9 +1448,6 @@ You look at the opening in the cave. It’s small, but not too small for you. Wi
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-cA-gxi">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="5ju-jD-e71"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“You did it! You saved the baby hapal!” Kayo exclaims with exuberance. “How can we ever thank you?”
@@ -1587,12 +1585,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ezZ-cA-gxi" firstAttribute="leading" secondItem="jM2-tR-i5P" secondAttribute="leading" constant="25" id="PUe-9X-iJT"/>
-                            <constraint firstItem="ezZ-cA-gxi" firstAttribute="top" secondItem="jM2-tR-i5P" secondAttribute="top" constant="50" id="QRi-zV-PRq"/>
-                            <constraint firstItem="jM2-tR-i5P" firstAttribute="trailing" secondItem="ezZ-cA-gxi" secondAttribute="trailing" constant="25" id="cBG-0H-QuS"/>
+                            <constraint firstItem="ezZ-cA-gxi" firstAttribute="leading" secondItem="jM2-tR-i5P" secondAttribute="leading" constant="25" id="BcM-HP-ozd"/>
+                            <constraint firstItem="ezZ-cA-gxi" firstAttribute="top" secondItem="jM2-tR-i5P" secondAttribute="top" constant="50" id="Pgr-qo-Tug"/>
+                            <constraint firstItem="jM2-tR-i5P" firstAttribute="trailing" secondItem="ezZ-cA-gxi" secondAttribute="trailing" constant="25" id="VEX-sJ-toj"/>
+                            <constraint firstItem="jM2-tR-i5P" firstAttribute="bottom" secondItem="ezZ-cA-gxi" secondAttribute="bottom" constant="197" id="jyz-4t-2EL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jM2-tR-i5P"/>
                     </view>
+                    <connections>
+                        <outlet property="hapalRescue3TextBox" destination="ezZ-cA-gxi" id="qPu-mL-K3I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yax-nE-tnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1794,6 +1796,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VcL-a2-1vp"/>
                     </view>
+                    <connections>
+                        <outlet property="jigsUpChoiceTextBox" destination="hqe-ML-nZx" id="Z7u-lI-x10"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2W-ZX-pZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1810,9 +1815,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9K-R1-DwW">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="xuh-IN-gA7"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You are led into an enormous high-tech laboratory by one of the Covarnian guards. Instruments and gadgets of every different kind are spread out on metal tables. Beakers and test tubes filled with strange liquids are strewn about, and some sort of unidentifiable writing is scrawled on chalkboards all over the walls. The sounds of bubbling chemicals fill the air.
@@ -1859,12 +1861,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KH5-Yl-djj" firstAttribute="trailing" secondItem="U9K-R1-DwW" secondAttribute="trailing" constant="25" id="5TX-HY-B42"/>
-                            <constraint firstItem="U9K-R1-DwW" firstAttribute="top" secondItem="KH5-Yl-djj" secondAttribute="top" constant="50" id="FbG-Lq-gS8"/>
-                            <constraint firstItem="U9K-R1-DwW" firstAttribute="leading" secondItem="KH5-Yl-djj" secondAttribute="leading" constant="25" id="yBE-KN-aRB"/>
+                            <constraint firstItem="KH5-Yl-djj" firstAttribute="bottom" secondItem="U9K-R1-DwW" secondAttribute="bottom" constant="197" id="HwQ-kn-mL5"/>
+                            <constraint firstItem="U9K-R1-DwW" firstAttribute="top" secondItem="KH5-Yl-djj" secondAttribute="top" constant="50" id="J61-fH-anu"/>
+                            <constraint firstItem="KH5-Yl-djj" firstAttribute="trailing" secondItem="U9K-R1-DwW" secondAttribute="trailing" constant="25" id="TSa-4Y-kUI"/>
+                            <constraint firstItem="U9K-R1-DwW" firstAttribute="leading" secondItem="KH5-Yl-djj" secondAttribute="leading" constant="25" id="cBf-7E-gm7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KH5-Yl-djj"/>
                     </view>
+                    <connections>
+                        <outlet property="imNotAScientistPoint5TextBox" destination="U9K-R1-DwW" id="zf3-fx-1la"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg0-f9-9iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1881,9 +1887,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02D-Tr-k0O">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="w9T-xF-pTZ"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“Well it seems as if those are our only two options,” you say after a moment of silence. “It has to be one of them.”
@@ -1956,12 +1959,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="02D-Tr-k0O" firstAttribute="top" secondItem="tPp-gF-fhJ" secondAttribute="top" constant="50" id="3fV-vJ-58E"/>
-                            <constraint firstItem="tPp-gF-fhJ" firstAttribute="trailing" secondItem="02D-Tr-k0O" secondAttribute="trailing" constant="25" id="Uys-qy-2mI"/>
-                            <constraint firstItem="02D-Tr-k0O" firstAttribute="leading" secondItem="tPp-gF-fhJ" secondAttribute="leading" constant="25" id="WJw-2y-6Pv"/>
+                            <constraint firstItem="02D-Tr-k0O" firstAttribute="top" secondItem="tPp-gF-fhJ" secondAttribute="top" constant="50" id="i3g-vf-tjQ"/>
+                            <constraint firstItem="02D-Tr-k0O" firstAttribute="leading" secondItem="tPp-gF-fhJ" secondAttribute="leading" constant="25" id="opr-Jm-aea"/>
+                            <constraint firstItem="tPp-gF-fhJ" firstAttribute="bottom" secondItem="02D-Tr-k0O" secondAttribute="bottom" constant="197" id="pbq-KL-l9Y"/>
+                            <constraint firstItem="tPp-gF-fhJ" firstAttribute="trailing" secondItem="02D-Tr-k0O" secondAttribute="trailing" constant="25" id="vtY-O5-T79"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tPp-gF-fhJ"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5Before7TextBox" destination="02D-Tr-k0O" id="vta-lm-gWK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCo-5I-EZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2085,6 +2092,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nzg-EA-J4U"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5_7TextBox" destination="tcm-qL-EPy" id="gDb-1D-dfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hq9-la-Nhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2981,9 +2991,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4Z-wh-YFn">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="9Ra-3H-qkL"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You and Chrono throw the robes on over your clothes while the ship heads for the Sinisterians. You look at your reflection in the glass and hope that you can pass for a Covarnian. 
@@ -3063,12 +3070,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TJE-a4-rvF" firstAttribute="trailing" secondItem="e4Z-wh-YFn" secondAttribute="trailing" constant="25" id="bym-aU-wVr"/>
-                            <constraint firstItem="e4Z-wh-YFn" firstAttribute="leading" secondItem="TJE-a4-rvF" secondAttribute="leading" constant="25" id="nq5-JD-a7A"/>
-                            <constraint firstItem="e4Z-wh-YFn" firstAttribute="top" secondItem="TJE-a4-rvF" secondAttribute="top" constant="50" id="rgf-vL-d97"/>
+                            <constraint firstItem="TJE-a4-rvF" firstAttribute="bottom" secondItem="e4Z-wh-YFn" secondAttribute="bottom" constant="197" id="54g-4p-6e4"/>
+                            <constraint firstItem="e4Z-wh-YFn" firstAttribute="top" secondItem="TJE-a4-rvF" secondAttribute="top" constant="50" id="Vnf-AL-zsx"/>
+                            <constraint firstItem="e4Z-wh-YFn" firstAttribute="leading" secondItem="TJE-a4-rvF" secondAttribute="leading" constant="25" id="dwa-10-EfG"/>
+                            <constraint firstItem="TJE-a4-rvF" firstAttribute="trailing" secondItem="e4Z-wh-YFn" secondAttribute="trailing" constant="25" id="s2s-wW-uhZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TJE-a4-rvF"/>
                     </view>
+                    <connections>
+                        <outlet property="Chapter_6_4_AmbassadorTextBox" destination="e4Z-wh-YFn" id="pVa-2Q-8Y3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="85U-eO-mkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3085,9 +3096,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHJ-uu-8TW">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="yOX-Y0-mIk"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“Sneaking into the ambassador’s home might be a good plan,” you explain to Chrono. “But who knows what we’ll encounter there? We don’t know the lay of the house either, we could get lost and never even find the robes! In this case, at least we know that the robes are in the store room.”
@@ -3166,12 +3174,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="D6y-nN-F7I" firstAttribute="trailing" secondItem="OHJ-uu-8TW" secondAttribute="trailing" constant="25" id="IkO-MI-dIY"/>
-                            <constraint firstItem="OHJ-uu-8TW" firstAttribute="leading" secondItem="D6y-nN-F7I" secondAttribute="leading" constant="25" id="S0C-mZ-pt3"/>
-                            <constraint firstItem="OHJ-uu-8TW" firstAttribute="top" secondItem="D6y-nN-F7I" secondAttribute="top" constant="50" id="VDT-0c-wPI"/>
+                            <constraint firstItem="D6y-nN-F7I" firstAttribute="bottom" secondItem="OHJ-uu-8TW" secondAttribute="bottom" constant="197" id="JgB-KH-1LT"/>
+                            <constraint firstItem="D6y-nN-F7I" firstAttribute="trailing" secondItem="OHJ-uu-8TW" secondAttribute="trailing" constant="25" id="Mcd-an-7Yr"/>
+                            <constraint firstItem="OHJ-uu-8TW" firstAttribute="top" secondItem="D6y-nN-F7I" secondAttribute="top" constant="50" id="hNy-z5-bsX"/>
+                            <constraint firstItem="OHJ-uu-8TW" firstAttribute="leading" secondItem="D6y-nN-F7I" secondAttribute="leading" constant="25" id="mON-0a-VRC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D6y-nN-F7I"/>
                     </view>
+                    <connections>
+                        <outlet property="counciChamberSneakTextBox" destination="OHJ-uu-8TW" id="Lra-IG-ZzL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBr-vK-oCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3188,9 +3200,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDY-1b-wdE">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="5DF-lF-Jjc"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“Everything ok?” Chrono asks you as he notices you deep in thought. 
@@ -3357,12 +3366,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QDY-1b-wdE" firstAttribute="leading" secondItem="36F-5j-R8O" secondAttribute="leading" constant="25" id="Hgt-Vr-xIf"/>
-                            <constraint firstItem="36F-5j-R8O" firstAttribute="trailing" secondItem="QDY-1b-wdE" secondAttribute="trailing" constant="25" id="Rt9-yU-Kfu"/>
-                            <constraint firstItem="QDY-1b-wdE" firstAttribute="top" secondItem="36F-5j-R8O" secondAttribute="top" constant="50" id="VtR-dw-Gr0"/>
+                            <constraint firstItem="36F-5j-R8O" firstAttribute="trailing" secondItem="QDY-1b-wdE" secondAttribute="trailing" constant="25" id="gOy-tV-y7B"/>
+                            <constraint firstItem="36F-5j-R8O" firstAttribute="bottom" secondItem="QDY-1b-wdE" secondAttribute="bottom" constant="197" id="h3T-mg-ah6"/>
+                            <constraint firstItem="QDY-1b-wdE" firstAttribute="top" secondItem="36F-5j-R8O" secondAttribute="top" constant="50" id="lOn-sd-UYq"/>
+                            <constraint firstItem="QDY-1b-wdE" firstAttribute="leading" secondItem="36F-5j-R8O" secondAttribute="leading" constant="25" id="lt7-Y7-qZl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="36F-5j-R8O"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_5AmbassadorTextBox" destination="QDY-1b-wdE" id="ehY-VC-G3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jol-bj-Fdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3376,12 +3389,23 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RE-uV-AMd">
+                                <rect key="frame" x="30" y="577" width="329" height="30"/>
+                                <state key="normal" title="How do you know so much about the layout?"/>
+                                <connections>
+                                    <segue destination="HMa-9y-sc6" kind="show" identifier="CCC" id="kwK-zr-qYc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cQ-EA-2nc">
+                                <rect key="frame" x="30" y="539" width="329" height="30"/>
+                                <state key="normal" title="No time for questions. Get to the store room."/>
+                                <connections>
+                                    <segue destination="HMa-9y-sc6" kind="show" identifier="no time for questions" id="Hx1-B2-Epu"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOu-e0-xQR">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="95D-99-lRb"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You inhale a large breath of fresh air, happy to smell something other than hot fetid garbage. “Nice going, Chrono!” you exclaim happily, patting him on the back. “We’re in, now we just have to find the store room,”
@@ -3458,41 +3482,27 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RE-uV-AMd">
-                                <rect key="frame" x="30" y="577" width="329" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="w30-XH-1cI"/>
-                                </constraints>
-                                <state key="normal" title="How do you know so much about the layout?"/>
-                                <connections>
-                                    <segue destination="HMa-9y-sc6" kind="show" identifier="CCC" id="kwK-zr-qYc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cQ-EA-2nc">
-                                <rect key="frame" x="30" y="539" width="329" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="L4Z-td-3TJ"/>
-                                </constraints>
-                                <state key="normal" title="No time for questions. Get to the store room."/>
-                                <connections>
-                                    <segue destination="HMa-9y-sc6" kind="show" identifier="no time for questions" id="Hx1-B2-Epu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3RE-uV-AMd" firstAttribute="top" secondItem="3cQ-EA-2nc" secondAttribute="bottom" constant="8" id="2NF-mF-0Se"/>
-                            <constraint firstItem="3RE-uV-AMd" firstAttribute="leading" secondItem="ZNU-a9-Ftm" secondAttribute="leading" constant="30" id="ApS-Nw-nP1"/>
-                            <constraint firstItem="dOu-e0-xQR" firstAttribute="top" secondItem="ZNU-a9-Ftm" secondAttribute="top" constant="50" id="Boa-wh-rFx"/>
-                            <constraint firstItem="3cQ-EA-2nc" firstAttribute="leading" secondItem="ZNU-a9-Ftm" secondAttribute="leading" constant="30" id="IHV-Re-SR3"/>
-                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="bottom" secondItem="3RE-uV-AMd" secondAttribute="bottom" constant="60" id="T7x-fG-RMn"/>
-                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="trailing" secondItem="3cQ-EA-2nc" secondAttribute="trailing" constant="16" id="b7Z-hk-Kdz"/>
-                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="trailing" secondItem="dOu-e0-xQR" secondAttribute="trailing" constant="25" id="fKY-4a-ed0"/>
-                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="trailing" secondItem="3RE-uV-AMd" secondAttribute="trailing" constant="16" id="xdZ-DZ-xvy"/>
-                            <constraint firstItem="dOu-e0-xQR" firstAttribute="leading" secondItem="ZNU-a9-Ftm" secondAttribute="leading" constant="25" id="znk-us-RTB"/>
+                            <constraint firstItem="3RE-uV-AMd" firstAttribute="top" secondItem="3cQ-EA-2nc" secondAttribute="bottom" constant="8" id="0aE-0A-dc0"/>
+                            <constraint firstItem="dOu-e0-xQR" firstAttribute="top" secondItem="ZNU-a9-Ftm" secondAttribute="top" constant="50" id="BbP-jk-4i3"/>
+                            <constraint firstItem="3RE-uV-AMd" firstAttribute="leading" secondItem="ZNU-a9-Ftm" secondAttribute="leading" constant="30" id="EbJ-oo-Sax"/>
+                            <constraint firstItem="3cQ-EA-2nc" firstAttribute="top" secondItem="dOu-e0-xQR" secondAttribute="bottom" constant="69" id="EyZ-66-THS"/>
+                            <constraint firstItem="3RE-uV-AMd" firstAttribute="top" secondItem="3cQ-EA-2nc" secondAttribute="bottom" constant="8" id="MYq-1P-mdZ"/>
+                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="trailing" secondItem="3cQ-EA-2nc" secondAttribute="trailing" constant="16" id="NV6-mz-OzP"/>
+                            <constraint firstItem="dOu-e0-xQR" firstAttribute="leading" secondItem="ZNU-a9-Ftm" secondAttribute="leading" constant="25" id="dNe-tX-pSg"/>
+                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="trailing" secondItem="dOu-e0-xQR" secondAttribute="trailing" constant="25" id="eOV-0k-O8T"/>
+                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="bottom" secondItem="3RE-uV-AMd" secondAttribute="bottom" constant="60" id="htl-pV-3cR"/>
+                            <constraint firstItem="3cQ-EA-2nc" firstAttribute="top" secondItem="dOu-e0-xQR" secondAttribute="bottom" constant="69" id="kI0-vz-yHN"/>
+                            <constraint firstItem="3cQ-EA-2nc" firstAttribute="leading" secondItem="ZNU-a9-Ftm" secondAttribute="leading" constant="30" id="rEL-sO-DQ1"/>
+                            <constraint firstItem="ZNU-a9-Ftm" firstAttribute="trailing" secondItem="3RE-uV-AMd" secondAttribute="trailing" constant="16" id="xNy-D0-kLm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZNU-a9-Ftm"/>
                     </view>
+                    <connections>
+                        <outlet property="chronoKnowsTheLayoutTextBox" destination="dOu-e0-xQR" id="gjH-26-VeF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrN-28-ifq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3509,9 +3519,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmm-hT-y6X">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="EGH-fr-WfG"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“I spent last summer working here as a Covarnian Cleanliness Companion or CCC for short.” Chrono explains. 
@@ -3649,12 +3656,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kMg-hZ-o1E" firstAttribute="trailing" secondItem="Bmm-hT-y6X" secondAttribute="trailing" constant="25" id="9IR-eV-cLN"/>
-                            <constraint firstItem="Bmm-hT-y6X" firstAttribute="top" secondItem="kMg-hZ-o1E" secondAttribute="top" constant="50" id="G8y-f6-V4r"/>
-                            <constraint firstItem="Bmm-hT-y6X" firstAttribute="leading" secondItem="kMg-hZ-o1E" secondAttribute="leading" constant="25" id="fRH-7f-FhE"/>
+                            <constraint firstItem="Bmm-hT-y6X" firstAttribute="leading" secondItem="kMg-hZ-o1E" secondAttribute="leading" constant="25" id="2S9-FE-LFE"/>
+                            <constraint firstItem="kMg-hZ-o1E" firstAttribute="bottom" secondItem="Bmm-hT-y6X" secondAttribute="bottom" constant="197" id="SvZ-ki-Nbd"/>
+                            <constraint firstItem="Bmm-hT-y6X" firstAttribute="top" secondItem="kMg-hZ-o1E" secondAttribute="top" constant="50" id="hFA-V4-jq7"/>
+                            <constraint firstItem="kMg-hZ-o1E" firstAttribute="trailing" secondItem="Bmm-hT-y6X" secondAttribute="trailing" constant="25" id="nQL-ws-X5p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kMg-hZ-o1E"/>
                     </view>
+                    <connections>
+                        <outlet property="CCCExplanationTextBox" destination="Bmm-hT-y6X" id="B53-Lc-r9k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1m-Jr-sYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -10480,9 +10491,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5U-jy-dWE">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="dQF-G7-pKQ"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“Cool!,” you exclaim, grabbing the device. Chrono jumps out of the ship into the cargo hold and you quickly follow with Luna close behind. 
@@ -10530,16 +10538,20 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="a5U-jy-dWE" firstAttribute="leading" secondItem="CNQ-5Y-nRy" secondAttribute="leading" constant="25" id="XG2-27-MiJ"/>
-                            <constraint firstItem="CNQ-5Y-nRy" firstAttribute="trailing" secondItem="a5U-jy-dWE" secondAttribute="trailing" constant="25" id="psE-xv-8ZP"/>
-                            <constraint firstItem="a5U-jy-dWE" firstAttribute="top" secondItem="CNQ-5Y-nRy" secondAttribute="top" constant="50" id="sf7-38-lOC"/>
+                            <constraint firstItem="a5U-jy-dWE" firstAttribute="top" secondItem="CNQ-5Y-nRy" secondAttribute="top" constant="50" id="a2G-Lt-Sro"/>
+                            <constraint firstItem="CNQ-5Y-nRy" firstAttribute="bottom" secondItem="a5U-jy-dWE" secondAttribute="bottom" constant="197" id="d4x-p3-HfV"/>
+                            <constraint firstItem="a5U-jy-dWE" firstAttribute="leading" secondItem="CNQ-5Y-nRy" secondAttribute="leading" constant="25" id="f9j-Gk-EcI"/>
+                            <constraint firstItem="CNQ-5Y-nRy" firstAttribute="trailing" secondItem="a5U-jy-dWE" secondAttribute="trailing" constant="25" id="sfx-hq-M2N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CNQ-5Y-nRy"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_3Point5TextBox" destination="a5U-jy-dWE" id="tX4-Yh-wE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJY-Y0-5c0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1630" y="8749"/>
+            <point key="canvasLocation" x="-1612" y="8656"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="8EJ-jx-3ew">
@@ -10552,9 +10564,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hn6-Da-I5q">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="jHx-6C-D1n"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“Luna is a dog,” you manage to answer. 
@@ -10629,16 +10638,20 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Hn6-Da-I5q" firstAttribute="leading" secondItem="1OZ-1M-VbA" secondAttribute="leading" constant="25" id="4S3-v4-uIh"/>
-                            <constraint firstItem="Hn6-Da-I5q" firstAttribute="top" secondItem="1OZ-1M-VbA" secondAttribute="top" constant="50" id="CIN-uq-7dQ"/>
-                            <constraint firstItem="1OZ-1M-VbA" firstAttribute="trailing" secondItem="Hn6-Da-I5q" secondAttribute="trailing" constant="25" id="xdf-ck-Sth"/>
+                            <constraint firstItem="Hn6-Da-I5q" firstAttribute="leading" secondItem="1OZ-1M-VbA" secondAttribute="leading" constant="25" id="4nF-Ah-UBy"/>
+                            <constraint firstItem="1OZ-1M-VbA" firstAttribute="trailing" secondItem="Hn6-Da-I5q" secondAttribute="trailing" constant="25" id="6Eu-nV-bri"/>
+                            <constraint firstItem="Hn6-Da-I5q" firstAttribute="top" secondItem="1OZ-1M-VbA" secondAttribute="top" constant="50" id="dWj-mK-hmg"/>
+                            <constraint firstItem="1OZ-1M-VbA" firstAttribute="bottom" secondItem="Hn6-Da-I5q" secondAttribute="bottom" constant="197" id="tOy-4b-lSh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1OZ-1M-VbA"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_4Point5TextBox" destination="Hn6-Da-I5q" id="Pdh-E9-ecm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXi-k9-H6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="8749"/>
+            <point key="canvasLocation" x="-858" y="8656"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="Zpr-7W-ObB">
@@ -10651,9 +10664,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV2-kS-P8R">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="QV4-rC-hqK"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“What kind of weird growlic is that?” The ambassador yells. “Keep him away from me!” The ambassador hurries on off.
@@ -10755,12 +10765,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="o59-qc-QHU" firstAttribute="trailing" secondItem="WV2-kS-P8R" secondAttribute="trailing" constant="25" id="VNS-rP-jZZ"/>
-                            <constraint firstItem="WV2-kS-P8R" firstAttribute="leading" secondItem="o59-qc-QHU" secondAttribute="leading" constant="25" id="dIY-io-WPk"/>
-                            <constraint firstItem="WV2-kS-P8R" firstAttribute="top" secondItem="o59-qc-QHU" secondAttribute="top" constant="50" id="yYH-ei-nJT"/>
+                            <constraint firstItem="o59-qc-QHU" firstAttribute="trailing" secondItem="WV2-kS-P8R" secondAttribute="trailing" constant="25" id="98m-Zx-FYC"/>
+                            <constraint firstItem="o59-qc-QHU" firstAttribute="bottom" secondItem="WV2-kS-P8R" secondAttribute="bottom" constant="197" id="PeY-FW-2gP"/>
+                            <constraint firstItem="WV2-kS-P8R" firstAttribute="leading" secondItem="o59-qc-QHU" secondAttribute="leading" constant="25" id="ZPV-4M-pAW"/>
+                            <constraint firstItem="WV2-kS-P8R" firstAttribute="top" secondItem="o59-qc-QHU" secondAttribute="top" constant="50" id="pGo-A9-RCD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o59-qc-QHU"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_1Point5TextBox" destination="WV2-kS-P8R" id="dC7-G6-RHI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0s-iA-Qyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -10777,9 +10791,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoM-IB-7aw">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="thf-CV-55O"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“I don’t like the idea of sneaking into the council chamber or into an ambassador’s home,” you state flatly. “I think it might be best if we skip straight to boarding the sinisterian’s ship. We’ll be extra stealthy, we’ll change the coordinates and be out of there before the sinisterians ever know we’re there.”
@@ -10858,12 +10869,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JoM-IB-7aw" firstAttribute="leading" secondItem="NbC-wm-NzJ" secondAttribute="leading" constant="25" id="Nnp-Kg-d2N"/>
-                            <constraint firstItem="JoM-IB-7aw" firstAttribute="top" secondItem="NbC-wm-NzJ" secondAttribute="top" constant="50" id="tsw-9j-nFu"/>
-                            <constraint firstItem="NbC-wm-NzJ" firstAttribute="trailing" secondItem="JoM-IB-7aw" secondAttribute="trailing" constant="25" id="xr5-dt-JfF"/>
+                            <constraint firstItem="JoM-IB-7aw" firstAttribute="top" secondItem="NbC-wm-NzJ" secondAttribute="top" constant="50" id="3kN-mf-LXe"/>
+                            <constraint firstItem="JoM-IB-7aw" firstAttribute="leading" secondItem="NbC-wm-NzJ" secondAttribute="leading" constant="25" id="Ibh-SI-Scr"/>
+                            <constraint firstItem="NbC-wm-NzJ" firstAttribute="trailing" secondItem="JoM-IB-7aw" secondAttribute="trailing" constant="25" id="UXj-YR-qWR"/>
+                            <constraint firstItem="NbC-wm-NzJ" firstAttribute="bottom" secondItem="JoM-IB-7aw" secondAttribute="bottom" constant="197" id="Z3Z-Kw-D7U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NbC-wm-NzJ"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_1TextBox" destination="JoM-IB-7aw" id="B2c-b3-Myb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPM-zV-dOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -10880,9 +10895,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opj-9I-qaD">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="FMe-gU-oJP"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">It’s skin is rough and leathery and a long tail extends behind it’s back. Cold, dark eyes stare back at you as you stand frozen next to the Covarnian ship. This must be a Sinisterian. 
@@ -10990,12 +11002,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="opj-9I-qaD" firstAttribute="top" secondItem="wem-ka-mzf" secondAttribute="top" constant="50" id="TH5-GN-I4f"/>
-                            <constraint firstItem="opj-9I-qaD" firstAttribute="leading" secondItem="wem-ka-mzf" secondAttribute="leading" constant="25" id="cNg-4s-Knf"/>
-                            <constraint firstItem="wem-ka-mzf" firstAttribute="trailing" secondItem="opj-9I-qaD" secondAttribute="trailing" constant="25" id="h2z-MW-Zq1"/>
+                            <constraint firstItem="wem-ka-mzf" firstAttribute="trailing" secondItem="opj-9I-qaD" secondAttribute="trailing" constant="25" id="3Nl-Tp-c9A"/>
+                            <constraint firstItem="wem-ka-mzf" firstAttribute="bottom" secondItem="opj-9I-qaD" secondAttribute="bottom" constant="197" id="KNp-b1-aeG"/>
+                            <constraint firstItem="opj-9I-qaD" firstAttribute="leading" secondItem="wem-ka-mzf" secondAttribute="leading" constant="25" id="m4T-iP-UMj"/>
+                            <constraint firstItem="opj-9I-qaD" firstAttribute="top" secondItem="wem-ka-mzf" secondAttribute="top" constant="50" id="zjm-OF-pbE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wem-ka-mzf"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_4TextBox" destination="opj-9I-qaD" id="JqT-U9-tep"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iI1-OQ-og9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -11012,9 +11028,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJp-58-ok3">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="n2Q-eQ-pmJ"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“How?” you reply. It occured to you that the plan devised between you and Luna had not included Chrono.
@@ -11180,19 +11193,13 @@ Cg
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wl-7y-QzV">
                                 <rect key="frame" x="0.0" y="577" width="375" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Bur-iM-SIs"/>
-                                </constraints>
                                 <state key="normal" title="Ram your spaceship through hard Sinisterian steel."/>
                                 <connections>
                                     <segue destination="qLc-cK-4nG" kind="show" identifier="ram ship" id="BWH-G5-FoG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faq-g9-jqP">
-                                <rect key="frame" x="60" y="539" width="315" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ETM-9N-m9i"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="539" width="375" height="30"/>
                                 <state key="normal" title="Have Luna fetch the key!"/>
                                 <connections>
                                     <segue destination="qLc-cK-4nG" kind="show" identifier="fetch key" id="pMP-5Z-Rb3"/>
@@ -11201,20 +11208,23 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7wl-7y-QzV" firstAttribute="top" secondItem="faq-g9-jqP" secondAttribute="bottom" constant="8" id="5Xa-Xo-raE"/>
-                            <constraint firstItem="r22-Eh-WXU" firstAttribute="trailing" secondItem="7wl-7y-QzV" secondAttribute="trailing" id="HVQ-8y-sxR"/>
-                            <constraint firstItem="faq-g9-jqP" firstAttribute="leading" secondItem="r22-Eh-WXU" secondAttribute="leading" constant="60" id="JZU-wZ-Aul"/>
-                            <constraint firstItem="OJp-58-ok3" firstAttribute="top" secondItem="r22-Eh-WXU" secondAttribute="top" constant="50" id="Kiy-98-B0D"/>
-                            <constraint firstItem="OJp-58-ok3" firstAttribute="leading" secondItem="r22-Eh-WXU" secondAttribute="leading" constant="25" id="MKU-M8-Akl"/>
-                            <constraint firstItem="r22-Eh-WXU" firstAttribute="trailing" secondItem="faq-g9-jqP" secondAttribute="trailing" id="ggZ-EL-927"/>
-                            <constraint firstItem="r22-Eh-WXU" firstAttribute="bottom" secondItem="7wl-7y-QzV" secondAttribute="bottom" constant="60" id="iwp-zN-Q78"/>
-                            <constraint firstItem="r22-Eh-WXU" firstAttribute="trailing" secondItem="OJp-58-ok3" secondAttribute="trailing" constant="25" id="l33-ST-nMb"/>
-                            <constraint firstItem="7wl-7y-QzV" firstAttribute="leading" secondItem="r22-Eh-WXU" secondAttribute="leading" id="yMj-Ix-nH1"/>
+                            <constraint firstItem="r22-Eh-WXU" firstAttribute="trailing" secondItem="OJp-58-ok3" secondAttribute="trailing" constant="25" id="1FH-PV-7AO"/>
+                            <constraint firstItem="OJp-58-ok3" firstAttribute="leading" secondItem="r22-Eh-WXU" secondAttribute="leading" constant="25" id="3V7-VP-5jB"/>
+                            <constraint firstItem="faq-g9-jqP" firstAttribute="top" secondItem="OJp-58-ok3" secondAttribute="bottom" constant="69" id="5AY-de-ZXE"/>
+                            <constraint firstItem="7wl-7y-QzV" firstAttribute="top" secondItem="faq-g9-jqP" secondAttribute="bottom" constant="8" id="G4O-79-WIt"/>
+                            <constraint firstItem="7wl-7y-QzV" firstAttribute="leading" secondItem="r22-Eh-WXU" secondAttribute="leading" id="TWh-fk-bRJ"/>
+                            <constraint firstItem="7wl-7y-QzV" firstAttribute="top" secondItem="faq-g9-jqP" secondAttribute="bottom" constant="8" id="Ts0-WX-bqU"/>
+                            <constraint firstItem="faq-g9-jqP" firstAttribute="leading" secondItem="r22-Eh-WXU" secondAttribute="leading" id="UhK-Sz-gQc"/>
+                            <constraint firstItem="r22-Eh-WXU" firstAttribute="bottom" secondItem="7wl-7y-QzV" secondAttribute="bottom" constant="60" id="Wrl-kt-lGM"/>
+                            <constraint firstItem="7wl-7y-QzV" firstAttribute="trailing" secondItem="r22-Eh-WXU" secondAttribute="trailing" id="YGx-vG-8rU"/>
+                            <constraint firstItem="OJp-58-ok3" firstAttribute="top" secondItem="r22-Eh-WXU" secondAttribute="top" constant="50" id="bya-T1-OCw"/>
+                            <constraint firstItem="faq-g9-jqP" firstAttribute="top" secondItem="OJp-58-ok3" secondAttribute="bottom" constant="69" id="h0g-X8-sQS"/>
+                            <constraint firstItem="faq-g9-jqP" firstAttribute="trailing" secondItem="r22-Eh-WXU" secondAttribute="trailing" id="zLZ-Gu-Ypn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r22-Eh-WXU"/>
                     </view>
                     <connections>
-                        <outlet property="FetchKey" destination="OJp-58-ok3" id="VcH-eT-hO2"/>
+                        <outlet property="chapter6_7TextBox" destination="OJp-58-ok3" id="tJ0-CQ-fP1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHm-Qd-D9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -11230,11 +11240,8 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktz-pz-RZT">
-                                <rect key="frame" x="25" y="70" width="325" height="450"/>
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="QtP-Jo-3RQ"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“Chrono,” you say thoughtfully, “that’s just crazy enough to work!” 
@@ -11401,12 +11408,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ktz-pz-RZT" firstAttribute="top" secondItem="oHv-sr-9Ex" secondAttribute="top" constant="50" id="9Vm-NI-OLH"/>
-                            <constraint firstItem="oHv-sr-9Ex" firstAttribute="trailing" secondItem="ktz-pz-RZT" secondAttribute="trailing" constant="25" id="O6h-cv-EZf"/>
-                            <constraint firstItem="ktz-pz-RZT" firstAttribute="leading" secondItem="oHv-sr-9Ex" secondAttribute="leading" constant="25" id="xNZ-Ip-L9L"/>
+                            <constraint firstItem="oHv-sr-9Ex" firstAttribute="bottom" secondItem="ktz-pz-RZT" secondAttribute="bottom" constant="197" id="Euo-LK-yIC"/>
+                            <constraint firstItem="ktz-pz-RZT" firstAttribute="top" secondItem="oHv-sr-9Ex" secondAttribute="top" constant="50" id="Q70-Z4-Vqv"/>
+                            <constraint firstItem="ktz-pz-RZT" firstAttribute="leading" secondItem="oHv-sr-9Ex" secondAttribute="leading" constant="25" id="RFr-Uu-cKb"/>
+                            <constraint firstItem="oHv-sr-9Ex" firstAttribute="trailing" secondItem="ktz-pz-RZT" secondAttribute="trailing" constant="25" id="XX3-Hb-b3X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oHv-sr-9Ex"/>
                     </view>
+                    <connections>
+                        <outlet property="ramShipTextBox" destination="ktz-pz-RZT" id="O3o-Ok-DTY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAF-15-HpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -11423,9 +11434,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLb-gI-Dk3">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="Zyg-NW-Uga"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">The plan fails spectacularly. Instead of crashing through the cell, the spaceship folds like an accordian. Why on earth did you think that this would be good idea?
@@ -11590,12 +11598,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LLb-gI-Dk3" firstAttribute="leading" secondItem="p61-me-A0q" secondAttribute="leading" constant="25" id="W1C-af-H2T"/>
-                            <constraint firstItem="p61-me-A0q" firstAttribute="trailing" secondItem="LLb-gI-Dk3" secondAttribute="trailing" constant="25" id="aY7-Cr-b41"/>
-                            <constraint firstItem="LLb-gI-Dk3" firstAttribute="top" secondItem="p61-me-A0q" secondAttribute="top" constant="50" id="dnu-pC-IEf"/>
+                            <constraint firstItem="LLb-gI-Dk3" firstAttribute="leading" secondItem="p61-me-A0q" secondAttribute="leading" constant="25" id="4TS-8P-Sa2"/>
+                            <constraint firstItem="LLb-gI-Dk3" firstAttribute="top" secondItem="p61-me-A0q" secondAttribute="top" constant="50" id="M6W-jH-rSM"/>
+                            <constraint firstItem="p61-me-A0q" firstAttribute="bottom" secondItem="LLb-gI-Dk3" secondAttribute="bottom" constant="197" id="fio-fR-XXw"/>
+                            <constraint firstItem="p61-me-A0q" firstAttribute="trailing" secondItem="LLb-gI-Dk3" secondAttribute="trailing" constant="25" id="p4S-1r-eGh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p61-me-A0q"/>
                     </view>
+                    <connections>
+                        <outlet property="ramShip2TextBox" destination="LLb-gI-Dk3" id="BJI-PR-SXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hfo-lu-yhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -11738,9 +11750,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqW-h4-OxZ">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="jmx-vW-dj5"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“I think sending Luna to get the key to the cell will be easiest,” you tell Chrono.
@@ -11877,12 +11886,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pqW-h4-OxZ" firstAttribute="top" secondItem="XW1-4R-Rmm" secondAttribute="top" constant="50" id="G6P-En-uCi"/>
-                            <constraint firstItem="XW1-4R-Rmm" firstAttribute="trailing" secondItem="pqW-h4-OxZ" secondAttribute="trailing" constant="25" id="Vlr-K7-4nW"/>
-                            <constraint firstItem="pqW-h4-OxZ" firstAttribute="leading" secondItem="XW1-4R-Rmm" secondAttribute="leading" constant="25" id="zu9-2g-PAx"/>
+                            <constraint firstItem="pqW-h4-OxZ" firstAttribute="leading" secondItem="XW1-4R-Rmm" secondAttribute="leading" constant="25" id="1Qp-wA-fOE"/>
+                            <constraint firstItem="pqW-h4-OxZ" firstAttribute="top" secondItem="XW1-4R-Rmm" secondAttribute="top" constant="50" id="7PY-2P-3sH"/>
+                            <constraint firstItem="XW1-4R-Rmm" firstAttribute="bottom" secondItem="pqW-h4-OxZ" secondAttribute="bottom" constant="197" id="QeQ-po-ea7"/>
+                            <constraint firstItem="XW1-4R-Rmm" firstAttribute="trailing" secondItem="pqW-h4-OxZ" secondAttribute="trailing" constant="25" id="naM-C5-Eer"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XW1-4R-Rmm"/>
                     </view>
+                    <connections>
+                        <outlet property="fetchKey" destination="pqW-h4-OxZ" id="WWK-Qj-GAT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMh-e3-5Rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -11897,11 +11910,8 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUI-bA-KWO">
-                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <rect key="frame" x="25" y="70" width="325" height="406"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="JzR-MY-jkL"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“First things first, we need to get off of this ship.” You say as you take the lead down the long corridor. 
@@ -11972,10 +11982,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-LE-Izd">
-                                <rect key="frame" x="30" y="478" width="315" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="uAA-uC-qKf"/>
-                                </constraints>
+                                <rect key="frame" x="25" y="543" width="325" height="30"/>
                                 <state key="normal" title="NEXT CHPATER"/>
                                 <connections>
                                     <segue destination="amq-0H-d2h" kind="show" identifier="Raid On Covarnius" id="4au-z9-cOS"/>
@@ -11984,19 +11991,24 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aVu-LE-Izd" firstAttribute="top" secondItem="wUI-bA-KWO" secondAttribute="bottom" constant="8" id="2Lf-y6-Mtf"/>
-                            <constraint firstItem="wUI-bA-KWO" firstAttribute="top" secondItem="RFs-DK-0YE" secondAttribute="top" constant="50" id="DXG-oc-L53"/>
-                            <constraint firstItem="RFs-DK-0YE" firstAttribute="trailing" secondItem="wUI-bA-KWO" secondAttribute="trailing" constant="25" id="R6y-rZ-GOz"/>
-                            <constraint firstItem="RFs-DK-0YE" firstAttribute="trailing" secondItem="aVu-LE-Izd" secondAttribute="trailing" constant="30" id="Rle-zG-9BU"/>
-                            <constraint firstItem="aVu-LE-Izd" firstAttribute="leading" secondItem="RFs-DK-0YE" secondAttribute="leading" constant="30" id="TLN-kv-meQ"/>
-                            <constraint firstItem="wUI-bA-KWO" firstAttribute="leading" secondItem="RFs-DK-0YE" secondAttribute="leading" constant="25" id="X7u-Ov-yfm"/>
+                            <constraint firstItem="wUI-bA-KWO" firstAttribute="top" secondItem="RFs-DK-0YE" secondAttribute="top" constant="50" id="1KE-4Q-VN8"/>
+                            <constraint firstItem="RFs-DK-0YE" firstAttribute="bottom" secondItem="aVu-LE-Izd" secondAttribute="bottom" constant="94" id="JI6-j8-cFy"/>
+                            <constraint firstItem="aVu-LE-Izd" firstAttribute="leading" secondItem="RFs-DK-0YE" secondAttribute="leading" constant="25" id="WZz-mw-Ieh"/>
+                            <constraint firstItem="aVu-LE-Izd" firstAttribute="top" secondItem="wUI-bA-KWO" secondAttribute="bottom" constant="67" id="dYK-sB-Tjr"/>
+                            <constraint firstItem="aVu-LE-Izd" firstAttribute="top" secondItem="wUI-bA-KWO" secondAttribute="bottom" constant="67" id="nvk-Ml-hu6"/>
+                            <constraint firstItem="wUI-bA-KWO" firstAttribute="leading" secondItem="RFs-DK-0YE" secondAttribute="leading" constant="25" id="pmd-37-EWm"/>
+                            <constraint firstItem="RFs-DK-0YE" firstAttribute="trailing" secondItem="aVu-LE-Izd" secondAttribute="trailing" constant="25" id="rJQ-0y-Ndw"/>
+                            <constraint firstItem="RFs-DK-0YE" firstAttribute="trailing" secondItem="wUI-bA-KWO" secondAttribute="trailing" constant="25" id="saw-Xa-PCh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RFs-DK-0YE"/>
                     </view>
+                    <connections>
+                        <outlet property="fetchKey2TextBox" destination="wUI-bA-KWO" id="KCE-z9-asO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgF-Mi-F2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="10254"/>
+            <point key="canvasLocation" x="752.79999999999995" y="10253.523238380811"/>
         </scene>
         <!--Raid On Covarnius Page View Controller-->
         <scene sceneID="AwI-gp-00I">
@@ -13575,9 +13587,6 @@ Cgo
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdT-u3-cb6">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="Vno-Pj-rgE"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“I told you we should have gone with the other idea,” Chrono grumbles as the two of you sit in the brig. 
@@ -13744,12 +13753,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oDc-0C-C4N" firstAttribute="trailing" secondItem="kdT-u3-cb6" secondAttribute="trailing" constant="25" id="9Bu-v4-ahe"/>
-                            <constraint firstItem="kdT-u3-cb6" firstAttribute="leading" secondItem="oDc-0C-C4N" secondAttribute="leading" constant="25" id="Dgd-KU-fyg"/>
-                            <constraint firstItem="kdT-u3-cb6" firstAttribute="top" secondItem="oDc-0C-C4N" secondAttribute="top" constant="50" id="jeW-j6-XbK"/>
+                            <constraint firstItem="kdT-u3-cb6" firstAttribute="top" secondItem="oDc-0C-C4N" secondAttribute="top" constant="50" id="aud-bt-ZX5"/>
+                            <constraint firstItem="oDc-0C-C4N" firstAttribute="trailing" secondItem="kdT-u3-cb6" secondAttribute="trailing" constant="25" id="eWg-We-C8F"/>
+                            <constraint firstItem="oDc-0C-C4N" firstAttribute="bottom" secondItem="kdT-u3-cb6" secondAttribute="bottom" constant="197" id="wHe-4d-dhQ"/>
+                            <constraint firstItem="kdT-u3-cb6" firstAttribute="leading" secondItem="oDc-0C-C4N" secondAttribute="leading" constant="25" id="yj5-sJ-2vH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oDc-0C-C4N"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_5TextBox" destination="kdT-u3-cb6" id="Ay6-q2-OBr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYL-aS-avm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -13766,9 +13779,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDW-hR-omR">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="RaH-J4-b0y"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Hours have passed by. You stare forlornly out the tiny porthole that looks out into deep, dark space. A small dot in the distance has been continuing to grow larger and larger. You conclude that must be the ship’s destination: Covarnius. 
@@ -13876,12 +13886,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Wqu-zQ-ogM" firstAttribute="trailing" secondItem="yDW-hR-omR" secondAttribute="trailing" constant="25" id="6oT-5j-oW0"/>
-                            <constraint firstItem="yDW-hR-omR" firstAttribute="top" secondItem="Wqu-zQ-ogM" secondAttribute="top" constant="50" id="VIb-rG-POu"/>
-                            <constraint firstItem="yDW-hR-omR" firstAttribute="leading" secondItem="Wqu-zQ-ogM" secondAttribute="leading" constant="25" id="gFd-UL-all"/>
+                            <constraint firstItem="Wqu-zQ-ogM" firstAttribute="bottom" secondItem="yDW-hR-omR" secondAttribute="bottom" constant="197" id="3y0-Ig-wdT"/>
+                            <constraint firstItem="yDW-hR-omR" firstAttribute="leading" secondItem="Wqu-zQ-ogM" secondAttribute="leading" constant="25" id="Ao1-El-OZv"/>
+                            <constraint firstItem="yDW-hR-omR" firstAttribute="top" secondItem="Wqu-zQ-ogM" secondAttribute="top" constant="50" id="Paf-Wa-U6a"/>
+                            <constraint firstItem="Wqu-zQ-ogM" firstAttribute="trailing" secondItem="yDW-hR-omR" secondAttribute="trailing" constant="25" id="RSe-qA-ev0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wqu-zQ-ogM"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_6TextBox" destination="yDW-hR-omR" id="1ZT-9z-r5J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdP-2Y-wV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -14096,9 +14110,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEn-cz-w5Z">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="lLj-dm-kSp"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">The three of you arrive at a large lot extending behind the council chamber. Covarnian Cruisers are parked in neat rows, each one shiny and perfect. “Which one goes with our key card?” You ask worriedly as you survey the dozens and dozens of ships in the lot. 
@@ -14236,12 +14247,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="IEn-cz-w5Z" firstAttribute="leading" secondItem="ySG-ra-gvN" secondAttribute="leading" constant="25" id="6Fn-gg-tZE"/>
-                            <constraint firstItem="IEn-cz-w5Z" firstAttribute="top" secondItem="ySG-ra-gvN" secondAttribute="top" constant="50" id="F9U-eS-Mmq"/>
-                            <constraint firstItem="ySG-ra-gvN" firstAttribute="trailing" secondItem="IEn-cz-w5Z" secondAttribute="trailing" constant="25" id="Tns-dV-uLa"/>
+                            <constraint firstItem="IEn-cz-w5Z" firstAttribute="top" secondItem="ySG-ra-gvN" secondAttribute="top" constant="50" id="4pi-89-UrM"/>
+                            <constraint firstItem="IEn-cz-w5Z" firstAttribute="leading" secondItem="ySG-ra-gvN" secondAttribute="leading" constant="25" id="Vck-Zr-ywH"/>
+                            <constraint firstItem="ySG-ra-gvN" firstAttribute="bottom" secondItem="IEn-cz-w5Z" secondAttribute="bottom" constant="197" id="cJO-dn-978"/>
+                            <constraint firstItem="ySG-ra-gvN" firstAttribute="trailing" secondItem="IEn-cz-w5Z" secondAttribute="trailing" constant="25" id="v8q-p6-Oa5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ySG-ra-gvN"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_2TextBox" destination="IEn-cz-w5Z" id="vhK-Uy-64b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKI-Eh-7uT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -14258,9 +14273,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqe-Qe-L6I">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="DSe-b8-Nv3"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You make your way through the deep recesses of space. Before you know it, you see the Sinisterian ship in the distance.
@@ -14368,12 +14380,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Oqe-Qe-L6I" firstAttribute="top" secondItem="L8H-9x-5pj" secondAttribute="top" constant="50" id="BvN-YF-AMy"/>
-                            <constraint firstItem="Oqe-Qe-L6I" firstAttribute="leading" secondItem="L8H-9x-5pj" secondAttribute="leading" constant="25" id="TMH-i4-Mna"/>
-                            <constraint firstItem="L8H-9x-5pj" firstAttribute="trailing" secondItem="Oqe-Qe-L6I" secondAttribute="trailing" constant="25" id="zW2-0z-bgT"/>
+                            <constraint firstItem="L8H-9x-5pj" firstAttribute="trailing" secondItem="Oqe-Qe-L6I" secondAttribute="trailing" constant="25" id="8qE-6G-ffd"/>
+                            <constraint firstItem="Oqe-Qe-L6I" firstAttribute="leading" secondItem="L8H-9x-5pj" secondAttribute="leading" constant="25" id="KDs-hU-a6k"/>
+                            <constraint firstItem="Oqe-Qe-L6I" firstAttribute="top" secondItem="L8H-9x-5pj" secondAttribute="top" constant="50" id="pOK-Ma-UOJ"/>
+                            <constraint firstItem="L8H-9x-5pj" firstAttribute="bottom" secondItem="Oqe-Qe-L6I" secondAttribute="bottom" constant="197" id="uki-Ms-ET2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L8H-9x-5pj"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter6_3TextBox" destination="Oqe-Qe-L6I" id="6LD-rv-oCY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJa-Dd-gwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -14505,6 +14521,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LYW-nM-bmb"/>
                     </view>
+                    <connections>
+                        <outlet property="almostGiveUpTextBox" destination="Mjc-T4-In7" id="pqJ-kz-in0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2II-Hh-Eh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -14634,6 +14653,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ogT-Pr-fpf"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5_5TextBox" destination="kAL-5m-8CW" id="id4-jE-6JF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVr-YO-sqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -14764,6 +14786,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="muI-pE-2uD"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5_4TextBox" destination="VpW-NX-kQG" id="Aze-S1-wTL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72s-8e-1SK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -14820,6 +14845,7 @@ Covarnians are not fighters, we’re builders. Chrono says as he kicks a strange
                         <viewLayoutGuide key="safeArea" id="KOV-Qb-ehZ"/>
                     </view>
                     <connections>
+                        <outlet property="Chapter5_3TextBox" destination="g8J-AO-Czg" id="w7z-4v-LBE"/>
                         <outlet property="glimmerOfHope" destination="g8J-AO-Czg" id="gi4-s5-bN7"/>
                     </connections>
                 </viewController>
@@ -14838,9 +14864,6 @@ Covarnians are not fighters, we’re builders. Chrono says as he kicks a strange
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRM-R5-gfC">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="Sfc-oZ-1xw"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">The two of you (with Luna) hurry to tell Zanarq about your genius plan to stop the Sinisterians once and for all. Upon arriving, you are escorted to a large room. The area is nearly empty, save  a table surrounded by a dozen chairs. Zanarq sits at the head of the table, his shiny crown perched atop his head. More Covarnians sit in the seats around the alien king, weary looks on their faces. This must be the war room, with the king surrounded by his wise councilmen.
@@ -14913,12 +14936,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="suV-JA-6Gi" firstAttribute="trailing" secondItem="iRM-R5-gfC" secondAttribute="trailing" constant="25" id="4Hk-S6-i48"/>
-                            <constraint firstItem="iRM-R5-gfC" firstAttribute="top" secondItem="suV-JA-6Gi" secondAttribute="top" constant="50" id="95V-kQ-PhO"/>
-                            <constraint firstItem="iRM-R5-gfC" firstAttribute="leading" secondItem="suV-JA-6Gi" secondAttribute="leading" constant="25" id="u4o-93-OG6"/>
+                            <constraint firstItem="suV-JA-6Gi" firstAttribute="trailing" secondItem="iRM-R5-gfC" secondAttribute="trailing" constant="25" id="7vK-bL-ods"/>
+                            <constraint firstItem="iRM-R5-gfC" firstAttribute="leading" secondItem="suV-JA-6Gi" secondAttribute="leading" constant="25" id="Tk8-Zh-w0e"/>
+                            <constraint firstItem="iRM-R5-gfC" firstAttribute="top" secondItem="suV-JA-6Gi" secondAttribute="top" constant="50" id="VCz-7W-5aR"/>
+                            <constraint firstItem="suV-JA-6Gi" firstAttribute="bottom" secondItem="iRM-R5-gfC" secondAttribute="bottom" constant="197" id="lyu-bF-sAr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="suV-JA-6Gi"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5Before5TextBox" destination="iRM-R5-gfC" id="nha-Yk-FLc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJS-HJ-BUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15016,6 +15043,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HsG-Fr-kQ5"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5_4Point5TextBox" destination="AHd-kH-uhx" id="ogo-90-Mi7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejZ-tP-zCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15167,6 +15197,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ryt-JE-cqa"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5_2TextBox" destination="Jfr-Fz-GB4" id="1Ci-nZ-G1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnq-Qi-qhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15236,25 +15269,25 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VJE-fp-Aki"/>
                     </view>
+                    <connections>
+                        <outlet property="chapter5Before2TextBox" destination="v6W-kL-swX" id="BhG-4R-snA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pyv-Bx-KUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1526" y="6508"/>
         </scene>
-        <!--View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="VFD-fM-cia">
             <objects>
-                <viewController id="2VN-on-IE5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="never know the end" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2VN-on-IE5" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kxv-y8-eeD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-bY-E70">
-                                <rect key="frame" x="25" y="80" width="325" height="450"/>
+                                <rect key="frame" x="25" y="70" width="325" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="2D0-fN-ZmM"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You bid Chrono farewell and wish him and Covarnius the best of luck. You jump into the ship and Luna jumps in after you. As the preprogrammed ship ascends into the sky, you take one more look at Covarnius. You can see Chrono standing dejectedly below. If only there was some way of stopping the Sinisterian invasion from happening. 
@@ -15390,7 +15423,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deC-OL-zkd">
-                                <rect key="frame" x="50" y="560" width="275" height="47"/>
+                                <rect key="frame" x="20" y="597" width="335" height="30"/>
                                 <state key="normal" title="THE END"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="4hG-Mm-Rda"/>
@@ -15399,16 +15432,19 @@ Cg
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.089814075160000006" blue="0.13611368779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="C2D-bq-m7g" firstAttribute="trailing" secondItem="9z5-bY-E70" secondAttribute="trailing" constant="25" id="7ON-cl-H3V"/>
-                            <constraint firstItem="deC-OL-zkd" firstAttribute="leading" secondItem="C2D-bq-m7g" secondAttribute="leading" constant="50" id="ChK-Rp-8Rm"/>
-                            <constraint firstItem="deC-OL-zkd" firstAttribute="top" secondItem="9z5-bY-E70" secondAttribute="bottom" constant="30" id="f8W-dN-v5q"/>
-                            <constraint firstItem="9z5-bY-E70" firstAttribute="leading" secondItem="C2D-bq-m7g" secondAttribute="leading" constant="25" id="rVF-88-9L2"/>
-                            <constraint firstItem="9z5-bY-E70" firstAttribute="top" secondItem="C2D-bq-m7g" secondAttribute="top" constant="60" id="rgG-XK-yRr"/>
-                            <constraint firstItem="C2D-bq-m7g" firstAttribute="bottom" secondItem="deC-OL-zkd" secondAttribute="bottom" constant="60" id="vqa-yO-Az4"/>
-                            <constraint firstItem="C2D-bq-m7g" firstAttribute="trailing" secondItem="deC-OL-zkd" secondAttribute="trailing" constant="50" id="yQc-uv-ILT"/>
+                            <constraint firstItem="C2D-bq-m7g" firstAttribute="trailing" secondItem="9z5-bY-E70" secondAttribute="trailing" constant="25" id="5GK-Nw-dHI"/>
+                            <constraint firstItem="C2D-bq-m7g" firstAttribute="trailing" secondItem="deC-OL-zkd" secondAttribute="trailing" constant="20" id="CZM-07-Lsk"/>
+                            <constraint firstItem="9z5-bY-E70" firstAttribute="leading" secondItem="C2D-bq-m7g" secondAttribute="leading" constant="25" id="Pv1-nS-N8R"/>
+                            <constraint firstItem="deC-OL-zkd" firstAttribute="leading" secondItem="C2D-bq-m7g" secondAttribute="leading" constant="20" id="TZX-br-g5o"/>
+                            <constraint firstItem="deC-OL-zkd" firstAttribute="top" secondItem="9z5-bY-E70" secondAttribute="bottom" constant="47" id="a1i-Qp-TMb"/>
+                            <constraint firstItem="9z5-bY-E70" firstAttribute="top" secondItem="C2D-bq-m7g" secondAttribute="top" constant="50" id="p5W-x9-EOu"/>
+                            <constraint firstItem="C2D-bq-m7g" firstAttribute="bottom" secondItem="deC-OL-zkd" secondAttribute="bottom" constant="40" id="tDv-e4-XSx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C2D-bq-m7g"/>
                     </view>
+                    <connections>
+                        <outlet property="neverKnowTheEnd" destination="9z5-bY-E70" id="g29-Tx-R9a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t53-Gz-T9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15425,9 +15461,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTo-gU-WGw">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="Vxa-Zf-1HG"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You and Chrono walk in silence. If Covarnius is being invaded by a hostile race of aliens, there is no way you want to be there for that. You could get captured, enslaved, or worse. What could possibly be done to help?
@@ -15525,18 +15558,21 @@ Cg
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="eRk-f7-65B" secondAttribute="trailing" constant="16" id="5va-0A-mYn"/>
-                            <constraint firstItem="oRd-wL-7HJ" firstAttribute="top" secondItem="tTo-gU-WGw" secondAttribute="bottom" constant="69" id="AbE-i8-2Wy"/>
-                            <constraint firstItem="tTo-gU-WGw" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="25" id="FB4-qq-rvB"/>
+                            <constraint firstItem="oRd-wL-7HJ" firstAttribute="top" secondItem="tTo-gU-WGw" secondAttribute="bottom" constant="69" id="CSE-cq-giR"/>
+                            <constraint firstItem="tTo-gU-WGw" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="25" id="D9o-zd-gO7"/>
+                            <constraint firstItem="tTo-gU-WGw" firstAttribute="top" secondItem="mob-a7-9Fu" secondAttribute="top" constant="50" id="E40-ch-Wsf"/>
                             <constraint firstItem="eRk-f7-65B" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="60" id="VvF-F4-hoE"/>
-                            <constraint firstItem="tTo-gU-WGw" firstAttribute="top" secondItem="mob-a7-9Fu" secondAttribute="top" constant="50" id="Z2y-18-wTh"/>
                             <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="oRd-wL-7HJ" secondAttribute="trailing" constant="16" id="ghr-It-4dZ"/>
                             <constraint firstItem="mob-a7-9Fu" firstAttribute="bottom" secondItem="eRk-f7-65B" secondAttribute="bottom" constant="60" id="iDc-BN-ZKe"/>
-                            <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="tTo-gU-WGw" secondAttribute="trailing" constant="25" id="nim-7Q-6WH"/>
+                            <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="tTo-gU-WGw" secondAttribute="trailing" constant="25" id="tov-GW-ag1"/>
                             <constraint firstItem="oRd-wL-7HJ" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="60" id="vjx-QR-gf8"/>
                             <constraint firstItem="eRk-f7-65B" firstAttribute="top" secondItem="oRd-wL-7HJ" secondAttribute="bottom" constant="8" id="y3T-QC-21D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mob-a7-9Fu"/>
                     </view>
+                    <connections>
+                        <outlet property="warMonger1TextBox" destination="tTo-gU-WGw" id="mkW-o6-Pkq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghG-gV-Twj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15553,9 +15589,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xiT-Bt-xPw">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="MT0-dp-Ma3"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Leave? And miss out on the adventure of a lifetime? Not a chance!
@@ -15693,12 +15726,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xiT-Bt-xPw" firstAttribute="top" secondItem="cz7-xI-lU1" secondAttribute="top" constant="50" id="54e-VW-4tc"/>
-                            <constraint firstItem="cz7-xI-lU1" firstAttribute="trailing" secondItem="xiT-Bt-xPw" secondAttribute="trailing" constant="25" id="W9t-2S-X8Z"/>
-                            <constraint firstItem="xiT-Bt-xPw" firstAttribute="leading" secondItem="cz7-xI-lU1" secondAttribute="leading" constant="25" id="ZZW-I5-Aww"/>
+                            <constraint firstItem="cz7-xI-lU1" firstAttribute="bottom" secondItem="xiT-Bt-xPw" secondAttribute="bottom" constant="197" id="UoO-fD-uGn"/>
+                            <constraint firstItem="cz7-xI-lU1" firstAttribute="trailing" secondItem="xiT-Bt-xPw" secondAttribute="trailing" constant="25" id="esV-um-7nO"/>
+                            <constraint firstItem="xiT-Bt-xPw" firstAttribute="leading" secondItem="cz7-xI-lU1" secondAttribute="leading" constant="25" id="kFr-qH-pBc"/>
+                            <constraint firstItem="xiT-Bt-xPw" firstAttribute="top" secondItem="cz7-xI-lU1" secondAttribute="top" constant="50" id="kLK-3n-RZB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cz7-xI-lU1"/>
                     </view>
+                    <connections>
+                        <outlet property="neverGiveUpTextBox" destination="xiT-Bt-xPw" id="iGp-q3-cyX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWV-YM-XlB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15715,9 +15752,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhe-mP-MKV">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="ksp-sw-2bg"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Following the guard out of the lab, you wonder what the scientist was talking about. Covarnius’ last hope? Nothing can save them from what?
@@ -15779,12 +15813,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vxk-6u-hnJ" firstAttribute="trailing" secondItem="bhe-mP-MKV" secondAttribute="trailing" constant="25" id="ME2-ua-FOx"/>
-                            <constraint firstItem="bhe-mP-MKV" firstAttribute="top" secondItem="vxk-6u-hnJ" secondAttribute="top" constant="50" id="fYQ-Wm-CRs"/>
-                            <constraint firstItem="bhe-mP-MKV" firstAttribute="leading" secondItem="vxk-6u-hnJ" secondAttribute="leading" constant="25" id="oWU-3Z-4kr"/>
+                            <constraint firstItem="vxk-6u-hnJ" firstAttribute="bottom" secondItem="bhe-mP-MKV" secondAttribute="bottom" constant="197" id="3yV-VJ-YDr"/>
+                            <constraint firstItem="bhe-mP-MKV" firstAttribute="top" secondItem="vxk-6u-hnJ" secondAttribute="top" constant="50" id="4Xd-eX-VK2"/>
+                            <constraint firstItem="bhe-mP-MKV" firstAttribute="leading" secondItem="vxk-6u-hnJ" secondAttribute="leading" constant="25" id="DEP-Ql-xYW"/>
+                            <constraint firstItem="vxk-6u-hnJ" firstAttribute="trailing" secondItem="bhe-mP-MKV" secondAttribute="trailing" constant="25" id="HZJ-iE-hg5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vxk-6u-hnJ"/>
                     </view>
+                    <connections>
+                        <outlet property="jigsUp1Point5TextBox" destination="bhe-mP-MKV" id="qGz-Pg-M5x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnb-sa-jFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15918,6 +15956,9 @@ Cg
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="chapter5_1TextBox" destination="EbW-V6-ghr" id="lZo-Nd-4fm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gx5-6m-xKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -15991,7 +16032,7 @@ You look at Chrono, who looks more miserable than ever. “What did he mean by i
                         <viewLayoutGuide key="safeArea" id="feh-sp-jO2"/>
                     </view>
                     <connections>
-                        <outlet property="enoughZanarq" destination="WQz-ah-9op" id="d4u-OJ-nm3"/>
+                        <outlet property="chapter51Point5TextBox" destination="WQz-ah-9op" id="fhr-2l-ARc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJj-ny-bol" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -16154,7 +16195,7 @@ Cg
                         <viewLayoutGuide key="safeArea" id="rig-yp-5Oj"/>
                     </view>
                     <connections>
-                        <outlet property="youLookAroundTheLab" destination="eAY-Ju-qSS" id="TaW-Dm-vIu"/>
+                        <outlet property="JigsUpTextBox" destination="eAY-Ju-qSS" id="kgY-AP-Itr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w62-Q2-3wH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -16172,9 +16213,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37h-Px-rKZ">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="69j-aG-CD0"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You pick up a beaker filled with a strange smelling liquid. It’s red, bubbly and seems important. As you bring it up to eye level to observe its contents, the Covarnian scientist lets out a sigh of exasperation
@@ -16221,12 +16259,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="37h-Px-rKZ" firstAttribute="leading" secondItem="6l4-h6-42w" secondAttribute="leading" constant="25" id="CFr-eq-Aml"/>
-                            <constraint firstItem="37h-Px-rKZ" firstAttribute="top" secondItem="6l4-h6-42w" secondAttribute="top" constant="50" id="F6n-wN-zvj"/>
-                            <constraint firstItem="6l4-h6-42w" firstAttribute="trailing" secondItem="37h-Px-rKZ" secondAttribute="trailing" constant="25" id="n3F-3c-L0i"/>
+                            <constraint firstItem="6l4-h6-42w" firstAttribute="bottom" secondItem="37h-Px-rKZ" secondAttribute="bottom" constant="197" id="4Pv-M2-Ryb"/>
+                            <constraint firstItem="6l4-h6-42w" firstAttribute="trailing" secondItem="37h-Px-rKZ" secondAttribute="trailing" constant="25" id="Cib-sQ-V4l"/>
+                            <constraint firstItem="37h-Px-rKZ" firstAttribute="top" secondItem="6l4-h6-42w" secondAttribute="top" constant="50" id="ZTQ-P6-9il"/>
+                            <constraint firstItem="37h-Px-rKZ" firstAttribute="leading" secondItem="6l4-h6-42w" secondAttribute="leading" constant="25" id="ar0-3Y-Yfj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6l4-h6-42w"/>
                     </view>
+                    <connections>
+                        <outlet property="youGoofedPoint5TextBox" destination="37h-Px-rKZ" id="NPP-aB-m1o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Pl-Vt-Rac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -16350,7 +16392,7 @@ Cg
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-eg-NCm">
                                 <rect key="frame" x="120" y="577" width="239" height="30"/>
-                                <state key="normal" title="Grab The Bright Green Liqued"/>
+                                <state key="normal" title="Grab the bright green liquid."/>
                                 <connections>
                                     <segue destination="Pxv-HS-Uwl" kind="show" id="z14-SB-I6z"/>
                                 </connections>
@@ -16382,26 +16424,24 @@ Cg
                     </view>
                     <connections>
                         <outlet property="whichFizz" destination="3Lz-Vq-evZ" id="3E0-iD-FNS"/>
+                        <outlet property="youGoofedTextBox" destination="3Lz-Vq-evZ" id="U5x-P9-rUv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJE-6i-E8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8286" y="7254"/>
         </scene>
-        <!--View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="JFg-Ye-Lig">
             <objects>
-                <viewController id="yg7-uA-qyh" sceneMemberID="viewController">
+                <viewController id="yg7-uA-qyh" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EnU-Qp-97y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paR-bA-MXN">
-                                <rect key="frame" x="25" y="70" width="325" height="420"/>
+                                <rect key="frame" x="25" y="70" width="325" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="420" id="Hbs-Cg-jfy"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Quickly, you grab the yellow liquid. It smells very strange, a mixture of honey and fresh cut grass. After mixing the red liquid with the yellow mixture, a look of sheer horror crosses the Covarnian scientist’s face.
@@ -16546,15 +16586,19 @@ Cg
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.089814075160000006" blue="0.13611368779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="paR-bA-MXN" firstAttribute="top" secondItem="tev-LY-2cK" secondAttribute="top" constant="50" id="MpI-38-GYQ"/>
-                            <constraint firstItem="6E0-Jy-2kl" firstAttribute="leading" secondItem="tev-LY-2cK" secondAttribute="leading" constant="50" id="Sv3-ab-mVw"/>
-                            <constraint firstItem="tev-LY-2cK" firstAttribute="trailing" secondItem="6E0-Jy-2kl" secondAttribute="trailing" constant="50" id="g6j-1K-g8x"/>
-                            <constraint firstItem="tev-LY-2cK" firstAttribute="trailing" secondItem="paR-bA-MXN" secondAttribute="trailing" constant="25" id="gKq-T9-8wq"/>
-                            <constraint firstItem="tev-LY-2cK" firstAttribute="bottom" secondItem="6E0-Jy-2kl" secondAttribute="bottom" constant="60" id="hWv-Gu-854"/>
-                            <constraint firstItem="paR-bA-MXN" firstAttribute="leading" secondItem="tev-LY-2cK" secondAttribute="leading" constant="25" id="sv8-cI-cix"/>
+                            <constraint firstItem="paR-bA-MXN" firstAttribute="top" secondItem="tev-LY-2cK" secondAttribute="top" constant="50" id="2g2-1a-OZU"/>
+                            <constraint firstItem="6E0-Jy-2kl" firstAttribute="leading" secondItem="tev-LY-2cK" secondAttribute="leading" constant="50" id="2rC-1V-WIE"/>
+                            <constraint firstItem="paR-bA-MXN" firstAttribute="leading" secondItem="tev-LY-2cK" secondAttribute="leading" constant="25" id="8fn-S1-0Ob"/>
+                            <constraint firstItem="tev-LY-2cK" firstAttribute="trailing" secondItem="6E0-Jy-2kl" secondAttribute="trailing" constant="50" id="G3f-JO-FJs"/>
+                            <constraint firstItem="6E0-Jy-2kl" firstAttribute="top" secondItem="paR-bA-MXN" secondAttribute="bottom" constant="40" id="GWT-2t-Hfn"/>
+                            <constraint firstItem="tev-LY-2cK" firstAttribute="trailing" secondItem="paR-bA-MXN" secondAttribute="trailing" constant="25" id="KER-5V-199"/>
+                            <constraint firstItem="tev-LY-2cK" firstAttribute="bottom" secondItem="6E0-Jy-2kl" secondAttribute="bottom" constant="60" id="qpa-Yc-VCN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tev-LY-2cK"/>
                     </view>
+                    <connections>
+                        <outlet property="yellowFizzTheEndTextBox" destination="paR-bA-MXN" id="W8S-wj-w6D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKi-la-OIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -16568,7 +16612,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQP-oF-37D" customClass="ChapterV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQP-oF-37D">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -16671,7 +16715,7 @@ Cg
                         <viewLayoutGuide key="safeArea" id="6JO-eq-dSY"/>
                     </view>
                     <connections>
-                        <outlet property="greenFizzeGameOver" destination="xQP-oF-37D" id="xaM-Et-BPA"/>
+                        <outlet property="greenFizzTheEndTextBox" destination="xQP-oF-37D" id="oZJ-ST-WJI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOU-L6-ZVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -16689,9 +16733,6 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqO-0r-zpY">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="SET-nF-UFL"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Kayo helped you, now you’re going to help him. Or at least you’re going to try…
@@ -16716,12 +16757,16 @@ As you round the corner of the ranch house, you see Kayo and Kina crouching near
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YqO-0r-zpY" firstAttribute="top" secondItem="71g-LJ-eUe" secondAttribute="top" constant="50" id="Gcp-O4-qbA"/>
-                            <constraint firstItem="71g-LJ-eUe" firstAttribute="trailing" secondItem="YqO-0r-zpY" secondAttribute="trailing" constant="25" id="Hpu-F9-7Aw"/>
-                            <constraint firstItem="YqO-0r-zpY" firstAttribute="leading" secondItem="71g-LJ-eUe" secondAttribute="leading" constant="25" id="lA9-X8-dmV"/>
+                            <constraint firstItem="71g-LJ-eUe" firstAttribute="trailing" secondItem="YqO-0r-zpY" secondAttribute="trailing" constant="25" id="bwo-GX-kfg"/>
+                            <constraint firstItem="YqO-0r-zpY" firstAttribute="leading" secondItem="71g-LJ-eUe" secondAttribute="leading" constant="25" id="iBw-Bi-Vdo"/>
+                            <constraint firstItem="71g-LJ-eUe" firstAttribute="bottom" secondItem="YqO-0r-zpY" secondAttribute="bottom" constant="197" id="yYZ-vb-QsD"/>
+                            <constraint firstItem="YqO-0r-zpY" firstAttribute="top" secondItem="71g-LJ-eUe" secondAttribute="top" constant="50" id="ypn-VN-jx8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="71g-LJ-eUe"/>
                     </view>
+                    <connections>
+                        <outlet property="hapalRescueTextBox" destination="YqO-0r-zpY" id="w2d-QZ-C3C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvB-6K-TPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -17273,9 +17318,8 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-kG-BP9">
-                                <rect key="frame" x="25" y="70" width="325" height="420"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-kG-BP9">
+                                <rect key="frame" x="25" y="70" width="325" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -17384,6 +17428,12 @@ Cg
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tlo-kK-KoD" firstAttribute="trailing" secondItem="Jyv-kG-BP9" secondAttribute="trailing" constant="25" id="4YB-nY-gzz"/>
+                            <constraint firstItem="tlo-kK-KoD" firstAttribute="bottom" secondItem="Jyv-kG-BP9" secondAttribute="bottom" constant="197" id="nDO-Xh-rKs"/>
+                            <constraint firstItem="Jyv-kG-BP9" firstAttribute="leading" secondItem="tlo-kK-KoD" secondAttribute="leading" constant="25" id="nGe-tA-wV2"/>
+                            <constraint firstItem="Jyv-kG-BP9" firstAttribute="top" secondItem="tlo-kK-KoD" secondAttribute="top" constant="50" id="wEp-fi-WKv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tlo-kK-KoD"/>
                     </view>
                     <connections>
@@ -19361,19 +19411,19 @@ Do you:
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="U32-uH-FzI"/>
-        <segue reference="TmK-dd-ndt"/>
-        <segue reference="FFv-aN-znV"/>
+        <segue reference="4au-z9-cOS"/>
+        <segue reference="pMP-5Z-Rb3"/>
         <segue reference="vLZ-qm-1Bl"/>
         <segue reference="6cW-v5-1e6"/>
-        <segue reference="e5A-CT-PnX"/>
-        <segue reference="7dg-rL-hhO"/>
-        <segue reference="xUf-0X-2cU"/>
+        <segue reference="PZg-sR-bY4"/>
+        <segue reference="6es-We-obc"/>
+        <segue reference="why-Zw-93Q"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="wuX-KR-O0k"/>
         <segue reference="dm8-JS-0k1"/>
         <segue reference="Rlm-ND-bdU"/>
         <segue reference="UT2-He-dFh"/>
         <segue reference="cSf-RQ-ef6"/>
-        <segue reference="uuZ-rN-ipF"/>
+        <segue reference="4hG-Mm-Rda"/>
     </inferredMetricsTieBreakers>
 </document>

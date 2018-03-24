@@ -9,7 +9,7 @@
 import UIKit
 
 class ChapterViewController: UIViewController {
-    
+    //FOR TOMORROW. LEAVING OFF ON "BORROW" FROM COVARNIAN AMBASSADOR ARC.
 
     
     
@@ -107,8 +107,54 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var trust1TextBox: UITextView!
     @IBOutlet weak var trust1Point5TextBox: UITextView!
     @IBOutlet weak var hapalStance1TextBox: UITextView!
+    @IBOutlet weak var letHapalDownTextBox: UITextView!
+    @IBOutlet weak var letHapalDown2TextBox: UITextView!
+    @IBOutlet weak var hapalRescueTextBox: UITextView!
+    @IBOutlet weak var hapalRescue2TextBox: UITextView!
+    @IBOutlet weak var hapalRescue2AgainTextBox: UITextView!
+    @IBOutlet weak var hapalRescue3TextBox: UITextView!
+    @IBOutlet weak var chap4_1TextBox: UITextView!
+    @IBOutlet weak var chapt4_2TextBox: UITextView!
+    @IBOutlet weak var chap4_3TextBox: UITextView!
+    @IBOutlet weak var imNotAScientistPoint5TextBox: UITextView!
+    @IBOutlet weak var youGoofedPoint5TextBox: UITextView!
+    @IBOutlet weak var youGoofedTextBox: UITextView!
+   
+    @IBOutlet weak var chapter51Point5TextBox: UITextView!
+    @IBOutlet weak var chapter5_1TextBox: UITextView!
+    @IBOutlet weak var Chapter5_3TextBox: UITextView!
+    @IBOutlet weak var chapter5_4TextBox: UITextView!
+    @IBOutlet weak var chapter5_4Point5TextBox: UITextView!
+    @IBOutlet weak var chapter5Before5TextBox: UITextView!
+    @IBOutlet weak var chapter5Before7TextBox: UITextView!
+    @IBOutlet weak var chapter6_1TextBox: UITextView!
+    @IBOutlet weak var chapter6_1Point5TextBox: UITextView!
+    @IBOutlet weak var chapter6_2TextBox: UITextView!
+    @IBOutlet weak var chapter6_3TextBox: UITextView!
+    @IBOutlet weak var chapter6_3Point5TextBox: UITextView!
+    @IBOutlet weak var chapter6_4TextBox: UITextView!
+    @IBOutlet weak var Chapter_6_4_AmbassadorTextBox: UITextView!
+    @IBOutlet weak var chapter6_4Point5TextBox: UITextView!
+    @IBOutlet weak var chapter6_5TextBox: UITextView!
+    @IBOutlet weak var chapter6_5AmbassadorTextBox: UITextView!
+    @IBOutlet weak var counciChamberSneakTextBox: UITextView!
+    @IBOutlet weak var chapter6_6TextBox: UITextView!
+    @IBOutlet weak var CCCExplanationTextBox: UITextView!
+    @IBOutlet weak var ramShipTextBox: UITextView!
+    @IBOutlet weak var ramShip2TextBox: UITextView!
+    @IBOutlet weak var fetchKey: UITextView!
+    @IBOutlet weak var fetchKey2TextBox: UITextView!
+    @IBOutlet weak var greenFizzTheEndTextBox: UITextView!
+    @IBOutlet weak var JigsUpTextBox: UITextView!
+    @IBOutlet weak var jigsUp1Point5TextBox: UITextView!
+    @IBOutlet weak var yellowFizzTheEndTextBox: UITextView!
+    
+    @IBOutlet weak var chapter5Before2TextBox: UITextView!
     @IBOutlet weak var TurnBackTheEnd: UITextView!
     @IBOutlet weak var glimmerOfHope: UITextView!
+    @IBOutlet weak var neverKnowTheEnd: UITextView!
+    @IBOutlet weak var neverGiveUpTextBox: UITextView!
+    @IBOutlet weak var almostGiveUpTextBox: UITextView!
     
     @IBOutlet weak var youLookAroundTheLab: UITextView!
     @IBOutlet weak var greenFizzeGameOver: UITextView!

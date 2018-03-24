@@ -12,11 +12,18 @@ class GenericDecisionPointViewController: Chapter3ViewController {
 
     @IBOutlet weak var hapalStanceTextBox: UITextView!
     @IBOutlet weak var someSortOfMistake: UITextView!
-    @IBOutlet weak var FetchKey: UITextView!
     @IBOutlet weak var gettingShady: UITextView!
+    @IBOutlet weak var warMonger1TextBox: UITextView!
+    
+    @IBOutlet weak var chronoKnowsTheLayoutTextBox: UITextView!
+    @IBOutlet weak var chapter5_2TextBox: UITextView!
+    @IBOutlet weak var chapter5_7TextBox: UITextView!
+    @IBOutlet weak var chapter6_7TextBox: UITextView!
+    @IBOutlet weak var jigsUpChoiceTextBox: UITextView!
+    @IBOutlet weak var chapter5_5TextBox: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.FetchKey?.setContentOffset(CGPoint.zero, animated: false)
+       
         self.someSortOfMistake?.setContentOffset(CGPoint.zero, animated: false)
         
         self.gettingShady?.setContentOffset(CGPoint.zero, animated: false)
