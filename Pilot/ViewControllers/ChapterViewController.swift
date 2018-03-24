@@ -17,59 +17,174 @@ class ChapterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         goToChapterSelectAction()
-       
-        self.chapter4?.setContentOffset(CGPoint.zero, animated: true)
-      
 
-        
         // Do any additional setup after loading the view.
     }
 
    
-   
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-         let width = self.view.frame.size.width
-        self.IntroductionTextBox?.changeFontSizeByDevice(width: width)
-        self.chronoGrinsAtYou?.setContentOffset(CGPoint.zero, animated: false)
-        self.youLookAroundTheLab?.setContentOffset(CGPoint.zero, animated: false)
-        self.enoughZanarq?.setContentOffset(CGPoint.zero, animated: false)
-        self.greenFizzeGameOver?.setContentOffset(CGPoint.zero, animated: false)
-        self.glimmerOfHope?.setContentOffset(CGPoint.zero, animated: false)
-        self.possibleButRisky?.setContentOffset(CGPoint.zero, animated: false)
-        self.chapter2?.setContentOffset(CGPoint.zero, animated: false)
-        self.chapter3?.setContentOffset(CGPoint.zero, animated: false)
-        self.Chapter3_1?.setContentOffset(CGPoint.zero, animated: false)
-        self.chapter3page2?.setContentOffset(CGPoint.zero, animated: false)
-        self.chapter4?.setContentOffset(CGPoint.zero, animated: true)
-        self.OnTheRanchChapter?.setContentOffset(CGPoint.zero, animated: false)
-        self.hapalStanceChapter?.setContentOffset(CGPoint.zero, animated: false)
-        self.EarthsGreatestScientist?.setContentOffset(CGPoint.zero, animated: false)
-        self.EarthsGreatestScientist2?.setContentOffset(CGPoint.zero, animated: false)
-        self.earthsGreatestScientist3?.setContentOffset(CGPoint.zero, animated: false)
-        self.whichFizz?.setContentOffset(CGPoint.zero, animated: false)
-        self.chapter4Page2?.setContentOffset(CGPoint.zero, animated: false)
+        
+  
+        
+
+//        chap2_1TextBox
+//        chap2_2TextBox
+//        chap2_3TextBox
+//        chap3_0
+//        chap3_1TextBox
+//        chap3_15TextBox
+//        chap3_2TextBox
+//        chap3_25TextBox
+//        katonian1_point5TextBox
+//        katonian1TextBox
+//        katonian2TextBox
+//        katonian2Point5TextBox
+//        at_the_ranch_run_choice_part_1TextBox
+//        at_the_ranch_run_choice_part_2TextBox
+//        at_the_ranch_run_choice_part_2Point5TextBox
+//        at_the_ranch_1TextBox
+//        at_the_ranch_2TextBox
+//        at_the_ranch_2Point5TextBox
+//        at_the_ranch_3TextBox
+//        noTrust_1TextBox
+//        noTrust1Point5TextBox
+//        trust1TextBox
+//        trust1Point5TextBox
+//        hapalStance1TextBox
+//        letHapalDownTextBox
+//        letHapalDown2TextBox
+//        hapalRescueTextBox
+//        hapalRescue2TextBox
+//        hapalRescue2AgainTextBox
+//        hapalRescue3TextBox
+//        chap4_1TextBox
+//        chapt4_2TextBox
+//        chap4_3TextBox
+//        imNotAScientistPoint5TextBox
+//        youGoofedPoint5TextBox
+//        youGoofedTextBox
+//        chapter51Point5TextBox
+//        chapter5_1TextBox
+//        Chapter5_3TextBox
+//        chapter5_4TextBox
+//        chapter5_4Point5TextBox
+//        chapter5Before5TextBox
+//        chapter5Before7TextBox
+//        chapter6_1TextBox
+//        Chapter6_1AmbassadorTextBox
+//        chapter6_1Point5TextBox
+//        chapter6_2TextBox
+//        chapter6_3TextBox
+//        chapter6_3Point5TextBox
+//        chapter6_3AmbassadorTextBox
+//        chapter6_4TextBox
+//        Chapter_6_4_AmbassadorTextBox
+//        chapter6_4Point5TextBox
+//        chapter6_5TextBox
+//        chapter6_5AmbassadorTextBox
+//        Chapter6_6AmbassadorTextBox
+//        chapter6_6Point5TextBox
+//        Chapter6_before7TextBox
+//        goodGrowlicsTextBox
+//        TheyreViciousRunTextBox
+//        theyreViciousRunTextBox_1Point5TextBox
+//        theyreViciousRun_2TextBox
+//        theyreViciousRun_2Point5TextBox
+//        counciChamberSneakTextBox
+//        councilChamberSneak_1Point5
+//        chapter6_6TextBox
+//        CCCExplanationTextBox
+//        ramShipTextBox
+//        ramShip2TextBox
+//        ramShip2Point5TextBox
+//        fetchKey
+//        fetchKey2TextBox
+//        greenFizzTheEndTextBox
+//        JigsUpTextBox
+//        jigsUp1Point5TextBox
+//        yellowFizzTheEndTextBox
+//        heSeemsSeriousTextBox
+//        chapter5Before2TextBox
+//        TurnBackTheEnd
+//        glimmerOfHope
+//        neverKnowTheEnd
+//        neverGiveUpTextBox
+//        almostGiveUpTextBox
+//        checkWindowTextBox
+//        checkDoorTextBox
+//        twoDiplomats1TextBox
+//        twoDiplomats3TextBox
+//        noPeaceTextBox
+//        noPeace2TextBox
+//        twoDiplomats6TextBox
+//        iceRayTextBox
+//        twoDiplomats7TextBox
+//        twoDiplomats8TextBox
+//        twoDiplomats9TextBox
+//        twoDiplomats10TextBox
+//        twoDiplomats11TextBox
+//        twoDiplomats12TextBox
+//        twoDiplomats13TextBox
+//        clog1TextBox
+//        clog2TextBox
+//        clog3TextBox
+//        failedDistraction1TextBox
+//        failedDistraction2TextBox
+//        tookTheKeyTextBox
+//        noKeyTakenTextBox
+//        possibleButRisky
+//        raidOnCovarnius1TextBox
+//        raidOnCovarnius2TextBox
+//        raidOnCovarnius3TextBox
+//        raidOnCovarnius4TextBox
+//        raidOnCovarnius5TextBox
+//        raidOnCovarnius6TextBox
+//        raidOnCovarnius7TextBox
+//        raidOnCovarnius8TextBox
+//        raidOnCovarnius10TextBox
+//        raidOnCovarnius11TextBox
+//        raidOnCovarnius12TextBox
+//        raidOnCovarnius13TextBox
+//        riseAndShine1TextBox
+//        riseAndShine2TextBox
+//        riseAndShine3TextBox
+//        riseAndShine4TextBox
+//        riseAndShine5TextBox
+//        ristAndShine6TextBox
+//        riseAndShine7TextBox
+//        riseAndShine8TextBox
+//        chapter2
+//        chapter3
+//        chapter3page2
+//        whichFizz
+//        IntroductionTextBox
       
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        
+
         self.navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.chapter4?.setContentOffset(CGPoint.zero, animated: true)
+        let width = self.view.frame.size.width
+        self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: false)
+        self.chap2_0TextBox?.changeFontSizeByDevice(width: width)
+        self.chap2_1TextBox?.setContentOffset(CGPoint.zero, animated: false)
+        self.chap2_1TextBox?.changeFontSizeByDevice(width: width)
+        self.chap2_2TextBox?.setContentOffset(CGPoint.zero, animated: false)
+        self.chap2_2TextBox?.changeFontSizeByDevice(width: width)
+        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: false)
+        self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
         
     }
-
     
     func goToChapterSelectAction() {
         let button = NavButton()
         // let button = CustomButton(value: 100) // also works
         button.setTitle(nil, for: .normal)
-        
         // auto layout
         // button.translatesAutoresizingMaskIntoConstraints = false
         button.frame = CGRect(x: -100, y: 30, width: 300, height: 40)
@@ -82,8 +197,10 @@ class ChapterViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "Chapter Select")
         self.show(vc, sender: self)
     }
-    @IBOutlet weak var chap2_0TextBox: myTextView!
-    @IBOutlet weak var chap2_1TextBox: myTextView!
+    
+    
+    @IBOutlet weak var chap2_0TextBox: UITextView!
+    @IBOutlet weak var chap2_1TextBox: UITextView!
     @IBOutlet weak var chap2_2TextBox: UITextView!
     @IBOutlet weak var chap2_3TextBox: UITextView!
     @IBOutlet weak var chap3_0: UITextView!
@@ -119,7 +236,6 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var imNotAScientistPoint5TextBox: UITextView!
     @IBOutlet weak var youGoofedPoint5TextBox: UITextView!
     @IBOutlet weak var youGoofedTextBox: UITextView!
-   
     @IBOutlet weak var chapter51Point5TextBox: UITextView!
     @IBOutlet weak var chapter5_1TextBox: UITextView!
     @IBOutlet weak var Chapter5_3TextBox: UITextView!
@@ -128,52 +244,118 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var chapter5Before5TextBox: UITextView!
     @IBOutlet weak var chapter5Before7TextBox: UITextView!
     @IBOutlet weak var chapter6_1TextBox: UITextView!
+    @IBOutlet weak var Chapter6_1AmbassadorTextBox: UITextView!
     @IBOutlet weak var chapter6_1Point5TextBox: UITextView!
     @IBOutlet weak var chapter6_2TextBox: UITextView!
     @IBOutlet weak var chapter6_3TextBox: UITextView!
     @IBOutlet weak var chapter6_3Point5TextBox: UITextView!
+    @IBOutlet weak var chapter6_3AmbassadorTextBox: UITextView!
     @IBOutlet weak var chapter6_4TextBox: UITextView!
     @IBOutlet weak var Chapter_6_4_AmbassadorTextBox: UITextView!
     @IBOutlet weak var chapter6_4Point5TextBox: UITextView!
     @IBOutlet weak var chapter6_5TextBox: UITextView!
     @IBOutlet weak var chapter6_5AmbassadorTextBox: UITextView!
+    @IBOutlet weak var Chapter6_6AmbassadorTextBox: UITextView!
+    @IBOutlet weak var chapter6_6Point5TextBox: UITextView!
+    @IBOutlet weak var Chapter6_before7TextBox: UITextView!
+    @IBOutlet weak var goodGrowlicsTextBox: UITextView!
+    @IBOutlet weak var TheyreViciousRunTextBox: UITextView!
+    @IBOutlet weak var theyreViciousRunTextBox_1Point5TextBox: UITextView!
+    @IBOutlet weak var theyreViciousRun_2TextBox: UITextView!
+    @IBOutlet weak var theyreViciousRun_2Point5TextBox: UITextView!
     @IBOutlet weak var counciChamberSneakTextBox: UITextView!
+    @IBOutlet weak var councilChamberSneak_1Point5: UITextView!
     @IBOutlet weak var chapter6_6TextBox: UITextView!
     @IBOutlet weak var CCCExplanationTextBox: UITextView!
     @IBOutlet weak var ramShipTextBox: UITextView!
     @IBOutlet weak var ramShip2TextBox: UITextView!
+    @IBOutlet weak var ramShip2Point5TextBox: UITextView!
     @IBOutlet weak var fetchKey: UITextView!
     @IBOutlet weak var fetchKey2TextBox: UITextView!
     @IBOutlet weak var greenFizzTheEndTextBox: UITextView!
     @IBOutlet weak var JigsUpTextBox: UITextView!
     @IBOutlet weak var jigsUp1Point5TextBox: UITextView!
     @IBOutlet weak var yellowFizzTheEndTextBox: UITextView!
-    
+    @IBOutlet weak var heSeemsSeriousTextBox: UITextView!
     @IBOutlet weak var chapter5Before2TextBox: UITextView!
     @IBOutlet weak var TurnBackTheEnd: UITextView!
     @IBOutlet weak var glimmerOfHope: UITextView!
     @IBOutlet weak var neverKnowTheEnd: UITextView!
     @IBOutlet weak var neverGiveUpTextBox: UITextView!
     @IBOutlet weak var almostGiveUpTextBox: UITextView!
-    
-    @IBOutlet weak var youLookAroundTheLab: UITextView!
-    @IBOutlet weak var greenFizzeGameOver: UITextView!
-    @IBOutlet weak var chronoGrinsAtYou: UITextView!
+    @IBOutlet weak var checkWindowTextBox: UITextView!
+    @IBOutlet weak var checkDoorTextBox: UITextView!
+    @IBOutlet weak var twoDiplomats1TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats3TextBox: UITextView!
+    @IBOutlet weak var noPeaceTextBox: UITextView!
+    @IBOutlet weak var noPeace2TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats6TextBox: UITextView!
+    @IBOutlet weak var iceRayTextBox: UITextView!
+    @IBOutlet weak var twoDiplomats7TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats8TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats9TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats10TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats11TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats12TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats13TextBox: UITextView!
+    @IBOutlet weak var clog1TextBox: UITextView!
+    @IBOutlet weak var clog2TextBox: UITextView!
+    @IBOutlet weak var clog3TextBox: UITextView!
+    @IBOutlet weak var failedDistraction1TextBox: UITextView!
+    @IBOutlet weak var failedDistraction2TextBox: UITextView!
+    @IBOutlet weak var tookTheKeyTextBox: UITextView!
+    @IBOutlet weak var noKeyTakenTextBox: UITextView!
     @IBOutlet weak var possibleButRisky: UITextView!
-    @IBOutlet weak var chapter4Page2: UITextView!
-    @IBOutlet weak var earthsGreatestScientist3: UITextView!
-    @IBOutlet weak var EarthsGreatestScientist2: UITextView!
-    @IBOutlet weak var EarthsGreatestScientist: UITextView!
-    @IBOutlet weak var Chapter3_1: UITextView!
+    @IBOutlet weak var raidOnCovarnius1TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius2TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius3TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius4TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius5TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius6TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius7TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius8TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius9TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius10TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius11TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius12TextBox: UITextView!
+    @IBOutlet weak var raidOnCovarnius13TextBox: UITextView!
+    @IBOutlet weak var riseAndShine1TextBox: UITextView!
+    @IBOutlet weak var riseAndShine2TextBox: UITextView!
+    @IBOutlet weak var riseAndShine3TextBox: UITextView!
+    @IBOutlet weak var riseAndShine4TextBox: UITextView!
+    @IBOutlet weak var riseAndShine5TextBox: UITextView!
+    @IBOutlet weak var ristAndShine6TextBox: UITextView!
+    @IBOutlet weak var riseAndShine7TextBox: UITextView!
+    @IBOutlet weak var riseAndShine8TextBox: UITextView!
     @IBOutlet weak var chapter2: UITextView!
     @IBOutlet weak var chapter3: UITextView!
-    @IBOutlet weak var chapter4: UITextView!
-    
     @IBOutlet weak var chapter3page2: UITextView!
-    
-    @IBOutlet weak var enoughZanarq: UITextView!
     @IBOutlet weak var whichFizz: UITextView!
-    @IBOutlet weak var hapalStanceChapter: UITextView!
-    @IBOutlet weak var OnTheRanchChapter: UITextView!
     @IBOutlet weak var IntroductionTextBox: myTextView!
+}
+
+
+
+
+
+extension UITextView {
+    
+    func changeFontSizeByDevice(width: CGFloat) {
+        
+        print(width)
+        switch width {
+        case 0..<321: // iPhone 4 and iPhone 5
+            self.font = UIFont(name: "Avenir-Book", size: 14)
+        case 375: // iPhone 6
+            self.font = UIFont(name: "Avenir-Book", size: 16)
+        case 414: // iPhone 6 Plus, iPhone 8 Plus
+            self.font = UIFont(name: "Avenir-Book", size: 20)
+        case 768: // iPad
+            self.font = UIFont(name: "Avenir-Book", size: 25)
+        default: // iPad Pro
+            self.font = UIFont(name: "Avenir-Book", size: 30)
+        }
+        
+    }
+    
 }

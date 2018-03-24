@@ -10,7 +10,7 @@ import UIKit
 
 class myTextView: UITextView {
     static let sharedHelper = myTextView()
-    func changeFontSizeByDevice(width: CGFloat) {
+  /* override func changeFontSizeByDevice(width: CGFloat) {
         
         print(width)
         switch width {
@@ -26,6 +26,6 @@ class myTextView: UITextView {
             self.font = UIFont(name: "Avenir-Book", size: 30)
         }
         
-    }
+    }*/
 }
 

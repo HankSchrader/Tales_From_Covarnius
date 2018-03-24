@@ -24,7 +24,7 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
             case "borrow"?:
-                return [self.newVC(viewController: "break and enter 0.5?"),
+                return [
                         self.newVC(viewController: "break and enter?")]
             case "break in"?:
                 // FILLER MUST CHANGE
@@ -41,9 +41,7 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chrono knows the layout")]
             case "snack time"?:
                  //DONE
-                return [
-                    self.newVC(viewController: "what should they eat? 0.5"),
-                    self.newVC(viewController: "what should they eat?")]
+                return [self.newVC(viewController: "what should they eat?")]
                 
             case "stinky meat"?:
                 return [

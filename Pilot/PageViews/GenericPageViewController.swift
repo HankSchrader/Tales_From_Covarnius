@@ -12,7 +12,7 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
  {
     
     var segueID: String? = nil
-    var menuShowing = false
+
     let viewController = ViewController()
     var previousRID: String? = nil
 
@@ -46,9 +46,6 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
             self.present(newChapterAlert, animated: true, completion: nil)
             
         }
-        ChapterViewController.chapterVC.EarthsGreatestScientist?.setContentOffset(CGPoint.zero, animated: false)
-    
-      
     }
     
     

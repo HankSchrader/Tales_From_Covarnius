@@ -10,24 +10,46 @@ import UIKit
 
 class GenericDecisionPointViewController: Chapter3ViewController {
 
+    @IBOutlet var noHomeworkButton: UIView!
+    @IBOutlet weak var dissectBrainButton: NavButton!
+    @IBOutlet weak var chap2_4TextBox: UITextView!
     @IBOutlet weak var hapalStanceTextBox: UITextView!
     @IBOutlet weak var someSortOfMistake: UITextView!
-    @IBOutlet weak var gettingShady: UITextView!
+    @IBOutlet weak var gettingShadySneakIntoAmbassadorHouseTextBox: UITextView!
+
     @IBOutlet weak var warMonger1TextBox: UITextView!
     
     @IBOutlet weak var chronoKnowsTheLayoutTextBox: UITextView!
     @IBOutlet weak var chapter5_2TextBox: UITextView!
     @IBOutlet weak var chapter5_7TextBox: UITextView!
     @IBOutlet weak var chapter6_7TextBox: UITextView!
+    @IBOutlet weak var chapter6_7AmbassadorTextBox: UITextView!
     @IBOutlet weak var jigsUpChoiceTextBox: UITextView!
+    @IBOutlet weak var doNotAskAboutCCCTextBox: UITextView!
+    @IBOutlet weak var whatShouldGrowlicsEatTextBox: UITextView!
     @IBOutlet weak var chapter5_5TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats2TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats4TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats5TextBox: UITextView!
+    @IBOutlet weak var twoDiplomats14TextBox: UITextView!
+    
+    @IBOutlet weak var hyperSleep0TextBox: UITextView!
+    @IBOutlet weak var clog4TextBox: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        self.someSortOfMistake?.setContentOffset(CGPoint.zero, animated: false)
-        
-        self.gettingShady?.setContentOffset(CGPoint.zero, animated: false)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let width = self.view.frame.size.width
+        self.chap2_4TextBox.changeFontSizeByDevice(width: width)
+       
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+         self.chap2_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,6 +72,11 @@ class GenericDecisionPointViewController: Chapter3ViewController {
         {
             let vc = segue.destination as? FakeScientistArcPageViewController
             vc?.segueID = segue.identifier!
+        }
+        else if segue.destination is Chapter3PageViewController
+        {
+            let vc = segue.destination as? Chapter3PageViewController
+            vc?.segueID = segue.identifier
         } else if segue.destination is Chapter4PageViewController {
             let vc = segue.destination as? Chapter4PageViewController
             vc?.segueID = segue.identifier!
