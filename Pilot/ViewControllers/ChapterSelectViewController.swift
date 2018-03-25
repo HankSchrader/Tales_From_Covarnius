@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ChapterSelectViewController: Chapter3ViewController {
+class ChapterSelectViewController: GenericDecisionPointViewController {
     static var chapterSelect = ChapterSelectViewController()
     var chapters = [Chapter]()
   
@@ -72,6 +72,10 @@ class ChapterSelectViewController: Chapter3ViewController {
             let vc = segue.destination as? GoAsAmbassadorPageViewController
             vc?.segueID = segue.identifier!
             vc?.previousRID = self.restorationIdentifier
+        } else if segue.destination is RandomHapalStancePageViewController {
+            let vc = segue.destination as? RandomHapalStancePageViewController
+            vc?.segueID = segue.identifier!
+            vc?.previousRID = self.restorationIdentifier!
         }
         
 

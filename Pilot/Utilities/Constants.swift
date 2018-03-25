@@ -19,6 +19,8 @@ struct Constants {
     static let COWBOYS_OF_KATONIA = "Cowboys of Katonia"
     static let BACK_AT_THE_RANCH = "Back At The Ranch"
     static let BY_RANDOM_HAPAL_STANCE = "By Random Hapal Stance"
+    
+    static let BY_RANDOM_HAPAL_STANCE_NO_TRUST = "Who Trusts Alien Cowboys?"
     static let FAKE_IT_TIL_YOU_MAKE_IT = "Fake It Til You Make It"
     static let MASTER_OF_DISGUISE_OR_LIES  = "The King and the Invasion"
     static let SNEAK_ONTO_SHIP = "Where's Your Boarding Ticket?"

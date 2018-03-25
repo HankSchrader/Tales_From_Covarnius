@@ -46,6 +46,7 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
             self.present(newChapterAlert, animated: true, completion: nil)
             
         }
+        
     }
     
     

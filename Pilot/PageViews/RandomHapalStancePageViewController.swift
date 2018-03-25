@@ -12,7 +12,7 @@ class RandomHapalStancePageViewController: GenericPageViewController {
 
     override func viewDidLoad() {
         self.orderedViewControllers =  {
-            if self.segueID == "Don't Trust" {
+            if self.segueID == "Don't Trust" || self.segueID == Constants.BY_RANDOM_HAPAL_STANCE_NO_TRUST{
                 return [self.newVC(viewController: "No Trust_1"),
                         self.newVC(viewController: "No Trust_1.5"),
                         self.newVC(viewController: "Hapal Stance 1"),
@@ -32,9 +32,16 @@ class RandomHapalStancePageViewController: GenericPageViewController {
     }
     
     override func viewDidAppear(_ animated: Bool){
+        print(self.segueID)
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.BY_RANDOM_HAPAL_STANCE, order: 3)
-       
-    }
+        if self.segueID == "Don't Trust" || self.segueID == Constants.BY_RANDOM_HAPAL_STANCE_NO_TRUST {
+            super.checkNewChapter(chapterName: Constants.BY_RANDOM_HAPAL_STANCE_NO_TRUST, order: 3)
+            ChapterSelectViewController.chapterSelect.deleteById(id: Constants.BY_RANDOM_HAPAL_STANCE)
+            
+        }
+        else {
+            super.checkNewChapter(chapterName: Constants.BY_RANDOM_HAPAL_STANCE, order: 3)
+            ChapterSelectViewController.chapterSelect.deleteById(id: Constants.BY_RANDOM_HAPAL_STANCE_NO_TRUST)}
+        }
 
 }

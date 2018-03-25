@@ -9,56 +9,65 @@
 import UIKit
 
 class ChapterViewController: UIViewController {
-    //FOR TOMORROW. LEAVING OFF ON "BORROW" FROM COVARNIAN AMBASSADOR ARC.
 
-    
-    
     static let chapterVC = ChapterViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
         goToChapterSelectAction()
-
         // Do any additional setup after loading the view.
     }
 
-   
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: false)
         
-  
+        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: false)
+        self.chap2_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap2_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_0?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_15TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_25TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian1_point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_run_choice_part_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_run_choice_part_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_run_choice_part_2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
         
+        self.at_the_ranch_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.noTrust_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.noTrust1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.trust1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.trust1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalStance1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.letHapalDownTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.letHapalDown2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalRescue2AgainTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalRescue3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalRescueTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.chap4_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapt4_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap4_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        
+        
+    
 
-//        chap2_1TextBox
-//        chap2_2TextBox
-//        chap2_3TextBox
-//        chap3_0
-//        chap3_1TextBox
-//        chap3_15TextBox
-//        chap3_2TextBox
-//        chap3_25TextBox
-//        katonian1_point5TextBox
-//        katonian1TextBox
-//        katonian2TextBox
-//        katonian2Point5TextBox
-//        at_the_ranch_run_choice_part_1TextBox
-//        at_the_ranch_run_choice_part_2TextBox
-//        at_the_ranch_run_choice_part_2Point5TextBox
-//        at_the_ranch_1TextBox
-//        at_the_ranch_2TextBox
-//        at_the_ranch_2Point5TextBox
-//        at_the_ranch_3TextBox
-//        noTrust_1TextBox
-//        noTrust1Point5TextBox
-//        trust1TextBox
-//        trust1Point5TextBox
-//        hapalStance1TextBox
-//        letHapalDownTextBox
-//        letHapalDown2TextBox
-//        hapalRescueTextBox
-//        hapalRescue2TextBox
-//        hapalRescue2AgainTextBox
-//        hapalRescue3TextBox
-//        chap4_1TextBox
+
+
+//
+//
+//
 //        chapt4_2TextBox
 //        chap4_3TextBox
 //        imNotAScientistPoint5TextBox
@@ -167,17 +176,45 @@ class ChapterViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let width = self.view.frame.size.width
-        self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: false)
         self.chap2_0TextBox?.changeFontSizeByDevice(width: width)
-        self.chap2_1TextBox?.setContentOffset(CGPoint.zero, animated: false)
         self.chap2_1TextBox?.changeFontSizeByDevice(width: width)
-        self.chap2_2TextBox?.setContentOffset(CGPoint.zero, animated: false)
         self.chap2_2TextBox?.changeFontSizeByDevice(width: width)
-        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: false)
         self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
+        self.chap3_0?.changeFontSizeByDevice(width: width)
+        self.chap3_1TextBox?.changeFontSizeByDevice(width: width)
+        self.chap3_15TextBox?.changeFontSizeByDevice(width: width)
+        self.chap3_2TextBox?.changeFontSizeByDevice(width: width)
+        self.chap3_25TextBox?.changeFontSizeByDevice(width: width)
+        self.katonian1_point5TextBox?.changeFontSizeByDevice(width: width)
+        self.katonian1TextBox?.changeFontSizeByDevice(width: width)
+        self.katonian2TextBox?.changeFontSizeByDevice(width: width)
+        self.katonian2Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.at_the_ranch_run_choice_part_1TextBox?.changeFontSizeByDevice(width: width)
+        self.at_the_ranch_run_choice_part_2TextBox?.changeFontSizeByDevice(width: width)
+        self.at_the_ranch_run_choice_part_2Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.at_the_ranch_1TextBox?.changeFontSizeByDevice(width: width)
+        self.at_the_ranch_2TextBox?.changeFontSizeByDevice(width: width)
+        self.at_the_ranch_2Point5TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.at_the_ranch_3TextBox?.changeFontSizeByDevice(width: width)
+        self.noTrust_1TextBox?.changeFontSizeByDevice(width: width)
+        self.noTrust1Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.at_the_ranch_3TextBox?.changeFontSizeByDevice(width: width)
+        self.trust1TextBox?.changeFontSizeByDevice(width: width)
+        self.trust1Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.hapalStance1TextBox?.changeFontSizeByDevice(width: width)
+        self.letHapalDownTextBox?.changeFontSizeByDevice(width: width)
+        self.letHapalDown2TextBox?.changeFontSizeByDevice(width: width)
+        self.hapalRescue2AgainTextBox?.changeFontSizeByDevice(width: width)
+        self.hapalRescue3TextBox?.changeFontSizeByDevice(width: width)
+        self.hapalRescueTextBox?.changeFontSizeByDevice(width: width)
+        self.chap4_1TextBox?.changeFontSizeByDevice(width: width)
+        self.chapt4_2TextBox?.changeFontSizeByDevice(width: width)
+        self.chap4_3TextBox?.changeFontSizeByDevice(width: width)
         
     }
     
@@ -230,6 +267,7 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var hapalRescue2TextBox: UITextView!
     @IBOutlet weak var hapalRescue2AgainTextBox: UITextView!
     @IBOutlet weak var hapalRescue3TextBox: UITextView!
+    @IBOutlet weak var hapalRescue4TextBox: UITextView!
     @IBOutlet weak var chap4_1TextBox: UITextView!
     @IBOutlet weak var chapt4_2TextBox: UITextView!
     @IBOutlet weak var chap4_3TextBox: UITextView!
@@ -341,8 +379,6 @@ class ChapterViewController: UIViewController {
 extension UITextView {
     
     func changeFontSizeByDevice(width: CGFloat) {
-        
-        print(width)
         switch width {
         case 0..<321: // iPhone 4 and iPhone 5
             self.font = UIFont(name: "Avenir-Book", size: 14)
