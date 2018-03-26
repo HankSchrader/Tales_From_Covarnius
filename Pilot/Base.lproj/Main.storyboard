@@ -667,7 +667,7 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                                     <attributedString key="attributedTitle">
                                         <fragment content="Tell Chrono To take you back to Earth.">
                                             <attributes>
-                                                <color key="NSColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="21" name="Times-Roman"/>
                                                 <real key="NSKern" value="0.0"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
@@ -689,6 +689,7 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                                     <attributedString key="attributedTitle">
                                         <fragment content="Chrono said that only you can help.">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="21" name=".AppleSystemUIFont"/>
                                             </attributes>
                                         </fragment>
@@ -699,7 +700,7 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hnT-ZY-568" firstAttribute="top" secondItem="72U-CS-EjY" secondAttribute="top" constant="50" id="4yE-yq-s1a"/>
                             <constraint firstItem="zxt-vP-Vov" firstAttribute="leading" secondItem="72U-CS-EjY" secondAttribute="leading" constant="30" id="7za-Vr-8cq"/>
@@ -717,6 +718,8 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                     </view>
                     <connections>
                         <outlet property="chap3_3TextBox" destination="hnT-ZY-568" id="ZnK-cL-yn5"/>
+                        <outlet property="onlyYouCanHelpButton" destination="zxt-vP-Vov" id="Blz-Z8-QMv"/>
+                        <outlet property="takeMeBackToEarthButton" destination="YtN-pq-VjW" id="YJA-tH-mas"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEG-3g-Zoo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1062,7 +1065,9 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDW-nN-FRe">
                                 <rect key="frame" x="16" y="577" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Lead the way, I'm a scientist afterall!"/>
+                                <state key="normal" title="Lead the way, I'm a scientist afterall!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="kdu-ys-dcd" kind="show" identifier="I'm A Scientist" id="7dg-rL-hhO"/>
                                 </connections>
@@ -1070,7 +1075,9 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO3-IX-7XY">
                                 <rect key="frame" x="16" y="539" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="There's some sort of mistake. I'm not a scientist!"/>
+                                <state key="normal" title="There's some sort of mistake. I'm not a scientist!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="UXc-Qz-fDL" kind="show" identifier="admit the truth" id="h2w-MD-tXx"/>
                                 </connections>
@@ -1093,6 +1100,8 @@ Cg
                         <viewLayoutGuide key="safeArea" id="ymu-0g-P1w"/>
                     </view>
                     <connections>
+                        <outlet property="iAmAScientistButton" destination="kDW-nN-FRe" id="oxT-wx-vkL"/>
+                        <outlet property="notAScientistButton" destination="sO3-IX-7XY" id="qQf-PJ-avA"/>
                         <outlet property="someSortOfMistake" destination="eji-h6-T2T" id="1ov-pO-Jtg"/>
                     </connections>
                 </viewController>
@@ -1660,7 +1669,7 @@ You wonder what kind of issues the Covarnians are having as Chrono engages hyper
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqe-ML-nZx">
-                                <rect key="frame" x="25" y="70" width="325" height="381"/>
+                                <rect key="frame" x="25" y="70" width="325" height="382"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1796,35 +1805,23 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxQ-Wv-nPI">
-                                <rect key="frame" x="0.0" y="553" width="375" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qxQ-Wv-nPI">
+                                <rect key="frame" x="0.0" y="555" width="375" height="52"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="17"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment>
-                                            <string key="content">Wing it. Afterall, you got an A on your science fair project. 
+                                    <string key="title">Wing it. Afterall, you got an A on your science fair project. 
 </string>
-                                            <attributes>
-                                                <font key="NSFont" size="18" name=".SFNSDisplay"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="kdu-ys-dcd" kind="show" identifier="Wing It" id="6es-We-obc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U4q-NS-Uuz">
-                                <rect key="frame" x="0.0" y="511" width="375" height="34"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="The jig is up. Tell him you're not a scientist.">
-                                            <attributes>
-                                                <font key="NSFont" size="19" name=".SFNSDisplay"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="U4q-NS-Uuz">
+                                <rect key="frame" x="0.0" y="512" width="375" height="35"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="19"/>
+                                <state key="normal" title="The jig is up. Tell him you're not a scientist.">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="UXc-Qz-fDL" kind="show" identifier="Fake Scientist" id="nvl-Th-opf"/>
@@ -1852,7 +1849,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="VcL-a2-1vp"/>
                     </view>
                     <connections>
+                        <outlet property="jigIsUpButton" destination="U4q-NS-Uuz" id="8Xy-ZR-Bvr"/>
                         <outlet property="jigsUpChoiceTextBox" destination="hqe-ML-nZx" id="Z7u-lI-x10"/>
+                        <outlet property="wingItButton" destination="qxQ-Wv-nPI" id="vkZ-DZ-0Zx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2W-ZX-pZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2117,15 +2116,19 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aua-t4-Cha">
-                                <rect key="frame" x="60" y="577" width="299" height="30"/>
-                                <state key="normal" title="Disguise ourselves as ambassadors."/>
+                                <rect key="frame" x="30" y="577" width="315" height="30"/>
+                                <state key="normal" title="Disguise ourselves as ambassadors.">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="HMa-9y-sc6" kind="show" identifier="ambassdor arc" id="e5A-CT-PnX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud6-ty-Lfe">
-                                <rect key="frame" x="60" y="539" width="299" height="30"/>
-                                <state key="normal" title="Sneak onto the Sinisterian ship."/>
+                                <rect key="frame" x="30" y="539" width="315" height="30"/>
+                                <state key="normal" title="Sneak onto the Sinisterian ship.">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="qLc-cK-4nG" kind="show" identifier="sneak arc" id="FFv-aN-znV"/>
                                 </connections>
@@ -2133,22 +2136,24 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Aua-t4-Cha" firstAttribute="leading" secondItem="nzg-EA-J4U" secondAttribute="leading" constant="60" id="266-eO-8Js"/>
-                            <constraint firstItem="nzg-EA-J4U" firstAttribute="trailing" secondItem="Aua-t4-Cha" secondAttribute="trailing" constant="16" id="AzR-Yv-NoL"/>
-                            <constraint firstItem="ud6-ty-Lfe" firstAttribute="top" secondItem="tcm-qL-EPy" secondAttribute="bottom" constant="69" id="HE6-53-tLG"/>
-                            <constraint firstItem="Aua-t4-Cha" firstAttribute="top" secondItem="ud6-ty-Lfe" secondAttribute="bottom" constant="8" id="J8T-xl-l6n"/>
-                            <constraint firstItem="nzg-EA-J4U" firstAttribute="bottom" secondItem="Aua-t4-Cha" secondAttribute="bottom" constant="60" id="Knc-sx-Kj5"/>
+                            <constraint firstItem="ud6-ty-Lfe" firstAttribute="top" secondItem="tcm-qL-EPy" secondAttribute="bottom" constant="69" id="4zC-9r-iNU"/>
+                            <constraint firstItem="Aua-t4-Cha" firstAttribute="leading" secondItem="nzg-EA-J4U" secondAttribute="leading" constant="30" id="FZk-5X-fi8"/>
+                            <constraint firstItem="ud6-ty-Lfe" firstAttribute="leading" secondItem="nzg-EA-J4U" secondAttribute="leading" constant="30" id="LNq-Vl-AT1"/>
+                            <constraint firstItem="Aua-t4-Cha" firstAttribute="top" secondItem="ud6-ty-Lfe" secondAttribute="bottom" constant="8" id="LPQ-wW-uSI"/>
                             <constraint firstItem="tcm-qL-EPy" firstAttribute="leading" secondItem="nzg-EA-J4U" secondAttribute="leading" constant="25" id="Pvh-Hy-Iq0"/>
-                            <constraint firstItem="nzg-EA-J4U" firstAttribute="trailing" secondItem="ud6-ty-Lfe" secondAttribute="trailing" constant="16" id="Xya-ww-cqB"/>
+                            <constraint firstItem="Aua-t4-Cha" firstAttribute="top" secondItem="ud6-ty-Lfe" secondAttribute="bottom" constant="8" id="UEm-SX-uls"/>
                             <constraint firstItem="nzg-EA-J4U" firstAttribute="trailing" secondItem="tcm-qL-EPy" secondAttribute="trailing" constant="25" id="d0M-wN-GAV"/>
+                            <constraint firstItem="nzg-EA-J4U" firstAttribute="bottom" secondItem="Aua-t4-Cha" secondAttribute="bottom" constant="60" id="f6D-y0-VLZ"/>
+                            <constraint firstItem="nzg-EA-J4U" firstAttribute="trailing" secondItem="Aua-t4-Cha" secondAttribute="trailing" constant="30" id="hc7-id-Mm1"/>
                             <constraint firstItem="tcm-qL-EPy" firstAttribute="top" secondItem="nzg-EA-J4U" secondAttribute="top" constant="50" id="mIw-4a-jcA"/>
-                            <constraint firstItem="ud6-ty-Lfe" firstAttribute="leading" secondItem="nzg-EA-J4U" secondAttribute="leading" constant="60" id="nZf-s6-VuC"/>
-                            <constraint firstItem="ud6-ty-Lfe" firstAttribute="top" secondItem="tcm-qL-EPy" secondAttribute="bottom" constant="69" id="v9e-hU-LPg"/>
+                            <constraint firstItem="nzg-EA-J4U" firstAttribute="trailing" secondItem="ud6-ty-Lfe" secondAttribute="trailing" constant="30" id="sWw-0r-j7f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nzg-EA-J4U"/>
                     </view>
                     <connections>
                         <outlet property="chapter5_7TextBox" destination="tcm-qL-EPy" id="gDb-1D-dfh"/>
+                        <outlet property="disguiseOurselvesButton" destination="Aua-t4-Cha" id="1zK-a3-7nD"/>
+                        <outlet property="sneakOntoShipButton" destination="ud6-ty-Lfe" id="HhC-wq-nH9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hq9-la-Nhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2697,6 +2702,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="Nty-IX-pol"/>
                     </view>
                     <connections>
+                        <outlet property="dessertButton" destination="ccz-z7-6ta" id="nfc-va-0LY"/>
+                        <outlet property="grossScalyFoodButton" destination="zGz-9V-HGh" id="XRO-4A-oig"/>
+                        <outlet property="stinkyMeatButton" destination="jjr-MF-qEE" id="RQa-7T-umU"/>
                         <outlet property="whatShouldGrowlicsEatTextBox" destination="sTW-rC-EUg" id="B65-GG-5Z2"/>
                     </connections>
                 </viewController>
@@ -2704,10 +2712,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="-7018" y="7085"/>
         </scene>
-        <!--View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="GRx-eF-gqT">
             <objects>
-                <viewController id="2QZ-f1-LdZ" sceneMemberID="viewController">
+                <viewController id="2QZ-f1-LdZ" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yre-Zv-EdK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2871,6 +2879,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X3g-FC-XEU"/>
                     </view>
+                    <connections>
+                        <outlet property="theEndBadFoodButton" destination="hpp-uA-lhO" id="UzD-SW-bjn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2IN-cy-eXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4177,7 +4188,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="wdx-a7-N07"/>
                     </view>
                     <connections>
+                        <outlet property="checkUnderDoorButton" destination="JC5-42-DhL" id="DLl-E7-BBM"/>
                         <outlet property="doNotAskAboutCCCTextBox" destination="ifh-yg-yeg" id="arJ-fX-bzK"/>
+                        <outlet property="lookOutWindowButton" destination="lCg-lw-e6v" id="416-MK-D1R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wE-vc-0k8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4365,6 +4378,8 @@ Cg
                     </view>
                     <connections>
                         <outlet property="chapter6_7AmbassadorTextBox" destination="WgN-Us-cL6" id="31M-Le-6Ty"/>
+                        <outlet property="notWithoutMyLunaButton" destination="OIt-ae-WB3" id="hXR-gt-DFa"/>
+                        <outlet property="sensitiveMissionButton" destination="Crs-0J-edD" id="dqf-Ap-1qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHa-EY-7Jh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4999,6 +5014,7 @@ Cg
                     </view>
                     <connections>
                         <outlet property="failedDistraction2TextBox" destination="Anl-Je-IVc" id="eav-nC-SH3"/>
+                        <outlet property="theEndClogToiletDistractionFailed" destination="iXr-Oc-DuA" id="E3t-kd-RHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCI-pJ-8EL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5255,6 +5271,8 @@ Cg
                     </view>
                     <connections>
                         <outlet property="clog4TextBox" destination="AQ7-25-H3t" id="Hn6-we-wWw"/>
+                        <outlet property="korgleIsDistrctedEnoughButton" destination="WPz-Ka-3jk" id="fca-rI-PR8"/>
+                        <outlet property="userKeyCardToCreateDistractionButton" destination="Dg4-gS-tff" id="8NA-kj-kYp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4A-il-eQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5599,6 +5617,8 @@ Cg
                         <viewLayoutGuide key="safeArea" id="bR2-v3-Wwn"/>
                     </view>
                     <connections>
+                        <outlet property="clogToiletButton" destination="8cF-cA-AgD" id="b88-Gf-qST"/>
+                        <outlet property="hyperSleepButton" destination="9Op-Pf-VE1" id="D8y-na-iTz"/>
                         <outlet property="twoDiplomats14TextBox" destination="bvn-aY-iFw" id="JtT-Pp-l95"/>
                     </connections>
                 </viewController>
@@ -5682,6 +5702,7 @@ Cg
                     </view>
                     <connections>
                         <outlet property="riseAndShine8TextBox" destination="3r5-cg-CCk" id="yR7-iK-IOh"/>
+                        <outlet property="theEndBestEnding" destination="2RM-7g-Ief" id="Zl7-Ky-Nhk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUv-Q1-Qsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -6706,7 +6727,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="Jzt-qo-RIP"/>
                     </view>
                     <connections>
+                        <outlet property="betterClogTheToiletButton" destination="gLF-iE-Rgy" id="gb0-cv-OVa"/>
                         <outlet property="hyperSleep0TextBox" destination="YRg-vz-GWS" id="011-wp-jVJ"/>
+                        <outlet property="stickToPlanButton" destination="TzH-cb-eVh" id="HW5-Zy-W9m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBx-Wp-kWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -7721,6 +7744,8 @@ Cg
                         <viewLayoutGuide key="safeArea" id="5hB-to-cJX"/>
                     </view>
                     <connections>
+                        <outlet property="antiGravityGunButton" destination="var-st-C6b" id="E7g-Wg-pdE"/>
+                        <outlet property="iceRayButton" destination="gYp-N8-NTc" id="hfD-S7-KAg"/>
                         <outlet property="twoDiplomats5TextBox" destination="EPJ-yj-e2K" id="wcx-xv-UDo"/>
                     </connections>
                 </viewController>
@@ -7879,7 +7904,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="q9L-tF-ClP"/>
                     </view>
                     <connections>
+                        <outlet property="brokerForPeaceButton" destination="kmi-re-NDf" id="4ap-TT-uGA"/>
                         <outlet property="twoDiplomats4TextBox" destination="RYX-nF-KpN" id="CU3-pS-6CH"/>
+                        <outlet property="weHaveASecretWeaponButton" destination="G95-5A-Hi9" id="8aR-BM-Cbb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jY-bA-Vc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -8708,6 +8735,8 @@ Cg
                         <viewLayoutGuide key="safeArea" id="FHu-4b-7ok"/>
                     </view>
                     <connections>
+                        <outlet property="takeKeyButton" destination="oSV-xp-xae" id="9ro-8R-Cn7"/>
+                        <outlet property="takeKeyTooRiskyButton" destination="zxS-JW-zCp" id="3W4-ld-I3m"/>
                         <outlet property="twoDiplomats2TextBox" destination="DUG-Fh-eJy" id="F1z-dP-BkR"/>
                     </connections>
                 </viewController>
@@ -8915,10 +8944,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="-6247" y="12232"/>
         </scene>
-        <!--Chapter View Controller-->
+        <!--Generic Decision Point View Controller-->
         <scene sceneID="8eE-Dk-TPO">
             <objects>
-                <viewController id="Ecj-7k-1la" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ecj-7k-1la" customClass="GenericDecisionPointViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xqI-jb-xBI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -9066,7 +9095,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="cDL-xT-bBH"/>
                     </view>
                     <connections>
+                        <outlet property="callTheBluffMistakeButton" destination="zSA-Bn-gcw" id="5NU-bB-hAP"/>
                         <outlet property="heSeemsSeriousTextBox" destination="qqe-yr-9SB" id="WqK-YM-QN7"/>
+                        <outlet property="heSeemsVerySeriousButton" destination="vgX-Ju-zTQ" id="cDw-kX-el2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz7-l5-jq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -9785,6 +9816,8 @@ Cg
                     </view>
                     <connections>
                         <outlet property="snackOrRunTextBox" destination="AKB-45-FlK" id="nUv-4R-R5h"/>
+                        <outlet property="theyAreViciousButton" destination="NfF-P9-gCX" id="Oos-Sq-nA4"/>
+                        <outlet property="theyLookHungryButton" destination="cEK-Hb-B46" id="orO-J6-Y9X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0P-bI-Acn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -9985,7 +10018,9 @@ As you approach the door you wonder whether or not you made the right decision. 
                         <viewLayoutGuide key="safeArea" id="TjN-bf-BHd"/>
                     </view>
                     <connections>
+                        <outlet property="breakInButton" destination="6nF-rf-0K4" id="Ye0-we-yyE"/>
                         <outlet property="gettingShadySneakIntoAmbassadorHouseTextBox" destination="UlP-AP-ZDS" id="ULl-Bo-SGo"/>
+                        <outlet property="thisIsGettingTooShadyButton" destination="uBh-fr-ebm" id="vbT-VI-AC1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e11-nm-Dkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -10115,7 +10150,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="duR-VI-bXM"/>
                     </view>
                     <connections>
+                        <outlet property="borrowFromCovarnianAmbassadorButton" destination="qet-NB-tXb" id="ODz-rM-CaL"/>
                         <outlet property="chapter6_2Ambassador" destination="KV2-Ca-DhR" id="g5f-Fi-L2e"/>
+                        <outlet property="sneakIntoCouncilChamberButton" destination="xe7-dp-Hvx" id="xhg-y9-zwp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kT7-IW-PSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -11141,6 +11178,8 @@ Cg
                     </view>
                     <connections>
                         <outlet property="chapter6_7TextBox" destination="OJp-58-ok3" id="tJ0-CQ-fP1"/>
+                        <outlet property="hardSinisterianSteelButton" destination="7wl-7y-QzV" id="LMT-L9-0CW"/>
+                        <outlet property="haveLunaFetchTheKey" destination="faq-g9-jqP" id="pdq-6Z-Akc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHm-Qd-D9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -11902,6 +11941,7 @@ Cg
                                 <rect key="frame" x="25" y="543" width="325" height="30"/>
                                 <state key="normal" title="NEXT CHPATER"/>
                                 <connections>
+                                    <action selector="nextChapterButton:" destination="73G-Py-jf4" eventType="touchUpInside" id="hyL-gK-meG"/>
                                     <segue destination="amq-0H-d2h" kind="show" identifier="Raid On Covarnius" id="4au-z9-cOS"/>
                                 </connections>
                             </button>
@@ -11924,6 +11964,7 @@ Cg
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgF-Mi-F2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="73G-Py-jf4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="752.79999999999995" y="10253.523238380811"/>
         </scene>
@@ -13464,6 +13505,9 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so0-EN-Bdu">
                                 <rect key="frame" x="16" y="520" width="343" height="87"/>
                                 <state key="normal" title="THE END (THIRD BEST ENDING)"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kSm-4p-oet"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -13481,6 +13525,7 @@ Cg
                     </view>
                     <connections>
                         <outlet property="raidOnCovarnius13TextBox" destination="3fA-eP-PHu" id="Xo1-S8-UVc"/>
+                        <outlet property="theEndThirdBestEnding" destination="so0-EN-Bdu" id="7mq-tZ-bn4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Seq-bi-4U8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -14451,7 +14496,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kAL-5m-8CW">
-                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <rect key="frame" x="25" y="70" width="325" height="398"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -14537,15 +14582,21 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WII-WC-7MN">
-                                <rect key="frame" x="60" y="577" width="299" height="30"/>
-                                <state key="normal" title="I give up. At least we tried..."/>
+                                <rect key="frame" x="30" y="575" width="315" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="I give up. At least we tried...">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="UXc-Qz-fDL" kind="show" identifier="we tried" id="xUf-0X-2cU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCD-JL-Wbh">
-                                <rect key="frame" x="40" y="539" width="319" height="30"/>
-                                <state key="normal" title="I think it's a great plan! Let's  do it ourselves."/>
+                                <rect key="frame" x="30" y="537" width="315" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="I think it's a great plan! Let's  do it ourselves.">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="UXc-Qz-fDL" kind="show" identifier="great plan" id="3tM-1C-F1f"/>
                                 </connections>
@@ -14553,21 +14604,24 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ogT-Pr-fpf" firstAttribute="trailing" secondItem="kCD-JL-Wbh" secondAttribute="trailing" constant="16" id="7Pa-A8-QyI"/>
-                            <constraint firstItem="ogT-Pr-fpf" firstAttribute="trailing" secondItem="WII-WC-7MN" secondAttribute="trailing" constant="16" id="EyX-EC-dk6"/>
+                            <constraint firstItem="WII-WC-7MN" firstAttribute="top" secondItem="kCD-JL-Wbh" secondAttribute="bottom" constant="8" id="9Xq-dO-usy"/>
+                            <constraint firstItem="kCD-JL-Wbh" firstAttribute="top" secondItem="kAL-5m-8CW" secondAttribute="bottom" constant="69" id="9xg-S2-bfT"/>
+                            <constraint firstItem="WII-WC-7MN" firstAttribute="leading" secondItem="ogT-Pr-fpf" secondAttribute="leading" constant="30" id="KvM-rX-Q3E"/>
                             <constraint firstItem="ogT-Pr-fpf" firstAttribute="trailing" secondItem="kAL-5m-8CW" secondAttribute="trailing" constant="25" id="LLo-Fi-93f"/>
-                            <constraint firstItem="kCD-JL-Wbh" firstAttribute="top" secondItem="kAL-5m-8CW" secondAttribute="bottom" constant="69" id="MGu-D9-nVI"/>
+                            <constraint firstItem="ogT-Pr-fpf" firstAttribute="bottom" secondItem="WII-WC-7MN" secondAttribute="bottom" constant="60" id="SOM-12-7hN"/>
+                            <constraint firstItem="ogT-Pr-fpf" firstAttribute="trailing" secondItem="WII-WC-7MN" secondAttribute="trailing" constant="30" id="Uqm-To-Ya0"/>
                             <constraint firstItem="kAL-5m-8CW" firstAttribute="leading" secondItem="ogT-Pr-fpf" secondAttribute="leading" constant="25" id="Y9D-dQ-xyD"/>
-                            <constraint firstItem="WII-WC-7MN" firstAttribute="top" secondItem="kCD-JL-Wbh" secondAttribute="bottom" constant="8" id="den-EF-3CR"/>
-                            <constraint firstItem="WII-WC-7MN" firstAttribute="leading" secondItem="ogT-Pr-fpf" secondAttribute="leading" constant="60" id="e5q-3h-OWF"/>
-                            <constraint firstItem="ogT-Pr-fpf" firstAttribute="bottom" secondItem="WII-WC-7MN" secondAttribute="bottom" constant="60" id="kET-Zr-OOv"/>
+                            <constraint firstItem="WII-WC-7MN" firstAttribute="top" secondItem="kCD-JL-Wbh" secondAttribute="bottom" constant="8" id="joe-Ya-vCQ"/>
+                            <constraint firstItem="ogT-Pr-fpf" firstAttribute="trailing" secondItem="kCD-JL-Wbh" secondAttribute="trailing" constant="30" id="ms2-XG-Uzn"/>
                             <constraint firstItem="kAL-5m-8CW" firstAttribute="top" secondItem="ogT-Pr-fpf" secondAttribute="top" constant="50" id="mvN-cg-Pn3"/>
-                            <constraint firstItem="kCD-JL-Wbh" firstAttribute="leading" secondItem="ogT-Pr-fpf" secondAttribute="leading" constant="40" id="xKR-Vs-JuI"/>
+                            <constraint firstItem="kCD-JL-Wbh" firstAttribute="leading" secondItem="ogT-Pr-fpf" secondAttribute="leading" constant="30" id="yQR-2j-Qpq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ogT-Pr-fpf"/>
                     </view>
                     <connections>
                         <outlet property="chapter5_5TextBox" destination="kAL-5m-8CW" id="id4-jE-6JF"/>
+                        <outlet property="iGiveUpSecondTimeButton" destination="WII-WC-7MN" id="eEX-dL-oEt"/>
+                        <outlet property="itsAGreatPlanButton" destination="kCD-JL-Wbh" id="kjd-kV-dc4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVr-YO-sqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -14972,7 +15026,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jfr-Fz-GB4">
-                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <rect key="frame" x="25" y="70" width="325" height="393"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -15080,15 +15134,21 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-Kd-hJK">
-                                <rect key="frame" x="60" y="577" width="299" height="30"/>
-                                <state key="normal" title="Let me help. We need to do something!"/>
+                                <rect key="frame" x="30" y="574" width="315" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Let me help. We need to do something!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="UXc-Qz-fDL" kind="show" identifier="never give up" id="why-Zw-93Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uij-sy-QkQ">
-                                <rect key="frame" x="60" y="539" width="299" height="30"/>
-                                <state key="normal" title="Warmongers you say? I'm outta here."/>
+                                <rect key="frame" x="30" y="532" width="315" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Warmongers you say? I'm outta here.">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="sxl-AR-98t" kind="show" id="yk2-hg-mbH"/>
                                 </connections>
@@ -15096,21 +15156,23 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="30" id="1j9-LZ-sCf"/>
                             <constraint firstItem="Jfr-Fz-GB4" firstAttribute="top" secondItem="ryt-JE-cqa" secondAttribute="top" constant="50" id="4J3-P3-X8N"/>
-                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="60" id="5xi-Nt-Oul"/>
+                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="top" secondItem="Uij-sy-QkQ" secondAttribute="bottom" constant="8" id="6Dv-Zb-qGw"/>
                             <constraint firstItem="Jfr-Fz-GB4" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="25" id="8dS-fG-Mr5"/>
-                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="top" secondItem="Uij-sy-QkQ" secondAttribute="bottom" constant="8" id="ISb-US-Ike"/>
-                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Uij-sy-QkQ" secondAttribute="trailing" constant="16" id="T1q-AT-oEz"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Uij-sy-QkQ" secondAttribute="trailing" constant="30" id="Dvu-No-cw4"/>
+                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="top" secondItem="Jfr-Fz-GB4" secondAttribute="bottom" constant="69" id="Ejd-Fc-FsE"/>
                             <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Jfr-Fz-GB4" secondAttribute="trailing" constant="25" id="TgA-eC-RiP"/>
-                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="aCY-Kd-hJK" secondAttribute="trailing" constant="16" id="bGY-JT-tYh"/>
-                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="60" id="d8j-pc-nTc"/>
-                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="top" secondItem="Jfr-Fz-GB4" secondAttribute="bottom" constant="69" id="gfZ-LZ-cjm"/>
-                            <constraint firstItem="ryt-JE-cqa" firstAttribute="bottom" secondItem="aCY-Kd-hJK" secondAttribute="bottom" constant="60" id="khT-Z5-qfc"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="bottom" secondItem="aCY-Kd-hJK" secondAttribute="bottom" constant="60" id="l3N-mS-0fQ"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="aCY-Kd-hJK" secondAttribute="trailing" constant="30" id="lCm-Qt-UeO"/>
+                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="30" id="r33-Ti-duJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ryt-JE-cqa"/>
                     </view>
                     <connections>
                         <outlet property="chapter5_2TextBox" destination="Jfr-Fz-GB4" id="1Ci-nZ-G1p"/>
+                        <outlet property="warmongersButton" destination="Uij-sy-QkQ" id="KCW-BO-iXc"/>
+                        <outlet property="weNeedToDoSomethingButton" destination="aCY-Kd-hJK" id="7rM-Of-eWl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnq-Qi-qhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -15356,6 +15418,7 @@ Cg
                     </view>
                     <connections>
                         <outlet property="neverKnowTheEnd" destination="9z5-bY-E70" id="g29-Tx-R9a"/>
+                        <outlet property="theEndYouGaveUpButton" destination="deC-OL-zkd" id="OPp-NU-WbQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t53-Gz-T9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -15450,18 +15513,19 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRk-f7-65B">
-                                <rect key="frame" x="60" y="577" width="299" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="PS8-Vp-5Ds"/>
-                                </constraints>
-                                <state key="normal" title="Never give up! We can do this."/>
+                                <rect key="frame" x="30" y="577" width="315" height="30"/>
+                                <state key="normal" title="Never give up! We can do this.">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="UXc-Qz-fDL" kind="show" identifier="never give up" id="y6E-Eg-nSg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRd-wL-7HJ">
-                                <rect key="frame" x="60" y="539" width="299" height="30"/>
-                                <state key="normal" title="I'm Done. I just want to go home."/>
+                                <rect key="frame" x="30" y="539" width="315" height="30"/>
+                                <state key="normal" title="I'm Done. I just want to go home.">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="2VN-on-IE5" kind="show" id="aV1-jU-UhX"/>
                                 </connections>
@@ -15469,20 +15533,23 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="eRk-f7-65B" secondAttribute="trailing" constant="16" id="5va-0A-mYn"/>
-                            <constraint firstItem="oRd-wL-7HJ" firstAttribute="top" secondItem="tTo-gU-WGw" secondAttribute="bottom" constant="69" id="CSE-cq-giR"/>
+                            <constraint firstItem="oRd-wL-7HJ" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="30" id="AzR-6m-6V1"/>
                             <constraint firstItem="tTo-gU-WGw" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="25" id="D9o-zd-gO7"/>
                             <constraint firstItem="tTo-gU-WGw" firstAttribute="top" secondItem="mob-a7-9Fu" secondAttribute="top" constant="50" id="E40-ch-Wsf"/>
-                            <constraint firstItem="eRk-f7-65B" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="60" id="VvF-F4-hoE"/>
-                            <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="oRd-wL-7HJ" secondAttribute="trailing" constant="16" id="ghr-It-4dZ"/>
-                            <constraint firstItem="mob-a7-9Fu" firstAttribute="bottom" secondItem="eRk-f7-65B" secondAttribute="bottom" constant="60" id="iDc-BN-ZKe"/>
+                            <constraint firstItem="eRk-f7-65B" firstAttribute="top" secondItem="oRd-wL-7HJ" secondAttribute="bottom" constant="8" id="KuV-J5-I2R"/>
+                            <constraint firstItem="eRk-f7-65B" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="30" id="So6-90-Fcv"/>
+                            <constraint firstItem="eRk-f7-65B" firstAttribute="top" secondItem="oRd-wL-7HJ" secondAttribute="bottom" constant="8" id="Z5Z-v7-li4"/>
+                            <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="eRk-f7-65B" secondAttribute="trailing" constant="30" id="hpn-dc-lnP"/>
+                            <constraint firstItem="mob-a7-9Fu" firstAttribute="bottom" secondItem="eRk-f7-65B" secondAttribute="bottom" constant="60" id="lbD-5A-YPc"/>
+                            <constraint firstItem="oRd-wL-7HJ" firstAttribute="top" secondItem="tTo-gU-WGw" secondAttribute="bottom" constant="69" id="ltQ-qh-BdL"/>
                             <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="tTo-gU-WGw" secondAttribute="trailing" constant="25" id="tov-GW-ag1"/>
-                            <constraint firstItem="oRd-wL-7HJ" firstAttribute="leading" secondItem="mob-a7-9Fu" secondAttribute="leading" constant="60" id="vjx-QR-gf8"/>
-                            <constraint firstItem="eRk-f7-65B" firstAttribute="top" secondItem="oRd-wL-7HJ" secondAttribute="bottom" constant="8" id="y3T-QC-21D"/>
+                            <constraint firstItem="mob-a7-9Fu" firstAttribute="trailing" secondItem="oRd-wL-7HJ" secondAttribute="trailing" constant="30" id="vmQ-KI-Rdf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mob-a7-9Fu"/>
                     </view>
                     <connections>
+                        <outlet property="iJustWantToGoHomeButton" destination="oRd-wL-7HJ" id="qRe-hD-0sO"/>
+                        <outlet property="neverGiveUpEverButton" destination="eRk-f7-65B" id="rjd-hM-C2q"/>
                         <outlet property="warMonger1TextBox" destination="tTo-gU-WGw" id="mkW-o6-Pkq"/>
                     </connections>
                 </viewController>
@@ -16303,38 +16370,42 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-eg-NCm">
-                                <rect key="frame" x="120" y="577" width="239" height="30"/>
-                                <state key="normal" title="Grab the bright green liquid."/>
+                                <rect key="frame" x="30" y="577" width="315" height="30"/>
+                                <state key="normal" title="Grab the bright green liquid.">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Pxv-HS-Uwl" kind="show" id="z14-SB-I6z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-5R-uKZ">
-                                <rect key="frame" x="120" y="539" width="239" height="30"/>
-                                <state key="normal" title="Choose the fizzy yellow liquid."/>
+                                <rect key="frame" x="30" y="539" width="315" height="30"/>
+                                <state key="normal" title="Choose the fizzy yellow liquid.">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="yg7-uA-qyh" kind="show" id="BRp-n3-gt3"/>
+                                    <segue destination="yg7-uA-qyh" kind="show" id="mrp-EX-tnj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cYU-5R-uKZ" firstAttribute="top" secondItem="3Lz-Vq-evZ" secondAttribute="bottom" constant="69" id="3Sz-DA-ECC"/>
-                            <constraint firstItem="OVq-Fi-qHZ" firstAttribute="bottom" secondItem="8gh-eg-NCm" secondAttribute="bottom" constant="60" id="5dO-2d-0Oj"/>
-                            <constraint firstItem="8gh-eg-NCm" firstAttribute="leading" secondItem="OVq-Fi-qHZ" secondAttribute="leading" constant="120" id="8bv-9v-pN7"/>
-                            <constraint firstItem="OVq-Fi-qHZ" firstAttribute="trailing" secondItem="cYU-5R-uKZ" secondAttribute="trailing" constant="16" id="HXv-rJ-9S6"/>
                             <constraint firstItem="3Lz-Vq-evZ" firstAttribute="leading" secondItem="OVq-Fi-qHZ" secondAttribute="leading" constant="25" id="Kgz-X1-bAw"/>
-                            <constraint firstItem="8gh-eg-NCm" firstAttribute="top" secondItem="cYU-5R-uKZ" secondAttribute="bottom" constant="8" id="LeF-aF-wTr"/>
-                            <constraint firstItem="8gh-eg-NCm" firstAttribute="top" secondItem="cYU-5R-uKZ" secondAttribute="bottom" constant="8" id="OlI-3P-Lc0"/>
                             <constraint firstItem="3Lz-Vq-evZ" firstAttribute="top" secondItem="OVq-Fi-qHZ" secondAttribute="top" constant="50" id="RvG-Da-Pdc"/>
                             <constraint firstItem="OVq-Fi-qHZ" firstAttribute="trailing" secondItem="3Lz-Vq-evZ" secondAttribute="trailing" constant="25" id="UUt-JV-eg1"/>
-                            <constraint firstItem="OVq-Fi-qHZ" firstAttribute="trailing" secondItem="8gh-eg-NCm" secondAttribute="trailing" constant="16" id="ctj-fq-7NW"/>
-                            <constraint firstItem="cYU-5R-uKZ" firstAttribute="leading" secondItem="OVq-Fi-qHZ" secondAttribute="leading" constant="120" id="r7t-Ic-VUQ"/>
-                            <constraint firstItem="cYU-5R-uKZ" firstAttribute="top" secondItem="3Lz-Vq-evZ" secondAttribute="bottom" constant="69" id="wVw-4H-osU"/>
+                            <constraint firstItem="8gh-eg-NCm" firstAttribute="top" secondItem="cYU-5R-uKZ" secondAttribute="bottom" constant="8" id="YLG-ts-j3Y"/>
+                            <constraint firstItem="8gh-eg-NCm" firstAttribute="leading" secondItem="OVq-Fi-qHZ" secondAttribute="leading" constant="30" id="dAC-k1-0yW"/>
+                            <constraint firstItem="OVq-Fi-qHZ" firstAttribute="bottom" secondItem="8gh-eg-NCm" secondAttribute="bottom" constant="60" id="eSr-6D-f1H"/>
+                            <constraint firstItem="cYU-5R-uKZ" firstAttribute="leading" secondItem="OVq-Fi-qHZ" secondAttribute="leading" constant="30" id="nDc-5Q-h7F"/>
+                            <constraint firstItem="OVq-Fi-qHZ" firstAttribute="trailing" secondItem="cYU-5R-uKZ" secondAttribute="trailing" constant="30" id="pK4-Bj-CgD"/>
+                            <constraint firstItem="OVq-Fi-qHZ" firstAttribute="trailing" secondItem="8gh-eg-NCm" secondAttribute="trailing" constant="30" id="tAG-IW-fRg"/>
+                            <constraint firstItem="cYU-5R-uKZ" firstAttribute="top" secondItem="3Lz-Vq-evZ" secondAttribute="bottom" constant="69" id="tLD-k9-Ykq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OVq-Fi-qHZ"/>
                     </view>
                     <connections>
+                        <outlet property="brightGreenButton" destination="8gh-eg-NCm" id="z2J-EW-oC1"/>
+                        <outlet property="fizzyYellowButton" destination="cYU-5R-uKZ" id="y39-Z7-tWd"/>
                         <outlet property="whichFizz" destination="3Lz-Vq-evZ" id="3E0-iD-FNS"/>
                         <outlet property="youGoofedTextBox" destination="3Lz-Vq-evZ" id="U5x-P9-rUv"/>
                     </connections>
@@ -16509,6 +16580,7 @@ Cg
                         <viewLayoutGuide key="safeArea" id="tev-LY-2cK"/>
                     </view>
                     <connections>
+                        <outlet property="theEndYellowLiquidButton" destination="6E0-Jy-2kl" id="0GN-ik-DU7"/>
                         <outlet property="yellowFizzTheEndTextBox" destination="paR-bA-MXN" id="W8S-wj-w6D"/>
                     </connections>
                 </viewController>
@@ -16628,6 +16700,7 @@ Cg
                     </view>
                     <connections>
                         <outlet property="greenFizzTheEndTextBox" destination="xQP-oF-37D" id="oZJ-ST-WJI"/>
+                        <outlet property="theEndBrightGreenLiquidButton" destination="PGS-Pn-7xV" id="6hm-3z-VSy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOU-L6-ZVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -17379,7 +17452,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h80-s8-vbP">
-                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <rect key="frame" x="25" y="70" width="325" height="384"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -17515,16 +17588,22 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmC-hp-CuQ">
-                                <rect key="frame" x="60" y="577" width="299" height="30"/>
-                                <state key="normal" title="Help Kayo With The Hapal"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jmC-hp-CuQ">
+                                <rect key="frame" x="30" y="569" width="315" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Help Kayo With The Hapal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="2G9-hX-PrL" kind="show" identifier="Help The Hapal" id="AuY-ba-zD0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UW5-by-xzZ">
-                                <rect key="frame" x="60" y="539" width="299" height="30"/>
-                                <state key="normal" title="Not your problem. Board the ship"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UW5-by-xzZ">
+                                <rect key="frame" x="30" y="523" width="315" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Not your problem. Board the ship">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="2G9-hX-PrL" kind="show" identifier="You Didn't Help The Hapal" id="dm8-JS-0k1"/>
                                 </connections>
@@ -17532,22 +17611,23 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="X2n-uG-agr" firstAttribute="bottom" secondItem="jmC-hp-CuQ" secondAttribute="bottom" constant="60" id="5PG-bC-y4u"/>
-                            <constraint firstItem="UW5-by-xzZ" firstAttribute="leading" secondItem="X2n-uG-agr" secondAttribute="leading" constant="60" id="5lP-uJ-4PE"/>
-                            <constraint firstItem="jmC-hp-CuQ" firstAttribute="leading" secondItem="X2n-uG-agr" secondAttribute="leading" constant="60" id="5sC-E7-d8y"/>
+                            <constraint firstItem="X2n-uG-agr" firstAttribute="trailing" secondItem="jmC-hp-CuQ" secondAttribute="trailing" constant="30" id="6qd-3z-liz"/>
                             <constraint firstItem="h80-s8-vbP" firstAttribute="leading" secondItem="X2n-uG-agr" secondAttribute="leading" constant="25" id="93q-Zy-Cia"/>
+                            <constraint firstItem="jmC-hp-CuQ" firstAttribute="top" secondItem="UW5-by-xzZ" secondAttribute="bottom" constant="8" id="AE9-Ic-YdN"/>
                             <constraint firstItem="X2n-uG-agr" firstAttribute="trailing" secondItem="h80-s8-vbP" secondAttribute="trailing" constant="25" id="Kg6-Yj-EN7"/>
-                            <constraint firstItem="X2n-uG-agr" firstAttribute="trailing" secondItem="UW5-by-xzZ" secondAttribute="trailing" constant="16" id="MNu-4k-otZ"/>
-                            <constraint firstItem="UW5-by-xzZ" firstAttribute="top" secondItem="h80-s8-vbP" secondAttribute="bottom" constant="69" id="UMI-Dz-6hV"/>
-                            <constraint firstItem="UW5-by-xzZ" firstAttribute="top" secondItem="h80-s8-vbP" secondAttribute="bottom" constant="69" id="nOq-fj-YKn"/>
-                            <constraint firstItem="X2n-uG-agr" firstAttribute="trailing" secondItem="jmC-hp-CuQ" secondAttribute="trailing" constant="16" id="qPQ-3H-QL9"/>
-                            <constraint firstItem="jmC-hp-CuQ" firstAttribute="top" secondItem="UW5-by-xzZ" secondAttribute="bottom" constant="8" id="rl9-ya-TQO"/>
+                            <constraint firstItem="X2n-uG-agr" firstAttribute="trailing" secondItem="UW5-by-xzZ" secondAttribute="trailing" constant="30" id="efP-cJ-t16"/>
+                            <constraint firstItem="UW5-by-xzZ" firstAttribute="leading" secondItem="X2n-uG-agr" secondAttribute="leading" constant="30" id="o2F-0D-N7s"/>
+                            <constraint firstItem="UW5-by-xzZ" firstAttribute="top" secondItem="h80-s8-vbP" secondAttribute="bottom" constant="69" id="pPH-aL-4Cl"/>
+                            <constraint firstItem="X2n-uG-agr" firstAttribute="bottom" secondItem="jmC-hp-CuQ" secondAttribute="bottom" constant="60" id="sX8-5r-IP9"/>
                             <constraint firstItem="h80-s8-vbP" firstAttribute="top" secondItem="X2n-uG-agr" secondAttribute="top" constant="50" id="tnv-9Y-IRt"/>
+                            <constraint firstItem="jmC-hp-CuQ" firstAttribute="leading" secondItem="X2n-uG-agr" secondAttribute="leading" constant="30" id="yfp-5v-E4h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X2n-uG-agr"/>
                     </view>
                     <connections>
                         <outlet property="hapalStanceTextBox" destination="h80-s8-vbP" id="kYh-Bb-MSa"/>
+                        <outlet property="helpKayoWithHapalButton" destination="jmC-hp-CuQ" id="FcI-b4-31J"/>
+                        <outlet property="notYourProblemButton" destination="UW5-by-xzZ" id="Lnj-99-3A9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLs-Bo-No0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -18367,7 +18447,9 @@ With a broken down ship, you don’t have many options. The way you see it, you 
                         <viewLayoutGuide key="safeArea" id="3Le-Se-QNK"/>
                     </view>
                     <connections>
+                        <outlet property="dontTrustSpaceCowboyButton" destination="JhG-i9-iPg" id="D6w-4H-bGG"/>
                         <outlet property="katonian3TextBox" destination="WOK-sM-Bln" id="7j3-go-098"/>
+                        <outlet property="trustSpaceCowboyButton" destination="R6S-6s-KoB" id="Wj3-56-gRI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CO-bE-0e2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -18811,7 +18893,7 @@ Cg
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-tI-G7t">
-                                <rect key="frame" x="25" y="70" width="325" height="400"/>
+                                <rect key="frame" x="25" y="70" width="325" height="384"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -18917,15 +18999,25 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LA-of-7eo">
-                                <rect key="frame" x="60" y="577" width="299" height="30"/>
-                                <state key="normal" title="Take Kayo's Offer To Relax"/>
+                                <rect key="frame" x="30" y="569" width="315" height="38"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Take Kayo's Offer To Relax">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Acj-X1-5dj" kind="show" identifier="He Seems Nice Enough" id="U32-uH-FzI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUH-eh-Jl2">
-                                <rect key="frame" x="60" y="539" width="299" height="30"/>
-                                <state key="normal" title="Kayo is suspicious..."/>
+                                <rect key="frame" x="30" y="523" width="315" height="38"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Kayo seems suspicious...">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="Acj-X1-5dj" kind="show" identifier="Don't Trust" id="5pV-va-Uw0"/>
                                 </connections>
@@ -18933,25 +19025,27 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5LA-of-7eo" firstAttribute="leading" secondItem="GVJ-70-rl2" secondAttribute="leading" constant="60" id="DHL-hb-7AH"/>
-                            <constraint firstItem="5LA-of-7eo" firstAttribute="top" secondItem="OUH-eh-Jl2" secondAttribute="bottom" constant="8" id="GP6-wX-Qxk"/>
+                            <constraint firstItem="OUH-eh-Jl2" firstAttribute="top" secondItem="ydB-tI-G7t" secondAttribute="bottom" constant="69" id="4a6-mQ-bnP"/>
+                            <constraint firstItem="OUH-eh-Jl2" firstAttribute="leading" secondItem="GVJ-70-rl2" secondAttribute="leading" constant="30" id="GV7-AN-Epo"/>
                             <constraint firstItem="ydB-tI-G7t" firstAttribute="leading" secondItem="GVJ-70-rl2" secondAttribute="leading" constant="25" id="IKJ-iL-aFb"/>
                             <constraint firstItem="ydB-tI-G7t" firstAttribute="top" secondItem="GVJ-70-rl2" secondAttribute="top" constant="50" id="KHc-pr-pj2"/>
-                            <constraint firstItem="OUH-eh-Jl2" firstAttribute="top" secondItem="ydB-tI-G7t" secondAttribute="bottom" constant="69" id="PZw-i0-giP"/>
                             <constraint firstItem="qhx-xf-Nlk" firstAttribute="trailing" secondItem="GVJ-70-rl2" secondAttribute="trailing" id="PoO-3R-2bB"/>
                             <constraint firstItem="qhx-xf-Nlk" firstAttribute="bottom" secondItem="GVJ-70-rl2" secondAttribute="bottom" id="Q7Z-EP-yvd"/>
-                            <constraint firstItem="GVJ-70-rl2" firstAttribute="bottom" secondItem="5LA-of-7eo" secondAttribute="bottom" constant="60" id="R2T-hu-4qW"/>
-                            <constraint firstItem="GVJ-70-rl2" firstAttribute="trailing" secondItem="OUH-eh-Jl2" secondAttribute="trailing" constant="16" id="UcS-Bi-2Ep"/>
-                            <constraint firstItem="OUH-eh-Jl2" firstAttribute="leading" secondItem="GVJ-70-rl2" secondAttribute="leading" constant="60" id="W0Y-7c-UB1"/>
+                            <constraint firstItem="GVJ-70-rl2" firstAttribute="trailing" secondItem="OUH-eh-Jl2" secondAttribute="trailing" constant="30" id="XHv-9o-vDK"/>
                             <constraint firstItem="GVJ-70-rl2" firstAttribute="trailing" secondItem="ydB-tI-G7t" secondAttribute="trailing" constant="25" id="blr-WB-6Ei"/>
                             <constraint firstItem="qhx-xf-Nlk" firstAttribute="top" secondItem="rt0-FM-nxJ" secondAttribute="top" id="cnc-Q7-9Mg"/>
                             <constraint firstItem="qhx-xf-Nlk" firstAttribute="leading" secondItem="GVJ-70-rl2" secondAttribute="leading" id="cvm-io-MBb"/>
-                            <constraint firstItem="GVJ-70-rl2" firstAttribute="trailing" secondItem="5LA-of-7eo" secondAttribute="trailing" constant="16" id="piv-pf-Ijh"/>
+                            <constraint firstItem="GVJ-70-rl2" firstAttribute="trailing" secondItem="5LA-of-7eo" secondAttribute="trailing" constant="30" id="m7X-Nn-gB0"/>
+                            <constraint firstItem="5LA-of-7eo" firstAttribute="top" secondItem="OUH-eh-Jl2" secondAttribute="bottom" constant="8" id="oMS-Uu-3cv"/>
+                            <constraint firstItem="5LA-of-7eo" firstAttribute="leading" secondItem="GVJ-70-rl2" secondAttribute="leading" constant="30" id="piM-1j-Fjs"/>
+                            <constraint firstItem="GVJ-70-rl2" firstAttribute="bottom" secondItem="5LA-of-7eo" secondAttribute="bottom" constant="60" id="wAH-5j-LBa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GVJ-70-rl2"/>
                     </view>
                     <connections>
                         <outlet property="atTheRanch_4TextBox" destination="ydB-tI-G7t" id="sJC-wa-RUI"/>
+                        <outlet property="kayoIsSuspicious" destination="OUH-eh-Jl2" id="242-e1-j9Z"/>
+                        <outlet property="kayoOfferToRelax" destination="5LA-of-7eo" id="5hu-gk-AJz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cer-7R-e9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -19118,6 +19212,8 @@ You can’t imagine why he would assume you speak French, but it doesn’t matte
                         <outlet property="chap2_4TextBox" destination="m8L-Wx-Dgx" id="9dS-Yd-iu9"/>
                         <outlet property="dissectBrainButton" destination="PzM-iX-ugb" id="3Zb-04-1u6"/>
                         <outlet property="noHomeworkButton" destination="PzM-iX-ugb" id="LkB-4l-tj8"/>
+                        <outlet property="noWayDissectMyBrains" destination="PzM-iX-ugb" id="z8V-0B-hRV"/>
+                        <outlet property="sureIllHelp" destination="1dY-6q-Fy4" id="Kcc-vp-Vfx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sK9-h6-zXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -19174,6 +19270,7 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                     </view>
                     <connections>
                         <outlet property="TurnBackTheEnd" destination="xZW-bu-DNB" id="EPY-Lz-pDD"/>
+                        <outlet property="theEndFirstOneButton" destination="9bC-pQ-A6m" id="ayi-Rw-2mO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gta-Sb-zNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -19243,6 +19340,8 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                         <viewLayoutGuide key="safeArea" id="YeS-VX-7ah"/>
                     </view>
                     <connections>
+                        <outlet property="goHomeFirstTimeButton" destination="r0f-Kc-Ivo" id="SW0-rX-Oe9"/>
+                        <outlet property="turnBackFirstTimeButton" destination="RCH-bg-8aq" id="Xq7-Gc-DxN"/>
                         <outlet property="turnBackTextBox" destination="PBd-Os-aiw" id="OxW-RY-uiG"/>
                     </connections>
                 </viewController>
@@ -19338,6 +19437,8 @@ Do you:
                     <navigationItem key="navigationItem" id="jWB-Sp-nhY"/>
                     <connections>
                         <outlet property="IntroductionTextBox" destination="0qd-Xl-I0i" id="3NZ-iB-Nc3"/>
+                        <outlet property="runAwayButton" destination="0kp-te-M5G" id="mpK-US-VrW"/>
+                        <outlet property="stopSeeSkyButton" destination="3aV-B2-dcB" id="SjF-SR-xAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dup-0H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -19374,19 +19475,19 @@ Do you:
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5pV-va-Uw0"/>
-        <segue reference="TmK-dd-ndt"/>
-        <segue reference="XiN-b6-dAI"/>
-        <segue reference="vLZ-qm-1Bl"/>
-        <segue reference="6cW-v5-1e6"/>
-        <segue reference="PZg-sR-bY4"/>
+        <segue reference="QEn-le-N99"/>
+        <segue reference="FFv-aN-znV"/>
+        <segue reference="XP7-SJ-P7h"/>
+        <segue reference="Oo5-EB-rb3"/>
+        <segue reference="e5A-CT-PnX"/>
         <segue reference="6es-We-obc"/>
-        <segue reference="why-Zw-93Q"/>
+        <segue reference="nvl-Th-opf"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="wuX-KR-O0k"/>
-        <segue reference="vUV-Ay-okI"/>
+        <segue reference="dm8-JS-0k1"/>
         <segue reference="IZ4-ah-DFk"/>
-        <segue reference="UT2-He-dFh"/>
+        <segue reference="KYf-bL-oLj"/>
         <segue reference="cSf-RQ-ef6"/>
-        <segue reference="WKD-KN-cYJ"/>
+        <segue reference="uuZ-rN-ipF"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -16,13 +16,19 @@ class GenericDecisionPointViewController: ChapterViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadBorderColor()
-        loadBorderWidth(borderWidth: 3.0)
+        loadBorderWidth(borderWidth: 4.0)
         loadCornerRadius(cornerRadius: 15.0)
+
+
+
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
+        loadDecisionPointButtons()
         let width = self.view.frame.size.width
         self.chap2_4TextBox?.changeFontSizeByDevice(width: width)
         self.turnBackTextBox?.changeFontSizeByDevice(width: width)
@@ -64,6 +70,7 @@ class GenericDecisionPointViewController: ChapterViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+
         self.chap2_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.turnBackTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.katonian3TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -286,7 +293,22 @@ class GenericDecisionPointViewController: ChapterViewController {
  
     }
     
-  
+    override func loadDecisionPointButton(button: UIButton?) {
+        button?.layer.borderWidth = 2
+        button?.layer.cornerRadius = 18
+        button?.layer.backgroundColor = UIColor.orange.cgColor
+        button?.layer.borderColor = UIColor.lightGray.cgColor
+        button?.setTitleColor(UIColor.black, for: .normal)
+        button?.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        button?.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        button?.layer.shadowOpacity = 1.0
+        button?.layer.shadowRadius = 0.0
+    
+    }
+    
+
+    
+  //Text Boxes
     @IBOutlet weak var turnBackTextBox: UITextView!
     @IBOutlet var noHomeworkButton: UIView!
     @IBOutlet weak var decisionButton: UIButton!
@@ -315,5 +337,124 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var twoDiplomats14TextBox: UITextView!
     @IBOutlet weak var hyperSleep0TextBox: UITextView!
     @IBOutlet weak var clog4TextBox: UITextView!
-
+    
+    //Buttons
+    
+    override func loadDecisionPointButtons() {
+        loadDecisionPointButton(button: self.kayoOfferToRelax)
+        loadDecisionPointButton(button: self.kayoIsSuspicious)
+        
+        
+        loadDecisionPointButton(button: self.sneakIntoCouncilChamberButton)
+        loadDecisionPointButton(button: self.borrowFromCovarnianAmbassadorButton)
+        
+        loadDecisionPointButton(button: self.breakInButton)
+        loadDecisionPointButton(button: self.thisIsGettingTooShadyButton)
+        
+        loadDecisionPointButton(button: self.theyAreViciousButton)
+        loadDecisionPointButton(button: self.theyLookHungryButton)
+        
+        
+        loadDecisionPointButton(button: self.sneakIntoCouncilChamberButton)
+        loadDecisionPointButton(button: self.borrowFromCovarnianAmbassadorButton)
+        
+        loadDecisionPointButton(button: self.sneakIntoCouncilChamberButton)
+        loadDecisionPointButton(button: self.borrowFromCovarnianAmbassadorButton)
+        
+        loadDecisionPointButton(button: self.stinkyMeatButton)
+        loadDecisionPointButton(button: self.grossScalyFoodButton)
+        
+        loadDecisionPointButton(button: self.dessertButton)
+        loadDecisionPointButton(button: self.userKeyCardToCreateDistractionButton)
+        
+        loadDecisionPointButton(button: self.korgleIsDistrctedEnoughButton)
+        loadDecisionPointButton(button: self.stickToPlanButton)
+        loadDecisionPointButton(button: self.betterClogTheToiletButton)
+        
+        loadDecisionPointButton(button: self.hyperSleepButton)
+        loadDecisionPointButton(button: self.clogToiletButton)
+        loadDecisionPointButton(button: self.antiGravityGunButton)
+        
+        loadDecisionPointButton(button: self.iceRayButton)
+        loadDecisionPointButton(button: self.brokerForPeaceButton)
+        loadDecisionPointButton(button: self.weHaveASecretWeaponButton)
+        
+        loadDecisionPointButton(button: self.takeKeyButton)
+        loadDecisionPointButton(button: self.takeKeyTooRiskyButton)
+        loadDecisionPointButton(button: self.callTheBluffMistakeButton)
+        
+        loadDecisionPointButton(button: self.heSeemsVerySeriousButton)
+        loadDecisionPointButton(button: self.notWithoutMyLunaButton)
+        loadDecisionPointButton(button: self.sensitiveMissionButton)
+        
+        loadDecisionPointButton(button: self.lookOutWindowButton)
+        loadDecisionPointButton(button: self.checkUnderDoorButton)
+        loadDecisionPointButton(button: self.hardSinisterianSteelButton)
+        
+        loadDecisionPointButton(button: self.haveLunaFetchTheKey)
+        loadDecisionPointButton(button: self.wingItButton)
+        loadDecisionPointButton(button: self.jigIsUpButton)
+        
+        loadDecisionPointButton(button: self.iAmAScientistButton)
+        loadDecisionPointButton(button: self.notAScientistButton)
+        loadDecisionPointButton(button: self.helpKayoWithHapalButton)
+        
+        loadDecisionPointButton(button: self.notYourProblemButton)
+        loadDecisionPointButton(button: self.dontTrustSpaceCowboyButton)
+        loadDecisionPointButton(button: self.trustSpaceCowboyButton)
+        
+        loadDecisionPointButton(button: self.takeMeBackToEarthButton)
+        loadDecisionPointButton(button: self.onlyYouCanHelpButton)
+        loadDecisionPointButton(button: self.goHomeFirstTimeButton)
+        
+        loadDecisionPointButton(button: self.turnBackFirstTimeButton)
+        loadDecisionPointButton(button: self.sureIllHelp)
+        loadDecisionPointButton(button: self.noWayDissectMyBrains)
+    }
+    
+    @IBOutlet weak var sneakIntoCouncilChamberButton: UIButton!
+    @IBOutlet weak var borrowFromCovarnianAmbassadorButton: UIButton!
+    @IBOutlet weak var breakInButton: UIButton!
+    @IBOutlet weak var thisIsGettingTooShadyButton: UIButton!
+    @IBOutlet weak var theyAreViciousButton: UIButton!
+    @IBOutlet weak var theyLookHungryButton: UIButton!
+    @IBOutlet weak var stinkyMeatButton: UIButton!
+    @IBOutlet weak var grossScalyFoodButton: UIButton!
+    @IBOutlet weak var dessertButton: UIButton!
+    @IBOutlet weak var userKeyCardToCreateDistractionButton: UIButton!
+    @IBOutlet weak var korgleIsDistrctedEnoughButton: UIButton!
+    @IBOutlet weak var stickToPlanButton: UIButton!
+    @IBOutlet weak var betterClogTheToiletButton: UIButton!
+    @IBOutlet weak var hyperSleepButton: UIButton!
+    @IBOutlet weak var clogToiletButton: UIButton!
+    @IBOutlet weak var antiGravityGunButton: UIButton!
+    @IBOutlet weak var iceRayButton: UIButton!
+    @IBOutlet weak var brokerForPeaceButton: UIButton!
+    @IBOutlet weak var weHaveASecretWeaponButton: UIButton!
+    @IBOutlet weak var takeKeyButton: UIButton!
+    @IBOutlet weak var takeKeyTooRiskyButton: UIButton!
+    @IBOutlet weak var callTheBluffMistakeButton: UIButton!
+    @IBOutlet weak var heSeemsVerySeriousButton: UIButton!
+    @IBOutlet weak var notWithoutMyLunaButton: UIButton!
+    @IBOutlet weak var sensitiveMissionButton: UIButton!
+    @IBOutlet weak var lookOutWindowButton: UIButton!
+    @IBOutlet weak var checkUnderDoorButton: UIButton!
+    @IBOutlet weak var hardSinisterianSteelButton: UIButton!
+    @IBOutlet weak var haveLunaFetchTheKey: UIButton!
+    @IBOutlet weak var wingItButton: UIButton!
+    @IBOutlet weak var jigIsUpButton: UIButton!
+    @IBOutlet weak var iAmAScientistButton: UIButton!
+    @IBOutlet weak var notAScientistButton: UIButton!
+    @IBOutlet weak var helpKayoWithHapalButton: UIButton!
+    @IBOutlet weak var notYourProblemButton: UIButton!
+    @IBOutlet weak var dontTrustSpaceCowboyButton: UIButton!
+    @IBOutlet weak var trustSpaceCowboyButton: UIButton!
+    @IBOutlet weak var takeMeBackToEarthButton: UIButton!
+    @IBOutlet weak var onlyYouCanHelpButton: UIButton!
+    @IBOutlet weak var goHomeFirstTimeButton: UIButton!
+    @IBOutlet weak var turnBackFirstTimeButton: UIButton!
+    @IBOutlet weak var sureIllHelp: UIButton!
+    @IBOutlet weak var noWayDissectMyBrains: UIButton!
+    @IBOutlet weak var kayoIsSuspicious: UIButton!
+    @IBOutlet weak var kayoOfferToRelax: UIButton!
 }

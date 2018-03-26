@@ -347,6 +347,8 @@ class ChapterViewController: UIViewController {
         self.IntroductionTextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
     
+
+    
     func goToChapterSelectAction() {
         let button = NavButton()
         // let button = CustomButton(value: 100) // also works
@@ -499,9 +501,9 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var whichFizz: UITextView!
     @IBOutlet weak var IntroductionTextBox: myTextView!
     
-    
     func loadCornerRadius(cornerRadius: CGFloat!) {
         self.chap2_0TextBox?.layer.cornerRadius = cornerRadius
+       
         self.chap2_3TextBox?.layer.cornerRadius = cornerRadius
         self.chap2_1TextBox?.layer.cornerRadius = cornerRadius
         self.chap2_2TextBox?.layer.cornerRadius = cornerRadius
@@ -948,6 +950,65 @@ class ChapterViewController: UIViewController {
         self.IntroductionTextBox?.layer.borderWidth = borderWidth
     
     
+    }
+    
+    // MARK: Buttons
+    @IBOutlet weak var runAwayButton: UIButton!
+    @IBOutlet weak var stopSeeSkyButton: UIButton!
+    @IBOutlet weak var fizzyYellowButton: UIButton!
+    @IBOutlet weak var theEndYellowLiquidButton: UIButton!
+    @IBOutlet weak var theEndBrightGreenLiquidButton: UIButton!
+    @IBOutlet weak var theEndYouGaveUpButton: UIButton!
+    @IBOutlet weak var theEndFirstOneButton: UIButton!
+    
+    
+    @IBOutlet weak var theEndClogToiletDistractionFailed: UIButton!
+    @IBOutlet weak var theEndThirdBestEnding: UIButton!
+    @IBOutlet weak var theEndBadFoodButton: UIButton!
+    @IBOutlet weak var theEndBestEnding: UIButton!
+    @IBOutlet weak var brightGreenButton: UIButton!
+    
+    func loadDecisionPointButton(button: UIButton?) {
+        button?.layer.borderWidth = 2
+        button?.layer.cornerRadius = 18
+        button?.layer.backgroundColor = UIColor.orange.cgColor
+        button?.layer.borderColor = UIColor.lightGray.cgColor
+        button?.setTitleColor(UIColor.black, for: .normal)
+        button?.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        button?.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        button?.layer.shadowOpacity = 1.0
+        button?.layer.shadowRadius = 0.0
+        
+    }
+    
+    // MARK: Load The Decision Points Buttons
+    func loadDecisionPointButtons(){
+        loadDecisionPointButton(button: self.runAwayButton)
+        loadDecisionPointButton(button: self.stopSeeSkyButton)
+        loadDecisionPointButton(button: self.fizzyYellowButton)
+        loadDecisionPointButton(button: self.brightGreenButton)
+    }
+    
+    func loadTheEndButton(button: UIButton?) {
+        button?.layer.borderWidth = 2
+        button?.layer.cornerRadius = 18
+        button?.layer.backgroundColor = UIColor.red.cgColor
+        button?.layer.borderColor = UIColor.lightGray.cgColor
+        button?.setTitleColor(UIColor.black, for: .normal)
+        button?.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        button?.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        button?.layer.shadowOpacity = 1.0
+        button?.layer.shadowRadius = 0.0
+        
+    }
+    
+    // MARK: Load The End Buttons
+    func loadTheEndButtons() {
+        loadTheEndButton(button: self.theEndYellowLiquidButton)
+        loadTheEndButton(button: self.theEndYellowLiquidButton)
+        loadTheEndButton(button: self.theEndYouGaveUpButton)
+        loadTheEndButton(button: self.theEndFirstOneButton)
+        loadTheEndButton(button: self.theEndClogToiletDistractionFailed)
     }
 }
 extension UITextView {
