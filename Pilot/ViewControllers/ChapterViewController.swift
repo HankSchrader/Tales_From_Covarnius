@@ -63,6 +63,7 @@ class ChapterViewController: UIViewController {
         self.letHapalDown2TextBox?.changeFontSizeByDevice(width: width)
         self.hapalRescue2AgainTextBox?.changeFontSizeByDevice(width: width)
         self.hapalRescue3TextBox?.changeFontSizeByDevice(width: width)
+        self.hapalRescue4TextBox?.changeFontSizeByDevice(width: width)
         self.hapalRescueTextBox?.changeFontSizeByDevice(width: width)
         self.chap4_1TextBox?.changeFontSizeByDevice(width: width)
         self.chapt4_2TextBox?.changeFontSizeByDevice(width: width)
@@ -242,6 +243,7 @@ class ChapterViewController: UIViewController {
         self.hapalRescue2AgainTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.hapalRescue3TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.hapalRescueTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalRescue4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chap4_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chapt4_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chap4_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -501,6 +503,8 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var whichFizz: UITextView!
     @IBOutlet weak var IntroductionTextBox: myTextView!
     
+    // MARK: Begin button decorations.
+    
     func loadCornerRadius(cornerRadius: CGFloat!) {
         self.chap2_0TextBox?.layer.cornerRadius = cornerRadius
        
@@ -535,6 +539,7 @@ class ChapterViewController: UIViewController {
         self.hapalRescue2AgainTextBox?.layer.cornerRadius = cornerRadius
         self.hapalRescue3TextBox?.layer.cornerRadius = cornerRadius
         self.hapalRescueTextBox?.layer.cornerRadius = cornerRadius
+        self.hapalRescue4TextBox?.layer.cornerRadius = cornerRadius
         self.chap4_1TextBox?.layer.cornerRadius = cornerRadius
         self.chapt4_2TextBox?.layer.cornerRadius = cornerRadius
         self.chap4_3TextBox?.layer.cornerRadius = cornerRadius
@@ -984,6 +989,8 @@ class ChapterViewController: UIViewController {
     // MARK: Load The Decision Points Buttons
     func loadDecisionPointButtons(){
         loadDecisionPointButton(button: self.runAwayButton)
+        loadDecisionPointButton(button: self.stopSeeSkyButton)
+ 
         loadDecisionPointButton(button: self.stopSeeSkyButton)
         loadDecisionPointButton(button: self.fizzyYellowButton)
         loadDecisionPointButton(button: self.brightGreenButton)

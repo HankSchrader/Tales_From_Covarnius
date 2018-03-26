@@ -323,7 +323,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIZ-1v-KuY" customClass="myTextView" customModule="Pilot" customModuleProvider="target">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">“We could be missing out on a chance of a lifetime!” you say to Luna. She wags her tail playfully and barks in agreement.
 
 Could it be military? Or an alien? Or an extra dimensional being? It could be anything, and there is only one way to find out! Without further ado, you sprint back to the object in the sky. 
@@ -359,10 +359,10 @@ Could it be military? Or an alien? Or an extra dimensional being? It could be an
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWW-Jm-yLg" customClass="myTextView" customModule="Pilot" customModuleProvider="target">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Run away? No way, this is too good to miss!
 
-You stop and observe the strange object as it makes a slow descent from the sky. As it gets closer, you see a strange creature inside, just behind the bulbous glass encasing. His complexion is green and he has two antennae protruding from his head.
+You stop and observe the strange object descending slowly from the sky. As it gets closer, you see a strange creature inside, just behind the bulbous glass encasing. His complexion is green and he has two antennae protruding from his head.
 
 Butterflies fill your stomach. Maybe you should have ran while you had the chance...
 </string>
@@ -415,13 +415,13 @@ Butterflies fill your stomach. Maybe you should have ran while you had the chanc
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Thoughts of examination tables and scalpels suddenly fill your head. The last thing you want to be the test subject in an alien experiment!
+                                        <string key="content">Thoughts of scalpels and examination tables suddenly fill your head. The last thing you want to become is a test subject in an alien experiment!
 
 You tell the alien that you won’t go with him. “How do I know you won’t just dissect my brain?” you ask accusingly. Your fists are clenched with anger and fright. So this is what the fight or flight mechanism you learned about in school must feel like.
 
 The alien stares at you as if you are completely crazy. 
 
-“Why on Covarnius would I do a thing like that?” The alien asks with confusion and disgust. “Do you have any idea how messy that would be?” </string>
+“Why on Covarnius would I do a thing like that?” The alien asks indignantly. “Do you have any idea how messy that would be?” </string>
                                         <attributes>
                                             <font key="NSFont" size="16" name="Baskerville"/>
                                         </attributes>
@@ -508,7 +508,7 @@ The sound clearly distresses the alien who looks back at his ship with impatienc
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="-1" maxY="0.0"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">After careful consideration, you decide the alien is probably not going to dissect your brain. The pleaful look in his eyes and clearly frightened demeanor give the impression that he does indeed need help.
+                                        <string key="content">After careful consideration, you decide the alien is probably not going to dissect your brain. The pleaful look in his eyes and frightened demeanor give the impression that he does indeed need help.
 
 At the very least you’ll get out of all the math homework your teacher assigned today. You cautiously approach with the green hued creature. Before you know it, he is insisting you enter the spaceship.
 
@@ -560,7 +560,7 @@ You stare at him defiantly, “If I’m going back to Covarnius with you, at lea
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“My name is Chrono and as I have said, my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
+                                        <string key="content">“My name is Chrono, and my home planet Covarnius is in trouble.” Chrono pulls a lever on the blinking console in front of him and a ping sound emanates through the small ship. His attention seems to be dedicated to the operation of the ship, rather than the answering of your questions.
 
 “And what does any of this have to do with me?” You question skeptically. You watch out the window as the spacecraft ascends upwards leaving the Earth behind. The houses below quickly become tiny dots. This is becoming too real.</string>
                                         <attributes>
@@ -645,9 +645,9 @@ And where is Covarnius located anyway? If it was close to Earth, wouldn’t we k
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“So how far away is this Covarnius?” You inquire with skepticism, afraid of what the answer may be.
+                                        <string key="content">“So how far away is this Covarnius?” you inquire with skepticism, afraid of what the answer may be.
 
-The gravity of the situation you have found yourself in is beginning to sink in.
+The gravity of the situation is beginning to sink in.
 
 “Is it going to take us thousands of years to get there?” You question with growing panic. “I change my mind, I want to go back to Earth!” You shout, pressing your nose to the glass window. 
 
@@ -18386,7 +18386,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOK-sM-Bln">
-                                <rect key="frame" x="25" y="70" width="325" height="450"/>
+                                <rect key="frame" x="25" y="70" width="325" height="401"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -18411,21 +18411,19 @@ With a broken down ship, you don’t have many options. The way you see it, you 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6S-6s-KoB">
-                                <rect key="frame" x="140" y="539" width="219" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="HQO-hc-ziN"/>
-                                </constraints>
-                                <state key="normal" title="Trust The Space Cowboy"/>
+                                <rect key="frame" x="30" y="539" width="315" height="30"/>
+                                <state key="normal" title="Trust The Space Cowboy">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="34s-dZ-fdU" kind="show" identifier="trust" id="jox-Tc-HCZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhG-i9-iPg">
-                                <rect key="frame" x="140" y="577" width="219" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="sd9-BG-UnA"/>
-                                </constraints>
-                                <state key="normal" title="Make a Run For It"/>
+                                <rect key="frame" x="30" y="577" width="315" height="30"/>
+                                <state key="normal" title="Make a Run For It">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="34s-dZ-fdU" kind="show" identifier="run" id="eCX-Mg-lVS"/>
                                 </connections>
@@ -18433,16 +18431,17 @@ With a broken down ship, you don’t have many options. The way you see it, you 
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="WOK-sM-Bln" secondAttribute="trailing" constant="25" id="1MQ-1l-IvX"/>
-                            <constraint firstItem="WOK-sM-Bln" firstAttribute="top" secondItem="3Le-Se-QNK" secondAttribute="top" constant="50" id="62B-Fn-eVC"/>
-                            <constraint firstItem="R6S-6s-KoB" firstAttribute="leading" secondItem="3Le-Se-QNK" secondAttribute="leading" constant="140" id="CZx-Yk-wht"/>
-                            <constraint firstItem="3Le-Se-QNK" firstAttribute="bottom" secondItem="JhG-i9-iPg" secondAttribute="bottom" constant="60" id="Gqs-3x-JbY"/>
-                            <constraint firstItem="WOK-sM-Bln" firstAttribute="leading" secondItem="3Le-Se-QNK" secondAttribute="leading" constant="25" id="Ofq-xe-DMU"/>
-                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="JhG-i9-iPg" secondAttribute="trailing" constant="16" id="PDz-32-aOw"/>
-                            <constraint firstItem="JhG-i9-iPg" firstAttribute="top" secondItem="R6S-6s-KoB" secondAttribute="bottom" constant="8" id="Xsi-Yg-Uvy"/>
-                            <constraint firstItem="R6S-6s-KoB" firstAttribute="top" secondItem="WOK-sM-Bln" secondAttribute="bottom" constant="19" id="j6U-fp-kaP"/>
-                            <constraint firstItem="JhG-i9-iPg" firstAttribute="leading" secondItem="3Le-Se-QNK" secondAttribute="leading" constant="140" id="nbc-kG-ng8"/>
-                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="R6S-6s-KoB" secondAttribute="trailing" constant="16" id="zJ3-2a-WTt"/>
+                            <constraint firstItem="WOK-sM-Bln" firstAttribute="leading" secondItem="3Le-Se-QNK" secondAttribute="leading" constant="25" id="Bcx-wb-rRQ"/>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="bottom" secondItem="JhG-i9-iPg" secondAttribute="bottom" constant="60" id="KxC-6n-K6r"/>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="R6S-6s-KoB" secondAttribute="trailing" constant="30" id="N8m-jV-8Dj"/>
+                            <constraint firstItem="JhG-i9-iPg" firstAttribute="top" secondItem="R6S-6s-KoB" secondAttribute="bottom" constant="8" id="UpI-Yw-JF8"/>
+                            <constraint firstItem="JhG-i9-iPg" firstAttribute="leading" secondItem="3Le-Se-QNK" secondAttribute="leading" constant="30" id="XEQ-Eq-liI"/>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="JhG-i9-iPg" secondAttribute="trailing" constant="30" id="gg9-P9-fWS"/>
+                            <constraint firstItem="R6S-6s-KoB" firstAttribute="top" secondItem="WOK-sM-Bln" secondAttribute="bottom" constant="68" id="gt4-RN-6f8"/>
+                            <constraint firstItem="WOK-sM-Bln" firstAttribute="top" secondItem="3Le-Se-QNK" secondAttribute="top" constant="50" id="lRH-xu-oXc"/>
+                            <constraint firstItem="3Le-Se-QNK" firstAttribute="trailing" secondItem="WOK-sM-Bln" secondAttribute="trailing" constant="25" id="lkZ-sn-Rkp"/>
+                            <constraint firstItem="JhG-i9-iPg" firstAttribute="top" secondItem="R6S-6s-KoB" secondAttribute="bottom" constant="8" id="oh4-17-9oo"/>
+                            <constraint firstItem="R6S-6s-KoB" firstAttribute="leading" secondItem="3Le-Se-QNK" secondAttribute="leading" constant="30" id="yyI-ob-4c4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Le-Se-QNK"/>
                     </view>
@@ -18454,7 +18453,7 @@ With a broken down ship, you don’t have many options. The way you see it, you 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CO-bE-0e2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8047" y="2785"/>
+            <point key="canvasLocation" x="8045.6000000000004" y="2784.5577211394307"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="vEk-U9-lUJ">
@@ -19062,10 +19061,10 @@ Cg
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcb-NQ-bcN">
                                 <rect key="frame" x="25" y="70" width="325" height="400"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Luna’s head is tilted to the left, she is staring at the object in puzzlement as well. Could the two of you be staring at a UFO? It doesn’t seem possible, you don’t even believe in aliens. But the oddly shaped green creature makes you start to think otherwise. You hear a loud hissing sound like the decompressing of air. The top of what appears to be an alien spaceship opens. 
+                                        <string key="content">Luna’s head tilts to the left, she is staring at the object in puzzlement as well. Could the two of you be staring at a UFO? It doesn’t seem possible, you don’t even believe in aliens. But the oddly shaped green creature makes you start to think otherwise. You hear a loud hissing sound like the decompressing of air. The top of what appears to be an alien spaceship opens. 
 
 Yup, definitely an alien!
 </string>
@@ -19107,11 +19106,11 @@ Yup, definitely an alien!
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">The creature inside hops out of the aircraft, which is hovers about 2 feet off the ground. His body is long and slender; he appears frantic and in a great hurry.
+                                        <string key="content">The creature inside hops out of the aircraft, which is hovering about 2 feet off the ground. His body is long and slender; he appears frantic and in a great hurry.
 
-The creature looks directly at you with his large bulbous eyes. He scans you, head to toe, silence for a moment, like a boxer sizing up an opponent. The alien is about your height. Maybe you could take him on?
+The creature looks directly at you with his large bulbous eyes. He scans you, head to toe, silent for a moment, like a boxer sizing up an opponent. The alien is about your height. Maybe you could take him on?
 
-All the scary alien movies you’ve ever watched come flooding back to you. What if he wants to dissect your brain? Or Worse! The alien begins to move closer to where you are standing. His awkward shuffling give you the creeps. His movements are akin to a zombie’s. Luna lets out a bark as a warning to the strange being. 
+All the scary alien movies you’ve ever watched come flooding back to you. What if he wants to dissect your brain? Or Worse! The alien moves closer to you. His awkward shuffling give you the creeps. His movements are akin to a zombie’s. Luna lets out a bark as a warning to the strange being. 
 </string>
                                         <attributes>
                                             <font key="NSFont" size="16" name="Baskerville"/>
@@ -19147,8 +19146,8 @@ All the scary alien movies you’ve ever watched come flooding back to you. What
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzM-iX-ugb">
-                                <rect key="frame" x="60" y="571" width="299" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="30" y="569" width="315" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="&quot;No Way! You'll dissect my brain!&quot;">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -19157,7 +19156,7 @@ All the scary alien movies you’ve ever watched come flooding back to you. What
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dY-6q-Fy4">
-                                <rect key="frame" x="60" y="525" width="299" height="38"/>
+                                <rect key="frame" x="30" y="523" width="315" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="&quot;Sure! I'll help.&quot; (No Homework!)">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -19167,13 +19166,13 @@ All the scary alien movies you’ve ever watched come flooding back to you. What
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m8L-Wx-Dgx">
-                                <rect key="frame" x="25" y="70" width="325" height="386"/>
+                                <rect key="frame" x="25" y="70" width="325" height="384"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“Bonjour,” the alien says slowly with a wave of his long slender arm. You look at him slack jawed with confusion. The alien speaks French? 
+                                        <string key="content">“Bonjour,” the alien says slowly, waving his long slender arm. You look at him slackjawed with confusion. The alien speaks French? 
 
-“Je m’appelle Chrono,” he continues with a bow, his eyes never leaving your face. 
+“Je m’appelle Chrono,” he continues with a bow, his eyes never leave your face. 
 
 You shake your head. “Do you speak English by chance?” you ask the alien hesitantly.
 
@@ -19193,17 +19192,16 @@ You can’t imagine why he would assume you speak French, but it doesn’t matte
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="bottom" secondItem="PzM-iX-ugb" secondAttribute="bottom" constant="60" id="0gY-K9-Iy5"/>
-                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="1dY-6q-Fy4" secondAttribute="trailing" constant="16" id="210-Qy-4US"/>
-                            <constraint firstItem="1dY-6q-Fy4" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="60" id="3Wj-E0-O4k"/>
                             <constraint firstItem="m8L-Wx-Dgx" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="25" id="4S2-bm-oH6"/>
                             <constraint firstItem="m8L-Wx-Dgx" firstAttribute="top" secondItem="hmJ-8f-LlA" secondAttribute="top" constant="50" id="5VB-R9-iH7"/>
-                            <constraint firstItem="PzM-iX-ugb" firstAttribute="top" secondItem="1dY-6q-Fy4" secondAttribute="bottom" constant="8" id="DpY-Vs-N2H"/>
-                            <constraint firstItem="1dY-6q-Fy4" firstAttribute="top" secondItem="m8L-Wx-Dgx" secondAttribute="bottom" constant="69" id="KlE-3v-Upq"/>
-                            <constraint firstItem="PzM-iX-ugb" firstAttribute="top" secondItem="1dY-6q-Fy4" secondAttribute="bottom" constant="8" id="PWI-Fv-RMS"/>
-                            <constraint firstItem="1dY-6q-Fy4" firstAttribute="top" secondItem="m8L-Wx-Dgx" secondAttribute="bottom" constant="69" id="Zzw-eH-xBr"/>
-                            <constraint firstItem="PzM-iX-ugb" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="60" id="bu8-GD-Jc3"/>
-                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="PzM-iX-ugb" secondAttribute="trailing" constant="16" id="hQ8-gS-YIx"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="bottom" secondItem="PzM-iX-ugb" secondAttribute="bottom" constant="60" id="5YV-WG-4DV"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="1dY-6q-Fy4" secondAttribute="trailing" constant="30" id="Cjs-Jr-goD"/>
+                            <constraint firstItem="1dY-6q-Fy4" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="30" id="OC6-1G-Aej"/>
+                            <constraint firstItem="PzM-iX-ugb" firstAttribute="top" secondItem="1dY-6q-Fy4" secondAttribute="bottom" constant="8" id="SB2-GK-cwO"/>
+                            <constraint firstItem="PzM-iX-ugb" firstAttribute="top" secondItem="1dY-6q-Fy4" secondAttribute="bottom" constant="8" id="USB-cs-CeC"/>
+                            <constraint firstItem="1dY-6q-Fy4" firstAttribute="top" secondItem="m8L-Wx-Dgx" secondAttribute="bottom" constant="69" id="Yhp-I5-ArH"/>
+                            <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="PzM-iX-ugb" secondAttribute="trailing" constant="30" id="eNt-IF-p81"/>
+                            <constraint firstItem="PzM-iX-ugb" firstAttribute="leading" secondItem="hmJ-8f-LlA" secondAttribute="leading" constant="30" id="fFU-PX-ePf"/>
                             <constraint firstItem="hmJ-8f-LlA" firstAttribute="trailing" secondItem="m8L-Wx-Dgx" secondAttribute="trailing" constant="25" id="zbV-DH-ku4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hmJ-8f-LlA"/>
@@ -19367,11 +19365,6 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="WMX-tm-g7U">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="tintColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Xl-I0i" customClass="myTextView" customModule="Pilot" customModuleProvider="target">
                                 <rect key="frame" x="25" y="70" width="325" height="384"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -19414,19 +19407,16 @@ Do you:
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="0.089814075160000006" blue="0.13611368779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="0qd-Xl-I0i" secondAttribute="trailing" constant="25" id="5SK-V0-OPt"/>
                             <constraint firstItem="0kp-te-M5G" firstAttribute="top" secondItem="0qd-Xl-I0i" secondAttribute="bottom" constant="69" id="6Rr-Za-G6M"/>
                             <constraint firstItem="3aV-B2-dcB" firstAttribute="top" secondItem="0kp-te-M5G" secondAttribute="bottom" constant="8" id="8ip-gI-Q3k"/>
-                            <constraint firstItem="riD-mQ-to4" firstAttribute="bottom" secondItem="WMX-tm-g7U" secondAttribute="bottom" id="A7a-kQ-OiT"/>
-                            <constraint firstItem="WMX-tm-g7U" firstAttribute="top" secondItem="r2B-gF-hwR" secondAttribute="top" id="G2V-C8-Onh"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="3aV-B2-dcB" secondAttribute="trailing" constant="16" id="NBo-hT-jUi"/>
-                            <constraint firstItem="WMX-tm-g7U" firstAttribute="leading" secondItem="r2B-gF-hwR" secondAttribute="leading" id="O8x-pO-O2C"/>
                             <constraint firstItem="3aV-B2-dcB" firstAttribute="top" secondItem="0kp-te-M5G" secondAttribute="bottom" constant="8" id="Wy3-kE-js7"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="trailing" secondItem="0kp-te-M5G" secondAttribute="trailing" constant="16" id="f5x-8L-FZr"/>
                             <constraint firstItem="0kp-te-M5G" firstAttribute="top" secondItem="0qd-Xl-I0i" secondAttribute="bottom" constant="69" id="k8R-Kj-6c2"/>
                             <constraint firstItem="0qd-Xl-I0i" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="25" id="m4z-Wg-d8w"/>
-                            <constraint firstItem="WMX-tm-g7U" firstAttribute="trailing" secondItem="riD-mQ-to4" secondAttribute="trailing" id="mac-To-5K9"/>
                             <constraint firstItem="0qd-Xl-I0i" firstAttribute="top" secondItem="riD-mQ-to4" secondAttribute="top" constant="50" id="r55-4g-qkm"/>
                             <constraint firstItem="0kp-te-M5G" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="60" id="rbN-kd-W7G"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="bottom" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="60" id="v4G-Sm-90J"/>
@@ -19469,7 +19459,6 @@ Do you:
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1112" height="834"/>
         <image name="Wooden Background" width="834" height="1112"/>
         <image name="baby hapal" width="834" height="1112"/>
     </resources>
@@ -19484,7 +19473,7 @@ Do you:
         <segue reference="nvl-Th-opf"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="wuX-KR-O0k"/>
-        <segue reference="dm8-JS-0k1"/>
+        <segue reference="vUV-Ay-okI"/>
         <segue reference="IZ4-ah-DFk"/>
         <segue reference="KYf-bL-oLj"/>
         <segue reference="cSf-RQ-ef6"/>

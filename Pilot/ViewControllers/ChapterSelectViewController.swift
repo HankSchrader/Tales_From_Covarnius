@@ -38,11 +38,8 @@ class ChapterSelectViewController: GenericDecisionPointViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if self.segueID == "fromMainMenu" {
-            navigationItem.hidesBackButton = false
-        } else {
-            navigationItem.hidesBackButton = true
-        }
+        
+        navigationItem.hidesBackButton = false
         self.navigationController?.isNavigationBarHidden = false
     }
     
