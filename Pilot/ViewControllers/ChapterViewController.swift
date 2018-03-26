@@ -14,162 +14,14 @@ class ChapterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         goToChapterSelectAction()
+        loadBorderColor()
+        loadBorderWidth(borderWidth: 3.0)
+        loadCornerRadius(cornerRadius: 15.0)
+
+        
         // Do any additional setup after loading the view.
     }
 
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: false)
-        
-        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: false)
-        self.chap2_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap2_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap3_0?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap3_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap3_15TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap3_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap3_25TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.katonian1_point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.katonian1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.katonian2TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.katonian2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.at_the_ranch_run_choice_part_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.at_the_ranch_run_choice_part_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.at_the_ranch_run_choice_part_2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.at_the_ranch_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.at_the_ranch_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.at_the_ranch_2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        
-        self.at_the_ranch_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.noTrust_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.noTrust1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.at_the_ranch_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.trust1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.trust1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.hapalStance1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.letHapalDownTextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.letHapalDown2TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.hapalRescue2AgainTextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.hapalRescue3TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.hapalRescueTextBox?.setContentOffset(CGPoint.zero, animated: true)
-        
-        self.chap4_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chapt4_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        self.chap4_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
-        
-        
-        
-    
-
-
-
-//
-//
-//
-//        chapt4_2TextBox
-//        chap4_3TextBox
-//        imNotAScientistPoint5TextBox
-//        youGoofedPoint5TextBox
-//        youGoofedTextBox
-//        chapter51Point5TextBox
-//        chapter5_1TextBox
-//        Chapter5_3TextBox
-//        chapter5_4TextBox
-//        chapter5_4Point5TextBox
-//        chapter5Before5TextBox
-//        chapter5Before7TextBox
-//        chapter6_1TextBox
-//        Chapter6_1AmbassadorTextBox
-//        chapter6_1Point5TextBox
-//        chapter6_2TextBox
-//        chapter6_3TextBox
-//        chapter6_3Point5TextBox
-//        chapter6_3AmbassadorTextBox
-//        chapter6_4TextBox
-//        Chapter_6_4_AmbassadorTextBox
-//        chapter6_4Point5TextBox
-//        chapter6_5TextBox
-//        chapter6_5AmbassadorTextBox
-//        Chapter6_6AmbassadorTextBox
-//        chapter6_6Point5TextBox
-//        Chapter6_before7TextBox
-//        goodGrowlicsTextBox
-//        TheyreViciousRunTextBox
-//        theyreViciousRunTextBox_1Point5TextBox
-//        theyreViciousRun_2TextBox
-//        theyreViciousRun_2Point5TextBox
-//        counciChamberSneakTextBox
-//        councilChamberSneak_1Point5
-//        chapter6_6TextBox
-//        CCCExplanationTextBox
-//        ramShipTextBox
-//        ramShip2TextBox
-//        ramShip2Point5TextBox
-//        fetchKey
-//        fetchKey2TextBox
-//        greenFizzTheEndTextBox
-//        JigsUpTextBox
-//        jigsUp1Point5TextBox
-//        yellowFizzTheEndTextBox
-//        heSeemsSeriousTextBox
-//        chapter5Before2TextBox
-//        TurnBackTheEnd
-//        glimmerOfHope
-//        neverKnowTheEnd
-//        neverGiveUpTextBox
-//        almostGiveUpTextBox
-//        checkWindowTextBox
-//        checkDoorTextBox
-//        twoDiplomats1TextBox
-//        twoDiplomats3TextBox
-//        noPeaceTextBox
-//        noPeace2TextBox
-//        twoDiplomats6TextBox
-//        iceRayTextBox
-//        twoDiplomats7TextBox
-//        twoDiplomats8TextBox
-//        twoDiplomats9TextBox
-//        twoDiplomats10TextBox
-//        twoDiplomats11TextBox
-//        twoDiplomats12TextBox
-//        twoDiplomats13TextBox
-//        clog1TextBox
-//        clog2TextBox
-//        clog3TextBox
-//        failedDistraction1TextBox
-//        failedDistraction2TextBox
-//        tookTheKeyTextBox
-//        noKeyTakenTextBox
-//        possibleButRisky
-//        raidOnCovarnius1TextBox
-//        raidOnCovarnius2TextBox
-//        raidOnCovarnius3TextBox
-//        raidOnCovarnius4TextBox
-//        raidOnCovarnius5TextBox
-//        raidOnCovarnius6TextBox
-//        raidOnCovarnius7TextBox
-//        raidOnCovarnius8TextBox
-//        raidOnCovarnius10TextBox
-//        raidOnCovarnius11TextBox
-//        raidOnCovarnius12TextBox
-//        raidOnCovarnius13TextBox
-//        riseAndShine1TextBox
-//        riseAndShine2TextBox
-//        riseAndShine3TextBox
-//        riseAndShine4TextBox
-//        riseAndShine5TextBox
-//        ristAndShine6TextBox
-//        riseAndShine7TextBox
-//        riseAndShine8TextBox
-//        chapter2
-//        chapter3
-//        chapter3page2
-//        whichFizz
-//        IntroductionTextBox
-      
-    }
 
     override func viewWillDisappear(_ animated: Bool) {
 
@@ -181,6 +33,7 @@ class ChapterViewController: UIViewController {
         super.viewWillAppear(animated)
         let width = self.view.frame.size.width
         self.chap2_0TextBox?.changeFontSizeByDevice(width: width)
+        self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_1TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_2TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
@@ -199,7 +52,6 @@ class ChapterViewController: UIViewController {
         self.at_the_ranch_1TextBox?.changeFontSizeByDevice(width: width)
         self.at_the_ranch_2TextBox?.changeFontSizeByDevice(width: width)
         self.at_the_ranch_2Point5TextBox?.changeFontSizeByDevice(width: width)
-        
         self.at_the_ranch_3TextBox?.changeFontSizeByDevice(width: width)
         self.noTrust_1TextBox?.changeFontSizeByDevice(width: width)
         self.noTrust1Point5TextBox?.changeFontSizeByDevice(width: width)
@@ -216,6 +68,283 @@ class ChapterViewController: UIViewController {
         self.chapt4_2TextBox?.changeFontSizeByDevice(width: width)
         self.chap4_3TextBox?.changeFontSizeByDevice(width: width)
         
+        
+        self.imNotAScientistPoint5TextBox?.changeFontSizeByDevice(width: width)
+        self.youGoofedPoint5TextBox?.changeFontSizeByDevice(width: width)
+        self.youGoofedTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.chapter51Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter5_1TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter5_3TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.chapter5_4TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.chapter5_4Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter5Before5TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter5Before7TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.chapter6_1TextBox?.changeFontSizeByDevice(width: width)
+        self.Chapter6_1AmbassadorTextBox?.changeFontSizeByDevice(width: width)
+        self.chapter6_1Point5TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.chapter6_2TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter6_3TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter6_3Point5TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.chapter6_3AmbassadorTextBox?.changeFontSizeByDevice(width: width)
+        self.chapter6_4TextBox?.changeFontSizeByDevice(width: width)
+        self.Chapter_6_4_AmbassadorTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.chapter6_4Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter6_5TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter6_5AmbassadorTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.Chapter6_6AmbassadorTextBox?.changeFontSizeByDevice(width: width)
+        self.chapter6_6Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.Chapter6_before7TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.goodGrowlicsTextBox?.changeFontSizeByDevice(width: width)
+        self.TheyreViciousRunTextBox?.changeFontSizeByDevice(width: width)
+        self.theyreViciousRunTextBox_1Point5TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.theyreViciousRun_2TextBox?.changeFontSizeByDevice(width: width)
+        self.theyreViciousRun_2Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.counciChamberSneakTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.councilChamberSneak_1Point5?.changeFontSizeByDevice(width: width)
+        self.chapter6_6TextBox?.changeFontSizeByDevice(width: width)
+        self.CCCExplanationTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.ramShipTextBox?.changeFontSizeByDevice(width: width)
+        self.ramShip2TextBox?.changeFontSizeByDevice(width: width)
+        self.ramShip2Point5TextBox?.changeFontSizeByDevice(width: width)
+        
+        
+        self.fetchKey?.changeFontSizeByDevice(width: width)
+        self.fetchKey2TextBox?.changeFontSizeByDevice(width: width)
+        self.greenFizzTheEndTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.JigsUpTextBox?.changeFontSizeByDevice(width: width)
+        self.jigsUp1Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.yellowFizzTheEndTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.heSeemsSeriousTextBox?.changeFontSizeByDevice(width: width)
+        self.chapter5Before2TextBox?.changeFontSizeByDevice(width: width)
+        self.TurnBackTheEnd?.changeFontSizeByDevice(width: width)
+        
+        self.neverKnowTheEnd?.changeFontSizeByDevice(width: width)
+        self.neverGiveUpTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.almostGiveUpTextBox?.changeFontSizeByDevice(width: width)
+        self.checkWindowTextBox?.changeFontSizeByDevice(width: width)
+        self.checkDoorTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.twoDiplomats1TextBox?.changeFontSizeByDevice(width: width)
+        self.twoDiplomats3TextBox?.changeFontSizeByDevice(width: width)
+        self.noPeaceTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.noPeace2TextBox?.changeFontSizeByDevice(width: width)
+        self.twoDiplomats6TextBox?.changeFontSizeByDevice(width: width)
+        self.iceRayTextBox?.changeFontSizeByDevice(width: width)
+        
+        self.twoDiplomats7TextBox?.changeFontSizeByDevice(width: width)
+        self.twoDiplomats8TextBox?.changeFontSizeByDevice(width: width)
+        self.twoDiplomats9TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.twoDiplomats10TextBox?.changeFontSizeByDevice(width: width)
+        self.twoDiplomats11TextBox?.changeFontSizeByDevice(width: width)
+        self.twoDiplomats12TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.twoDiplomats13TextBox?.changeFontSizeByDevice(width: width)
+        self.clog1TextBox?.changeFontSizeByDevice(width: width)
+        self.clog2TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.clog3TextBox?.changeFontSizeByDevice(width: width)
+        self.failedDistraction1TextBox?.changeFontSizeByDevice(width: width)
+        self.failedDistraction2TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.tookTheKeyTextBox?.changeFontSizeByDevice(width: width)
+        self.noKeyTakenTextBox?.changeFontSizeByDevice(width: width)
+        self.possibleButRisky?.changeFontSizeByDevice(width: width)
+        
+        self.raidOnCovarnius1TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius2TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius3TextBox?.changeFontSizeByDevice(width: width)
+        
+        
+        self.raidOnCovarnius4TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius5TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius6TextBox?.changeFontSizeByDevice(width: width)
+        
+        
+        self.raidOnCovarnius7TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius8TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius10TextBox?.changeFontSizeByDevice(width: width)
+        
+        
+        self.raidOnCovarnius11TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius12TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius13TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.riseAndShine1TextBox?.changeFontSizeByDevice(width: width)
+        self.riseAndShine2TextBox?.changeFontSizeByDevice(width: width)
+        self.riseAndShine3TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.keepLunaGetSentToPrison?.changeFontSizeByDevice(width: width)
+        
+        
+        
+        self.riseAndShine4TextBox?.changeFontSizeByDevice(width: width)
+        self.riseAndShine5TextBox?.changeFontSizeByDevice(width: width)
+        self.ristAndShine6TextBox?.changeFontSizeByDevice(width: width)
+        
+        self.riseAndShine7TextBox?.changeFontSizeByDevice(width: width)
+        self.riseAndShine8TextBox?.changeFontSizeByDevice(width: width)
+        self.chapter3page2?.changeFontSizeByDevice(width: width)
+        self.whichFizz?.changeFontSizeByDevice(width: width)
+        
+        self.IntroductionTextBox?.changeFontSizeByDevice(width: width)
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap2_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap2_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_0?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_15TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap3_25TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian1_point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.katonian2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_run_choice_part_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_run_choice_part_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_run_choice_part_2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.noTrust_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.noTrust1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.at_the_ranch_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.trust1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.trust1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalStance1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.letHapalDownTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.letHapalDown2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalRescue2AgainTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalRescue3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.hapalRescueTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap4_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapt4_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chap4_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.imNotAScientistPoint5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.youGoofedPoint5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.youGoofedTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter51Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter5_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter5_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter5_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.chapter5_4Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter5Before5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter5Before7TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.Chapter6_1AmbassadorTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_3Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_3AmbassadorTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.Chapter_6_4_AmbassadorTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_4Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_5AmbassadorTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.Chapter6_6AmbassadorTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_6Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.Chapter6_before7TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.goodGrowlicsTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.TheyreViciousRunTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.theyreViciousRunTextBox_1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.theyreViciousRun_2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.theyreViciousRun_2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.counciChamberSneakTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.councilChamberSneak_1Point5?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter6_6TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.CCCExplanationTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.ramShipTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.ramShip2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.ramShip2Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.fetchKey?.setContentOffset(CGPoint.zero, animated: true)
+        self.fetchKey2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.greenFizzTheEndTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.JigsUpTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.jigsUp1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.yellowFizzTheEndTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.heSeemsSeriousTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chapter5Before2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.TurnBackTheEnd?.setContentOffset(CGPoint.zero, animated: true)
+        self.neverKnowTheEnd?.setContentOffset(CGPoint.zero, animated: true)
+        self.neverGiveUpTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.almostGiveUpTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.checkWindowTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.checkDoorTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.noPeaceTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.noPeace2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats6TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.iceRayTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats7TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats8TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats9TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats10TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats11TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats12TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+            self.keepLunaGetSentToPrison?.setContentOffset(CGPoint.zero, animated: true)
+        self.twoDiplomats13TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.clog1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.clog2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.clog3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.failedDistraction1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.failedDistraction2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.tookTheKeyTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.noKeyTakenTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.possibleButRisky?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius6TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius7TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius8TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius10TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius11TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius12TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius13TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.riseAndShine1TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.riseAndShine2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.riseAndShine3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.riseAndShine4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.riseAndShine5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.ristAndShine6TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.riseAndShine7TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.riseAndShine8TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.chapter3page2?.setContentOffset(CGPoint.zero, animated: true)
+        self.whichFizz?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.IntroductionTextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
     
     func goToChapterSelectAction() {
@@ -276,7 +405,8 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var youGoofedTextBox: UITextView!
     @IBOutlet weak var chapter51Point5TextBox: UITextView!
     @IBOutlet weak var chapter5_1TextBox: UITextView!
-    @IBOutlet weak var Chapter5_3TextBox: UITextView!
+   
+    @IBOutlet weak var chapter5_3TextBox: UITextView!
     @IBOutlet weak var chapter5_4TextBox: UITextView!
     @IBOutlet weak var chapter5_4Point5TextBox: UITextView!
     @IBOutlet weak var chapter5Before5TextBox: UITextView!
@@ -305,6 +435,7 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var councilChamberSneak_1Point5: UITextView!
     @IBOutlet weak var chapter6_6TextBox: UITextView!
     @IBOutlet weak var CCCExplanationTextBox: UITextView!
+    @IBOutlet weak var keepLunaGetSentToPrison: UITextView!
     @IBOutlet weak var ramShipTextBox: UITextView!
     @IBOutlet weak var ramShip2TextBox: UITextView!
     @IBOutlet weak var ramShip2Point5TextBox: UITextView!
@@ -317,7 +448,6 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var heSeemsSeriousTextBox: UITextView!
     @IBOutlet weak var chapter5Before2TextBox: UITextView!
     @IBOutlet weak var TurnBackTheEnd: UITextView!
-    @IBOutlet weak var glimmerOfHope: UITextView!
     @IBOutlet weak var neverKnowTheEnd: UITextView!
     @IBOutlet weak var neverGiveUpTextBox: UITextView!
     @IBOutlet weak var almostGiveUpTextBox: UITextView!
@@ -365,17 +495,461 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var ristAndShine6TextBox: UITextView!
     @IBOutlet weak var riseAndShine7TextBox: UITextView!
     @IBOutlet weak var riseAndShine8TextBox: UITextView!
-    @IBOutlet weak var chapter2: UITextView!
-    @IBOutlet weak var chapter3: UITextView!
     @IBOutlet weak var chapter3page2: UITextView!
     @IBOutlet weak var whichFizz: UITextView!
     @IBOutlet weak var IntroductionTextBox: myTextView!
+    
+    
+    func loadCornerRadius(cornerRadius: CGFloat!) {
+        self.chap2_0TextBox?.layer.cornerRadius = cornerRadius
+        self.chap2_3TextBox?.layer.cornerRadius = cornerRadius
+        self.chap2_1TextBox?.layer.cornerRadius = cornerRadius
+        self.chap2_2TextBox?.layer.cornerRadius = cornerRadius
+        self.chap2_3TextBox?.layer.cornerRadius = cornerRadius
+        self.chap3_0?.layer.cornerRadius = cornerRadius
+        self.chap3_1TextBox?.layer.cornerRadius = cornerRadius
+        self.chap3_15TextBox?.layer.cornerRadius = cornerRadius
+        self.chap3_2TextBox?.layer.cornerRadius = cornerRadius
+        self.chap3_25TextBox?.layer.cornerRadius = cornerRadius
+        self.katonian1_point5TextBox?.layer.cornerRadius = cornerRadius
+        self.katonian1TextBox?.layer.cornerRadius = cornerRadius
+        self.katonian2TextBox?.layer.cornerRadius = cornerRadius
+        self.katonian2Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_run_choice_part_1TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_run_choice_part_2TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_run_choice_part_2Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_1TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_2TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_2Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_3TextBox?.layer.cornerRadius = cornerRadius
+        self.noTrust_1TextBox?.layer.cornerRadius = cornerRadius
+        self.noTrust1Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.at_the_ranch_3TextBox?.layer.cornerRadius = cornerRadius
+        self.trust1TextBox?.layer.cornerRadius = cornerRadius
+        self.trust1Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.hapalStance1TextBox?.layer.cornerRadius = cornerRadius
+        self.letHapalDownTextBox?.layer.cornerRadius = cornerRadius
+        self.letHapalDown2TextBox?.layer.cornerRadius = cornerRadius
+        self.hapalRescue2AgainTextBox?.layer.cornerRadius = cornerRadius
+        self.hapalRescue3TextBox?.layer.cornerRadius = cornerRadius
+        self.hapalRescueTextBox?.layer.cornerRadius = cornerRadius
+        self.chap4_1TextBox?.layer.cornerRadius = cornerRadius
+        self.chapt4_2TextBox?.layer.cornerRadius = cornerRadius
+        self.chap4_3TextBox?.layer.cornerRadius = cornerRadius
+        self.imNotAScientistPoint5TextBox?.layer.cornerRadius = cornerRadius
+        self.youGoofedPoint5TextBox?.layer.cornerRadius = cornerRadius
+        self.youGoofedTextBox?.layer.cornerRadius = cornerRadius
+        self.chapter51Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter5_1TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter5_3TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter5_4TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter5_4Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter5Before5TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter5Before7TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_1TextBox?.layer.cornerRadius = cornerRadius
+        self.Chapter6_1AmbassadorTextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_1Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_2TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_3TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_3Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_3AmbassadorTextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_4TextBox?.layer.cornerRadius = cornerRadius
+        self.Chapter_6_4_AmbassadorTextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_4Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_5TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_5AmbassadorTextBox?.layer.cornerRadius = cornerRadius
+        self.Chapter6_6AmbassadorTextBox?.layer.cornerRadius = cornerRadius
+        self.chapter6_6Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.Chapter6_before7TextBox?.layer.cornerRadius = cornerRadius
+        self.goodGrowlicsTextBox?.layer.cornerRadius = cornerRadius
+        self.TheyreViciousRunTextBox?.layer.cornerRadius = cornerRadius
+        self.theyreViciousRunTextBox_1Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.theyreViciousRun_2TextBox?.layer.cornerRadius = cornerRadius
+        self.theyreViciousRun_2Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.counciChamberSneakTextBox?.layer.cornerRadius = cornerRadius
+        self.councilChamberSneak_1Point5?.layer.cornerRadius = cornerRadius
+        self.chapter6_6TextBox?.layer.cornerRadius = cornerRadius
+        self.CCCExplanationTextBox?.layer.cornerRadius = cornerRadius
+        self.ramShipTextBox?.layer.cornerRadius = cornerRadius
+        self.ramShip2TextBox?.layer.cornerRadius = cornerRadius
+        self.ramShip2Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.fetchKey?.layer.cornerRadius = cornerRadius
+        self.fetchKey2TextBox?.layer.cornerRadius = cornerRadius
+        self.greenFizzTheEndTextBox?.layer.cornerRadius = cornerRadius
+        
+        self.JigsUpTextBox?.layer.cornerRadius = cornerRadius
+        self.jigsUp1Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.yellowFizzTheEndTextBox?.layer.cornerRadius = cornerRadius
+        
+        self.heSeemsSeriousTextBox?.layer.cornerRadius = cornerRadius
+        self.chapter5Before2TextBox?.layer.cornerRadius = cornerRadius
+        self.TurnBackTheEnd?.layer.cornerRadius = cornerRadius
+        
+        self.neverKnowTheEnd?.layer.cornerRadius = cornerRadius
+        self.neverGiveUpTextBox?.layer.cornerRadius = cornerRadius
+        
+        self.almostGiveUpTextBox?.layer.cornerRadius = cornerRadius
+        self.checkWindowTextBox?.layer.cornerRadius = cornerRadius
+        self.checkDoorTextBox?.layer.cornerRadius = cornerRadius
+        
+        self.twoDiplomats1TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats3TextBox?.layer.cornerRadius = cornerRadius
+        self.noPeaceTextBox?.layer.cornerRadius = cornerRadius
+        self.noPeace2TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats6TextBox?.layer.cornerRadius = cornerRadius
+        self.iceRayTextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats7TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats8TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats9TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats10TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats11TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats12TextBox?.layer.cornerRadius = cornerRadius
+        self.twoDiplomats13TextBox?.layer.cornerRadius = cornerRadius
+        self.clog1TextBox?.layer.cornerRadius = cornerRadius
+        self.clog2TextBox?.layer.cornerRadius = cornerRadius
+        self.clog3TextBox?.layer.cornerRadius = cornerRadius
+        self.failedDistraction1TextBox?.layer.cornerRadius = cornerRadius
+        self.failedDistraction2TextBox?.layer.cornerRadius = cornerRadius
+        self.tookTheKeyTextBox?.layer.cornerRadius = cornerRadius
+        self.noKeyTakenTextBox?.layer.cornerRadius = cornerRadius
+        self.possibleButRisky?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius1TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius2TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius3TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius4TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius5TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius6TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius7TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius8TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius10TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius11TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius12TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius13TextBox?.layer.cornerRadius = cornerRadius
+        self.riseAndShine1TextBox?.layer.cornerRadius = cornerRadius
+        self.riseAndShine2TextBox?.layer.cornerRadius = cornerRadius
+        self.riseAndShine3TextBox?.layer.cornerRadius = cornerRadius
+        self.keepLunaGetSentToPrison?.layer.cornerRadius = cornerRadius
+        self.riseAndShine4TextBox?.layer.cornerRadius = cornerRadius
+        self.riseAndShine5TextBox?.layer.cornerRadius = cornerRadius
+        self.ristAndShine6TextBox?.layer.cornerRadius = cornerRadius
+        self.riseAndShine7TextBox?.layer.cornerRadius = cornerRadius
+        self.riseAndShine8TextBox?.layer.cornerRadius = cornerRadius
+        self.chapter3page2?.layer.cornerRadius = cornerRadius
+        self.whichFizz?.layer.cornerRadius = cornerRadius
+        self.IntroductionTextBox?.layer.cornerRadius = cornerRadius
+    }
+    
+    func loadBorderColor() {
+        let Color = UIColor.lightGray
+        let myColor = Color.cgColor
+        self.chap2_0TextBox?.layer.borderColor = myColor
+        self.chap2_3TextBox?.layer.borderColor = myColor
+        self.chap2_1TextBox?.layer.borderColor = myColor
+        self.chap2_2TextBox?.layer.borderColor = myColor
+        self.chap2_3TextBox?.layer.borderColor = myColor
+        self.chap3_0?.layer.borderColor = myColor
+        self.chap3_1TextBox?.layer.borderColor = myColor
+        self.chap3_15TextBox?.layer.borderColor = myColor
+        self.chap3_2TextBox?.layer.borderColor = myColor
+        self.chap3_25TextBox?.layer.borderColor = myColor
+        self.katonian1_point5TextBox?.layer.borderColor = myColor
+        self.katonian1TextBox?.layer.borderColor = myColor
+        self.katonian2TextBox?.layer.borderColor = myColor
+        self.katonian2Point5TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_run_choice_part_1TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_run_choice_part_2TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_run_choice_part_2Point5TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_1TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_2TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_2Point5TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_3TextBox?.layer.borderColor = myColor
+        self.noTrust_1TextBox?.layer.borderColor = myColor
+        self.noTrust1Point5TextBox?.layer.borderColor = myColor
+        self.at_the_ranch_3TextBox?.layer.borderColor = myColor
+        self.trust1TextBox?.layer.borderColor = myColor
+        self.trust1Point5TextBox?.layer.borderColor = myColor
+        self.hapalStance1TextBox?.layer.borderColor = myColor
+        self.letHapalDownTextBox?.layer.borderColor = myColor
+        self.letHapalDown2TextBox?.layer.borderColor = myColor
+        self.hapalRescue2AgainTextBox?.layer.borderColor = myColor
+        self.hapalRescue3TextBox?.layer.borderColor = myColor
+        self.hapalRescueTextBox?.layer.borderColor = myColor
+        self.chap4_1TextBox?.layer.borderColor = myColor
+        self.chapt4_2TextBox?.layer.borderColor = myColor
+        self.chap4_3TextBox?.layer.borderColor = myColor
+        self.imNotAScientistPoint5TextBox?.layer.borderColor = myColor
+        self.youGoofedPoint5TextBox?.layer.borderColor = myColor
+        self.youGoofedTextBox?.layer.borderColor = myColor
+        
+        self.chapter51Point5TextBox?.layer.borderColor = myColor
+        self.chapter5_1TextBox?.layer.borderColor = myColor
+        self.chapter5_3TextBox?.layer.borderColor = myColor
+        
+        self.chapter5_4TextBox?.layer.borderColor = myColor
+        
+        self.chapter5_4Point5TextBox?.layer.borderColor = myColor
+        self.chapter5Before5TextBox?.layer.borderColor = myColor
+        self.chapter5Before7TextBox?.layer.borderColor = myColor
+        
+        self.chapter6_1TextBox?.layer.borderColor = myColor
+        self.Chapter6_1AmbassadorTextBox?.layer.borderColor = myColor
+        self.chapter6_1Point5TextBox?.layer.borderColor = myColor
+        
+        self.chapter6_2TextBox?.layer.borderColor = myColor
+        self.chapter6_3TextBox?.layer.borderColor = myColor
+        self.chapter6_3Point5TextBox?.layer.borderColor = myColor
+        
+        self.chapter6_3AmbassadorTextBox?.layer.borderColor = myColor
+        self.chapter6_4TextBox?.layer.borderColor = myColor
+        self.Chapter_6_4_AmbassadorTextBox?.layer.borderColor = myColor
+        
+        self.chapter6_4Point5TextBox?.layer.borderColor = myColor
+        self.chapter6_5TextBox?.layer.borderColor = myColor
+        self.chapter6_5AmbassadorTextBox?.layer.borderColor = myColor
+        
+        self.Chapter6_6AmbassadorTextBox?.layer.borderColor = myColor
+        self.chapter6_6Point5TextBox?.layer.borderColor = myColor
+        self.Chapter6_before7TextBox?.layer.borderColor = myColor
+        
+        self.goodGrowlicsTextBox?.layer.borderColor = myColor
+        self.TheyreViciousRunTextBox?.layer.borderColor = myColor
+        self.theyreViciousRunTextBox_1Point5TextBox?.layer.borderColor = myColor
+        
+        self.theyreViciousRun_2TextBox?.layer.borderColor = myColor
+        self.theyreViciousRun_2Point5TextBox?.layer.borderColor = myColor
+        self.counciChamberSneakTextBox?.layer.borderColor = myColor
+        
+        self.councilChamberSneak_1Point5?.layer.borderColor = myColor
+        self.chapter6_6TextBox?.layer.borderColor = myColor
+        self.CCCExplanationTextBox?.layer.borderColor = myColor
+        
+        self.ramShipTextBox?.layer.borderColor = myColor
+        self.ramShip2TextBox?.layer.borderColor = myColor
+        self.ramShip2Point5TextBox?.layer.borderColor = myColor
+        
+        
+        self.fetchKey?.layer.borderColor = myColor
+        self.fetchKey2TextBox?.layer.borderColor = myColor
+        self.greenFizzTheEndTextBox?.layer.borderColor = myColor
+        
+        self.JigsUpTextBox?.layer.borderColor = myColor
+        self.jigsUp1Point5TextBox?.layer.borderColor = myColor
+        self.yellowFizzTheEndTextBox?.layer.borderColor = myColor
+        
+        self.heSeemsSeriousTextBox?.layer.borderColor = myColor
+        self.chapter5Before2TextBox?.layer.borderColor = myColor
+        self.TurnBackTheEnd?.layer.borderColor = myColor
+        
+        self.neverKnowTheEnd?.layer.borderColor = myColor
+        self.neverGiveUpTextBox?.layer.borderColor = myColor
+        
+        self.almostGiveUpTextBox?.layer.borderColor = myColor
+        self.checkWindowTextBox?.layer.borderColor = myColor
+        self.checkDoorTextBox?.layer.borderColor = myColor
+        
+        self.twoDiplomats1TextBox?.layer.borderColor = myColor
+        self.twoDiplomats3TextBox?.layer.borderColor = myColor
+        self.noPeaceTextBox?.layer.borderColor = myColor
+        self.noPeace2TextBox?.layer.borderColor = myColor
+        self.twoDiplomats6TextBox?.layer.borderColor = myColor
+        self.iceRayTextBox?.layer.borderColor = myColor
+        self.twoDiplomats7TextBox?.layer.borderColor = myColor
+        self.twoDiplomats8TextBox?.layer.borderColor = myColor
+        self.twoDiplomats9TextBox?.layer.borderColor = myColor
+        self.twoDiplomats10TextBox?.layer.borderColor = myColor
+        self.twoDiplomats11TextBox?.layer.borderColor = myColor
+        self.twoDiplomats12TextBox?.layer.borderColor = myColor
+        self.twoDiplomats13TextBox?.layer.borderColor = myColor
+        self.clog1TextBox?.layer.borderColor = myColor
+        self.clog2TextBox?.layer.borderColor = myColor
+        self.clog3TextBox?.layer.borderColor = myColor
+        self.failedDistraction1TextBox?.layer.borderColor = myColor
+        self.failedDistraction2TextBox?.layer.borderColor = myColor
+        self.tookTheKeyTextBox?.layer.borderColor = myColor
+        self.noKeyTakenTextBox?.layer.borderColor = myColor
+        self.possibleButRisky?.layer.borderColor = myColor
+        self.raidOnCovarnius1TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius2TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius3TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius4TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius5TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius6TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius7TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius8TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius10TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius11TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius12TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius13TextBox?.layer.borderColor = myColor
+        self.riseAndShine1TextBox?.layer.borderColor = myColor
+        self.riseAndShine2TextBox?.layer.borderColor = myColor
+        self.riseAndShine3TextBox?.layer.borderColor = myColor
+        self.keepLunaGetSentToPrison?.layer.borderColor = myColor
+        self.riseAndShine4TextBox?.layer.borderColor = myColor
+        self.riseAndShine5TextBox?.layer.borderColor = myColor
+        self.ristAndShine6TextBox?.layer.borderColor = myColor
+        self.riseAndShine7TextBox?.layer.borderColor = myColor
+        self.riseAndShine8TextBox?.layer.borderColor = myColor
+        self.chapter3page2?.layer.borderColor = myColor
+        self.whichFizz?.layer.borderColor = myColor
+        self.IntroductionTextBox?.layer.borderColor = myColor
+        
+    }
+    
+    func loadBorderWidth(borderWidth:CGFloat!) {
+        self.chap2_0TextBox?.layer.borderWidth = borderWidth
+        self.chap2_3TextBox?.layer.borderWidth = borderWidth
+        self.chap2_1TextBox?.layer.borderWidth = borderWidth
+        self.chap2_2TextBox?.layer.borderWidth = borderWidth
+        self.chap2_3TextBox?.layer.borderWidth = borderWidth
+        self.chap3_0?.layer.borderWidth = borderWidth
+        self.chap3_1TextBox?.layer.borderWidth = borderWidth
+        self.chap3_15TextBox?.layer.borderWidth = borderWidth
+        self.chap3_2TextBox?.layer.borderWidth = borderWidth
+        self.chap3_25TextBox?.layer.borderWidth = borderWidth
+        self.katonian1_point5TextBox?.layer.borderWidth = borderWidth
+        self.katonian1TextBox?.layer.borderWidth = borderWidth
+        self.katonian2TextBox?.layer.borderWidth = borderWidth
+        self.katonian2Point5TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_run_choice_part_1TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_run_choice_part_2TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_run_choice_part_2Point5TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_1TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_2TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_2Point5TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_3TextBox?.layer.borderWidth = borderWidth
+        self.noTrust_1TextBox?.layer.borderWidth = borderWidth
+        self.noTrust1Point5TextBox?.layer.borderWidth = borderWidth
+        self.at_the_ranch_3TextBox?.layer.borderWidth = borderWidth
+        self.trust1TextBox?.layer.borderWidth = borderWidth
+        self.trust1Point5TextBox?.layer.borderWidth = borderWidth
+        self.hapalStance1TextBox?.layer.borderWidth = borderWidth
+        self.letHapalDownTextBox?.layer.borderWidth = borderWidth
+        self.letHapalDown2TextBox?.layer.borderWidth = borderWidth
+        self.hapalRescue2AgainTextBox?.layer.borderWidth = borderWidth
+        self.hapalRescue3TextBox?.layer.borderWidth = borderWidth
+        self.hapalRescueTextBox?.layer.borderWidth = borderWidth
+        self.chap4_1TextBox?.layer.borderWidth = borderWidth
+        self.chapt4_2TextBox?.layer.borderWidth = borderWidth
+        self.chap4_3TextBox?.layer.borderWidth = borderWidth
+        self.imNotAScientistPoint5TextBox?.layer.borderWidth = borderWidth
+        self.youGoofedPoint5TextBox?.layer.borderWidth = borderWidth
+        self.youGoofedTextBox?.layer.borderWidth = borderWidth
+        
+        self.chapter51Point5TextBox?.layer.borderWidth = borderWidth
+        self.chapter5_1TextBox?.layer.borderWidth = borderWidth
+        self.chapter5_3TextBox?.layer.borderWidth = borderWidth
+        
+        self.chapter5_4TextBox?.layer.borderWidth = borderWidth
+        
+        self.chapter5_4Point5TextBox?.layer.borderWidth = borderWidth
+        self.chapter5Before5TextBox?.layer.borderWidth = borderWidth
+        self.chapter5Before7TextBox?.layer.borderWidth = borderWidth
+        
+        self.chapter6_1TextBox?.layer.borderWidth = borderWidth
+        self.Chapter6_1AmbassadorTextBox?.layer.borderWidth = borderWidth
+        self.chapter6_1Point5TextBox?.layer.borderWidth = borderWidth
+        
+        self.chapter6_2TextBox?.layer.borderWidth = borderWidth
+        self.chapter6_3TextBox?.layer.borderWidth = borderWidth
+        self.chapter6_3Point5TextBox?.layer.borderWidth = borderWidth
+        
+        self.chapter6_3AmbassadorTextBox?.layer.borderWidth = borderWidth
+        self.chapter6_4TextBox?.layer.borderWidth = borderWidth
+        self.Chapter_6_4_AmbassadorTextBox?.layer.borderWidth = borderWidth
+        
+        self.chapter6_4Point5TextBox?.layer.borderWidth = borderWidth
+        self.chapter6_5TextBox?.layer.borderWidth = borderWidth
+        self.chapter6_5AmbassadorTextBox?.layer.borderWidth = borderWidth
+        
+        self.Chapter6_6AmbassadorTextBox?.layer.borderWidth = borderWidth
+        self.chapter6_6Point5TextBox?.layer.borderWidth = borderWidth
+        self.Chapter6_before7TextBox?.layer.borderWidth = borderWidth
+        
+        self.goodGrowlicsTextBox?.layer.borderWidth = borderWidth
+        self.TheyreViciousRunTextBox?.layer.borderWidth = borderWidth
+        self.theyreViciousRunTextBox_1Point5TextBox?.layer.borderWidth = borderWidth
+        
+        self.theyreViciousRun_2TextBox?.layer.borderWidth = borderWidth
+        self.theyreViciousRun_2Point5TextBox?.layer.borderWidth = borderWidth
+        self.counciChamberSneakTextBox?.layer.borderWidth = borderWidth
+        
+        self.councilChamberSneak_1Point5?.layer.borderWidth = borderWidth
+        self.chapter6_6TextBox?.layer.borderWidth = borderWidth
+        self.CCCExplanationTextBox?.layer.borderWidth = borderWidth
+        
+        self.ramShipTextBox?.layer.borderWidth = borderWidth
+        self.ramShip2TextBox?.layer.borderWidth = borderWidth
+        self.ramShip2Point5TextBox?.layer.borderWidth = borderWidth
+        
+        
+        self.fetchKey?.layer.borderWidth = borderWidth
+        self.fetchKey2TextBox?.layer.borderWidth = borderWidth
+        self.greenFizzTheEndTextBox?.layer.borderWidth = borderWidth
+        
+        self.JigsUpTextBox?.layer.borderWidth = borderWidth
+        self.jigsUp1Point5TextBox?.layer.borderWidth = borderWidth
+        self.yellowFizzTheEndTextBox?.layer.borderWidth = borderWidth
+        
+        self.heSeemsSeriousTextBox?.layer.borderWidth = borderWidth
+        self.chapter5Before2TextBox?.layer.borderWidth = borderWidth
+        self.TurnBackTheEnd?.layer.borderWidth = borderWidth
+        
+        self.neverKnowTheEnd?.layer.borderWidth = borderWidth
+        self.neverGiveUpTextBox?.layer.borderWidth = borderWidth
+        
+        self.almostGiveUpTextBox?.layer.borderWidth = borderWidth
+        self.checkWindowTextBox?.layer.borderWidth = borderWidth
+        self.checkDoorTextBox?.layer.borderWidth = borderWidth
+        
+        self.twoDiplomats1TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats3TextBox?.layer.borderWidth = borderWidth
+        self.noPeaceTextBox?.layer.borderWidth = borderWidth
+        self.noPeace2TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats6TextBox?.layer.borderWidth = borderWidth
+        self.iceRayTextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats7TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats8TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats9TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats10TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats11TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats12TextBox?.layer.borderWidth = borderWidth
+        self.twoDiplomats13TextBox?.layer.borderWidth = borderWidth
+        self.clog1TextBox?.layer.borderWidth = borderWidth
+        self.clog2TextBox?.layer.borderWidth = borderWidth
+        self.clog3TextBox?.layer.borderWidth = borderWidth
+        self.failedDistraction1TextBox?.layer.borderWidth = borderWidth
+        self.failedDistraction2TextBox?.layer.borderWidth = borderWidth
+        self.tookTheKeyTextBox?.layer.borderWidth = borderWidth
+        self.noKeyTakenTextBox?.layer.borderWidth = borderWidth
+        self.possibleButRisky?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius1TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius2TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius3TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius4TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius5TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius6TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius7TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius8TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius10TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius11TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius12TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius13TextBox?.layer.borderWidth = borderWidth
+        self.riseAndShine1TextBox?.layer.borderWidth = borderWidth
+        self.riseAndShine2TextBox?.layer.borderWidth = borderWidth
+        self.riseAndShine3TextBox?.layer.borderWidth = borderWidth
+        self.keepLunaGetSentToPrison?.layer.borderWidth = borderWidth
+        self.riseAndShine4TextBox?.layer.borderWidth = borderWidth
+        self.riseAndShine5TextBox?.layer.borderWidth = borderWidth
+        self.ristAndShine6TextBox?.layer.borderWidth = borderWidth
+        self.riseAndShine7TextBox?.layer.borderWidth = borderWidth
+        self.riseAndShine8TextBox?.layer.borderWidth = borderWidth
+        self.chapter3page2?.layer.borderWidth = borderWidth
+        self.whichFizz?.layer.borderWidth = borderWidth
+        self.IntroductionTextBox?.layer.borderWidth = borderWidth
+    
+    
+    }
 }
-
-
-
-
-
 extension UITextView {
     
     func changeFontSizeByDevice(width: CGFloat) {
@@ -389,7 +963,7 @@ extension UITextView {
         case 768: // iPad
             self.font = UIFont(name: "Avenir-Book", size: 25)
         default: // iPad Pro
-            self.font = UIFont(name: "Avenir-Book", size: 30)
+            self.font = UIFont(name: "Avenir-Book", size: 25)
         }
         
     }

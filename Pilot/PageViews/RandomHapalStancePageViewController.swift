@@ -32,7 +32,6 @@ class RandomHapalStancePageViewController: GenericPageViewController {
     }
     
     override func viewDidAppear(_ animated: Bool){
-        print(self.segueID)
         super.viewDidAppear(animated)
         if self.segueID == "Don't Trust" || self.segueID == Constants.BY_RANDOM_HAPAL_STANCE_NO_TRUST {
             super.checkNewChapter(chapterName: Constants.BY_RANDOM_HAPAL_STANCE_NO_TRUST, order: 3)
