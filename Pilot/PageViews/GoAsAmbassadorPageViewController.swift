@@ -41,7 +41,6 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                 
             case "stinky meat"?:
                 return [
-                        self.newVC(viewController: "Phase One Complete 0.5"),
                         self.newVC(viewController: "Phase One Complete"),
                         self.newVC(viewController: "Chapter 6 3 Ambassador"),
                         self.newVC(viewController: "Chapter 6 4 Ambassador"),
@@ -55,14 +54,6 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chrono knows the layout")]
             case "no time for questions"?:
                 return [self.newVC(viewController: "do not ask")]
-            case "check window"?:
-                return [self.newVC(viewController: "check window"),
-                        self.newVC(viewController: "check door"),
-                        self.newVC(viewController: "Chapter 6 3 Ambassador"),
-                        self.newVC(viewController: "Chapter 6 4 Ambassador"),
-                        self.newVC(viewController: "Chapter 6 5 Ambassador"),
-                        self.newVC(viewController: "Chapter 6 6 Ambassador"),
-                        self.newVC(viewController: "Chapter 6 7 Ambassador") ]
             case "check door"?:
                 return [self.newVC(viewController: "check door"),
                         self.newVC(viewController: "Chapter 6 3 Ambassador"),

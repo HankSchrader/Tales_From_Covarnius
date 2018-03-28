@@ -18,6 +18,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         loadBorderColor()
         loadBorderWidth(borderWidth: 4.0)
         loadCornerRadius(cornerRadius: 15.0)
+        loadTextBoxColor()
 
 
 
@@ -25,14 +26,15 @@ class GenericDecisionPointViewController: ChapterViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
-        super.viewWillAppear(animated)
         loadDecisionPointButtons()
         let width = self.view.frame.size.width
         self.chap2_4TextBox?.changeFontSizeByDevice(width: width)
         self.turnBackTextBox?.changeFontSizeByDevice(width: width)
         self.katonian3TextBox?.changeFontSizeByDevice(width: width)
+        self.snackOrRunTextBox?.changeFontSizeByDevice(width: width)
         
         self.atTheRanch_4TextBox?.changeFontSizeByDevice(width: width)
         self.hapalStanceTextBox?.changeFontSizeByDevice(width: width)
@@ -63,13 +65,6 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.changeFontSizeByDevice(width: width)
         self.clog4TextBox?.changeFontSizeByDevice(width: width)
 
-    
-       
-    }
-
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
 
         self.chap2_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.turnBackTextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -95,6 +90,8 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.whatShouldGrowlicsEatTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chapter5_5TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chap3_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.snackOrRunTextBox?.setContentOffset(CGPoint.zero, animated: true)
         
         self.twoDiplomats2TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.twoDiplomats4TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -215,10 +212,12 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.layer.borderColor = myColor
         self.hyperSleep0TextBox?.layer.borderColor = myColor
         self.clog4TextBox?.layer.borderColor = myColor
+        self.snackOrRunTextBox?.layer.borderColor = myColor
         
     }
     
     override func loadBorderWidth(borderWidth: CGFloat!) {
+        
         self.chap2_4TextBox?.layer.borderWidth = borderWidth
         self.turnBackTextBox?.layer.borderWidth = borderWidth
         self.katonian3TextBox?.layer.borderWidth = borderWidth
@@ -252,6 +251,49 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.layer.borderWidth = borderWidth
         self.clog4TextBox?.layer.borderWidth = borderWidth
         
+        self.snackOrRunTextBox?.layer.borderWidth = borderWidth
+        
+
+    }
+    
+    override func loadTextBoxColor() {
+        
+        self.chap2_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.turnBackTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.katonian3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.atTheRanch_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.hapalStanceTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.someSortOfMistake?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.gettingShadySneakIntoAmbassadorHouseTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.warMonger1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chronoKnowsTheLayoutTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.chapter5_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5_7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.chapter6_7AmbassadorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.jigsUpChoiceTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.doNotAskAboutCCCTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.whatShouldGrowlicsEatTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5_5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap3_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.twoDiplomats2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_2Ambassador?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.twoDiplomats14TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.hyperSleep0TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.clog4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.snackOrRunTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        
     }
     
     override func loadCornerRadius(cornerRadius: CGFloat!) {
@@ -275,7 +317,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.chapter6_7AmbassadorTextBox?.layer.cornerRadius = cornerRadius
         self.jigsUpChoiceTextBox?.layer.cornerRadius = cornerRadius
         self.doNotAskAboutCCCTextBox?.layer.cornerRadius = cornerRadius
-        
+        self.snackOrRunTextBox?.layer.cornerRadius = cornerRadius
         self.whatShouldGrowlicsEatTextBox?.layer.cornerRadius = cornerRadius
         self.chapter5_5TextBox?.layer.cornerRadius = cornerRadius
         self.chap3_3TextBox?.layer.cornerRadius = cornerRadius
@@ -309,6 +351,7 @@ class GenericDecisionPointViewController: ChapterViewController {
 
     
   //Text Boxes
+    @IBOutlet weak var snackOrRunTextBox: UITextView!
     @IBOutlet weak var turnBackTextBox: UITextView!
     @IBOutlet var noHomeworkButton: UIView!
     @IBOutlet weak var decisionButton: UIButton!
@@ -410,6 +453,17 @@ class GenericDecisionPointViewController: ChapterViewController {
         loadDecisionPointButton(button: self.turnBackFirstTimeButton)
         loadDecisionPointButton(button: self.sureIllHelp)
         loadDecisionPointButton(button: self.noWayDissectMyBrains)
+        loadDecisionPointButton(button: self.warmongerButton)
+        loadDecisionPointButton(button: self.weNeedToDoSomethingButton)
+        
+        loadDecisionPointButton(button: self.iJustWantToGoHomeButton)
+        loadDecisionPointButton(button: self.neverGiveUpButton)
+        
+        loadDecisionPointButton(button: self.itsAGreatPlanButton)
+        loadDecisionPointButton(button: self.iGiveUpSecondTimeButton)
+        
+        loadDecisionPointButton(button: self.sneakOntoSinisterianShipButton)
+        loadDecisionPointButton(button: self.disguiseOurselvesButton)
     }
     
     @IBOutlet weak var sneakIntoCouncilChamberButton: UIButton!
@@ -452,9 +506,17 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var takeMeBackToEarthButton: UIButton!
     @IBOutlet weak var onlyYouCanHelpButton: UIButton!
     @IBOutlet weak var goHomeFirstTimeButton: UIButton!
+    @IBOutlet weak var warmongerButton: UIButton!
+    @IBOutlet weak var weNeedToDoSomethingButton: UIButton!
     @IBOutlet weak var turnBackFirstTimeButton: UIButton!
+    @IBOutlet weak var iJustWantToGoHomeButton: UIButton!
+    @IBOutlet weak var neverGiveUpButton: UIButton!
     @IBOutlet weak var sureIllHelp: UIButton!
     @IBOutlet weak var noWayDissectMyBrains: UIButton!
     @IBOutlet weak var kayoIsSuspicious: UIButton!
     @IBOutlet weak var kayoOfferToRelax: UIButton!
+    @IBOutlet weak var iGiveUpSecondTimeButton: UIButton!
+    @IBOutlet weak var itsAGreatPlanButton: UIButton!
+    @IBOutlet weak var disguiseOurselvesButton: UIButton!
+    @IBOutlet weak var sneakOntoSinisterianShipButton: UIButton!
 }

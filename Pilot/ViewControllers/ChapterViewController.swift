@@ -14,11 +14,6 @@ class ChapterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         goToChapterSelectAction()
-        loadBorderColor()
-        loadBorderWidth(borderWidth: 3.0)
-        loadCornerRadius(cornerRadius: 15.0)
-
-        
         // Do any additional setup after loading the view.
     }
 
@@ -28,10 +23,16 @@ class ChapterViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
     }
     
+
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         let width = self.view.frame.size.width
+        loadBorderColor()
+        loadBorderWidth(borderWidth: 3.0)
+        loadCornerRadius(cornerRadius: 15.0)
+        loadTextBoxColor()
+        loadDecisionPointButtons()
         self.chap2_0TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_1TextBox?.changeFontSizeByDevice(width: width)
@@ -206,10 +207,8 @@ class ChapterViewController: UIViewController {
         
         self.IntroductionTextBox?.changeFontSizeByDevice(width: width)
         
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+        self.greenFoodTheEnd?.changeFontSizeByDevice(width: width)
+        self.phaseOneCompleteTextBox?.changeFontSizeByDevice(width: width)
         self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: true)
         
         self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -312,7 +311,7 @@ class ChapterViewController: UIViewController {
         self.twoDiplomats11TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.twoDiplomats12TextBox?.setContentOffset(CGPoint.zero, animated: true)
         
-            self.keepLunaGetSentToPrison?.setContentOffset(CGPoint.zero, animated: true)
+        self.keepLunaGetSentToPrison?.setContentOffset(CGPoint.zero, animated: true)
         self.twoDiplomats13TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.clog1TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.clog2TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -347,6 +346,8 @@ class ChapterViewController: UIViewController {
         self.whichFizz?.setContentOffset(CGPoint.zero, animated: true)
         
         self.IntroductionTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.phaseOneCompleteTextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
     
 
@@ -409,7 +410,8 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var youGoofedTextBox: UITextView!
     @IBOutlet weak var chapter51Point5TextBox: UITextView!
     @IBOutlet weak var chapter5_1TextBox: UITextView!
-   
+    @IBOutlet weak var phaseOneCompleteTextBox: UITextView!
+    
     @IBOutlet weak var chapter5_3TextBox: UITextView!
     @IBOutlet weak var chapter5_4TextBox: UITextView!
     @IBOutlet weak var chapter5_4Point5TextBox: UITextView!
@@ -503,11 +505,13 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var whichFizz: UITextView!
     @IBOutlet weak var IntroductionTextBox: myTextView!
     
+    @IBOutlet weak var greenFoodTheEnd: UITextView!
     // MARK: Begin button decorations.
     
     func loadCornerRadius(cornerRadius: CGFloat!) {
+        
         self.chap2_0TextBox?.layer.cornerRadius = cornerRadius
-       
+        
         self.chap2_3TextBox?.layer.cornerRadius = cornerRadius
         self.chap2_1TextBox?.layer.cornerRadius = cornerRadius
         self.chap2_2TextBox?.layer.cornerRadius = cornerRadius
@@ -644,6 +648,157 @@ class ChapterViewController: UIViewController {
         self.chapter3page2?.layer.cornerRadius = cornerRadius
         self.whichFizz?.layer.cornerRadius = cornerRadius
         self.IntroductionTextBox?.layer.cornerRadius = cornerRadius
+
+        self.greenFoodTheEnd?.layer.cornerRadius = cornerRadius
+        self.phaseOneCompleteTextBox?.layer.cornerRadius = cornerRadius
+        
+       
+        
+    }
+    
+    func loadTextBoxColor() {
+        self.chap2_0TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.chap2_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap2_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap2_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap2_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap3_0?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap3_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap3_15TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap3_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap3_25TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.katonian1_point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.katonian1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.katonian2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.katonian2Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_run_choice_part_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_run_choice_part_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_run_choice_part_2Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_2Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.noTrust_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.noTrust1Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.at_the_ranch_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.trust1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.trust1Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.hapalStance1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.letHapalDownTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.letHapalDown2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.hapalRescue2AgainTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.hapalRescue3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.hapalRescueTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.hapalRescue4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap4_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapt4_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap4_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.imNotAScientistPoint5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.youGoofedPoint5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.youGoofedTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter51Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5_4Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5Before5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5Before7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.Chapter6_1AmbassadorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_1Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_3Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_3AmbassadorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.Chapter_6_4_AmbassadorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_4Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_5AmbassadorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.Chapter6_6AmbassadorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_6Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.Chapter6_before7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.goodGrowlicsTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.TheyreViciousRunTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.theyreViciousRunTextBox_1Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.theyreViciousRun_2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.theyreViciousRun_2Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.counciChamberSneakTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.councilChamberSneak_1Point5?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter6_6TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.CCCExplanationTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.ramShipTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.ramShip2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.ramShip2Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.fetchKey?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.fetchKey2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.greenFizzTheEndTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.JigsUpTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.jigsUp1Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.yellowFizzTheEndTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.heSeemsSeriousTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter5Before2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.TurnBackTheEnd?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.neverKnowTheEnd?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.neverGiveUpTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.almostGiveUpTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.checkWindowTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.checkDoorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.twoDiplomats1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.noPeaceTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.noPeace2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats6TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.iceRayTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats8TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats9TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats10TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats11TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats12TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.twoDiplomats13TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.clog1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.clog2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.clog3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.failedDistraction1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.failedDistraction2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.tookTheKeyTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.noKeyTakenTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.possibleButRisky?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius6TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius8TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius10TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius11TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius12TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius13TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.riseAndShine1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.riseAndShine2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.riseAndShine3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.keepLunaGetSentToPrison?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.riseAndShine4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.riseAndShine5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.ristAndShine6TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.riseAndShine7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.riseAndShine8TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chapter3page2?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.whichFizz?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.IntroductionTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
+        self.greenFoodTheEnd?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.phaseOneCompleteTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        
     }
     
     func loadBorderColor() {
@@ -800,6 +955,8 @@ class ChapterViewController: UIViewController {
         self.whichFizz?.layer.borderColor = myColor
         self.IntroductionTextBox?.layer.borderColor = myColor
         
+        self.greenFoodTheEnd?.layer.borderColor = myColor
+        self.phaseOneCompleteTextBox?.layer.borderColor = myColor
     }
     
     func loadBorderWidth(borderWidth:CGFloat!) {
@@ -953,6 +1110,10 @@ class ChapterViewController: UIViewController {
         self.chapter3page2?.layer.borderWidth = borderWidth
         self.whichFizz?.layer.borderWidth = borderWidth
         self.IntroductionTextBox?.layer.borderWidth = borderWidth
+        
+        self.greenFoodTheEnd?.layer.borderWidth = borderWidth
+        
+        self.phaseOneCompleteTextBox?.layer.borderWidth = borderWidth
     
     
     }
@@ -967,6 +1128,7 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var theEndFirstOneButton: UIButton!
     
     
+    @IBOutlet weak var theEndWindowButton: UIButton!
     @IBOutlet weak var theEndClogToiletDistractionFailed: UIButton!
     @IBOutlet weak var theEndThirdBestEnding: UIButton!
     @IBOutlet weak var theEndBadFoodButton: UIButton!
@@ -997,7 +1159,7 @@ class ChapterViewController: UIViewController {
     }
     
     func loadTheEndButton(button: UIButton?) {
-        button?.layer.borderWidth = 2
+        button?.layer.borderWidth = 4
         button?.layer.cornerRadius = 18
         button?.layer.backgroundColor = UIColor.red.cgColor
         button?.layer.borderColor = UIColor.lightGray.cgColor
@@ -1016,6 +1178,9 @@ class ChapterViewController: UIViewController {
         loadTheEndButton(button: self.theEndYouGaveUpButton)
         loadTheEndButton(button: self.theEndFirstOneButton)
         loadTheEndButton(button: self.theEndClogToiletDistractionFailed)
+        loadTheEndButton(button: self.theEndWindowButton)
+        loadTheEndButton(button: self.theEndBadFoodButton)
+        
     }
 }
 extension UITextView {
