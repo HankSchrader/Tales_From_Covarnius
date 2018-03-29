@@ -181,6 +181,7 @@ class ChapterViewController: UIViewController {
         
         self.raidOnCovarnius7TextBox?.changeFontSizeByDevice(width: width)
         self.raidOnCovarnius8TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius9TextBox?.changeFontSizeByDevice(width: width)
         self.raidOnCovarnius10TextBox?.changeFontSizeByDevice(width: width)
         
         
@@ -333,6 +334,7 @@ class ChapterViewController: UIViewController {
         self.raidOnCovarnius11TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.raidOnCovarnius12TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.raidOnCovarnius13TextBox?.setContentOffset(CGPoint.zero, animated: true)
+         self.raidOnCovarnius9TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.riseAndShine1TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.riseAndShine2TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.riseAndShine3TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -632,6 +634,7 @@ class ChapterViewController: UIViewController {
         self.raidOnCovarnius6TextBox?.layer.cornerRadius = cornerRadius
         self.raidOnCovarnius7TextBox?.layer.cornerRadius = cornerRadius
         self.raidOnCovarnius8TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius9TextBox?.layer.cornerRadius = cornerRadius
         self.raidOnCovarnius10TextBox?.layer.cornerRadius = cornerRadius
         self.raidOnCovarnius11TextBox?.layer.cornerRadius = cornerRadius
         self.raidOnCovarnius12TextBox?.layer.cornerRadius = cornerRadius
@@ -779,6 +782,7 @@ class ChapterViewController: UIViewController {
         self.raidOnCovarnius6TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.raidOnCovarnius7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.raidOnCovarnius8TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius9TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.raidOnCovarnius10TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.raidOnCovarnius11TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.raidOnCovarnius12TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
@@ -938,6 +942,7 @@ class ChapterViewController: UIViewController {
         self.raidOnCovarnius6TextBox?.layer.borderColor = myColor
         self.raidOnCovarnius7TextBox?.layer.borderColor = myColor
         self.raidOnCovarnius8TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius9TextBox?.layer.borderColor = myColor
         self.raidOnCovarnius10TextBox?.layer.borderColor = myColor
         self.raidOnCovarnius11TextBox?.layer.borderColor = myColor
         self.raidOnCovarnius12TextBox?.layer.borderColor = myColor
@@ -1094,6 +1099,7 @@ class ChapterViewController: UIViewController {
         self.raidOnCovarnius6TextBox?.layer.borderWidth = borderWidth
         self.raidOnCovarnius7TextBox?.layer.borderWidth = borderWidth
         self.raidOnCovarnius8TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius9TextBox?.layer.borderWidth = borderWidth
         self.raidOnCovarnius10TextBox?.layer.borderWidth = borderWidth
         self.raidOnCovarnius11TextBox?.layer.borderWidth = borderWidth
         self.raidOnCovarnius12TextBox?.layer.borderWidth = borderWidth

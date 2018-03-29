@@ -78,7 +78,6 @@
                         <outlet property="topLabel" destination="DH5-4b-1cb" id="E8h-OW-PXn"/>
                         <segue destination="GYB-hd-9Im" kind="show" identifier="Start From The Beginning!" id="ijG-Ma-eQD"/>
                         <segue destination="cx7-q2-roP" kind="show" identifier="toCredits" id="hw1-xZ-B8C"/>
-                        <segue destination="VR6-TB-rp0" kind="show" identifier="The Two Diplomats" id="MYK-DC-TgA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -274,6 +273,7 @@
                         <segue destination="tnv-J0-xgn" kind="show" identifier="Rise and Shine!" id="6cW-v5-1e6"/>
                         <segue destination="Acj-X1-5dj" kind="show" identifier="Who Trusts Alien Cowboys?" id="2SN-St-die"/>
                         <segue destination="Txc-t6-P1L" kind="show" identifier="Onto Covarnius" id="dmg-3r-Uw5"/>
+                        <segue destination="VR6-TB-rp0" kind="show" identifier="The Two Diplomats" id="E0a-7V-sHG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXH-ll-hLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3605,7 +3605,10 @@ Cg
                         <viewLayoutGuide key="safeArea" id="ZNU-a9-Ftm"/>
                     </view>
                     <connections>
+                        <outlet property="CCCButton" destination="3RE-uV-AMd" id="dR5-Ng-uJH"/>
                         <outlet property="chronoKnowsTheLayoutTextBox" destination="dOu-e0-xQR" id="gjH-26-VeF"/>
+                        <outlet property="noTimeForQuestionsButton" destination="3cQ-EA-2nc" id="ed3-Yg-cDS"/>
+                        <outlet property="sneakIntoCouncilChamberButton" destination="3RE-uV-AMd" id="vSM-Ob-KO4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrN-28-ifq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4121,12 +4124,15 @@ Cg
                                     <string key="title">Look out the window of the door into the hallway.
 </string>
                                 </state>
+                                <connections>
+                                    <segue destination="99v-66-37y" kind="show" id="sBt-sp-IyB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC5-42-DhL">
                                 <rect key="frame" x="20" y="539" width="339" height="30"/>
                                 <state key="normal" title="Check underneath the door for shadows. "/>
                                 <connections>
-                                    <segue destination="99v-66-37y" kind="show" id="sNm-rB-2MF"/>
+                                    <segue destination="HMa-9y-sc6" kind="show" identifier="check door" id="wZo-rO-d7q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -4524,7 +4530,7 @@ I guess you should have peeked under the door!</mutableString>
                                 <rect key="frame" x="30" y="567" width="315" height="70"/>
                                 <state key="normal" title="THE END"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="693-ya-JrE"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="THE END" id="693-ya-JrE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -4563,7 +4569,7 @@ I guess you should have peeked under the door!</mutableString>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“You begin to go into great detail about the ice ray. You tell the chief all about the secret technology the Covarnian labs have created, trying to sound as convincing as possible. The Sinisterian chief listens intently as you tell your tale. 
+                                        <string key="content">You go into great detail about the ice ray. Korgle is all ears, hearing about the secret technology the Covarnian labs have created. You try to sound as convincing as possible. Korgle listens intently as you tell your tale. 
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4621,7 +4627,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“That’s a good one,” he says when he manages to catch his breath. He motions to the guard who had been standing motionless to the side. “Get them out of here,” he instructs, wiping the tears from his face. 
+                                        <string key="content">“That’s a good one,” he says after finally managing to catch his breath. He motions to the guard who had been standing motionless to the side. “Get them out of here,” he instructs, wiping the tears from his face. 
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6500,7 +6506,7 @@ Cg
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="tnv-J0-xgn" customClass="RiseAndShinePageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ii4-3G-nuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16482" y="12287"/>
+            <point key="canvasLocation" x="-14874" y="10053"/>
         </scene>
         <!--Generic Decision Point View Controller-->
         <scene sceneID="q5i-s2-wbT">
@@ -7842,7 +7848,7 @@ Cg
         <!--Chapter View Controller-->
         <scene sceneID="s2m-0p-bA7">
             <objects>
-                <viewController storyboardIdentifier="no peace" useStoryboardIdentifierAsRestorationIdentifier="YES" id="enE-Op-hm2" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="no peace 1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="enE-Op-hm2" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gT5-LT-Gpc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8868,7 +8874,7 @@ Cg
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="VR6-TB-rp0" customClass="TheTwoDiplomatsPageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7QP-Ha-kuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6247" y="12232"/>
+            <point key="canvasLocation" x="-7754" y="11314"/>
         </scene>
         <!--Generic Decision Point View Controller-->
         <scene sceneID="8eE-Dk-TPO">
@@ -11897,7 +11903,7 @@ Cg
         <!--Raid On Covarnius Page View Controller-->
         <scene sceneID="AwI-gp-00I">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="amq-0H-d2h" customClass="RaidOnCovarniusPageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="amq-0H-d2h" customClass="RaidOnCovarniusPageViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odU-Lj-u0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1609" y="10254"/>
@@ -13033,7 +13039,7 @@ Cg
                         <viewLayoutGuide key="safeArea" id="w96-TJ-WNu"/>
                     </view>
                     <connections>
-                        <outlet property="raidOnCovarnius9TextBox" destination="Vxf-Me-5M7" id="Bur-BI-fxz"/>
+                        <outlet property="raidOnCovarnius9TextBox" destination="Vxf-Me-5M7" id="f8m-lY-iuh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLU-OR-Kyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -19390,19 +19396,19 @@ Do you:
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2SN-St-die"/>
-        <segue reference="TmK-dd-ndt"/>
-        <segue reference="FFv-aN-znV"/>
-        <segue reference="XP7-SJ-P7h"/>
+        <segue reference="QAQ-4k-ECr"/>
+        <segue reference="DP0-Ef-V4N"/>
+        <segue reference="E0a-7V-sHG"/>
         <segue reference="6cW-v5-1e6"/>
-        <segue reference="2LS-54-2c4"/>
+        <segue reference="wZo-rO-d7q"/>
         <segue reference="EU2-bt-ued"/>
-        <segue reference="3tM-1C-F1f"/>
+        <segue reference="RCY-zu-fcZ"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="44a-Dl-z7T"/>
         <segue reference="His-wU-R6i"/>
         <segue reference="TfN-Qd-HdO"/>
-        <segue reference="KYf-bL-oLj"/>
+        <segue reference="dmg-3r-Uw5"/>
         <segue reference="cSf-RQ-ef6"/>
-        <segue reference="RIJ-aP-aMJ"/>
+        <segue reference="693-ya-JrE"/>
     </inferredMetricsTieBreakers>
 </document>

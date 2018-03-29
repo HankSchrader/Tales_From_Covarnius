@@ -17,6 +17,9 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
             case "sensitive mission"?:
                 return [self.newVC(viewController: "two diplomats 1"),
                         self.newVC(viewController: "two diplomats 2")]
+            case "The Two Diplomats"?:
+                return [self.newVC(viewController: "two diplomats 1"),
+                        self.newVC(viewController: "two diplomats 2")]
             case "don't mess with him"?:
                 //Needs completing
                 return [self.newVC(viewController: "two diplomats 1"),
@@ -56,7 +59,8 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
             default:
                 print("Something may have gone wrong. Segue should never be nil. Segue: \(String(describing: segue))")
                 // TODO:
-                return [self.newVC(viewController: "smart move")]
+                return [self.newVC(viewController: "two diplomats 1"),
+                        self.newVC(viewController: "two diplomats 2")]
                 
             }
         }()

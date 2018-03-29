@@ -43,8 +43,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                     self.newVC(viewController: "raid on covarnius 10"),
                     self.newVC(viewController: "raid on covarnius 11"),
                     self.newVC(viewController: "raid on covarnius 12"),
-                    self.newVC(viewController: "raid on covarnius 13"),
-                    self.newVC(viewController: "raid on covarnius 14")]
+                    self.newVC(viewController: "raid on covarnius 13")]
             
             }
         

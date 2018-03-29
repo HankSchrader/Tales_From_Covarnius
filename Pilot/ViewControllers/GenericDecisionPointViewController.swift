@@ -464,8 +464,13 @@ class GenericDecisionPointViewController: ChapterViewController {
         
         loadDecisionPointButton(button: self.sneakOntoSinisterianShipButton)
         loadDecisionPointButton(button: self.disguiseOurselvesButton)
+        
+        loadDecisionPointButton(button: self.CCCButton)
+        loadDecisionPointButton(button: self.noTimeForQuestionsButton)
     }
     
+    @IBOutlet weak var noTimeForQuestionsButton: UIButton!
+    @IBOutlet weak var CCCButton: UIButton!
     @IBOutlet weak var sneakIntoCouncilChamberButton: UIButton!
     @IBOutlet weak var borrowFromCovarnianAmbassadorButton: UIButton!
     @IBOutlet weak var breakInButton: UIButton!
