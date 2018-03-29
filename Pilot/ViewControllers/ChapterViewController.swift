@@ -1120,6 +1120,7 @@ class ChapterViewController: UIViewController {
         self.greenFoodTheEnd?.layer.borderWidth = borderWidth
         
         self.phaseOneCompleteTextBox?.layer.borderWidth = borderWidth
+        
     
     
     }
@@ -1134,6 +1135,7 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var theEndFirstOneButton: UIButton!
     
     
+    @IBOutlet weak var newPlanButton: UIButton!
     @IBOutlet weak var theEndWindowButton: UIButton!
     @IBOutlet weak var theEndClogToiletDistractionFailed: UIButton!
     @IBOutlet weak var theEndThirdBestEnding: UIButton!
@@ -1141,6 +1143,7 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var theEndBestEnding: UIButton!
     @IBOutlet weak var brightGreenButton: UIButton!
     
+
     func loadDecisionPointButton(button: UIButton?) {
         button?.layer.borderWidth = 2
         button?.layer.cornerRadius = 18
@@ -1162,6 +1165,8 @@ class ChapterViewController: UIViewController {
         loadDecisionPointButton(button: self.stopSeeSkyButton)
         loadDecisionPointButton(button: self.fizzyYellowButton)
         loadDecisionPointButton(button: self.brightGreenButton)
+        loadDecisionPointButton(button: self.newPlanButton)
+       
     }
     
     func loadTheEndButton(button: UIButton?) {
@@ -1186,6 +1191,7 @@ class ChapterViewController: UIViewController {
         loadTheEndButton(button: self.theEndClogToiletDistractionFailed)
         loadTheEndButton(button: self.theEndWindowButton)
         loadTheEndButton(button: self.theEndBadFoodButton)
+        
         
     }
 }

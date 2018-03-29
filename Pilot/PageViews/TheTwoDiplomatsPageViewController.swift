@@ -25,6 +25,7 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
                 return [self.newVC(viewController: "two diplomats 1"),
                         self.newVC(viewController: "two diplomats 2")]
             case "take key"?:
+            
                 return [self.newVC(viewController: "took the key"),
                         self.newVC(viewController: "two diplomats 3"),
                         self.newVC(viewController: "two diplomats 4")]
@@ -70,7 +71,7 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.THE_TWO_DIPLOMATS, order: 9)
+        super.checkNewChapter(chapterName: Constants.THE_TWO_DIPLOMATS, order: 10)
     }
     
 

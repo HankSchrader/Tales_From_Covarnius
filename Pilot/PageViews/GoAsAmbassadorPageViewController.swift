@@ -78,7 +78,7 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.AMBASSADOR_ARC,order: 7)
+        super.checkNewChapter(chapterName: Constants.AMBASSADOR_ARC,order: 8)
         
     }
 

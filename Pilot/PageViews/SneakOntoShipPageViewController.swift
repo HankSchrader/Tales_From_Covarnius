@@ -30,11 +30,11 @@ class SneakOntoShipPageViewController: GenericPageViewController {
                 //Needs completing
                 return [self.newVC(viewController: "ram ship"),
                         self.newVC(viewController: "ram ship 2"),
-                        self.newVC(viewController: "ram ship 2.5")]
+                        self.newVC(viewController: "ram ship 2.5"),
+                        self.newVC(viewController: "fetch key")]
             case "fetch key"?:
                 //Needs Completing
-                return [self.newVC(viewController: "fetch key"),
-                        self.newVC(viewController: "fetch key 2")]
+                return [self.newVC(viewController: "fetch key")]
             case "not without Luna"?:
                 return [self.newVC(viewController: "not without Luna"),
                         self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
@@ -68,7 +68,7 @@ class SneakOntoShipPageViewController: GenericPageViewController {
     
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.SNEAK_ONTO_SHIP, order: 7)
+        super.checkNewChapter(chapterName: Constants.SNEAK_ONTO_SHIP, order: 10)
     }
     
 

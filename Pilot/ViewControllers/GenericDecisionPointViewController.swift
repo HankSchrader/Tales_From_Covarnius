@@ -467,8 +467,14 @@ class GenericDecisionPointViewController: ChapterViewController {
         
         loadDecisionPointButton(button: self.CCCButton)
         loadDecisionPointButton(button: self.noTimeForQuestionsButton)
+        loadDecisionPointButton(button: self.nextChapterRaidOnCovarniusButton)
+        
+        loadDecisionPointButton(button: self.nextChapterRamShipButton)
     }
     
+
+    @IBOutlet weak var nextChapterRaidOnCovarniusButton: UIButton!
+    @IBOutlet weak var nextChapterRamShipButton: UIButton!
     @IBOutlet weak var noTimeForQuestionsButton: UIButton!
     @IBOutlet weak var CCCButton: UIButton!
     @IBOutlet weak var sneakIntoCouncilChamberButton: UIButton!

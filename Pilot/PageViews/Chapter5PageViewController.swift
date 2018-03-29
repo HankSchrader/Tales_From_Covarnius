@@ -60,7 +60,7 @@ class Chapter5PageViewController: GenericPageViewController {
     }
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.MASTER_OF_DISGUISE_OR_LIES,order: 7)
+        super.checkNewChapter(chapterName: Constants.MASTER_OF_DISGUISE_OR_LIES,order: 6)
             
         }
     }

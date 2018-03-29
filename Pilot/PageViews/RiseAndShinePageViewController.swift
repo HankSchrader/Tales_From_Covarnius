@@ -35,6 +35,7 @@ class RiseAndShinePageViewController: GenericPageViewController {
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
         super.checkNewChapter(chapterName: Constants.RISE_AND_SHINE, order: 11)
+        ChapterSelectViewController.chapterSelect.deleteById(id: Constants.RAID_ON_COVARNIUS)
     }
     
     
