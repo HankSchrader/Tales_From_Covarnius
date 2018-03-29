@@ -11,10 +11,7 @@ import UIKit
 class RiseAndShinePageViewController: GenericPageViewController {
     
     lazy override var orderedViewControllers: [UIViewController] = {
-        let segue: String? = self.segueID
-        switch segue {
-            
-        case "hypersleep"?:
+
             return [self.newVC(viewController: "rise and shine 1"),
                     self.newVC(viewController: "rise and shine 2"),
                     self.newVC(viewController: "rise and shine 3"),
@@ -22,13 +19,7 @@ class RiseAndShinePageViewController: GenericPageViewController {
                     self.newVC(viewController: "rise and shine 5"),
                     self.newVC(viewController: "rise and shine 6"),
                     self.newVC(viewController: "rise and shine 7") ]
-        default:
-            print("Something may have gone wrong. Segue should never be nil. Segue: \(String(describing: segue))")
-            // TODO:
-            return [self.newVC(viewController: "smart move")]
-            
-        }
-    }()
+        }()
 
     override func viewDidLoad() {
         super.viewDidLoad()

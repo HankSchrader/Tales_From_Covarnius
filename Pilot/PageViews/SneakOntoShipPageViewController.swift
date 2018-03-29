@@ -68,7 +68,7 @@ class SneakOntoShipPageViewController: GenericPageViewController {
     
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-        super.checkNewChapter(chapterName: Constants.SNEAK_ONTO_SHIP, order: 8)
+        super.checkNewChapter(chapterName: Constants.SNEAK_ONTO_SHIP, order: 7)
     }
     
 
