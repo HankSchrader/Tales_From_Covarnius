@@ -4496,7 +4496,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Well, that was a mistake. Hindsight, as they say, is 20/20. Just like that guard’s eyesight. As soon as you peek into the window, you make eye contact with a giant Covarnian watchman.
+                                        <string key="content">Well, that was a mistake. Hindsight, as they say, is 20/20. Just like that guard’s eyesight. As soon as you peek into the window, you make eye contact with a giant Covarnian watchman.
 
 “Hey!” the guard yells, “who is that in the storage room?”
 
@@ -4512,7 +4512,7 @@ The guard swings the storage room door open. You’ve been caught! The jig is up
 
 The guard leads you to a small, austere building. This must be the interrogation room. After several hours of intense interrogation, you are promptly sent back to Earth. You never even get a chance to say goodbye to Chrono. At least they are letting you take Luna with you!
 
-I guess you should have peeked under the door!</mutableString>
+I guess you should have peeked under the door!</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="16" name="Baskerville"/>
@@ -12766,7 +12766,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">In about two seconds, the two inch Murkblur becomes a two foot Murkblur. You nod approvingly and give the thumbs up to Chrono. Luna, meanwhile, barks at the poor Murkblur, whose face quickly becomes one of terror. It quickly scurries out of the bedroom and down the hall.
+                                        <string key="content">In about two seconds, the two inch Murkblur becomes a two foot Murkblur. You nod approvingly and give a thumbs up to Chrono. Luna, meanwhile, barks at the poor Murkblur, whose face quickly becomes one of terror. It quickly scurries out of the bedroom and down the hall.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12795,7 +12795,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">You kneel down and level with Luna. “Are you ready girl? You’re about to save the world!” you pat Luna on the head and she barks reassuringly. Chrono turns the know to Humungous and points in at man’s best friend and fires.
+                                        <string key="content">You kneel down and level with Luna. “Are you ready girl? You’re about to save the world!” you pat Luna on the head and she barks reassuringly. Chrono turns the dial to 'Humungous" and points in at man’s best friend and fires.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -19244,7 +19244,7 @@ Do you:
                                 <rect key="frame" x="60" y="569" width="299" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Stop to see what is in the sky.">
+                                <state key="normal" title="See what is in the sky.">
                                     <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -19319,9 +19319,9 @@ Do you:
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="44a-Dl-z7T"/>
         <segue reference="His-wU-R6i"/>
-        <segue reference="TfN-Qd-HdO"/>
-        <segue reference="dmg-3r-Uw5"/>
-        <segue reference="cSf-RQ-ef6"/>
+        <segue reference="Rlm-ND-bdU"/>
+        <segue reference="KYf-bL-oLj"/>
+        <segue reference="5Vr-zP-NTi"/>
         <segue reference="693-ya-JrE"/>
     </inferredMetricsTieBreakers>
 </document>

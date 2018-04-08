@@ -13,7 +13,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     override lazy var orderedViewControllers: [UIViewController] =
         {   if (self.segueID == "Raid On Covarnius" || self.segueID == "broke out of prison") {
-            print(self.segueID)
+            
             return [self.newVC(viewController: "raid on covarnius 1"),
                     self.newVC(viewController: "raid on covarnius 2"),
                     self.newVC(viewController: "raid on covarnius 3"),
@@ -63,7 +63,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                     self.newVC(viewController: "raid on covarnius 13")]
         }
   
-        else {print(self.segueID)
+        else {
             return [
                     self.newVC(viewController: "raid on covarnius 1"),
                     self.newVC(viewController: "raid on covarnius 2"),
