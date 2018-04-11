@@ -338,7 +338,7 @@ class GenericDecisionPointViewController: ChapterViewController {
     override func loadDecisionPointButton(button: UIButton?) {
         button?.layer.borderWidth = 2
         button?.layer.cornerRadius = 18
-        button?.layer.backgroundColor = UIColor.orange.cgColor
+        button?.layer.backgroundColor = UIColor.lightText.cgColor
         button?.layer.borderColor = UIColor.lightGray.cgColor
         button?.setTitleColor(UIColor.black, for: .normal)
         button?.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor

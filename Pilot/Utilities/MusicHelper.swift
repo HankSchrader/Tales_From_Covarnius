@@ -33,7 +33,7 @@ class MusicHelper {
     }
     
     func fadeInBackgroundMusic(resource: String!, fadeDuration: TimeInterval!) {
-        audioPlayer!.setVolume(1, fadeDuration: fadeDuration)
+        audioPlayer!.setVolume(1, fadeDuration: 4)
     }
     
 

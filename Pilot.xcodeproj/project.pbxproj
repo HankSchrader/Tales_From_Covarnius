@@ -43,6 +43,7 @@
 		53A5FAE820692050008304F9 /* GenericButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A5FAE720692050008304F9 /* GenericButton.swift */; };
 		53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53A973732044A65D00ED4D9D /* MainMenuSong.wav */; };
 		53C647D220653BD1000F08D5 /* GenericDecisionPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C647D120653BD1000F08D5 /* GenericDecisionPointViewController.swift */; };
+		53E49FCD207E189100E2E4BE /* Throughout story.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53E49FCC207E189000E2E4BE /* Throughout story.wav */; };
 		53ED4E6D2063FA42005A271E /* RiseAndShinePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED4E6C2063FA41005A271E /* RiseAndShinePageViewController.swift */; };
 		53F0959D2046D47E002880D1 /* Chapter2PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -107,6 +108,7 @@
 		53A5FAE720692050008304F9 /* GenericButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericButton.swift; sourceTree = "<group>"; };
 		53A973732044A65D00ED4D9D /* MainMenuSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMenuSong.wav; sourceTree = "<group>"; };
 		53C647D120653BD1000F08D5 /* GenericDecisionPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDecisionPointViewController.swift; sourceTree = "<group>"; };
+		53E49FCC207E189000E2E4BE /* Throughout story.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Throughout story.wav"; path = "Pilot/ViewControllers/Throughout story.wav"; sourceTree = SOURCE_ROOT; };
 		53ED4E6C2063FA41005A271E /* RiseAndShinePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiseAndShinePageViewController.swift; sourceTree = "<group>"; };
 		53F0959C2046D47E002880D1 /* Chapter2PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				53A973732044A65D00ED4D9D /* MainMenuSong.wav */,
+				53E49FCC207E189000E2E4BE /* Throughout story.wav */,
 				5317724F20555C860005F3DB /* New Chapter Sound.wav */,
 			);
 			name = FX;
@@ -368,6 +371,7 @@
 			files = (
 				5398420C20439F3300CCD93E /* LaunchScreen.storyboard in Resources */,
 				5317725020555C870005F3DB /* New Chapter Sound.wav in Resources */,
+				53E49FCD207E189100E2E4BE /* Throughout story.wav in Resources */,
 				53A973742044A65D00ED4D9D /* MainMenuSong.wav in Resources */,
 				5398420920439F3300CCD93E /* Assets.xcassets in Resources */,
 				5398420420439F3300CCD93E /* Main.storyboard in Resources */,

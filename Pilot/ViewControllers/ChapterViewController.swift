@@ -19,7 +19,7 @@ class ChapterViewController: UIViewController {
         loadBorderWidth(borderWidth: 3.0)
         loadCornerRadius(cornerRadius: 15.0)
         loadTextBoxColor()
-        loadDecisionPointButtons()
+        loadDecisionPointButtons()        
         self.chap2_0TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_1TextBox?.changeFontSizeByDevice(width: width)
@@ -1470,7 +1470,7 @@ class ChapterViewController: UIViewController {
     func loadDecisionPointButton(button: UIButton?) {
         button?.layer.borderWidth = 2
         button?.layer.cornerRadius = 18
-        button?.layer.backgroundColor = UIColor.orange.cgColor
+        button?.layer.backgroundColor = UIColor.lightText.cgColor
         button?.layer.borderColor = UIColor.lightGray.cgColor
         button?.setTitleColor(UIColor.black, for: .normal)
         button?.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor

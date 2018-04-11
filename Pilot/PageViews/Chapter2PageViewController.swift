@@ -17,6 +17,19 @@ class Chapter2PageViewController: GenericPageViewController{
 
     
     override func viewDidLoad() {
+        let imageName = "Shooting Star.png"
+        let margins = view.layoutMarginsGuide
+        let image = UIImage(named: imageName)
+        let imageView = UIImageView(image: image!)
+        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+      
+        view.addSubview(imageView)
+        view.sendSubview(toBack: imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        imageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         self.orderedViewControllers =  {
             if self.previousRID != nil {
                 return [self.newVC(viewController: "chap2_0"),
