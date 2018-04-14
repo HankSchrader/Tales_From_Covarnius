@@ -29,6 +29,12 @@ struct Constants {
     static let RAID_ON_COVARNIUS =  "Raid On Covarnius"
     static let RISE_AND_SHINE = "Rise and Shine!"
     
+    //Images
+    static let KATONIAN_DESERT_PIC = "Desert.png"
+    static let SHOOTING_STAR_PIC =  "Shooting Star.png"
+    static let WOODEN_BACKGROUND_PIC = "WoodBackground.png"
+    static let CLOUDS_PIC = "Clouds.png"
+    
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
     static let SUBMIT = "Great!"

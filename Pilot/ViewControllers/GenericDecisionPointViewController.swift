@@ -31,6 +31,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         
         loadDecisionPointButtons()
         let width = self.view.frame.size.width
+        self.intoTextBox?.changeFontSizeByDevice(width: width)
         self.chap2_4TextBox?.changeFontSizeByDevice(width: width)
         self.turnBackTextBox?.changeFontSizeByDevice(width: width)
         self.katonian3TextBox?.changeFontSizeByDevice(width: width)
@@ -100,6 +101,8 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.hyperSleep0TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.clog4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.intoTextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -123,7 +126,12 @@ class GenericDecisionPointViewController: ChapterViewController {
         {
             let vc = segue.destination as? FakeScientistArcPageViewController
             vc?.segueID = segue.identifier!
-        } else if segue.destination is BackAtTheRanchPageViewController {
+        }
+        else if segue.destination is IntroPageViewController {
+            let vc = segue.destination as? IntroPageViewController
+            vc?.segueID = segue.identifier!
+        }
+        else if segue.destination is BackAtTheRanchPageViewController {
            let vc = segue.destination as? BackAtTheRanchPageViewController
             vc?.segueID = segue.identifier!
         }
@@ -180,6 +188,7 @@ class GenericDecisionPointViewController: ChapterViewController {
     override func loadBorderColor() {
         let Color = UIColor.lightGray
         let myColor = Color.cgColor
+        self.intoTextBox?.layer.borderColor = myColor
         self.chap2_4TextBox?.layer.borderColor = myColor
         self.turnBackTextBox?.layer.borderColor = myColor
         self.katonian3TextBox?.layer.borderColor = myColor
@@ -217,7 +226,7 @@ class GenericDecisionPointViewController: ChapterViewController {
     }
     
     override func loadBorderWidth(borderWidth: CGFloat!) {
-        
+        self.intoTextBox?.layer.borderWidth = borderWidth
         self.chap2_4TextBox?.layer.borderWidth = borderWidth
         self.turnBackTextBox?.layer.borderWidth = borderWidth
         self.katonian3TextBox?.layer.borderWidth = borderWidth
@@ -257,7 +266,7 @@ class GenericDecisionPointViewController: ChapterViewController {
     }
     
     override func loadTextBoxColor() {
-        
+        self.intoTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.chap2_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.turnBackTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.katonian3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
@@ -297,7 +306,7 @@ class GenericDecisionPointViewController: ChapterViewController {
     }
     
     override func loadCornerRadius(cornerRadius: CGFloat!) {
-        
+        self.intoTextBox?.layer.cornerRadius = cornerRadius
         self.chap2_4TextBox?.layer.cornerRadius = cornerRadius
         self.turnBackTextBox?.layer.cornerRadius = cornerRadius
         self.katonian3TextBox?.layer.cornerRadius = cornerRadius
@@ -352,6 +361,7 @@ class GenericDecisionPointViewController: ChapterViewController {
 
     
   //Text Boxes
+    @IBOutlet weak var intoTextBox: UITextView!
     @IBOutlet weak var snackOrRunTextBox: UITextView!
     @IBOutlet weak var turnBackTextBox: UITextView!
     @IBOutlet var noHomeworkButton: UIView!
@@ -385,6 +395,8 @@ class GenericDecisionPointViewController: ChapterViewController {
     //Buttons
     
     override func loadDecisionPointButtons() {
+        loadDecisionPointButton(button: self.seeTheSkyButton)
+        loadDecisionPointButton(button: self.runAwayFromSpaceshipButton)
         loadDecisionPointButton(button: self.kayoOfferToRelax)
         loadDecisionPointButton(button: self.kayoIsSuspicious)
         
@@ -474,6 +486,9 @@ class GenericDecisionPointViewController: ChapterViewController {
     }
     
 
+    
+    @IBOutlet weak var seeTheSkyButton: UIButton!
+    @IBOutlet weak var runAwayFromSpaceshipButton: UIButton!
     @IBOutlet weak var nextChapterRaidOnCovarniusButton: UIButton!
     @IBOutlet weak var nextChapterRamShipButton: UIButton!
     @IBOutlet weak var noTimeForQuestionsButton: UIButton!

@@ -11,9 +11,12 @@ import UIKit
 class BackAtTheRanchPageViewController: GenericPageViewController  {
  
     override func viewDidLoad() {
+
+
+      //  UIPageViewController.pvc.setImage(image: "Katonian_Desert.png")
         self.orderedViewControllers =  {
             if self.segueID == "run" {
-                return [self.newVC(viewController: "at_the_ranch_run_choice_part_1"),
+                                return [self.newVC(viewController: "at_the_ranch_run_choice_part_1"),
                         self.newVC(viewController: "at_the_ranch_run_choice_part_2"),
                         self.newVC(viewController: "at_the_ranch_run_choice_part_2.5"),
                         self.newVC(viewController: "at_the_ranch_2"),

@@ -11,7 +11,9 @@ import UIKit
 class Chapter4PageViewController: GenericPageViewController {
     
     override func viewDidLoad() {
+        super.setImage(image: Constants.CLOUDS_PIC)
         self.orderedViewControllers =  {
+       
             if self.segueID == "keep going" || self.segueID == "Earth's Greatest Scientist" {
                 return [self.newVC(viewController: "chap4_1"),
                         self.newVC(viewController: "chap4_2"),

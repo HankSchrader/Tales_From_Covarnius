@@ -127,4 +127,19 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
     
         }
     }
+    
+    func setImage(image: String?) {
+        let imageName = image
+        let image = UIImage(named: imageName!)
+        let imageView = UIImageView(image: image)
+        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+        
+        view.addSubview(imageView)
+        view.sendSubview(toBack: imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        imageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+    }
 }

@@ -15,7 +15,9 @@ class Chapter3PageViewController:  GenericPageViewController{
     
     
     override func viewDidLoad() {
+        super.setImage(image: Constants.WOODEN_BACKGROUND_PIC)
         self.orderedViewControllers =  {
+           
             if self.segueID == "Dissect" {
                 return [self.newVC(viewController: "chap3_0"),
                         self.newVC(viewController: "chap3_0.5"),
