@@ -14,12 +14,14 @@ class IntroPageViewController: GenericPageViewController {
     override lazy var orderedViewControllers: [UIViewController] =
         {
         if(self.segueID == "Run Far Away" ) {
-             return [self.newVC(viewController: "run_as_fast_as_you_can_1")]
+                removeImage(image: Constants.EMPTY_SIDEWALK_PIC)
+                setImage(image: Constants.CLOUDS_PIC)
+                return [self.newVC(viewController: "run_as_fast_as_you_can_1")]
         } else {
-            print(self.segueID)
-        return [
-            
-            self.newVC(viewController: "Intro_1")]
+            setImage(image: Constants.EMPTY_SIDEWALK_PIC)
+            return [
+                self.newVC(viewController: "Sidewalk Image"),
+                self.newVC(viewController: "Intro_1")]
             }
         }()
     override func viewDidLoad() {

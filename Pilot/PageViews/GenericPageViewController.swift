@@ -142,4 +142,11 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
         imageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         imageView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
+    
+    func removeImage(image: String?){
+        let imageName = image
+        let image = UIImage(named: imageName!)
+        let imageView = UIImageView(image: image)
+        imageView.removeFromSuperview()
+    }
 }

@@ -34,10 +34,14 @@ struct Constants {
     static let SHOOTING_STAR_PIC =  "Shooting Star.png"
     static let WOODEN_BACKGROUND_PIC = "WoodBackground.png"
     static let CLOUDS_PIC = "Clouds.png"
+    static let EMPTY_SIDEWALK_PIC = "Empty_Sidewalk.png"
+    static let GREEN_FIZZ_PIC = "GreenFizzTheEnd.png"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
     static let SUBMIT = "Great!"
+    
+    //Music
     static let MAIN_MENU_SONG = "MainMenuSong"
     static let THROUGHOUT_STORY_SONG = "Throughout story"
     static let NEW_CHAPTER_SOUND = "New Chapter Sound"

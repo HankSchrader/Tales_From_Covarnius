@@ -18,8 +18,6 @@ class Chapter2PageViewController: GenericPageViewController{
        
         self.orderedViewControllers =  {
             if self.segueID != "to_main_quest" {
-                print(self.segueID)
-                print("Hello")
                 super.setImage(image: Constants.CLOUDS_PIC)
                 return [self.newVC(viewController: "chap2_0"),
                         self.newVC(viewController: "chap2_1"),
