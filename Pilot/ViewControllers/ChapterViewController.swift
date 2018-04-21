@@ -13,6 +13,7 @@ class ChapterViewController: UIViewController {
     static let chapterVC = ChapterViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.clear
         goToChapterSelectAction()
         let width = self.view.frame.size.width
         loadBorderColor()
@@ -59,9 +60,10 @@ class ChapterViewController: UIViewController {
         
         
         self.imNotAScientistPoint5TextBox?.changeFontSizeByDevice(width: width)
+          self.youGoofedTextBox?.font = UIFont.boldSystemFont(ofSize: 18)
         self.youGoofedPoint5TextBox?.changeFontSizeByDevice(width: width)
         self.youGoofedTextBox?.changeFontSizeByDevice(width: width)
-        
+         self.youGoofedTextBox?.font = UIFont.boldSystemFont(ofSize: 18)
         self.chapter51Point5TextBox?.changeFontSizeByDevice(width: width)
         self.chapter5_1TextBox?.changeFontSizeByDevice(width: width)
         self.chapter5_3TextBox?.changeFontSizeByDevice(width: width)

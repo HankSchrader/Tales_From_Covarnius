@@ -15,7 +15,6 @@
 		5336A422205D2DB4002802C7 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336A421205D2DB3002802C7 /* NavButton.swift */; };
 		5336A424205D6DAA002802C7 /* Chapter4PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336A423205D6DAA002802C7 /* Chapter4PageViewController.swift */; };
 		533B40992049EA0000D61D80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B40982049EA0000D61D80 /* Constants.swift */; };
-		5341A0E42065361400B31CF4 /* HapalImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341A0E32065361200B31CF4 /* HapalImageViewController.swift */; };
 		5350C77A207A755400DE771A /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C779207A755400DE771A /* CreditsViewController.swift */; };
 		5365E3C8205E8BA9009E481F /* BackAtTheRanchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5365E3C7205E8BA9009E481F /* BackAtTheRanchPageViewController.swift */; };
 		5365E3CC205EB87D009E481F /* RandomHapalStancePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5365E3CB205EB87D009E481F /* RandomHapalStancePageViewController.swift */; };
@@ -72,7 +71,6 @@
 		5336A421205D2DB3002802C7 /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
 		5336A423205D6DAA002802C7 /* Chapter4PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4PageViewController.swift; sourceTree = "<group>"; };
 		533B40982049EA0000D61D80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5341A0E32065361200B31CF4 /* HapalImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapalImageViewController.swift; sourceTree = "<group>"; };
 		5350C779207A755400DE771A /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		5365E3C7205E8BA9009E481F /* BackAtTheRanchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackAtTheRanchPageViewController.swift; sourceTree = "<group>"; };
 		5365E3CB205EB87D009E481F /* RandomHapalStancePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHapalStancePageViewController.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 		5341A0E22065353800B31CF4 /* Image ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5341A0E32065361200B31CF4 /* HapalImageViewController.swift */,
 			);
 			path = "Image ViewControllers";
 			sourceTree = "<group>";
@@ -419,7 +416,6 @@
 				5365E3C8205E8BA9009E481F /* BackAtTheRanchPageViewController.swift in Sources */,
 				5365E3DE20602120009E481F /* SneakOntoShipPageViewController.swift in Sources */,
 				53C647D220653BD1000F08D5 /* GenericDecisionPointViewController.swift in Sources */,
-				5341A0E42065361400B31CF4 /* HapalImageViewController.swift in Sources */,
 				5350C77A207A755400DE771A /* CreditsViewController.swift in Sources */,
 				5365E3D6205EFEE0009E481F /* Chapter5PageViewController.swift in Sources */,
 			);

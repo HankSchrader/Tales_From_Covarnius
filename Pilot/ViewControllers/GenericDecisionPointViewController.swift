@@ -127,6 +127,10 @@ class GenericDecisionPointViewController: ChapterViewController {
             let vc = segue.destination as? FakeScientistArcPageViewController
             vc?.segueID = segue.identifier!
         }
+        else if segue.destination is Chapter2PageViewController {
+            let vc = segue.destination as? Chapter2PageViewController
+            vc?.segueID = segue.identifier!
+        }
         else if segue.destination is IntroPageViewController {
             let vc = segue.destination as? IntroPageViewController
             vc?.segueID = segue.identifier!

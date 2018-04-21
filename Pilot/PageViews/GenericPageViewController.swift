@@ -22,6 +22,7 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
     var pageControl = UIPageControl()
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.clear
         self.dataSource = self
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: false, completion: nil)
