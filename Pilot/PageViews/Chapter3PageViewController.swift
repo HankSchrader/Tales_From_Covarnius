@@ -17,7 +17,7 @@ class Chapter3PageViewController:  GenericPageViewController{
     override func viewDidLoad() {
         super.setImage(image: Constants.SHOOTING_STAR_PIC)
         self.orderedViewControllers =  {
-           
+           //Sidewalk pic, he has his hand's on his hips and spaceship is in top left
             if self.segueID == "Dissect" {
                 return [self.newVC(viewController: "chap3_0"),
                         self.newVC(viewController: "chap3_0.5"),

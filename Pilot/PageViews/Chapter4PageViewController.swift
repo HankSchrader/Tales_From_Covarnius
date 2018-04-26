@@ -25,6 +25,7 @@ class Chapter4PageViewController: GenericPageViewController {
                         self.newVC(viewController: "chap4_3"),
                         self.newVC(viewController: "chap4_4")]
             } else if self.segueID == "Help The Hapal" || self.segueID == "You Saved The Hapal!!" {
+              
                 return [self.newVC(viewController: "Hapal Rescue 1"),
                         self.newVC(viewController: "Hapal Rescue 2"),
                         self.newVC(viewController: "Hapal Rescue 3"),
@@ -33,6 +34,7 @@ class Chapter4PageViewController: GenericPageViewController {
                         self.newVC(viewController: "chap4_4")]
             }
             else {
+                //Control console, inside of spaceship
                 return [self.newVC(viewController: "katonian_1"),
                         self.newVC(viewController: "katonian_1.5"),
                         self.newVC(viewController: "katonian_2"),

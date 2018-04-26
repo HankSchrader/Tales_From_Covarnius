@@ -93,7 +93,8 @@ class ChapterViewController: UIViewController {
         self.Chapter6_6AmbassadorTextBox?.changeFontSizeByDevice(width: width)
         self.chapter6_6Point5TextBox?.changeFontSizeByDevice(width: width)
         self.Chapter6_before7TextBox?.changeFontSizeByDevice(width: width)
-        
+        self.dessertTextBox?.changeFontSizeByDevice(width: width)
+
         self.goodGrowlicsTextBox?.changeFontSizeByDevice(width: width)
         self.TheyreViciousRunTextBox?.changeFontSizeByDevice(width: width)
         self.theyreViciousRunTextBox_1Point5TextBox?.changeFontSizeByDevice(width: width)
@@ -262,6 +263,7 @@ class ChapterViewController: UIViewController {
         self.Chapter6_6AmbassadorTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chapter6_6Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.Chapter6_before7TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.dessertTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.goodGrowlicsTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.TheyreViciousRunTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.theyreViciousRunTextBox_1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -429,7 +431,8 @@ class ChapterViewController: UIViewController {
         self.Chapter6_6AmbassadorTextBox?.changeFontSizeByDevice(width: width)
         self.chapter6_6Point5TextBox?.changeFontSizeByDevice(width: width)
         self.Chapter6_before7TextBox?.changeFontSizeByDevice(width: width)
-        
+        self.dessertTextBox?.changeFontSizeByDevice(width: width)
+
         self.goodGrowlicsTextBox?.changeFontSizeByDevice(width: width)
         self.TheyreViciousRunTextBox?.changeFontSizeByDevice(width: width)
         self.theyreViciousRunTextBox_1Point5TextBox?.changeFontSizeByDevice(width: width)
@@ -598,6 +601,7 @@ class ChapterViewController: UIViewController {
         self.Chapter6_6AmbassadorTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chapter6_6Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.Chapter6_before7TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.dessertTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.goodGrowlicsTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.TheyreViciousRunTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.theyreViciousRunTextBox_1Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -803,6 +807,7 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var clog2TextBox: UITextView!
     @IBOutlet weak var clog3TextBox: UITextView!
     @IBOutlet weak var failedDistraction1TextBox: UITextView!
+    @IBOutlet weak var dessertTextBox: UITextView!
     @IBOutlet weak var failedDistraction2TextBox: UITextView!
     @IBOutlet weak var tookTheKeyTextBox: UITextView!
     @IBOutlet weak var noKeyTakenTextBox: UITextView!
@@ -898,7 +903,9 @@ class ChapterViewController: UIViewController {
         self.chapter6_5AmbassadorTextBox?.layer.cornerRadius = cornerRadius
         self.Chapter6_6AmbassadorTextBox?.layer.cornerRadius = cornerRadius
         self.chapter6_6Point5TextBox?.layer.cornerRadius = cornerRadius
+        
         self.Chapter6_before7TextBox?.layer.cornerRadius = cornerRadius
+        self.dessertTextBox?.layer.cornerRadius = cornerRadius
         self.goodGrowlicsTextBox?.layer.cornerRadius = cornerRadius
         self.TheyreViciousRunTextBox?.layer.cornerRadius = cornerRadius
         self.theyreViciousRunTextBox_1Point5TextBox?.layer.cornerRadius = cornerRadius
@@ -1047,6 +1054,7 @@ class ChapterViewController: UIViewController {
         self.Chapter6_6AmbassadorTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.chapter6_6Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.Chapter6_before7TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.dessertTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.goodGrowlicsTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.TheyreViciousRunTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.theyreViciousRunTextBox_1Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
@@ -1201,7 +1209,7 @@ class ChapterViewController: UIViewController {
         self.Chapter6_6AmbassadorTextBox?.layer.borderColor = myColor
         self.chapter6_6Point5TextBox?.layer.borderColor = myColor
         self.Chapter6_before7TextBox?.layer.borderColor = myColor
-        
+        self.dessertTextBox?.layer.borderColor = myColor
         self.goodGrowlicsTextBox?.layer.borderColor = myColor
         self.TheyreViciousRunTextBox?.layer.borderColor = myColor
         self.theyreViciousRunTextBox_1Point5TextBox?.layer.borderColor = myColor
@@ -1358,7 +1366,7 @@ class ChapterViewController: UIViewController {
         self.Chapter6_6AmbassadorTextBox?.layer.borderWidth = borderWidth
         self.chapter6_6Point5TextBox?.layer.borderWidth = borderWidth
         self.Chapter6_before7TextBox?.layer.borderWidth = borderWidth
-        
+        self.dessertTextBox?.layer.borderWidth = borderWidth
         self.goodGrowlicsTextBox?.layer.borderWidth = borderWidth
         self.TheyreViciousRunTextBox?.layer.borderWidth = borderWidth
         self.theyreViciousRunTextBox_1Point5TextBox?.layer.borderWidth = borderWidth

@@ -19,17 +19,17 @@ class Chapter2PageViewController: GenericPageViewController{
         self.orderedViewControllers =  {
             if self.segueID == "Whats In The Sky" {
                 
-                super.setImage(image: Constants.CLOUDS_PIC)
+                //Change to Chrono Landing
+               setImage(image: Constants.BACK_AT_THE_RANCH)
                 return [
-                        self.newVC(viewController: "chap2_1"),
-                        self.newVC(viewController: "chap2_2"),
-                        self.newVC(viewController: "chap2_3"),
-                        self.newVC(viewController: "chap2_4")]
+                    self.newVC(viewController: "chap2_1",previousImage: nil,newImage: Constants.BACK_AT_THE_RANCH),
+                    self.newVC(viewController: "chap2_2",previousImage: nil,newImage: Constants.BACK_AT_THE_RANCH),
+                    self.newVC(viewController: "chap2_3",previousImage: Constants.BACK_AT_THE_RANCH,newImage: Constants.YOU_SAVED_THE_HAPAL),
+                    self.newVC(viewController: "chap2_4",previousImage: Constants.YOU_SAVED_THE_HAPAL,newImage: Constants.CLOUDS_PIC)]
             } else {
                 
-                 super.setImage(image: Constants.KATONIAN_DESERT_PIC)
                 return [
-                        self.newVC(viewController: "chap2_0"),
+                    self.newVC(viewController: "chap2_0"),
                         self.newVC(viewController: "chap2_2"),
                         self.newVC(viewController: "chap2_3"),
                         self.newVC(viewController: "chap2_4")]

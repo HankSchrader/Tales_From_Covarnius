@@ -61,7 +61,11 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
         self.view.addSubview(pageControl)
     }
     
-    func newVC(viewController : String) -> UIViewController {
+    func newVC(viewController : String, previousImage: String? = nil, newImage: String? = nil) -> UIViewController {
+        if(previousImage != nil) {
+            removeImage(image: previousImage)
+        }
+        setImage(image: newImage)
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     }
     
@@ -129,7 +133,8 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
         }
     }
     
-    func setImage(image: String?) {
+    func setImage(image: String? = nil) {
+        if(image != nil) {
         let imageName = image
         let image = UIImage(named: imageName!)
         let imageView = UIImageView(image: image)
@@ -142,6 +147,7 @@ class GenericPageViewController: UIPageViewController, UIPageViewControllerDeleg
         imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         imageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         imageView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        }
     }
     
     func removeImage(image: String?){

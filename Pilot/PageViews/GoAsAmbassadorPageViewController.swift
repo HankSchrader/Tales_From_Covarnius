@@ -26,6 +26,7 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                 return [
                         self.newVC(viewController: "break and enter?")]
             case "break in"?:
+                setImage(image: "Two Growlics.png")
                 return [self.newVC(viewController: "good growlics"),
                         self.newVC(viewController: "snack or run")]
             case "vicious growlics"?:
@@ -38,7 +39,11 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chrono knows the layout")]
             case "snack time"?:
                 return [self.newVC(viewController: "what should they eat?")]
-                
+                case "dessert"?:
+                return [self.newVC(viewController: "dessert"),
+                        self.newVC(viewController: "council chamber sneak"),
+                        self.newVC(viewController: "council chamber sneak 1.5"),
+                        self.newVC(viewController: "Chrono knows the layout")]
             case "stinky meat"?:
                 return [
                         self.newVC(viewController: "Phase One Complete"),
