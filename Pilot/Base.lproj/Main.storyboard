@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
                                 <rect key="frame" x="16" y="89" width="288" height="29"/>
                                 <attributedString key="attributedText">
                                     <fragment content="COVARNIUS">
@@ -40,7 +40,7 @@
                                 <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
                                 <rect key="frame" x="16" y="53" width="288" height="20"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TALES FROM">
@@ -128,11 +128,11 @@
         <scene sceneID="mFr-ct-7jt">
             <objects>
                 <viewController id="cx7-q2-roP" customClass="CreditsViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Yhf-P8-D2T">
+                    <view key="view" contentMode="scaleToFill" id="Yhf-P8-D2T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-DQ-sHU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-DQ-sHU">
                                 <rect key="frame" x="32" y="125" width="256" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -983,7 +983,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sO3-IX-7XY">
                                 <rect key="frame" x="30" y="434" width="260" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="There's some sort of mistake. I'm not a scientist!">
+                                <state key="normal" title="I'm not a scientist!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -993,7 +993,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kDW-nN-FRe">
                                 <rect key="frame" x="30" y="495" width="260" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Lead the way, I'm a scientist afterall!">
+                                <state key="normal" title="I'm a scientist afterall!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1588,7 +1588,7 @@ You wonder what kind of issues the Covarnians are having as Chrono engages hyper
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqe-ML-nZx">
                                 <rect key="frame" x="25" y="70" width="270" height="286"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“English?” The Covarnian scientist replies skeptically. “Um, ok…”
@@ -1786,7 +1786,7 @@ Cg
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9K-R1-DwW">
                                 <rect key="frame" x="25" y="70" width="270" height="301"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You are led into an enormous high-tech laboratory by one of the Covarnian guards. Instruments and gadgets of every different kind are spread out on metal tables. Beakers and test tubes filled with strange liquids are strewn about, and some sort of unidentifiable writing is scrawled on chalkboards all over the walls. The sounds of bubbling chemicals fill the air.
@@ -9892,14 +9892,14 @@ As you approach the door you wonder whether or not you made the right decision. 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aaN-Sw-OZq">
                                 <rect key="frame" x="25" y="45" width="270" height="326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">You grab the plate with the strange looking dessert and throw it to the growlics. They sniff at it with interest. “That’s it,” you urge the growlics. “Eat the food.” The growlics lick the dessert but seem disinterested. 
+                                <string key="text">You grab the plate with the strange looking dessert and throw it to the growlics. They sniff at it with interest. “That’s it,” you urge the growlics. “Eat the food.” The growlics lick the dessert but seem disinterested. 
 
 Your plan doesn’t seem to be going the way you wanted. Time for a new plan! “Run!” you shout to Chrono. You hightail it out of the kitchen as fast as you can, Luna’s leash in hand. The three of you make it past the growlics while they are distracted with the food and out into the fresh air. You slam the door behind you closing the growlics inside. 
 
 You managed to make it out with your lives but unfortunately, you didn’t procure the items necessary.
 
 “I guess we’ll have to get everything we need from the council chamber,” Chrono says matter of factly. “And we need to hurry, we’re running out of time!”
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -14952,9 +14952,9 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-Kd-hJK">
-                                <rect key="frame" x="16" y="483" width="288" height="33"/>
+                                <rect key="frame" x="16" y="502" width="288" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Let me help. We need to do something!">
+                                <state key="normal" title="Let me help!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -14962,7 +14962,7 @@ Cg
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uij-sy-QkQ">
-                                <rect key="frame" x="16" y="435" width="288" height="32"/>
+                                <rect key="frame" x="16" y="454" width="288" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Warmongers you say? I'm outta here.">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -14974,17 +14974,20 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jfr-Fz-GB4" firstAttribute="top" secondItem="ryt-JE-cqa" secondAttribute="top" constant="50" id="4J3-P3-X8N"/>
-                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Uij-sy-QkQ" secondAttribute="trailing" constant="16" id="7fS-cH-hVc"/>
-                            <constraint firstItem="Jfr-Fz-GB4" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="25" id="8dS-fG-Mr5"/>
-                            <constraint firstItem="ryt-JE-cqa" firstAttribute="bottom" secondItem="aCY-Kd-hJK" secondAttribute="bottom" constant="52" id="9Mq-Us-6l2"/>
-                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="top" secondItem="Uij-sy-QkQ" secondAttribute="bottom" constant="16" id="BTb-Hv-tho"/>
-                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="16" id="CpL-t5-nKm"/>
-                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="top" secondItem="Jfr-Fz-GB4" secondAttribute="bottom" constant="61" id="QdO-6j-vWS"/>
-                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Jfr-Fz-GB4" secondAttribute="trailing" constant="25" id="TgA-eC-RiP"/>
-                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="aCY-Kd-hJK" secondAttribute="trailing" constant="16" id="az7-Sb-FF6"/>
-                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="16" id="cB9-gL-dcY"/>
-                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="top" secondItem="Uij-sy-QkQ" secondAttribute="bottom" constant="16" id="fFz-tf-Cxh"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="bottom" secondItem="aCY-Kd-hJK" secondAttribute="bottom" constant="33" id="07R-i1-uYQ"/>
+                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="top" secondItem="Jfr-Fz-GB4" secondAttribute="bottom" constant="80" id="2iO-NX-MaF"/>
+                            <constraint firstItem="Jfr-Fz-GB4" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="25" id="5sB-LJ-eHi"/>
+                            <constraint firstItem="Jfr-Fz-GB4" firstAttribute="top" secondItem="ryt-JE-cqa" secondAttribute="top" constant="50" id="72k-Yo-woS"/>
+                            <constraint firstItem="Jfr-Fz-GB4" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="25" id="HL7-dr-iIx"/>
+                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="16" id="NIm-Jh-QxN"/>
+                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="leading" secondItem="ryt-JE-cqa" secondAttribute="leading" constant="16" id="PFb-Uj-4TD"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Jfr-Fz-GB4" secondAttribute="trailing" constant="25" id="VA7-8M-K59"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Uij-sy-QkQ" secondAttribute="trailing" constant="16" id="Wcs-CZ-R5z"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="Jfr-Fz-GB4" secondAttribute="trailing" constant="25" id="ZAC-ix-RC1"/>
+                            <constraint firstItem="aCY-Kd-hJK" firstAttribute="top" secondItem="Uij-sy-QkQ" secondAttribute="bottom" constant="16" id="ea4-eD-m0X"/>
+                            <constraint firstItem="ryt-JE-cqa" firstAttribute="trailing" secondItem="aCY-Kd-hJK" secondAttribute="trailing" constant="16" id="fec-OO-Hxt"/>
+                            <constraint firstItem="Uij-sy-QkQ" firstAttribute="top" secondItem="Jfr-Fz-GB4" secondAttribute="bottom" constant="80" id="k1A-2t-13D"/>
+                            <constraint firstItem="Jfr-Fz-GB4" firstAttribute="top" secondItem="ryt-JE-cqa" secondAttribute="top" constant="50" id="qcW-Ik-amu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ryt-JE-cqa"/>
                     </view>
@@ -14996,7 +14999,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnq-Qi-qhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710" y="6508"/>
+            <point key="canvasLocation" x="708.75" y="6507.0422535211264"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="VvU-39-Mou">
@@ -15078,6 +15081,9 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shooting Star" translatesAutoresizingMaskIntoConstraints="NO" id="Ma0-vo-NQ2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-bY-E70">
                                 <rect key="frame" x="25" y="70" width="270" height="381"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -15223,13 +15229,16 @@ Cg
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.089814075160000006" blue="0.13611368779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="C2D-bq-m7g" firstAttribute="trailing" secondItem="9z5-bY-E70" secondAttribute="trailing" constant="25" id="5GK-Nw-dHI"/>
                             <constraint firstItem="C2D-bq-m7g" firstAttribute="trailing" secondItem="deC-OL-zkd" secondAttribute="trailing" constant="20" id="CZM-07-Lsk"/>
+                            <constraint firstItem="Ma0-vo-NQ2" firstAttribute="trailing" secondItem="C2D-bq-m7g" secondAttribute="trailing" id="Kfh-O4-aBP"/>
+                            <constraint firstItem="Ma0-vo-NQ2" firstAttribute="leading" secondItem="C2D-bq-m7g" secondAttribute="leading" id="Pho-xL-n4b"/>
                             <constraint firstItem="9z5-bY-E70" firstAttribute="leading" secondItem="C2D-bq-m7g" secondAttribute="leading" constant="25" id="Pv1-nS-N8R"/>
                             <constraint firstItem="deC-OL-zkd" firstAttribute="leading" secondItem="C2D-bq-m7g" secondAttribute="leading" constant="20" id="TZX-br-g5o"/>
                             <constraint firstItem="deC-OL-zkd" firstAttribute="top" secondItem="9z5-bY-E70" secondAttribute="bottom" constant="47" id="a1i-Qp-TMb"/>
+                            <constraint firstItem="Ma0-vo-NQ2" firstAttribute="top" secondItem="Kxv-y8-eeD" secondAttribute="top" id="fIc-xE-8Nj"/>
+                            <constraint firstItem="C2D-bq-m7g" firstAttribute="bottom" secondItem="Ma0-vo-NQ2" secondAttribute="bottom" id="jRK-nL-Ksw"/>
                             <constraint firstItem="9z5-bY-E70" firstAttribute="top" secondItem="C2D-bq-m7g" secondAttribute="top" constant="50" id="p5W-x9-EOu"/>
                             <constraint firstItem="C2D-bq-m7g" firstAttribute="bottom" secondItem="deC-OL-zkd" secondAttribute="bottom" constant="40" id="tDv-e4-XSx"/>
                         </constraints>
@@ -15242,7 +15251,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t53-Gz-T9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710" y="7934"/>
+            <point key="canvasLocation" x="708.75" y="7933.0985915492956"/>
         </scene>
         <!--Generic Decision Point View Controller-->
         <scene sceneID="26S-UW-1zk">
@@ -16008,9 +16017,10 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="37h-Px-rKZ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="37h-Px-rKZ">
                                 <rect key="frame" x="25" y="70" width="270" height="301"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">You pick up a beaker filled with a strange smelling liquid. It’s red, bubbly and seems important. As you bring it up to eye level to observe its contents, the Covarnian scientist lets out a sigh of exasperation
@@ -16082,7 +16092,7 @@ Cg
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-Vq-evZ">
                                 <rect key="frame" x="25" y="70" width="270" height="297"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“Oh? Uhh, you mean this?” you sputter, staring at the crimson liquid. Regaining your confidence you continue, “Ah yes of course, the electrolytic catalyst...thing. Just mix it with this over here...”
@@ -16243,6 +16253,9 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="PmI-ES-JNq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="paR-bA-MXN">
                                 <rect key="frame" x="25" y="70" width="270" height="368"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -16382,6 +16395,7 @@ Cg
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E0-Jy-2kl">
                                 <rect key="frame" x="50" y="478" width="220" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="THE END"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="pW4-6f-NYF"/>
@@ -16394,8 +16408,12 @@ Cg
                             <constraint firstItem="paR-bA-MXN" firstAttribute="leading" secondItem="tev-LY-2cK" secondAttribute="leading" constant="25" id="8fn-S1-0Ob"/>
                             <constraint firstItem="tev-LY-2cK" firstAttribute="trailing" secondItem="6E0-Jy-2kl" secondAttribute="trailing" constant="50" id="G3f-JO-FJs"/>
                             <constraint firstItem="6E0-Jy-2kl" firstAttribute="top" secondItem="paR-bA-MXN" secondAttribute="bottom" constant="40" id="GWT-2t-Hfn"/>
+                            <constraint firstItem="PmI-ES-JNq" firstAttribute="top" secondItem="EnU-Qp-97y" secondAttribute="top" id="K4A-2X-sB9"/>
                             <constraint firstItem="tev-LY-2cK" firstAttribute="trailing" secondItem="paR-bA-MXN" secondAttribute="trailing" constant="25" id="KER-5V-199"/>
+                            <constraint firstItem="PmI-ES-JNq" firstAttribute="leading" secondItem="tev-LY-2cK" secondAttribute="leading" id="Y5w-uW-gOA"/>
+                            <constraint firstItem="tev-LY-2cK" firstAttribute="bottom" secondItem="PmI-ES-JNq" secondAttribute="bottom" id="eCQ-30-iWv"/>
                             <constraint firstItem="tev-LY-2cK" firstAttribute="bottom" secondItem="6E0-Jy-2kl" secondAttribute="bottom" constant="60" id="qpa-Yc-VCN"/>
+                            <constraint firstItem="tev-LY-2cK" firstAttribute="trailing" secondItem="PmI-ES-JNq" secondAttribute="trailing" id="tp2-2F-DXh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tev-LY-2cK"/>
                     </view>
@@ -16406,7 +16424,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKi-la-OIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9009" y="8034"/>
+            <point key="canvasLocation" x="9007.5" y="8033.4507042253526"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="2pt-XH-ewB">
@@ -16416,17 +16434,9 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="GreenFizzTheEnd" translatesAutoresizingMaskIntoConstraints="NO" id="jcm-CB-DC8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenFizzTheEnd" translatesAutoresizingMaskIntoConstraints="NO" id="jcm-CB-DC8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGS-Pn-7xV">
-                                <rect key="frame" x="50" y="473" width="220" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="THE END."/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ny0-xI-AUK"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQP-oF-37D">
                                 <rect key="frame" x="25" y="70" width="270" height="323"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -16505,17 +16515,28 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGS-Pn-7xV">
+                                <rect key="frame" x="50" y="473" width="220" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="THE END.">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ny0-xI-AUK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="6JO-eq-dSY" firstAttribute="bottom" secondItem="jcm-CB-DC8" secondAttribute="bottom" id="31E-rP-WF3"/>
                             <constraint firstItem="6JO-eq-dSY" firstAttribute="trailing" secondItem="xQP-oF-37D" secondAttribute="trailing" constant="25" id="6c8-9s-4em"/>
                             <constraint firstItem="6JO-eq-dSY" firstAttribute="bottom" secondItem="PGS-Pn-7xV" secondAttribute="bottom" constant="60" id="9cj-4J-XPn"/>
-                            <constraint firstItem="jcm-CB-DC8" firstAttribute="leading" secondItem="6JO-eq-dSY" secondAttribute="leading" id="TLK-9S-eAH"/>
+                            <constraint firstItem="jcm-CB-DC8" firstAttribute="trailing" secondItem="6JO-eq-dSY" secondAttribute="trailing" id="HAf-GM-p7v"/>
+                            <constraint firstItem="jcm-CB-DC8" firstAttribute="top" secondItem="aWF-nX-GBF" secondAttribute="top" id="P1b-RM-vgv"/>
                             <constraint firstItem="PGS-Pn-7xV" firstAttribute="leading" secondItem="6JO-eq-dSY" secondAttribute="leading" constant="50" id="Vbn-Aq-VJV"/>
                             <constraint firstItem="xQP-oF-37D" firstAttribute="top" secondItem="6JO-eq-dSY" secondAttribute="top" constant="50" id="Y1L-Nq-KPr"/>
+                            <constraint firstItem="jcm-CB-DC8" firstAttribute="bottom" secondItem="6JO-eq-dSY" secondAttribute="bottom" id="ZaK-qh-TwK"/>
+                            <constraint firstItem="jcm-CB-DC8" firstAttribute="leading" secondItem="6JO-eq-dSY" secondAttribute="leading" id="m2d-pc-YUs"/>
                             <constraint firstItem="6JO-eq-dSY" firstAttribute="trailing" secondItem="PGS-Pn-7xV" secondAttribute="trailing" constant="50" id="mRD-4P-zDs"/>
-                            <constraint firstItem="6JO-eq-dSY" firstAttribute="trailing" secondItem="jcm-CB-DC8" secondAttribute="trailing" id="qOa-6L-mdU"/>
-                            <constraint firstItem="jcm-CB-DC8" firstAttribute="top" secondItem="6JO-eq-dSY" secondAttribute="top" id="tOr-G0-qXe"/>
                             <constraint firstItem="PGS-Pn-7xV" firstAttribute="top" secondItem="xQP-oF-37D" secondAttribute="bottom" constant="80" id="wG0-dY-Z9z"/>
                             <constraint firstItem="xQP-oF-37D" firstAttribute="leading" secondItem="6JO-eq-dSY" secondAttribute="leading" constant="25" id="wUz-2h-04I"/>
                         </constraints>
@@ -19207,7 +19228,9 @@ Do you:
     <resources>
         <image name="Clouds" width="834" height="1112"/>
         <image name="GreenFizzTheEnd" width="834" height="1112"/>
+        <image name="Shooting Star" width="834" height="1112"/>
         <image name="baby hapal" width="834" height="1112"/>
+        <image name="frog" width="834" height="1112"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5pV-va-Uw0"/>
@@ -19216,8 +19239,8 @@ Do you:
         <segue reference="E0a-7V-sHG"/>
         <segue reference="6cW-v5-1e6"/>
         <segue reference="kwK-zr-qYc"/>
-        <segue reference="EU2-bt-ued"/>
-        <segue reference="RCY-zu-fcZ"/>
+        <segue reference="7dg-rL-hhO"/>
+        <segue reference="h2w-MD-tXx"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="44a-Dl-z7T"/>
         <segue reference="AuY-ba-zD0"/>
@@ -19225,6 +19248,6 @@ Do you:
         <segue reference="UT2-He-dFh"/>
         <segue reference="h7j-ZC-5Tj"/>
         <segue reference="5Vr-zP-NTi"/>
-        <segue reference="eEh-7I-qgF"/>
+        <segue reference="pW4-6f-NYF"/>
     </inferredMetricsTieBreakers>
 </document>

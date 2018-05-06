@@ -36,8 +36,11 @@ struct Constants {
     static let CLOUDS_PIC = "Clouds.png"
     static let EMPTY_SIDEWALK_PIC = "Empty_Sidewalk.png"
     static let GREEN_FIZZ_PIC = "GreenFizzTheEnd.png"
-    static let KATONIAN_SUNSET = "Katonian_Sunset.png"
-    static let COVARNIAN_LAB = "Covarian_Lab.png"
+    static let KATONIAN_SUNSET_PIC = "Katonian_Sunset.png"
+    static let COVARNIAN_LAB_PIC = "Covarian_Lab.png"
+    static let CHRONO_AND_SHIP_PIC = "Chrono_And_Ship.png"
+    static let AMBASSADOR_FRIDGE_PIC = "Ambassador_Fridge.png"
+    static let GROWLICS_PIC = "Growlics.png"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
