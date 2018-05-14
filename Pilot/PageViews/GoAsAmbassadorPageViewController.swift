@@ -23,13 +23,16 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
             case "borrow"?:
+                setImage(image: Constants.FRONT_DOOR_PIC)
                 return [
                         self.newVC(viewController: "break and enter?")]
             case "break in"?:
+                removeImage(image: Constants.FRONT_DOOR_PIC)
                 setImage(image: Constants.GROWLICS_PIC)
                 return [self.newVC(viewController: "good growlics"),
                         self.newVC(viewController: "snack or run")]
             case "vicious growlics"?:
+                super.setImage(image: Constants.GROWLICS_PIC)
                 
                 return [self.newVC(viewController: "They're Vicious. Run!"),
                         self.newVC(viewController: "They're Vicious. Run! 1.5"),

@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Efz-uf-jtQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Efz-uf-jtQ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Arial.ttf">
-            <string>ArialMT</string>
-        </array>
-        <array key="Baskerville.ttc">
-            <string>Baskerville</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Main Menu-->
         <scene sceneID="tne-QT-ifu">
@@ -156,7 +148,7 @@
         <!--Chapter Menu-->
         <scene sceneID="UbU-d0-5y0">
             <objects>
-                <viewController storyboardIdentifier="Chapter Select" title="Chapter Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epm-LR-xz1" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chapter Select" title="Chapter Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epm-LR-xz1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XTx-h4-hbC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,8 +430,21 @@ At the very least you’ll get out of all the math homework your teacher assigne
 
 Luna is on your heels and follow you into the spaceship. At least you’re not going alone! She finds a cozy corner to lay down in. 
 
-Taking a quick peek at your surroundings , you notice that Switches, dials and knobs encompass the entire vessel.
-
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">After taking a quick peek at your surroundings, you notice that switches, dials and knobs encompass the entire vessel.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 You stare at him defiantly, “If I’m going back to Covarnius with you, at least tell me your name first,” </string>
                                         <attributes>
                                             <font key="NSFont" size="16" name="Baskerville"/>
@@ -993,7 +998,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kDW-nN-FRe">
                                 <rect key="frame" x="30" y="495" width="260" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="I'm a scientist afterall!">
+                                <state key="normal" title="I'm a scientist after all!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1727,7 +1732,7 @@ Cg
                                 <rect key="frame" x="0.0" y="456" width="320" height="52"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="17"/>
                                 <state key="normal">
-                                    <string key="title">Wing it. Afterall, you got an A on your science fair project. 
+                                    <string key="title">Wing it. After all, you got an A on your science fair project. 
 </string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -3901,7 +3906,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifh-yg-yeg">
-                                <rect key="frame" x="25" y="70" width="270" height="301"/>
+                                <rect key="frame" x="25" y="70" width="270" height="321"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -4038,20 +4043,17 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lCg-lw-e6v">
-                                <rect key="frame" x="16" y="473" width="288" height="53"/>
+                                <rect key="frame" x="16" y="493" width="288" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal">
-                                    <string key="title">Look out the door's window into the hallway.
-</string>
-                                </state>
+                                <state key="normal" title="Look out the door's window"/>
                                 <connections>
                                     <segue destination="99v-66-37y" kind="show" id="sBt-sp-IyB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JC5-42-DhL">
-                                <rect key="frame" x="16" y="405" width="288" height="33"/>
+                                <rect key="frame" x="16" y="425" width="288" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Check underneath the door for shadows. "/>
+                                <state key="normal" title="Check underneath the door."/>
                                 <connections>
                                     <segue destination="HMa-9y-sc6" kind="show" identifier="check door" id="wZo-rO-d7q"/>
                                 </connections>
@@ -7434,14 +7436,14 @@ Cg
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="U8B-hz-3k1"/>
                                 </constraints>
-                                <state key="normal" title="We have a Anti-Gravity Gun!"/>
+                                <state key="normal" title="We have an Anti-Gravity Gun!"/>
                                 <connections>
                                     <segue destination="VR6-TB-rp0" kind="show" identifier="anti-gravity" id="Wvi-I4-RYJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYp-N8-NTc">
                                 <rect key="frame" x="40" y="440" width="264" height="30"/>
-                                <state key="normal" title="We have a Ice Ray!"/>
+                                <state key="normal" title="We have an Ice Ray!"/>
                                 <connections>
                                     <segue destination="amq-0H-d2h" kind="show" identifier="ice ray" id="QEn-le-N99"/>
                                 </connections>
@@ -10014,14 +10016,14 @@ Cg
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jvp-eK-kSz"/>
                                 </constraints>
-                                <state key="normal" title="Sneak into the Council Chamber store room."/>
+                                <state key="normal" title="Sneak into the Council store room."/>
                                 <connections>
                                     <segue destination="HMa-9y-sc6" kind="show" identifier="sneak into storeroom" id="ulO-8S-mAL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qet-NB-tXb">
                                 <rect key="frame" x="30" y="440" width="274" height="30"/>
-                                <state key="normal" title="&quot;Borrow&quot; from the Covarnian Ambassador"/>
+                                <state key="normal" title="&quot;Borrow&quot; from the Ambassador"/>
                                 <connections>
                                     <segue destination="HMa-9y-sc6" kind="show" identifier="borrow" id="PZg-sR-bY4"/>
                                 </connections>
@@ -11041,7 +11043,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7wl-7y-QzV">
                                 <rect key="frame" x="30" y="503" width="260" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Ram your spaceship through hard Sinisterian steel."/>
+                                <state key="normal" title="Ram spaceship into wall."/>
                                 <connections>
                                     <segue destination="qLc-cK-4nG" kind="show" identifier="ram ship" id="BWH-G5-FoG"/>
                                 </connections>
@@ -11610,7 +11612,7 @@ Cg
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-tE-kQE">
                                 <rect key="frame" x="30" y="478" width="260" height="30"/>
-                                <state key="normal" title="NEXT CHPATER"/>
+                                <state key="normal" title="NEXT CHAPTER"/>
                                 <connections>
                                     <segue destination="amq-0H-d2h" kind="show" identifier="broke out of prison" id="Gcn-JL-feb"/>
                                 </connections>
@@ -11824,7 +11826,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">There must be something you can do to stop the Sinisterians. If only you knew their weakness. You scratch Luna’s ears absentmindedly as you think. And then it hits you! You already the Sinisterians’ weakness: Luna!
+                                        <string key="content">There must be something you can do to stop the Sinisterians. If only you knew their weakness. You scratch Luna’s ears absentmindedly as you think. And then it hits you! You already know the Sinisterians’ weakness: Luna!
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12190,7 +12192,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“What choice do we have?” Chrono say while surveying the legions of Sinisterian’s destroying his home.
+                                        <string key="content">“What choice do we have?” Chrono say while surveying the legions of Sinisterians destroying his home.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12263,7 +12265,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Darting behind bushes, dodging between tree. The two of you finally arrive at 99 Larblok Lane: Chrono’s house. Chrono sprints up the staircase with you and Luna immediately upon him. Peering out the window of his bedroom, you notice that Sinisterians are going door to door, rounding up all of the Covarnians.
+                                        <string key="content">Darting behind bushes and dodging between trees, the two of you finally arrive at 99 Larblok Lane: Chrono’s house. Chrono sprints up the staircase with you and Luna immediately upon him. Peering out the window of his bedroom, you notice that Sinisterians are going door to door, rounding up all of the Covarnians.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12396,7 +12398,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“So you’re saying that this thing doesn’t work?” an edge of desperation grows in your voice. You crane your neck back out the window. They’re only 5 houses away now!
+                                        <string key="content">“So you’re saying that this thing doesn’t work?” An edge of desperation grows in your voice. You look back out the window and notice that they’re only 5 houses away now!
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12524,7 +12526,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“It’s ok,” you say quickly, “it doesn't matter now. They are only 1 door away now!” A posse of Sinisterian thugs are slamming there fists against Chrono’s next door neighbor’s home. It’s time to get this thing working!
+                                        <string key="content">“It’s ok,” you say quickly, “it doesn't matter now. They're only 1 door away now!” A posse of Sinisterian thugs are slamming their fists against Chrono’s next door neighbor’s home. It’s time to get this thing working!
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12682,7 +12684,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Chrono things for a moment and shrugs his shoulders. “Well that makes sense. Here goes nothing!” He points the blow-up ray at the Murkblur and fires the ray. A wide, multi-colored ray shoots out of the muzzle and hit’s the bug. </string>
+                                        <string key="content">Chrono thinks for a moment and shrugs his shoulders. “Well that makes sense. Here goes nothing!” He points the blow-up ray at the Murkblur and fires the ray. A wide, multi-colored ray shoots out of the muzzle and hits the bug.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="Baskerville"/>
@@ -12727,8 +12729,8 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">In about two seconds, the two inch Murkblur becomes a two foot Murkblur. You nod approvingly and give a thumbs up to Chrono. Luna, meanwhile, barks at the poor Murkblur, whose face quickly becomes one of terror. It quickly scurries out of the bedroom and down the hall.
-</string>
+                                        <mutableString key="content">In about two seconds, the two inch Murkblur becomes a two foot Murkblur. You nod approvingly and give a thumbs up to Chrono. Luna, meanwhile, barks at the poor Murkblur, whose face quickly becomes one of terror. It quickly scurries out of the bedroom and down the hall.
+</mutableString>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="Baskerville"/>
@@ -12756,7 +12758,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">You kneel down and level with Luna. “Are you ready girl? You’re about to save the world!” you pat Luna on the head and she barks reassuringly. Chrono turns the dial to 'Humungous" and points in at man’s best friend and fires.
+                                        <string key="content">You kneel down and level with Luna. “Are you ready girl? You’re about to save the world!” you pat Luna on the head and she barks reassuringly. Chrono turns the dial to 'Humungous" and points it at man’s best friend and fires.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12859,9 +12861,9 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“What happened?” Chrono says crestfallen. “Luna was supposed to—”
- The entire house rumbles like an earthquakes. Suddenly, Luna is the size of you! She give you a slobbery lick to tell you everything is ok. Then, before you know it, her canine head is hitting the celing. Putting two and two together, it dawns on you that it is critical you get out of the house. A look of understanding is communicated between you and Chrono.
-</string>
+                                        <mutableString key="content">“What happened?” Chrono says crestfallen. “Luna was supposed to—”
+ The entire house rumbles like an earthquake. Suddenly, Luna is the size of you! She gives you a slobbery lick to tell you everything is ok. Then, before you know it, her canine head is hitting the ceiling. Putting two and two together, it dawns on you that it's critical you get out of the house. A look of understanding is communicated between you and Chrono.
+</mutableString>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="Baskerville"/>
@@ -12962,7 +12964,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“WOOF, WOOF” Luna barks. Her deafening roars catch the attention of the astonished Sinisterians, who are just approaching the driveway. Luna suddenly shakes her whole body, and giant fur flies.
+                                        <string key="content">“WOOF, WOOF” Luna barks. Her deafening roars catch the attention of the astonished Sinisterians, who are just approaching the driveway. Luna suddenly shakes her whole body and giant fur flies.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12991,7 +12993,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“Achoo! Achoo! Achoo!” The Sinisterian’s sneeze in unison. Their eyes become puffy and bloodshot. Green slime pours out of their noses, ears, and eyes. Red rashes and boils cover their slick, slimy skin.</string>
+                                        <string key="content">“Achoo! Achoo! Achoo!” The Sinisterians sneeze in unison. Their eyes become puffy and bloodshot. Green slime pours out of their noses, ears, and eyes. Red rashes and boils cover their slick, slimy skin.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="Baskerville"/>
@@ -13037,7 +13039,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“Retreat!” The Sinisterian leader is barely able to make the words out. Even before announcing the command, his cadre had already began evacuating. Luna trots across the city, allowing her fur to fall freely amongst the Sinisterians. Green slime pours out of every invader that is unlucky enough to come across the giant dog.
+                                        <string key="content">“Retreat!” The Sinisterian leader is barely able to make the words out. Even before announcing the command, his cadre had already begun evacuating. Luna trots across the city, allowing her fur to fall freely amongst the Sinisterians. Green slime pours out of every invader that is unlucky enough to come across the giant dog.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -13064,7 +13066,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Before the Covarnian’s know it, the entire race of Sinisterians are on the run. They quickly scatter, running back into the mothership. After a few moments, they are halfway across the galaxy. Their plan has been pulverized by an enormous canine!</string>
+                                        <string key="content">Before the Covarnians know it, the entire race of Sinisterians are on the run. They quickly scatter, running back into the mothership. After a few moments, they are halfway across the galaxy. Their plan has been pulverized by an enormous canine!</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="Baskerville"/>
@@ -13109,8 +13111,8 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">You dance around on the lawn with Chrono. You did it! The Sinisterians have been stopped. Your laughter is stifled by coughing. Luna may have stopped the Sinisterians, but there's dog fur up to your ankles as far as the eye could see. Not too mention, a 80 foot dog carelessly trampled over the homes of everyone, utterly destroying them. But it doesn’t matter, the Sinisterian invasion has been stopped!
-</string>
+                                        <mutableString key="content">You dance around on the lawn with Chrono. You did it! The Sinisterians have been stopped. Your laughter is stifled by coughing. Luna may have stopped the Sinisterians, but there is dog fur up to your ankles as far as the eye can see. Not to mention, an 80 foot dog carelessly trampled over the homes of everyone, utterly destroying them. But it doesn’t matter, the Sinisterian invasion has been stopped!
+</mutableString>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17" name="Baskerville"/>
@@ -13167,7 +13169,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“Chrono. You are responsible for this?” the king say with astonishment.
+                                        <string key="content">“Chrono. You are responsible for this?” the king says with astonishment.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -13195,7 +13197,7 @@ Cg
                                             <real key="NSStrokeWidth" value="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="“Me and the Earthling!” Chrono replies proudly, slinging his arm around your neck.">
+                                    <fragment content="“Me and the earthling!” Chrono replies proudly, slinging his arm around your neck.">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17" name="Baskerville"/>
@@ -15812,8 +15814,6 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">You look at Chrono, who looks more miserable than ever. “What did he mean by invasion?” you question.
-“It’s the Sinisterians.” Chrono says pitifully. “They are on their way to Covarnius as we speak.”
-You look at Chrono, who looks more miserable than ever. “What did he mean by invasion?” you question.
 “It’s the Sinisterians.” Chrono says pitifully. “They are on their way to Covarnius as we speak.”</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -18999,6 +18999,16 @@ You can’t imagine why he would assume you speak French, but it doesn’t matte
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Luna_And_TV" translatesAutoresizingMaskIntoConstraints="NO" id="rm6-Xa-RDc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-pQ-A6m">
+                                <rect key="frame" x="60" y="478" width="200" height="30"/>
+                                <state key="normal" title="THE END "/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="THE END" id="uuZ-rN-ipF"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZW-bu-DNB">
                                 <rect key="frame" x="25" y="70" width="270" height="319"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -19019,22 +19029,19 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-pQ-A6m">
-                                <rect key="frame" x="60" y="478" width="200" height="30"/>
-                                <state key="normal" title="THE END "/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="THE END" id="uuZ-rN-ipF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="rm6-Xa-RDc" firstAttribute="trailing" secondItem="m9O-t6-yk6" secondAttribute="trailing" id="5md-eZ-Mmi"/>
                             <constraint firstItem="m9O-t6-yk6" firstAttribute="bottom" secondItem="9bC-pQ-A6m" secondAttribute="bottom" constant="60" id="7OG-XS-OJ3"/>
                             <constraint firstItem="m9O-t6-yk6" firstAttribute="trailing" secondItem="xZW-bu-DNB" secondAttribute="trailing" constant="25" id="7X6-PK-hd2"/>
                             <constraint firstItem="xZW-bu-DNB" firstAttribute="top" secondItem="m9O-t6-yk6" secondAttribute="top" constant="50" id="RTh-Nf-G0u"/>
                             <constraint firstItem="9bC-pQ-A6m" firstAttribute="top" secondItem="xZW-bu-DNB" secondAttribute="bottom" constant="89" id="fVG-uW-Gzj"/>
+                            <constraint firstItem="rm6-Xa-RDc" firstAttribute="top" secondItem="97i-9b-ZzH" secondAttribute="top" id="gZ5-7k-nIg"/>
+                            <constraint firstItem="rm6-Xa-RDc" firstAttribute="leading" secondItem="m9O-t6-yk6" secondAttribute="leading" id="gft-eI-bgI"/>
                             <constraint firstItem="9bC-pQ-A6m" firstAttribute="leading" secondItem="m9O-t6-yk6" secondAttribute="leading" constant="60" id="iBf-jT-Mvj"/>
                             <constraint firstItem="m9O-t6-yk6" firstAttribute="trailing" secondItem="9bC-pQ-A6m" secondAttribute="trailing" constant="60" id="iHp-vK-670"/>
                             <constraint firstItem="xZW-bu-DNB" firstAttribute="leading" secondItem="m9O-t6-yk6" secondAttribute="leading" constant="25" id="lYF-yJ-GNf"/>
+                            <constraint firstItem="rm6-Xa-RDc" firstAttribute="bottom" secondItem="m9O-t6-yk6" secondAttribute="bottom" id="wd1-uj-LxZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m9O-t6-yk6"/>
                     </view>
@@ -19045,7 +19052,33 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gta-Sb-zNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1737" y="1299"/>
+            <point key="canvasLocation" x="-1738.125" y="1298.2394366197184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dFy-gw-LEv">
+            <objects>
+                <viewController storyboardIdentifier="Luna and TV" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TNU-CK-Gw0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R4t-C7-yee">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Luna and TV" image="Luna_And_TV" translatesAutoresizingMaskIntoConstraints="NO" id="gF4-HC-vwj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gF4-HC-vwj" firstAttribute="top" secondItem="R4t-C7-yee" secondAttribute="top" id="2Ns-Fs-AUg"/>
+                            <constraint firstItem="gF4-HC-vwj" firstAttribute="bottom" secondItem="xHM-U0-f7N" secondAttribute="bottom" id="IEi-pc-8HK"/>
+                            <constraint firstItem="gF4-HC-vwj" firstAttribute="trailing" secondItem="xHM-U0-f7N" secondAttribute="trailing" id="MNx-at-xte"/>
+                            <constraint firstItem="gF4-HC-vwj" firstAttribute="leading" secondItem="xHM-U0-f7N" secondAttribute="leading" id="pzL-CO-E3v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xHM-U0-f7N"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1uk-Zv-zfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913.125" y="1298.2394366197184"/>
         </scene>
         <!--Run Away!-->
         <scene sceneID="I4i-xz-e7Y">
@@ -19124,7 +19157,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEu-W2-8D0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11" y="1233"/>
+            <point key="canvasLocation" x="-11" y="1298"/>
         </scene>
         <!--Generic Decision Point View Controller-->
         <scene sceneID="cGq-fh-97v">
@@ -19141,7 +19174,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Txc-t6-P1L" kind="showDetail" identifier="Whats In The Sky" action="showViewController:sender:" id="KYf-bL-oLj"/>
+                                    <segue destination="Txc-t6-P1L" kind="showDetail" identifier="Whats In The Sky" id="KYf-bL-oLj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-te-M5G">
@@ -19228,17 +19261,18 @@ Do you:
     <resources>
         <image name="Clouds" width="834" height="1112"/>
         <image name="GreenFizzTheEnd" width="834" height="1112"/>
+        <image name="Luna_And_TV" width="500" height="667"/>
         <image name="Shooting Star" width="834" height="1112"/>
         <image name="baby hapal" width="834" height="1112"/>
         <image name="frog" width="834" height="1112"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5pV-va-Uw0"/>
-        <segue reference="TmK-dd-ndt"/>
+        <segue reference="Gcn-JL-feb"/>
         <segue reference="DP0-Ef-V4N"/>
         <segue reference="E0a-7V-sHG"/>
         <segue reference="6cW-v5-1e6"/>
-        <segue reference="kwK-zr-qYc"/>
+        <segue reference="iTw-gO-hCb"/>
         <segue reference="7dg-rL-hhO"/>
         <segue reference="h2w-MD-tXx"/>
         <segue reference="jox-Tc-HCZ"/>
@@ -19246,8 +19280,8 @@ Do you:
         <segue reference="AuY-ba-zD0"/>
         <segue reference="IZ4-ah-DFk"/>
         <segue reference="UT2-He-dFh"/>
-        <segue reference="h7j-ZC-5Tj"/>
+        <segue reference="ijG-Ma-eQD"/>
         <segue reference="5Vr-zP-NTi"/>
-        <segue reference="pW4-6f-NYF"/>
+        <segue reference="uuZ-rN-ipF"/>
     </inferredMetricsTieBreakers>
 </document>
