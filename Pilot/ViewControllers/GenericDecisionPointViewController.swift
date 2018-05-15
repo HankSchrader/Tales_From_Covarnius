@@ -14,11 +14,13 @@ class GenericDecisionPointViewController: ChapterViewController {
     
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        loadBorderColor()
-        loadBorderWidth(borderWidth: 4.0)
-        loadCornerRadius(cornerRadius: 15.0)
-        loadTextBoxColor()
+        if(self.segueID != "Chapter Select") {
+            super.viewDidLoad()
+            loadBorderColor()
+            loadBorderWidth(borderWidth: 4.0)
+            loadCornerRadius(cornerRadius: 15.0)
+            loadTextBoxColor()
+        }
 
 
 

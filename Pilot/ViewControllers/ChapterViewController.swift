@@ -14,6 +14,7 @@ class ChapterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.clear
+        
         goToChapterSelectAction()
         let width = self.view.frame.size.width
         loadBorderColor()

@@ -14,8 +14,8 @@ class IntroPageViewController: GenericPageViewController {
     override lazy var orderedViewControllers: [UIViewController] =
         {
         if(self.segueID == "Run Far Away" ) {
-              //  removeImage(image: Constants.EMPTY_SIDEWALK_PIC)
-               // setImage(image: Constants.CLOUDS_PIC)
+                
+                setImage(image: Constants.LAWN_GNOME_PIC)
             
                 return [self.newVC(viewController: "run_as_fast_as_you_can_1")]
         } else {

@@ -42,6 +42,7 @@ struct Constants {
     static let AMBASSADOR_FRIDGE_PIC = "Ambassador_Fridge.png"
     static let GROWLICS_PIC = "Growlics.png"
     static let FRONT_DOOR_PIC =  "Front Door.png"
+    static let LAWN_GNOME_PIC = "Lawn Gnome.png"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
                                 <rect key="frame" x="16" y="89" width="288" height="29"/>
                                 <attributedString key="attributedText">
                                     <fragment content="COVARNIUS">
@@ -32,7 +32,7 @@
                                 <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
                                 <rect key="frame" x="16" y="53" width="288" height="20"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TALES FROM">
@@ -120,11 +120,11 @@
         <scene sceneID="mFr-ct-7jt">
             <objects>
                 <viewController id="cx7-q2-roP" customClass="CreditsViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yhf-P8-D2T">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Yhf-P8-D2T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-DQ-sHU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-DQ-sHU">
                                 <rect key="frame" x="32" y="125" width="256" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -148,7 +148,7 @@
         <!--Chapter Menu-->
         <scene sceneID="UbU-d0-5y0">
             <objects>
-                <viewController storyboardIdentifier="Chapter Select" title="Chapter Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epm-LR-xz1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chapter Select" title="Chapter Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="epm-LR-xz1" customClass="ChapterSelectViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XTx-h4-hbC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -13243,7 +13243,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">“Thank you, you both deserve a hero’s celebration.” The king said excitedly, but his voice quickly grew weary. “We must thank Luna too, but her fur will take years to clean up. She and the sinisterians have leveled our home.”
+                                        <string key="content">“Thank you, you both deserve a hero’s celebration.” The king says excitedly, but his voice quickly grows weary. “We must thank Luna too, but her fur will take years to clean up. She and the Sinisterians have leveled our homes.”
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -13270,7 +13270,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">“Well at least we have a home!” Chrono says indignantly.
+                                        <string key="content">“Well at least we have homes!” Chrono says indignantly.
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -19088,11 +19088,8 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="KoW-vl-hfO">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCH-bg-8aq">
-                                <rect key="frame" x="60" y="470" width="244" height="38"/>
+                                <rect key="frame" x="25" y="470" width="279" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Turn Back"/>
                                 <connections>
@@ -19100,7 +19097,7 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0f-Kc-Ivo">
-                                <rect key="frame" x="60" y="424" width="244" height="38"/>
+                                <rect key="frame" x="25" y="424" width="279" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Go Home"/>
                                 <connections>
@@ -19133,18 +19130,14 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RCH-bg-8aq" firstAttribute="top" secondItem="r0f-Kc-Ivo" secondAttribute="bottom" constant="8" id="5Di-0y-gyS"/>
-                            <constraint firstItem="RCH-bg-8aq" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="60" id="Awo-YE-EeM"/>
+                            <constraint firstItem="RCH-bg-8aq" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="25" id="Awo-YE-EeM"/>
                             <constraint firstItem="PBd-Os-aiw" firstAttribute="top" secondItem="YeS-VX-7ah" secondAttribute="top" constant="50" id="DWF-nk-M9f"/>
-                            <constraint firstItem="KoW-vl-hfO" firstAttribute="top" secondItem="c9O-Jk-YRK" secondAttribute="top" id="Grh-vF-FWu"/>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="RCH-bg-8aq" secondAttribute="trailing" constant="16" id="HhR-QW-e8z"/>
                             <constraint firstItem="PBd-Os-aiw" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="25" id="RDp-uA-ZC5"/>
-                            <constraint firstItem="KoW-vl-hfO" firstAttribute="trailing" secondItem="YeS-VX-7ah" secondAttribute="trailing" id="Shd-Ld-Lox"/>
-                            <constraint firstItem="YeS-VX-7ah" firstAttribute="bottom" secondItem="KoW-vl-hfO" secondAttribute="bottom" id="br2-eO-6i1"/>
                             <constraint firstItem="r0f-Kc-Ivo" firstAttribute="top" secondItem="PBd-Os-aiw" secondAttribute="bottom" constant="69" id="c1D-eT-NUi"/>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="r0f-Kc-Ivo" secondAttribute="trailing" constant="16" id="mr9-Mb-3fl"/>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="bottom" secondItem="RCH-bg-8aq" secondAttribute="bottom" constant="60" id="pXT-lI-uoT"/>
-                            <constraint firstItem="KoW-vl-hfO" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" id="sU8-6g-geR"/>
-                            <constraint firstItem="r0f-Kc-Ivo" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="60" id="v23-yp-rdI"/>
+                            <constraint firstItem="r0f-Kc-Ivo" firstAttribute="leading" secondItem="YeS-VX-7ah" secondAttribute="leading" constant="25" id="v23-yp-rdI"/>
                             <constraint firstItem="YeS-VX-7ah" firstAttribute="trailing" secondItem="PBd-Os-aiw" secondAttribute="trailing" constant="25" id="yY4-hg-lDv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YeS-VX-7ah"/>
@@ -19157,7 +19150,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEu-W2-8D0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11" y="1298"/>
+            <point key="canvasLocation" x="-11.25" y="1297.1830985915492"/>
         </scene>
         <!--Generic Decision Point View Controller-->
         <scene sceneID="cGq-fh-97v">
@@ -19168,7 +19161,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-B2-dcB">
-                                <rect key="frame" x="60" y="475" width="244" height="33"/>
+                                <rect key="frame" x="25" y="475" width="279" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="See what is in the sky.">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -19178,7 +19171,7 @@ Maybe you should go back. You can’t help but be curious. You’re probably the
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kp-te-M5G">
-                                <rect key="frame" x="60" y="434" width="244" height="33"/>
+                                <rect key="frame" x="25" y="434" width="279" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Run Away!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -19217,9 +19210,9 @@ Do you:
                             <constraint firstItem="0kp-te-M5G" firstAttribute="top" secondItem="0qd-Xl-I0i" secondAttribute="bottom" constant="69" id="k8R-Kj-6c2"/>
                             <constraint firstItem="0qd-Xl-I0i" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="25" id="m4z-Wg-d8w"/>
                             <constraint firstItem="0qd-Xl-I0i" firstAttribute="top" secondItem="riD-mQ-to4" secondAttribute="top" constant="50" id="r55-4g-qkm"/>
-                            <constraint firstItem="0kp-te-M5G" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="60" id="rbN-kd-W7G"/>
+                            <constraint firstItem="0kp-te-M5G" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="25" id="rbN-kd-W7G"/>
                             <constraint firstItem="riD-mQ-to4" firstAttribute="bottom" secondItem="3aV-B2-dcB" secondAttribute="bottom" constant="60" id="v4G-Sm-90J"/>
-                            <constraint firstItem="3aV-B2-dcB" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="60" id="xqd-aT-TQR"/>
+                            <constraint firstItem="3aV-B2-dcB" firstAttribute="leading" secondItem="riD-mQ-to4" secondAttribute="leading" constant="25" id="xqd-aT-TQR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="riD-mQ-to4"/>
                     </view>
@@ -19259,7 +19252,6 @@ Do you:
         </scene>
     </scenes>
     <resources>
-        <image name="Clouds" width="834" height="1112"/>
         <image name="GreenFizzTheEnd" width="834" height="1112"/>
         <image name="Luna_And_TV" width="500" height="667"/>
         <image name="Shooting Star" width="834" height="1112"/>
@@ -19267,21 +19259,21 @@ Do you:
         <image name="frog" width="834" height="1112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5pV-va-Uw0"/>
-        <segue reference="Gcn-JL-feb"/>
+        <segue reference="qyY-c4-Pfi"/>
+        <segue reference="TmK-dd-ndt"/>
         <segue reference="DP0-Ef-V4N"/>
         <segue reference="E0a-7V-sHG"/>
         <segue reference="6cW-v5-1e6"/>
-        <segue reference="iTw-gO-hCb"/>
-        <segue reference="7dg-rL-hhO"/>
-        <segue reference="h2w-MD-tXx"/>
+        <segue reference="9Y9-jv-VoU"/>
+        <segue reference="EU2-bt-ued"/>
+        <segue reference="RCY-zu-fcZ"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="44a-Dl-z7T"/>
-        <segue reference="AuY-ba-zD0"/>
-        <segue reference="IZ4-ah-DFk"/>
+        <segue reference="His-wU-R6i"/>
+        <segue reference="TfN-Qd-HdO"/>
         <segue reference="UT2-He-dFh"/>
-        <segue reference="ijG-Ma-eQD"/>
+        <segue reference="h7j-ZC-5Tj"/>
         <segue reference="5Vr-zP-NTi"/>
-        <segue reference="uuZ-rN-ipF"/>
+        <segue reference="WKD-KN-cYJ"/>
     </inferredMetricsTieBreakers>
 </document>
