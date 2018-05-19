@@ -43,6 +43,11 @@ struct Constants {
     static let GROWLICS_PIC = "Growlics.png"
     static let FRONT_DOOR_PIC =  "Front Door.png"
     static let LAWN_GNOME_PIC = "Lawn Gnome.png"
+    static let KORGLE_PIC = "Sinisterian.png"
+    static let ICERAY_PIC = "iceray.png"
+    static let BABY_HAPAL_PIC = "baby hapal.png"
+    static let TAKE_KEY_PIC = "TakeKey.png"
+    static let CLOG_TOILET_PIC = "clog toilet.png"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"

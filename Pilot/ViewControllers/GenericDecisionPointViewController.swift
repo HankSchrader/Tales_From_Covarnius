@@ -14,13 +14,13 @@ class GenericDecisionPointViewController: ChapterViewController {
     
 
     override func viewDidLoad() {
-        if(self.segueID != "Chapter Select") {
+       
             super.viewDidLoad()
             loadBorderColor()
             loadBorderWidth(borderWidth: 4.0)
             loadCornerRadius(cornerRadius: 15.0)
             loadTextBoxColor()
-        }
+        
 
 
 
@@ -38,6 +38,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.turnBackTextBox?.changeFontSizeByDevice(width: width)
         self.katonian3TextBox?.changeFontSizeByDevice(width: width)
         self.snackOrRunTextBox?.changeFontSizeByDevice(width: width)
+        self.ramShipNextTextBox?.changeFontSizeByDevice(width: width)
         
         self.atTheRanch_4TextBox?.changeFontSizeByDevice(width: width)
         self.hapalStanceTextBox?.changeFontSizeByDevice(width: width)
@@ -72,6 +73,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.chap2_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.turnBackTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.katonian3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.ramShipNextTextBox?.setContentOffset(CGPoint.zero, animated: true)
         
         self.atTheRanch_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.hapalStanceTextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -164,6 +166,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         }
         else if segue.destination is Chapter5PageViewController
         {
+           
             let vc = segue.destination as? Chapter5PageViewController
             vc?.segueID = segue.identifier!
         }
@@ -179,6 +182,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         }
             
         else if segue.destination is RaidOnCovarniusPageViewController {
+             print("Inside the segue")
             let vc = segue.destination as? RaidOnCovarniusPageViewController
             vc?.segueID = segue.identifier!
         }
@@ -198,6 +202,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.chap2_4TextBox?.layer.borderColor = myColor
         self.turnBackTextBox?.layer.borderColor = myColor
         self.katonian3TextBox?.layer.borderColor = myColor
+        self.ramShipNextTextBox?.layer.borderColor = myColor
         
         self.atTheRanch_4TextBox?.layer.borderColor = myColor
         self.hapalStanceTextBox?.layer.borderColor = myColor
@@ -236,7 +241,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.chap2_4TextBox?.layer.borderWidth = borderWidth
         self.turnBackTextBox?.layer.borderWidth = borderWidth
         self.katonian3TextBox?.layer.borderWidth = borderWidth
-        
+        self.ramShipNextTextBox?.layer.borderWidth = borderWidth
         self.atTheRanch_4TextBox?.layer.borderWidth = borderWidth
         self.hapalStanceTextBox?.layer.borderWidth = borderWidth
         self.someSortOfMistake?.layer.borderWidth = borderWidth
@@ -276,7 +281,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.chap2_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.turnBackTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.katonian3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
-        
+        self.ramShipNextTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.atTheRanch_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.hapalStanceTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.someSortOfMistake?.layer.backgroundColor = UIColor.lightText.cgColor
@@ -316,6 +321,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.chap2_4TextBox?.layer.cornerRadius = cornerRadius
         self.turnBackTextBox?.layer.cornerRadius = cornerRadius
         self.katonian3TextBox?.layer.cornerRadius = cornerRadius
+        self.ramShipNextTextBox?.layer.cornerRadius = cornerRadius
         
         self.atTheRanch_4TextBox?.layer.cornerRadius = cornerRadius
         self.hapalStanceTextBox?.layer.cornerRadius = cornerRadius
@@ -367,6 +373,7 @@ class GenericDecisionPointViewController: ChapterViewController {
 
     
   //Text Boxes
+    @IBOutlet weak var ramShipNextTextBox: UITextView!
     @IBOutlet weak var intoTextBox: UITextView!
     @IBOutlet weak var snackOrRunTextBox: UITextView!
     @IBOutlet weak var turnBackTextBox: UITextView!
@@ -398,9 +405,12 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var hyperSleep0TextBox: UITextView!
     @IBOutlet weak var clog4TextBox: UITextView!
     
+    
+  
     //Buttons
     
     override func loadDecisionPointButtons() {
+        loadDecisionPointButton(button: self.ramShipButton)
         loadDecisionPointButton(button: self.seeTheSkyButton)
         loadDecisionPointButton(button: self.runAwayFromSpaceshipButton)
         loadDecisionPointButton(button: self.kayoOfferToRelax)
@@ -552,4 +562,5 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var itsAGreatPlanButton: UIButton!
     @IBOutlet weak var disguiseOurselvesButton: UIButton!
     @IBOutlet weak var sneakOntoSinisterianShipButton: UIButton!
+    @IBOutlet weak var ramShipButton: UIButton!
 }

@@ -49,7 +49,6 @@ class SneakOntoShipPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 3.5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4.5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),

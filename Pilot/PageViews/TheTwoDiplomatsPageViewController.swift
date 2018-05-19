@@ -15,25 +15,31 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
             switch segue {
                 
             case "sensitive mission"?:
+                 setImage(image: Constants.TAKE_KEY_PIC)
                 return [self.newVC(viewController: "two diplomats 1"),
                         self.newVC(viewController: "two diplomats 2")]
             case "The Two Diplomats"?:
+                setImage(image: Constants.TAKE_KEY_PIC)
                 return [self.newVC(viewController: "two diplomats 1"),
                         self.newVC(viewController: "two diplomats 2")]
             case "don't mess with him"?:
-                //Needs completing
+                setImage(image: Constants.TAKE_KEY_PIC)
                 return [self.newVC(viewController: "two diplomats 1"),
                         self.newVC(viewController: "two diplomats 2")]
             case "take key"?:
-            
+                removeImage(image:  Constants.TAKE_KEY_PIC)
+                setImage(image: Constants.KORGLE_PIC)
                 return [self.newVC(viewController: "took the key"),
                         self.newVC(viewController: "two diplomats 3"),
                         self.newVC(viewController: "two diplomats 4")]
             case "too risky"?:
+                removeImage(image:  Constants.TAKE_KEY_PIC)
+                setImage(image: Constants.KORGLE_PIC)
                 return [self.newVC(viewController: "no key taken"),
                         self.newVC(viewController: "two diplomats 3"),
                         self.newVC(viewController: "two diplomats 4")]
             case "anti-gravity"?:
+                setImage(image: Constants.KORGLE_PIC)
                 return [self.newVC(viewController: "two diplomats 6"),
                         self.newVC(viewController: "two diplomats 7"),
                         self.newVC(viewController: "two diplomats 8"),
@@ -44,22 +50,26 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
                         self.newVC(viewController: "two diplomats 13"),
                         self.newVC(viewController: "two diplomats 14")]
             case "clog"?:
+                removeImage(image:  Constants.KORGLE_PIC)
+                setImage(image: Constants.CLOG_TOILET_PIC)
                 return [self.newVC(viewController: "clog 1"),
                         self.newVC(viewController: "clog 2"),
                         self.newVC(viewController: "clog 3"),
                         self.newVC(viewController: "clog 4")]
                 
             case "go back to toilet"?:
+                removeImage(image:  Constants.KORGLE_PIC)
+                setImage(image: Constants.CLOG_TOILET_PIC)
                 return [self.newVC(viewController: "clog 1"),
                         self.newVC(viewController: "clog 2"),
                         self.newVC(viewController: "clog 3"),
                         self.newVC(viewController: "clog 4")]
             case "failed diversion"?:
+                setImage(image: Constants.CLOG_TOILET_PIC)
                 return [self.newVC(viewController: "failed distraction 1"),
                         self.newVC(viewController: "failed distraction 2")]
             default:
-                print("Something may have gone wrong. Segue should never be nil. Segue: \(String(describing: segue))")
-                // TODO:
+                setImage(image: Constants.TAKE_KEY_PIC)
                 return [self.newVC(viewController: "two diplomats 1"),
                         self.newVC(viewController: "two diplomats 2")]
                 

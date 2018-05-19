@@ -17,7 +17,7 @@ class ChapterSelectViewController: GenericDecisionPointViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+      //  super.viewDidLoad()
         
         let fetchRequest: NSFetchRequest<Chapter> = Chapter.fetchRequest()
         do {
