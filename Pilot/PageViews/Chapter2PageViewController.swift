@@ -20,14 +20,14 @@ class Chapter2PageViewController: GenericPageViewController{
             if self.segueID == "Whats In The Sky" {
                 
                 //Change to Chrono Landing
-               setImage(image: Constants.BACK_AT_THE_RANCH)
+                setImage(image: Constants.CHRONO_LANDS_PIC)
                 return [
-                    self.newVC(viewController: "chap2_1",previousImage: nil,newImage: Constants.BACK_AT_THE_RANCH),
-                    self.newVC(viewController: "chap2_2",previousImage: nil,newImage: Constants.BACK_AT_THE_RANCH),
-                    self.newVC(viewController: "chap2_3",previousImage: Constants.BACK_AT_THE_RANCH,newImage: Constants.YOU_SAVED_THE_HAPAL),
-                    self.newVC(viewController: "chap2_4",previousImage: Constants.YOU_SAVED_THE_HAPAL,newImage: Constants.CLOUDS_PIC)]
+                    self.newVC(viewController: "chap2_1"),
+                    self.newVC(viewController: "chap2_2"),
+                    self.newVC(viewController: "chap2_3"),
+                    self.newVC(viewController: "chap2_4")]
             } else {
-                
+                setImage(image: Constants.LUNA_PIC)
                 return [
                     self.newVC(viewController: "chap2_0"),
                         self.newVC(viewController: "chap2_2"),

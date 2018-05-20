@@ -20,7 +20,8 @@ class RandomHapalStancePageViewController: GenericPageViewController {
                         self.newVC(viewController: "Hapal Stance 1"),
                         self.newVC(viewController: "Hapal Stance 2")]
             } else {
-                setImage(image: Constants.BABY_HAPAL_PIC)
+       
+                
                 return [self.newVC(viewController: "Trust_1"),
                         self.newVC(viewController: "Trust_1.5"),
                         self.newVC(viewController: "Hapal Stance 1"),

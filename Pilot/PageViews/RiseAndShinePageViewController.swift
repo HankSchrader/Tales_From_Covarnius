@@ -12,14 +12,27 @@ class RiseAndShinePageViewController: GenericPageViewController {
     
     lazy override var orderedViewControllers: [UIViewController] = {
 
-            return [self.newVC(viewController: "rise and shine 1"),
+        
+        if(self.segueID == "Use Key") {
+            return [self.newVC(viewController: "yet another distraction"),
+                    self.newVC(viewController: "yet another distraction 2"),
+                    self.newVC(viewController: "yet another distraction 3"),
+                    self.newVC(viewController: "rise and shine 4"),
+                    self.newVC(viewController: "rise and shine 5"),
+                    self.newVC(viewController: "rise and shine 6"),
+                    self.newVC(viewController: "rise and shine 7") ]
+        } else {
+        return [self.newVC(viewController: "rise and shine 1"),
                     self.newVC(viewController: "rise and shine 2"),
                     self.newVC(viewController: "rise and shine 3"),
                     self.newVC(viewController: "rise and shine 4"),
                     self.newVC(viewController: "rise and shine 5"),
                     self.newVC(viewController: "rise and shine 6"),
-                    self.newVC(viewController: "rise and shine 7") ]
-        }()
+                    self.newVC(viewController: "rise and shine 7")]
+        }
+    }()
+ 
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -65,7 +65,7 @@ class TheTwoDiplomatsPageViewController: GenericPageViewController {
                         self.newVC(viewController: "clog 3"),
                         self.newVC(viewController: "clog 4")]
             case "failed diversion"?:
-                setImage(image: Constants.CLOG_TOILET_PIC)
+                setImage(image: Constants.SINISTERIAN_GUARDS_PIC)
                 return [self.newVC(viewController: "failed distraction 1"),
                         self.newVC(viewController: "failed distraction 2")]
             default:
