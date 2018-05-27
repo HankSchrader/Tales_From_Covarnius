@@ -13,28 +13,19 @@ class SneakOntoShipPageViewController: GenericPageViewController {
         let segue: String? = self.segueID
         self.orderedViewControllers =  {
             switch segue {
-
+            case "continue as planned"?:
+                return [ self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
+                         self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
+                         self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
+                         self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
+                         self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
+                         self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
+                         self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
+                
             case "sneak arc"?:
                     return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 3.5 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 4.5 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
-            case "ram ship"?:
-                //Needs completing
-                return [self.newVC(viewController: "ram ship"),
-                        self.newVC(viewController: "ram ship 2"),
-                        self.newVC(viewController: "ram ship 2.5"),
-                        self.newVC(viewController: "fetch key")]
-            case "fetch key"?:
-                //Needs Completing
-                return [self.newVC(viewController: "fetch key")]
+                            self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),]
+
             case "not without Luna"?:
                 return [self.newVC(viewController: "not without Luna"),
                         self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
@@ -45,14 +36,7 @@ class SneakOntoShipPageViewController: GenericPageViewController {
             default:
                 return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 2 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 3.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 4 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
-                        self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
+                     ]
   
             }
         }()

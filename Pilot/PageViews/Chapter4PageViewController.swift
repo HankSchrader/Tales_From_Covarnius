@@ -15,11 +15,13 @@ class Chapter4PageViewController: GenericPageViewController {
         self.orderedViewControllers =  {
        
             if self.segueID == "keep going" || self.segueID == "Earth's Greatest Scientist" {
+                //MARK: Picture of King Zanarq.
                 return [self.newVC(viewController: "chap4_1"),
                         self.newVC(viewController: "chap4_2"),
                         self.newVC(viewController: "chap4_3"),
                         self.newVC(viewController: "chap4_4")]
             } else if self.segueID == "You Didn't Help The Hapal" || segueID == "You Let The Hapal Down..." {
+                //MARK: Picture of King Zanarq
                 return [self.newVC(viewController: "Let Hapal Down"),
                         self.newVC(viewController: "Let Hapal Down 2"),
                         self.newVC(viewController: "chap4_3"),
@@ -35,7 +37,7 @@ class Chapter4PageViewController: GenericPageViewController {
                         self.newVC(viewController: "chap4_4")]
             }
             else {
-                //Control console, inside of spaceship
+                setImage(image:Constants.CRASH_LAND_ON_KATONIA_PIC)
                 return [self.newVC(viewController: "katonian_1"),
                         self.newVC(viewController: "katonian_1.5"),
                         self.newVC(viewController: "katonian_2"),

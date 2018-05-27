@@ -128,17 +128,19 @@ class ChapterSelectViewController: GenericDecisionPointViewController {
     }
     
     func deleteById(id: String?) {
-        if(isChapterThere(chapterName: id)) {
-            do {
-                let chapter = getById(id: id)
-                PersistanceService.context.delete(chapter!)
-                try PersistanceService.context.save()
+        if(id != nil) {
+            if(isChapterThere(chapterName: id)) {
+                do {
+                    let chapter = getById(id: id)
+                    PersistanceService.context.delete(chapter!)
+                    try PersistanceService.context.save()
+                }
+                catch {
+                     NSLog("Delete of record Failed")
+                }
+            
+                }
             }
-            catch {
-                 NSLog("Delete of record Failed")
-            }
-        
-        }
     }
 
     func deleteAllData() {

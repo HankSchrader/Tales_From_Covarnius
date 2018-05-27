@@ -51,6 +51,9 @@ struct Constants {
     static let LUNA_PIC = "Luna.png"
     static let SINISTERIAN_GUARDS_PIC = "Sinisterian_Guards.png"
     static let CHRONO_LANDS_PIC = "Chrono_Lands.png"
+    static let SHIPS_CONSOLE_PIC = "Ships Console.png"
+    static let CRASH_LAND_ON_KATONIA_PIC = "Crash_Land_On_Katonia.png"
+    static let LUNA_IN_SPACESHIP_PIC = "Luna In Spaceship.png"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"

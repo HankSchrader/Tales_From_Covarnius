@@ -9,7 +9,7 @@
 import UIKit
 
 class IntroPageViewController: GenericPageViewController {
-    
+
     //The array of viewControllers. Keep adding to this as I continue to add more viewControllers
     override lazy var orderedViewControllers: [UIViewController] =
         {

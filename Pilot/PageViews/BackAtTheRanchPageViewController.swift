@@ -12,9 +12,8 @@ class BackAtTheRanchPageViewController: GenericPageViewController  {
  
     override func viewDidLoad() {
         self.orderedViewControllers =  {
-            //Make an illustration of Kayo standing in the ranch.
             if self.segueID == "run" {
-
+                //Katonian Standing next to the ship.
                 return [self.newVC(viewController: "at_the_ranch_run_choice_part_1"),
                                         self.newVC(viewController: "at_the_ranch_run_choice_part_1.5"),
                         self.newVC(viewController: "at_the_ranch_run_choice_part_2"),
@@ -25,9 +24,10 @@ class BackAtTheRanchPageViewController: GenericPageViewController  {
                         self.newVC(viewController: "at_the_ranch_4"),]
             } else {
                 
-                
+                //LUNA EATING PICTURE
                 return [self.newVC(viewController: "at_the_ranch_1"),
                         self.newVC(viewController: "at_the_ranch_2"),
+                        self.newVC(viewController: "at_the_ranch_2.5"),
                         self.newVC(viewController: "at_the_ranch_3"),
                         self.newVC(viewController: "at_the_ranch_4")]
             }

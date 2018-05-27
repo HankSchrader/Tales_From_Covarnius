@@ -15,6 +15,9 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
         self.orderedViewControllers =  {
             switch segue {
                 
+            case "change my mind"?:
+                return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 2 Ambassador")]
             case "ambassador arc"?:
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
@@ -38,8 +41,6 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "They're Vicious. Run! 1.5"),
                         self.newVC(viewController: "They're Vicious. Run! 2"),
                         self.newVC(viewController: "They're Vicious. Run! 2.5"),
-                        self.newVC(viewController: "council chamber sneak"),
-                        self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
             case "snack time"?:
                 removeImage(image: Constants.GROWLICS_PIC)

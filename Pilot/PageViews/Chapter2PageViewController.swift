@@ -18,8 +18,6 @@ class Chapter2PageViewController: GenericPageViewController{
        
         self.orderedViewControllers =  {
             if self.segueID == "Whats In The Sky" {
-                
-                //Change to Chrono Landing
                 setImage(image: Constants.CHRONO_LANDS_PIC)
                 return [
                     self.newVC(viewController: "chap2_1"),

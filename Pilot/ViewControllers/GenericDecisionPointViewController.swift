@@ -68,6 +68,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.changeFontSizeByDevice(width: width)
         self.hyperSleep0TextBox?.changeFontSizeByDevice(width: width)
         self.clog4TextBox?.changeFontSizeByDevice(width: width)
+        self.itMustBeFateTextBox?.changeFontSizeByDevice(width: width)
 
 
         self.chap2_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -105,6 +106,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.hyperSleep0TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.clog4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.itMustBeFateTextBox?.setContentOffset(CGPoint.zero, animated: true)
         
         self.intoTextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
@@ -232,6 +234,8 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.layer.borderColor = myColor
         self.hyperSleep0TextBox?.layer.borderColor = myColor
         self.clog4TextBox?.layer.borderColor = myColor
+        self.itMustBeFateTextBox?.layer.borderColor = myColor
+        
         self.snackOrRunTextBox?.layer.borderColor = myColor
         
     }
@@ -270,6 +274,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.layer.borderWidth = borderWidth
         self.hyperSleep0TextBox?.layer.borderWidth = borderWidth
         self.clog4TextBox?.layer.borderWidth = borderWidth
+        self.itMustBeFateTextBox?.layer.borderWidth = borderWidth
         
         self.snackOrRunTextBox?.layer.borderWidth = borderWidth
         
@@ -310,6 +315,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.hyperSleep0TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.clog4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.itMustBeFateTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         
         self.snackOrRunTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         
@@ -351,6 +357,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.twoDiplomats14TextBox?.layer.cornerRadius = cornerRadius
         self.hyperSleep0TextBox?.layer.cornerRadius = cornerRadius
         self.clog4TextBox?.layer.cornerRadius = cornerRadius
+        self.itMustBeFateTextBox?.layer.cornerRadius = cornerRadius
        
         
  
@@ -404,6 +411,7 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var twoDiplomats14TextBox: UITextView!
     @IBOutlet weak var hyperSleep0TextBox: UITextView!
     @IBOutlet weak var clog4TextBox: UITextView!
+    @IBOutlet weak var itMustBeFateTextBox: UITextView!
     
     
   
@@ -434,6 +442,9 @@ class GenericDecisionPointViewController: ChapterViewController {
         loadDecisionPointButton(button: self.borrowFromCovarnianAmbassadorButton)
         
         loadDecisionPointButton(button: self.stinkyMeatButton)
+        loadDecisionPointButton(button: self.changeMyMindButton)
+        loadDecisionPointButton(button: self.continueAsPlannedButton)
+        
         loadDecisionPointButton(button: self.grossScalyFoodButton)
         
         loadDecisionPointButton(button: self.dessertButton)
@@ -563,4 +574,6 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var disguiseOurselvesButton: UIButton!
     @IBOutlet weak var sneakOntoSinisterianShipButton: UIButton!
     @IBOutlet weak var ramShipButton: UIButton!
+    @IBOutlet weak var changeMyMindButton: UIButton!
+    @IBOutlet weak var continueAsPlannedButton: UIButton!
 }
