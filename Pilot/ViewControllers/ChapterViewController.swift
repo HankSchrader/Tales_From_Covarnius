@@ -25,7 +25,9 @@ class ChapterViewController: UIViewController {
         
         self.yetAnotherDistraction1TextBox?.changeFontSizeByDevice(width: width)
         self.yetAnotherDistraction2TextBox?.changeFontSizeByDevice(width: width)
+         self.chronoRemindsTextBox?.changeFontSizeByDevice(width: width)
         self.yetAnotherDistraction3TextBox?.changeFontSizeByDevice(width: width)
+        self.runForItTheEnd?.changeFontSizeByDevice(width: width)
         self.chap2_0TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_1TextBox?.changeFontSizeByDevice(width: width)
@@ -208,7 +210,9 @@ class ChapterViewController: UIViewController {
         
         self.yetAnotherDistraction1TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.yetAnotherDistraction2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chronoRemindsTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.yetAnotherDistraction3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.runForItTheEnd?.setContentOffset(CGPoint.zero, animated: true)
         self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: true)
         
         self.chap2_3TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -372,7 +376,9 @@ class ChapterViewController: UIViewController {
         
         self.yetAnotherDistraction1TextBox?.changeFontSizeByDevice(width: width)
         self.yetAnotherDistraction2TextBox?.changeFontSizeByDevice(width: width)
+        self.chronoRemindsTextBox?.changeFontSizeByDevice(width: width)
         self.yetAnotherDistraction3TextBox?.changeFontSizeByDevice(width: width)
+        self.runForItTheEnd?.changeFontSizeByDevice(width: width)
         self.chap2_0TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_3TextBox?.changeFontSizeByDevice(width: width)
         self.chap2_1TextBox?.changeFontSizeByDevice(width: width)
@@ -552,7 +558,10 @@ class ChapterViewController: UIViewController {
         self.greenFoodTheEnd?.changeFontSizeByDevice(width: width)
         self.phaseOneCompleteTextBox?.changeFontSizeByDevice(width: width)
         self.yetAnotherDistraction3TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        
+        self.runForItTheEnd?.setContentOffset(CGPoint.zero, animated: true)
         self.yetAnotherDistraction2TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.chronoRemindsTextBox?.setContentOffset(CGPoint.zero, animated: true)
         
          self.yetAnotherDistraction1TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.chap2_0TextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -856,7 +865,9 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var yetAnotherDistraction1TextBox: UITextView!
     @IBOutlet weak var yetAnotherDistraction2TextBox: UITextView!
     @IBOutlet weak var yetAnotherDistraction3TextBox: UITextView!
+    @IBOutlet weak var runForItTheEnd: UITextView!
     
+    @IBOutlet weak var chronoRemindsTextBox: UITextView!
     
     @IBOutlet weak var greenFoodTheEnd: UITextView!
     // MARK: Begin button decorations.
@@ -864,7 +875,9 @@ class ChapterViewController: UIViewController {
     func loadCornerRadius(cornerRadius: CGFloat!) {
         self.yetAnotherDistraction1TextBox?.layer.cornerRadius = cornerRadius
         self.yetAnotherDistraction2TextBox?.layer.cornerRadius = cornerRadius
+        self.chronoRemindsTextBox?.layer.cornerRadius = cornerRadius
         self.yetAnotherDistraction3TextBox?.layer.cornerRadius = cornerRadius
+        self.runForItTheEnd?.layer.cornerRadius = cornerRadius
         self.chap2_0TextBox?.layer.cornerRadius = cornerRadius
         
         self.chap2_3TextBox?.layer.cornerRadius = cornerRadius
@@ -1016,7 +1029,9 @@ class ChapterViewController: UIViewController {
     
     func loadTextBoxColor() {
         self.yetAnotherDistraction3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.runForItTheEnd?.layer.backgroundColor = UIColor.lightText.cgColor
         self.yetAnotherDistraction2TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chronoRemindsTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         
         self.yetAnotherDistraction1TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
 
@@ -1174,7 +1189,9 @@ class ChapterViewController: UIViewController {
         
         self.yetAnotherDistraction1TextBox?.layer.borderColor = myColor
         self.yetAnotherDistraction2TextBox?.layer.borderColor = myColor
+        self.chronoRemindsTextBox?.layer.borderColor = myColor
         self.yetAnotherDistraction3TextBox?.layer.borderColor = myColor
+        self.runForItTheEnd?.layer.borderColor = myColor
         self.chap2_3TextBox?.layer.borderColor = myColor
         self.chap2_1TextBox?.layer.borderColor = myColor
         self.chap2_2TextBox?.layer.borderColor = myColor
@@ -1334,7 +1351,9 @@ class ChapterViewController: UIViewController {
         
         self.yetAnotherDistraction1TextBox?.layer.borderWidth = borderWidth
         self.yetAnotherDistraction2TextBox?.layer.borderWidth = borderWidth
+        self.chronoRemindsTextBox?.layer.borderWidth = borderWidth
         self.yetAnotherDistraction3TextBox?.layer.borderWidth = borderWidth
+        self.runForItTheEnd?.layer.borderWidth = borderWidth
         self.chap2_0TextBox?.layer.borderWidth = borderWidth
         self.chap2_3TextBox?.layer.borderWidth = borderWidth
         self.chap2_1TextBox?.layer.borderWidth = borderWidth

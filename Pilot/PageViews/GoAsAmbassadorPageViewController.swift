@@ -16,12 +16,15 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
             switch segue {
                 
             case "change my mind"?:
+                setImage(image: Constants.OUTSIDSE_CONCIL_CHAMBER_PIC)
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
             case "ambassador arc"?:
+                setImage(image: Constants.OUTSIDSE_CONCIL_CHAMBER_PIC)
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
             case "sneak into storeroom"?:
+                setImage(image: Constants.OUTSIDSE_CONCIL_CHAMBER_PIC)
                 return [self.newVC(viewController: "council chamber sneak"),
                         self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
@@ -62,24 +65,36 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chapter 6 6 Ambassador"),
                         self.newVC(viewController: "Chapter 6 7 Ambassador")]
                 
+            case "check door"?:
+                return [self.newVC(viewController: "check door"),
+                        self.newVC(viewController: "Chapter 6 3 Ambassador"),
+                        self.newVC(viewController: "Chapter 6 4 Ambassador")]
             case "shady turn back"?:
+                removeImage(image: Constants.AMBASSADOR_FRIDGE_PIC)
+                setImage(image: Constants.OUTSIDSE_CONCIL_CHAMBER_PIC)
                 return [self.newVC(viewController: "council chamber sneak"),
                         self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]
             case "no time for questions"?:
                 return [self.newVC(viewController: "do not ask")]
-            case "check door"?:
-                return [self.newVC(viewController: "check door"),
-                        self.newVC(viewController: "Chapter 6 3 Ambassador"),
-                        self.newVC(viewController: "Chapter 6 4 Ambassador"),
-                        self.newVC(viewController: "Chapter 6 5 Ambassador"),
+                
+            case "not important"?:
+                return [self.newVC(viewController: "notImportant"),
+                self.newVC(viewController: "Chapter 6 6 Ambassador"),
+                self.newVC(viewController: "Chapter 6 7 Ambassador")]
+                
+            case "keep thinking"?:
+                return [self.newVC(viewController: "Chapter 6 5 Ambassador"),
                         self.newVC(viewController: "Chapter 6 6 Ambassador"),
                         self.newVC(viewController: "Chapter 6 7 Ambassador")]
+                
+
             case "CCC"?:
                 return [self.newVC(viewController: "CCC explanation"),
                         self.newVC(viewController: "do not ask")]
 
             default:
+                setImage(image: Constants.OUTSIDSE_CONCIL_CHAMBER_PIC)
                 return [self.newVC(viewController: "Chapter 6 1 Ambassador"),
                         self.newVC(viewController: "Chapter 6 2 Ambassador")]
             }

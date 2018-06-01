@@ -19,36 +19,45 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
             if (self.segueID == "Raid On Covarnius" || self.segueID == "broke out of prison") {
             
             
-            return [self.newVC(viewController: "raid on covarnius 1"),
+            return [
+                self.newVC(viewController: "fetch key"),
+                self.newVC(viewController: "raid on covarnius 1"),
                     self.newVC(viewController: "raid on covarnius 2"),
                     self.newVC(viewController: "raid on covarnius 3"),
-                    self.newVC(viewController: "raid on covarnius 4"),
-                    self.newVC(viewController: "raid on covarnius 5"),
-                    self.newVC(viewController: "raid on covarnius 6"),
-                    self.newVC(viewController: "raid on covarnius 7"),
-                    self.newVC(viewController: "raid on covarnius 8"),
-                    self.newVC(viewController: "raid on covarnius 9"),
-                    self.newVC(viewController: "raid on covarnius 10"),
-                    self.newVC(viewController: "raid on covarnius 11"),
-                    self.newVC(viewController: "raid on covarnius 12"),
-                    self.newVC(viewController: "raid on covarnius 13")] }
+                    self.newVC(viewController: "raid on covarnius 3.5")] }
         else if self.segueID == "ice ray" {
             return [self.newVC(viewController: "ice ray"),
                     self.newVC(viewController: "no peace 2"),
                     self.newVC(viewController: "raid on covarnius 1"),
                     self.newVC(viewController: "raid on covarnius 2"),
                     self.newVC(viewController: "raid on covarnius 3"),
-                    self.newVC(viewController: "raid on covarnius 4"),
-                    self.newVC(viewController: "raid on covarnius 5"),
-                    self.newVC(viewController: "raid on covarnius 6"),
-                    self.newVC(viewController: "raid on covarnius 7"),
-                    self.newVC(viewController: "raid on covarnius 8"),
-                    self.newVC(viewController: "raid on covarnius 9"),
-                    self.newVC(viewController: "raid on covarnius 10"),
-                    self.newVC(viewController: "raid on covarnius 11"),
-                    self.newVC(viewController: "raid on covarnius 12"),
-                    self.newVC(viewController: "raid on covarnius 13")]
+                    self.newVC(viewController: "raid on covarnius 3.5")
+                   ]
             
+            }
+            else if self.segueID == "stealth" {
+                return [self.newVC(viewController: "raid on covarnius 4"),
+                self.newVC(viewController: "raid on covarnius 5"),
+                self.newVC(viewController: "raid on covarnius 6"),
+                self.newVC(viewController: "raid on covarnius 7"),
+                self.newVC(viewController: "raid on covarnius 8"),
+                self.newVC(viewController: "raid on covarnius 9"),
+                self.newVC(viewController: "raid on covarnius 10"),
+                self.newVC(viewController: "raid on covarnius 11"),
+                self.newVC(viewController: "raid on covarnius 12"),
+                self.newVC(viewController: "raid on covarnius 13")]
+                
+            }
+            else if self.segueID == "ram ship" {
+               return [self.newVC(viewController: "ram ship"),
+                self.newVC(viewController: "ram ship 2"),
+                self.newVC(viewController: "ram ship 2.5"),
+                self.newVC(viewController: "raid on covarnius 1"),
+                self.newVC(viewController: "raid on covarnius 2"),
+                self.newVC(viewController: "raid on covarnius 3"),
+                self.newVC(viewController: "raid on covarnius 3.5")
+                ]
+                
             }
         else if self.segueID == "broker peace"{
             return [self.newVC(viewController: "no peace 1"),
@@ -56,16 +65,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                     self.newVC(viewController: "raid on covarnius 1"),
                     self.newVC(viewController: "raid on covarnius 2"),
                     self.newVC(viewController: "raid on covarnius 3"),
-                    self.newVC(viewController: "raid on covarnius 4"),
-                    self.newVC(viewController: "raid on covarnius 5"),
-                    self.newVC(viewController: "raid on covarnius 6"),
-                    self.newVC(viewController: "raid on covarnius 7"),
-                    self.newVC(viewController: "raid on covarnius 8"),
-                    self.newVC(viewController: "raid on covarnius 9"),
-                    self.newVC(viewController: "raid on covarnius 10"),
-                    self.newVC(viewController: "raid on covarnius 11"),
-                    self.newVC(viewController: "raid on covarnius 12"),
-                    self.newVC(viewController: "raid on covarnius 13")]
+                    self.newVC(viewController: "raid on covarnius 3.5")]
         } else if self.segueID == "Second Best Ending" && ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: Constants.YOU_SAVED_THE_HAPAL) {
             return [self.newVC(viewController: "Special Ending")]
         } else if self.segueID == "Second Best Ending" && ChapterSelectViewController.chapterSelect.isChapterThere(chapterName: Constants.YOU_SAVED_THE_HAPAL) == false {
@@ -77,16 +77,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                     self.newVC(viewController: "raid on covarnius 1"),
                     self.newVC(viewController: "raid on covarnius 2"),
                     self.newVC(viewController: "raid on covarnius 3"),
-                    self.newVC(viewController: "raid on covarnius 4"),
-                    self.newVC(viewController: "raid on covarnius 5"),
-                    self.newVC(viewController: "raid on covarnius 6"),
-                    self.newVC(viewController: "raid on covarnius 7"),
-                    self.newVC(viewController: "raid on covarnius 8"),
-                    self.newVC(viewController: "raid on covarnius 9"),
-                    self.newVC(viewController: "raid on covarnius 10"),
-                    self.newVC(viewController: "raid on covarnius 11"),
-                    self.newVC(viewController: "raid on covarnius 12"),
-                    self.newVC(viewController: "raid on covarnius 13")]
+                    self.newVC(viewController: "raid on covarnius 3.5")]
             }
     }()
     override func viewDidLoad() {

@@ -24,10 +24,11 @@ class SneakOntoShipPageViewController: GenericPageViewController {
                 
             case "sneak arc"?:
                     return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
-                            self.newVC(viewController: "Chapter 6 1.5 Sneak Arc"),]
-
-            case "not without Luna"?:
-                return [self.newVC(viewController: "not without Luna"),
+                            self.newVC(viewController: "Chapter 6 1.5 Sneak Arc")]
+        
+            case "Luna Stays"?:
+                return [
+                        self.newVC(viewController: "keepLunaGetSentToPrison"),
                         self.newVC(viewController: "Chapter 6 6 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 6.5 Sneak Arc"),
                         self.newVC(viewController: "Chapter 6 7 Sneak Arc")

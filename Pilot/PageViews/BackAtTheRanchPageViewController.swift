@@ -11,6 +11,7 @@ import UIKit
 class BackAtTheRanchPageViewController: GenericPageViewController  {
  
     override func viewDidLoad() {
+        setImage(image: Constants.LUNA_EATING_PIC)
         self.orderedViewControllers =  {
             if self.segueID == "run" {
                 //Katonian Standing next to the ship.
@@ -24,7 +25,7 @@ class BackAtTheRanchPageViewController: GenericPageViewController  {
                         self.newVC(viewController: "at_the_ranch_4"),]
             } else {
                 
-                //LUNA EATING PICTURE
+                
                 return [self.newVC(viewController: "at_the_ranch_1"),
                         self.newVC(viewController: "at_the_ranch_2"),
                         self.newVC(viewController: "at_the_ranch_2.5"),

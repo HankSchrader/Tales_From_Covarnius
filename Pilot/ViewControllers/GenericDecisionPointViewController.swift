@@ -20,11 +20,7 @@ class GenericDecisionPointViewController: ChapterViewController {
             loadBorderWidth(borderWidth: 4.0)
             loadCornerRadius(cornerRadius: 15.0)
             loadTextBoxColor()
-        
 
-
-
-        
         // Do any additional setup after loading the view.
     }
     
@@ -39,6 +35,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.katonian3TextBox?.changeFontSizeByDevice(width: width)
         self.snackOrRunTextBox?.changeFontSizeByDevice(width: width)
         self.ramShipNextTextBox?.changeFontSizeByDevice(width: width)
+        self.fetchKeyTextBox?.changeFontSizeByDevice(width: width)
         
         self.atTheRanch_4TextBox?.changeFontSizeByDevice(width: width)
         self.hapalStanceTextBox?.changeFontSizeByDevice(width: width)
@@ -69,12 +66,16 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.changeFontSizeByDevice(width: width)
         self.clog4TextBox?.changeFontSizeByDevice(width: width)
         self.itMustBeFateTextBox?.changeFontSizeByDevice(width: width)
+        self.chap6_4TextBox?.changeFontSizeByDevice(width: width)
+        self.raidOnCovarnius3Point5TextBox?.changeFontSizeByDevice(width: width)
+        self.seriousTextbox?.changeFontSizeByDevice(width: width)
 
 
         self.chap2_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.turnBackTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.katonian3TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.ramShipNextTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.fetchKeyTextBox?.setContentOffset(CGPoint.zero, animated: true)
         
         self.atTheRanch_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.hapalStanceTextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -107,7 +108,9 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.clog4TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.itMustBeFateTextBox?.setContentOffset(CGPoint.zero, animated: true)
-        
+          self.chap6_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.raidOnCovarnius3Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.seriousTextbox?.setContentOffset(CGPoint.zero, animated: true)
         self.intoTextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
     
@@ -205,6 +208,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.turnBackTextBox?.layer.borderColor = myColor
         self.katonian3TextBox?.layer.borderColor = myColor
         self.ramShipNextTextBox?.layer.borderColor = myColor
+        self.fetchKeyTextBox?.layer.borderColor = myColor
         
         self.atTheRanch_4TextBox?.layer.borderColor = myColor
         self.hapalStanceTextBox?.layer.borderColor = myColor
@@ -235,6 +239,9 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.layer.borderColor = myColor
         self.clog4TextBox?.layer.borderColor = myColor
         self.itMustBeFateTextBox?.layer.borderColor = myColor
+        self.chap6_4TextBox?.layer.borderColor = myColor
+        self.raidOnCovarnius3Point5TextBox?.layer.borderColor = myColor
+        self.seriousTextbox?.layer.borderColor = myColor
         
         self.snackOrRunTextBox?.layer.borderColor = myColor
         
@@ -246,6 +253,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.turnBackTextBox?.layer.borderWidth = borderWidth
         self.katonian3TextBox?.layer.borderWidth = borderWidth
         self.ramShipNextTextBox?.layer.borderWidth = borderWidth
+        self.fetchKeyTextBox?.layer.borderWidth = borderWidth
         self.atTheRanch_4TextBox?.layer.borderWidth = borderWidth
         self.hapalStanceTextBox?.layer.borderWidth = borderWidth
         self.someSortOfMistake?.layer.borderWidth = borderWidth
@@ -275,6 +283,9 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.layer.borderWidth = borderWidth
         self.clog4TextBox?.layer.borderWidth = borderWidth
         self.itMustBeFateTextBox?.layer.borderWidth = borderWidth
+        self.chap6_4TextBox?.layer.borderWidth = borderWidth
+        self.raidOnCovarnius3Point5TextBox?.layer.borderWidth = borderWidth
+        self.seriousTextbox?.layer.borderWidth = borderWidth
         
         self.snackOrRunTextBox?.layer.borderWidth = borderWidth
         
@@ -287,6 +298,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.turnBackTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.katonian3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.ramShipNextTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.fetchKeyTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.atTheRanch_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.hapalStanceTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.someSortOfMistake?.layer.backgroundColor = UIColor.lightText.cgColor
@@ -316,6 +328,9 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.clog4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.itMustBeFateTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.chap6_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.raidOnCovarnius3Point5TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.seriousTextbox?.layer.backgroundColor = UIColor.lightText.cgColor
         
         self.snackOrRunTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         
@@ -328,6 +343,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.turnBackTextBox?.layer.cornerRadius = cornerRadius
         self.katonian3TextBox?.layer.cornerRadius = cornerRadius
         self.ramShipNextTextBox?.layer.cornerRadius = cornerRadius
+        self.fetchKeyTextBox?.layer.cornerRadius = cornerRadius
         
         self.atTheRanch_4TextBox?.layer.cornerRadius = cornerRadius
         self.hapalStanceTextBox?.layer.cornerRadius = cornerRadius
@@ -358,6 +374,9 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.hyperSleep0TextBox?.layer.cornerRadius = cornerRadius
         self.clog4TextBox?.layer.cornerRadius = cornerRadius
         self.itMustBeFateTextBox?.layer.cornerRadius = cornerRadius
+        self.chap6_4TextBox?.layer.cornerRadius = cornerRadius
+        self.raidOnCovarnius3Point5TextBox?.layer.cornerRadius = cornerRadius
+        self.seriousTextbox?.layer.cornerRadius = cornerRadius
        
         
  
@@ -380,6 +399,9 @@ class GenericDecisionPointViewController: ChapterViewController {
 
     
   //Text Boxes
+   
+    @IBOutlet weak var seriousTextbox: UITextView!
+    @IBOutlet weak var fetchKeyTextBox: UITextView!
     @IBOutlet weak var ramShipNextTextBox: UITextView!
     @IBOutlet weak var intoTextBox: UITextView!
     @IBOutlet weak var snackOrRunTextBox: UITextView!
@@ -412,6 +434,9 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var hyperSleep0TextBox: UITextView!
     @IBOutlet weak var clog4TextBox: UITextView!
     @IBOutlet weak var itMustBeFateTextBox: UITextView!
+   
+    @IBOutlet weak var raidOnCovarnius3Point5TextBox: UITextView!
+    @IBOutlet weak var chap6_4TextBox: UITextView!
     
     
   
@@ -419,10 +444,14 @@ class GenericDecisionPointViewController: ChapterViewController {
     
     override func loadDecisionPointButtons() {
         loadDecisionPointButton(button: self.ramShipButton)
+        loadDecisionPointButton(button: self.notImportantButton)
+        loadDecisionPointButton(button: self.keepThinkingButton)
         loadDecisionPointButton(button: self.seeTheSkyButton)
         loadDecisionPointButton(button: self.runAwayFromSpaceshipButton)
         loadDecisionPointButton(button: self.kayoOfferToRelax)
         loadDecisionPointButton(button: self.kayoIsSuspicious)
+        loadDecisionPointButton(button: self.runQuickButton)
+        loadDecisionPointButton(button: self.sneakThereButton)
         
         
         loadDecisionPointButton(button: self.sneakIntoCouncilChamberButton)
@@ -576,4 +605,8 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var ramShipButton: UIButton!
     @IBOutlet weak var changeMyMindButton: UIButton!
     @IBOutlet weak var continueAsPlannedButton: UIButton!
+    @IBOutlet weak var keepThinkingButton: UIButton!
+    @IBOutlet weak var notImportantButton: UIButton!
+    @IBOutlet weak var runQuickButton: UIButton!
+    @IBOutlet weak var sneakThereButton: UIButton!
 }
