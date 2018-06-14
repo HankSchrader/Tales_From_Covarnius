@@ -1522,6 +1522,7 @@ class ChapterViewController: UIViewController {
     @IBOutlet weak var theEndBrightGreenLiquidButton: UIButton!
     @IBOutlet weak var theEndYouGaveUpButton: UIButton!
     @IBOutlet weak var theEndFirstOneButton: UIButton!
+    @IBOutlet weak var theEndRaidOnCovarniusButton: UIButton!
     
     
     @IBOutlet weak var newPlanButton: UIButton!
@@ -1577,6 +1578,7 @@ class ChapterViewController: UIViewController {
         loadTheEndButton(button: self.theEndYellowLiquidButton)
         loadTheEndButton(button: self.theEndYouGaveUpButton)
         loadTheEndButton(button: self.theEndFirstOneButton)
+        loadTheEndButton(button: self.theEndRaidOnCovarniusButton)
         loadTheEndButton(button: self.theEndClogToiletDistractionFailed)
         loadTheEndButton(button: self.theEndWindowButton)
         loadTheEndButton(button: self.theEndBadFoodButton)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,26 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bright-Anchor-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="k4I-xO-81E">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sunny-Anchor-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DpI-yf-KoG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="k4I-xO-81E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6d9-iS-hqA"/>
-                            <constraint firstItem="k4I-xO-81E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NXm-5i-X9E"/>
-                            <constraint firstItem="k4I-xO-81E" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hKD-zP-WaD"/>
-                            <constraint firstItem="k4I-xO-81E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jfU-dY-btT"/>
+                            <constraint firstItem="DpI-yf-KoG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3TI-0Y-nGg"/>
+                            <constraint firstItem="DpI-yf-KoG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="5J9-oY-SSo"/>
+                            <constraint firstItem="DpI-yf-KoG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gWM-HP-gcr"/>
+                            <constraint firstItem="DpI-yf-KoG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pXj-ky-fJZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Bright-Anchor-Logo" width="834" height="1112"/>
+        <image name="Sunny-Anchor-Logo" width="834" height="1025"/>
     </resources>
 </document>

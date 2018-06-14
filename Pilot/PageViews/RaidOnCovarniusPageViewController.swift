@@ -39,15 +39,34 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                 return [self.newVC(viewController: "raid on covarnius 4"),
                 self.newVC(viewController: "raid on covarnius 5"),
                 self.newVC(viewController: "raid on covarnius 6"),
-                self.newVC(viewController: "raid on covarnius 7"),
-                self.newVC(viewController: "raid on covarnius 8"),
+                self.newVC(viewController: "raid on covarnius 7")
+               ]
+                
+            }
+            else if self.segueID == "murkblur" {
+                return [self.newVC(viewController: "raid on covarnius 8"),
                 self.newVC(viewController: "raid on covarnius 9"),
+                self.newVC(viewController: "raid on covarnius 10"),
+                self.newVC(viewController: "raid on covarnius 11"),
+                self.newVC(viewController: "raid on covarnius 12")]
+            } else if self.segueID == "Tell King Good News" {
+               return[ self.newVC(viewController: "tell king good news"),
+                self.newVC(viewController: "raid on covarnius 13")]
+            } else if self.segueID == "don't tell king" {
+                
+                return[self.newVC(viewController: "don't tell king"),
+                    self.newVC(viewController: "tell king good news"),
+                        self.newVC(viewController: "raid on covarnius 13")]
+            }
+            
+            else if self.segueID == "skip test" {
+                return [self.newVC(viewController: "raid on covarnius 9"),
                 self.newVC(viewController: "raid on covarnius 10"),
                 self.newVC(viewController: "raid on covarnius 11"),
                 self.newVC(viewController: "raid on covarnius 12"),
                 self.newVC(viewController: "raid on covarnius 13")]
-                
             }
+                
             else if self.segueID == "ram ship" {
                return [self.newVC(viewController: "ram ship"),
                 self.newVC(viewController: "ram ship 2"),

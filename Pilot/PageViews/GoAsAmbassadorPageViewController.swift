@@ -71,7 +71,7 @@ class GoAsAmbassadorPageViewController: GenericPageViewController {
                         self.newVC(viewController: "Chapter 6 4 Ambassador")]
             case "shady turn back"?:
                 removeImage(image: Constants.AMBASSADOR_FRIDGE_PIC)
-                setImage(image: Constants.OUTSIDSE_CONCIL_CHAMBER_PIC)
+                setImage(image: Constants.CHRONO_AND_LUNA_PIC)
                 return [self.newVC(viewController: "council chamber sneak"),
                         self.newVC(viewController: "council chamber sneak 1.5"),
                         self.newVC(viewController: "Chrono knows the layout")]

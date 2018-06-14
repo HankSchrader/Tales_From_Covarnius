@@ -49,7 +49,7 @@ struct Constants {
     static let TAKE_KEY_PIC = "TakeKey.png"
     static let CLOG_TOILET_PIC = "clog toilet.png"
     static let LUNA_PIC = "Luna.png"
-    static let SINISTERIAN_GUARDS_PIC = "Sinisterian_Guards.png"
+    static let SINISTERIAN_GUARDS_PIC = "Sinisterian_Guards2.png"
     static let CHRONO_LANDS_PIC = "Chrono_Lands.png"
     static let SHIPS_CONSOLE_PIC = "Ships Console.png"
     static let CRASH_LAND_ON_KATONIA_PIC = "Crash_Land_On_Katonia.png"
@@ -58,6 +58,11 @@ struct Constants {
     static let OUTSIDSE_CONCIL_CHAMBER_PIC = "Outside_Council_Chamber.png"
     static let SINISTERIAN_SHIP_CLOSEUP_PIC = "Sinisterian_Ship_Closeup.png"
     static let SINISTERIAN_SHIP_PIC = "Sinisterian_Ship.png"
+    static let DOOR_OR_WINDOW_PIC = "DoorOrWindow.png"
+    static let KING_ZANARQ_PIC = "King_Zanark.png"
+    static let LUNA_AND_AMBASSADOR_PIC = "Luna and Ambassador.png"
+    static let CHRONO_AND_LUNA_PIC = "Chrono and Luna.png"
+    static let KAYO_PIC = "Kayo.png"
     
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"

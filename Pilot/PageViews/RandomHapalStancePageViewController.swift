@@ -13,7 +13,7 @@ class RandomHapalStancePageViewController: GenericPageViewController {
     override func viewDidLoad() {
         
         self.orderedViewControllers =  {
-            setImage(image: Constants.KATONIAN_SUNSET_PIC)
+            setImage(image: Constants.KAYO_PIC)
             if self.segueID == "Don't Trust" || self.segueID == Constants.BY_RANDOM_HAPAL_STANCE_NO_TRUST{
                 return [self.newVC(viewController: "No Trust_1"),
                         self.newVC(viewController: "No Trust_1.5"),

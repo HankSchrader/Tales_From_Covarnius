@@ -30,6 +30,8 @@ class GenericDecisionPointViewController: ChapterViewController {
         loadDecisionPointButtons()
         let width = self.view.frame.size.width
         self.intoTextBox?.changeFontSizeByDevice(width: width)
+        self.murkblurTextBox?.changeFontSizeByDevice(width: width)
+        self.tellKingOrNotTextBox?.changeFontSizeByDevice(width: width)
         self.chap2_4TextBox?.changeFontSizeByDevice(width: width)
         self.turnBackTextBox?.changeFontSizeByDevice(width: width)
         self.katonian3TextBox?.changeFontSizeByDevice(width: width)
@@ -72,6 +74,7 @@ class GenericDecisionPointViewController: ChapterViewController {
 
 
         self.chap2_4TextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.tellKingOrNotTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.turnBackTextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.katonian3TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.ramShipNextTextBox?.setContentOffset(CGPoint.zero, animated: true)
@@ -112,6 +115,7 @@ class GenericDecisionPointViewController: ChapterViewController {
         self.raidOnCovarnius3Point5TextBox?.setContentOffset(CGPoint.zero, animated: true)
         self.seriousTextbox?.setContentOffset(CGPoint.zero, animated: true)
         self.intoTextBox?.setContentOffset(CGPoint.zero, animated: true)
+        self.murkblurTextBox?.setContentOffset(CGPoint.zero, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -204,7 +208,9 @@ class GenericDecisionPointViewController: ChapterViewController {
         let Color = UIColor.lightGray
         let myColor = Color.cgColor
         self.intoTextBox?.layer.borderColor = myColor
+        self.murkblurTextBox?.layer.borderColor = myColor
         self.chap2_4TextBox?.layer.borderColor = myColor
+        self.tellKingOrNotTextBox?.layer.borderColor = myColor
         self.turnBackTextBox?.layer.borderColor = myColor
         self.katonian3TextBox?.layer.borderColor = myColor
         self.ramShipNextTextBox?.layer.borderColor = myColor
@@ -249,7 +255,9 @@ class GenericDecisionPointViewController: ChapterViewController {
     
     override func loadBorderWidth(borderWidth: CGFloat!) {
         self.intoTextBox?.layer.borderWidth = borderWidth
+        self.murkblurTextBox?.layer.borderWidth = borderWidth
         self.chap2_4TextBox?.layer.borderWidth = borderWidth
+        self.tellKingOrNotTextBox?.layer.borderWidth = borderWidth
         self.turnBackTextBox?.layer.borderWidth = borderWidth
         self.katonian3TextBox?.layer.borderWidth = borderWidth
         self.ramShipNextTextBox?.layer.borderWidth = borderWidth
@@ -294,7 +302,10 @@ class GenericDecisionPointViewController: ChapterViewController {
     
     override func loadTextBoxColor() {
         self.intoTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.murkblurTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+
         self.chap2_4TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
+        self.tellKingOrNotTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.turnBackTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.katonian3TextBox?.layer.backgroundColor = UIColor.lightText.cgColor
         self.ramShipNextTextBox?.layer.backgroundColor = UIColor.lightText.cgColor
@@ -339,7 +350,9 @@ class GenericDecisionPointViewController: ChapterViewController {
     
     override func loadCornerRadius(cornerRadius: CGFloat!) {
         self.intoTextBox?.layer.cornerRadius = cornerRadius
+        self.murkblurTextBox?.layer.cornerRadius = cornerRadius
         self.chap2_4TextBox?.layer.cornerRadius = cornerRadius
+        self.tellKingOrNotTextBox?.layer.cornerRadius = cornerRadius
         self.turnBackTextBox?.layer.cornerRadius = cornerRadius
         self.katonian3TextBox?.layer.cornerRadius = cornerRadius
         self.ramShipNextTextBox?.layer.cornerRadius = cornerRadius
@@ -435,6 +448,8 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var clog4TextBox: UITextView!
     @IBOutlet weak var itMustBeFateTextBox: UITextView!
    
+    @IBOutlet weak var tellKingOrNotTextBox: UITextView!
+    @IBOutlet weak var murkblurTextBox: UITextView!
     @IBOutlet weak var raidOnCovarnius3Point5TextBox: UITextView!
     @IBOutlet weak var chap6_4TextBox: UITextView!
     
@@ -452,7 +467,10 @@ class GenericDecisionPointViewController: ChapterViewController {
         loadDecisionPointButton(button: self.kayoIsSuspicious)
         loadDecisionPointButton(button: self.runQuickButton)
         loadDecisionPointButton(button: self.sneakThereButton)
-        
+        loadDecisionPointButton(button: self.murkblurButton)
+        loadDecisionPointButton(button: self.skipTestButton)
+        loadDecisionPointButton(button: self.noTellKingButton)
+        loadDecisionPointButton(button: self.goodNewsKingButton)
         
         loadDecisionPointButton(button: self.sneakIntoCouncilChamberButton)
         loadDecisionPointButton(button: self.borrowFromCovarnianAmbassadorButton)
@@ -609,4 +627,8 @@ class GenericDecisionPointViewController: ChapterViewController {
     @IBOutlet weak var notImportantButton: UIButton!
     @IBOutlet weak var runQuickButton: UIButton!
     @IBOutlet weak var sneakThereButton: UIButton!
+    @IBOutlet weak var murkblurButton: UIButton!
+    @IBOutlet weak var skipTestButton: UIButton!
+    @IBOutlet weak var goodNewsKingButton: UIButton!
+    @IBOutlet weak var noTellKingButton: UIButton!
 }
