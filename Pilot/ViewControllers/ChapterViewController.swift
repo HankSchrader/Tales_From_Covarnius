@@ -711,14 +711,21 @@ class ChapterViewController: UIViewController {
     
     func goToChapterSelectAction() {
         let button = NavButton()
-        // let button = CustomButton(value: 100) // also works
+       /* // let button = CustomButton(value: 100) // also works
         button.setTitle(nil, for: .normal)
         // auto layout
-        // button.translatesAutoresizingMaskIntoConstraints = false
+        // button.translatesAutoresizingMaskIntoConstraints = false */
         button.frame = CGRect(x: -100, y: 30, width: 300, height: 40)
         view.addSubview(button)
-        button.addTarget(self, action: #selector(self.goToChapterSelect(_:)), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(handleMore), for:
+            UIControlEvents.touchUpInside)
+        
     }
+    let chapterSelectLauncher = ChapterSelectLauncher(coder: <#NSCoder#>)
+    @objc func handleMore(sender: UIButton?)  {
+        chapterSelectLauncher?.showChapters(sender: sender)
+    }
+    
     
     @IBAction func goToChapterSelect(_ sender: Any?) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -1591,7 +1598,7 @@ extension UITextView {
     func changeFontSizeByDevice(width: CGFloat) {
         switch width {
         case 0..<321: // iPhone 4 and iPhone 5
-            self.font = UIFont(name: "Avenir-Book", size: 14)
+            self.font = UIFont(name: "Avenir-Book", size: 15)
         case 375: // iPhone 6
             self.font = UIFont(name: "Avenir-Book", size: 16)
         case 414: // iPhone 6 Plus, iPhone 8 Plus

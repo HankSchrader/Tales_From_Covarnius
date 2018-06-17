@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53176F8920D687AA0026A456 /* ChapterSelectLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53176F8820D687AA0026A456 /* ChapterSelectLauncher.swift */; };
 		5317725020555C870005F3DB /* New Chapter Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5317724F20555C860005F3DB /* New Chapter Sound.wav */; };
 		5317FA9920499BD400CC30EE /* ChapterSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */; };
 		5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53176F8820D687AA0026A456 /* ChapterSelectLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSelectLauncher.swift; sourceTree = "<group>"; };
 		5317724F20555C860005F3DB /* New Chapter Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "New Chapter Sound.wav"; sourceTree = "<group>"; };
 		5317FA9820499BD400CC30EE /* ChapterSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSelectViewController.swift; sourceTree = "<group>"; };
 		5317FA9A2049A2AF00CC30EE /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				5336A421205D2DB3002802C7 /* NavButton.swift */,
 				53A5FAE720692050008304F9 /* GenericButton.swift */,
 				5365E3E120616074009E481F /* myTextView.swift */,
+				53176F8820D687AA0026A456 /* ChapterSelectLauncher.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				53984230204468AA00CCD93E /* MainMenuViewController.swift in Sources */,
 				5365E3E220616074009E481F /* myTextView.swift in Sources */,
 				5317FA9E2049AF3E00CC30EE /* Chapter+CoreDataClass.swift in Sources */,
+				53176F8920D687AA0026A456 /* ChapterSelectLauncher.swift in Sources */,
 				5317FA9F2049AF3E00CC30EE /* Chapter+CoreDataProperties.swift in Sources */,
 				5317FA9B2049A2AF00CC30EE /* PersistanceService.swift in Sources */,
 				5365E3E020614227009E481F /* TheTwoDiplomatsPageViewController.swift in Sources */,

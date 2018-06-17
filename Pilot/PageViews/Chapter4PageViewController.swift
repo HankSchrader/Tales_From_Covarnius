@@ -16,12 +16,13 @@ class Chapter4PageViewController: GenericPageViewController {
        
             if self.segueID == "keep going" || self.segueID == "Earth's Greatest Scientist" {
                 //MARK: Picture of King Zanarq.
+                setImage(image: Constants.KING_ZANARQ_PIC)
                 return [self.newVC(viewController: "chap4_1"),
                         self.newVC(viewController: "chap4_2"),
                         self.newVC(viewController: "chap4_3"),
                         self.newVC(viewController: "chap4_4")]
             } else if self.segueID == "You Didn't Help The Hapal" || segueID == "You Let The Hapal Down..." {
-                //MARK: Picture of King Zanarq
+                setImage(image: Constants.KING_ZANARQ_PIC)
                 return [self.newVC(viewController: "Let Hapal Down"),
                         self.newVC(viewController: "Let Hapal Down 2"),
                         self.newVC(viewController: "chap4_3"),

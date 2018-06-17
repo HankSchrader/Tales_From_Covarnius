@@ -3720,7 +3720,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1m-Jr-sYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4671" y="10101"/>
+            <point key="canvasLocation" x="-4526" y="10125"/>
         </scene>
         <!--Chapter View Controller-->
         <scene sceneID="5Bq-HV-r6Q">
@@ -3922,9 +3922,6 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DoorOrWindow" translatesAutoresizingMaskIntoConstraints="NO" id="gAz-fC-YP8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lCg-lw-e6v">
                                 <rect key="frame" x="16" y="466" width="288" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -4083,19 +4080,15 @@ Cg
                         <constraints>
                             <constraint firstItem="lCg-lw-e6v" firstAttribute="top" secondItem="JC5-42-DhL" secondAttribute="bottom" constant="8" id="0X2-4I-yhk"/>
                             <constraint firstItem="lCg-lw-e6v" firstAttribute="top" secondItem="JC5-42-DhL" secondAttribute="bottom" constant="8" id="6hQ-Qm-hbA"/>
-                            <constraint firstItem="gAz-fC-YP8" firstAttribute="top" secondItem="wdx-a7-N07" secondAttribute="top" constant="-20" id="9AN-Ot-KlV"/>
                             <constraint firstItem="ifh-yg-yeg" firstAttribute="top" secondItem="wdx-a7-N07" secondAttribute="top" constant="50" id="BGS-2c-ROv"/>
                             <constraint firstItem="wdx-a7-N07" firstAttribute="trailing" secondItem="JC5-42-DhL" secondAttribute="trailing" constant="16" id="Djo-hB-j7O"/>
                             <constraint firstItem="JC5-42-DhL" firstAttribute="leading" secondItem="wdx-a7-N07" secondAttribute="leading" constant="16" id="IX0-ui-gEu"/>
                             <constraint firstItem="ifh-yg-yeg" firstAttribute="leading" secondItem="wdx-a7-N07" secondAttribute="leading" constant="25" id="QKe-mQ-dou"/>
-                            <constraint firstItem="gAz-fC-YP8" firstAttribute="centerX" secondItem="JC5-42-DhL" secondAttribute="centerX" id="YcR-fr-db0"/>
-                            <constraint firstItem="gAz-fC-YP8" firstAttribute="leading" secondItem="625-pi-1Y4" secondAttribute="leading" id="Zgp-x3-JBg"/>
                             <constraint firstItem="wdx-a7-N07" firstAttribute="trailing" secondItem="ifh-yg-yeg" secondAttribute="trailing" constant="25" id="cd5-X4-yBi"/>
                             <constraint firstItem="lCg-lw-e6v" firstAttribute="leading" secondItem="wdx-a7-N07" secondAttribute="leading" constant="16" id="dJg-u9-TeP"/>
                             <constraint firstItem="wdx-a7-N07" firstAttribute="trailing" secondItem="lCg-lw-e6v" secondAttribute="trailing" constant="16" id="ic9-AV-pED"/>
                             <constraint firstItem="wdx-a7-N07" firstAttribute="bottom" secondItem="lCg-lw-e6v" secondAttribute="bottom" constant="69" id="y0u-4O-2B2"/>
                             <constraint firstItem="JC5-42-DhL" firstAttribute="top" secondItem="ifh-yg-yeg" secondAttribute="bottom" constant="34" id="zei-de-VnR"/>
-                            <constraint firstItem="gAz-fC-YP8" firstAttribute="bottom" secondItem="wdx-a7-N07" secondAttribute="bottom" id="zsw-hC-jHY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wdx-a7-N07"/>
                     </view>
@@ -18626,7 +18619,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">The alien babbles in a language that you have never heard.
+                                        <string key="content">The alien babbles in a language that you have never heard.
 
 “I’m sorry, but I don’t understand,” you say politely, shrugging your shoulders.
 
@@ -18637,7 +18630,7 @@ The alien looks at you, as if he is straining to hear. Then he nods his head vig
 You whip around and see a large muscular alien standing before you. In fact, he looks a bit like Chrono. Unlike Chrono though, this being has pale orange skin and an extra eye in the middle of his forehead. He seems friendly but you know that could all just be a ploy. Maybe he is the one who will dissect your brain!
 
 With a broken down ship, you don’t have many options. The way you see it, you can either trust the space cowboy and hope he is as friendly as he seems. Or, you can make a run for it. You mull over the situation for a moment and decide to:  
-</mutableString>
+</string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="Baskerville"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -19671,7 +19664,6 @@ Do you:
         </scene>
     </scenes>
     <resources>
-        <image name="DoorOrWindow" width="834" height="1112"/>
         <image name="Earth" width="834" height="1112"/>
         <image name="GreenFizzTheEnd" width="834" height="1112"/>
         <image name="Luna_And_TV" width="500" height="667"/>

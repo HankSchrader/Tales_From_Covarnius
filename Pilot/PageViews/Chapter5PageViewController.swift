@@ -14,19 +14,19 @@ class Chapter5PageViewController: GenericPageViewController {
     // Prints "The last letter of the alphabet"
     override func viewDidLoad() {
         
-        setImage(image: Constants.KING_ZANARQ_PIC)
+        
         let segue: String? = self.segueID
         self.orderedViewControllers =  {
             switch segue {
             case "Fake Scientist"?:
-                
+                setImage(image: Constants.KING_ZANARQ_PIC)
                 return [self.newVC(viewController: "The Jig Is Up"),
                         self.newVC(viewController: "Chapter 5 1"),
                         self.newVC(viewController: "Chapter 5 1.5"),
                         self.newVC(viewController: "Chapter 5 brefore2"),
                         self.newVC(viewController: "Chapter 5 2")]
             case "never give up"?:
-                removeImage(image: Constants.KING_ZANARQ_PIC)
+          
                 setImage(image: Constants.CHRONO_AND_SHIP_PIC)
                 return [
                     self.newVC(viewController: "never give up"),
@@ -57,7 +57,7 @@ class Chapter5PageViewController: GenericPageViewController {
                 ]
                 
             default:
-          
+                setImage(image: Constants.KING_ZANARQ_PIC)
                 return [self.newVC(viewController: "Chapter 5 1"),
                         self.newVC(viewController: "Chapter 5 1.5"),
                         self.newVC(viewController: "Chapter 5 brefore2"),

@@ -14,8 +14,6 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
     override lazy var orderedViewControllers: [UIViewController] =
         
         {
-            
-            
             if (self.segueID == "Raid On Covarnius" || self.segueID == "broke out of prison") {
             
             
@@ -36,6 +34,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
             
             }
             else if self.segueID == "stealth" {
+                setImage(image: Constants.HYPER_GROTH_RAY_PIC)
                 return [self.newVC(viewController: "raid on covarnius 4"),
                 self.newVC(viewController: "raid on covarnius 5"),
                 self.newVC(viewController: "raid on covarnius 6"),
@@ -50,16 +49,21 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                 self.newVC(viewController: "raid on covarnius 11"),
                 self.newVC(viewController: "raid on covarnius 12")]
             } else if self.segueID == "Tell King Good News" {
+                removeImage(image: Constants.HYPER_GROTH_RAY_PIC)
+                setImage(image: Constants.FINAL_PICTURE_PIC)
                return[ self.newVC(viewController: "tell king good news"),
                 self.newVC(viewController: "raid on covarnius 13")]
             } else if self.segueID == "don't tell king" {
-                
+                removeImage(image: Constants.HYPER_GROTH_RAY_PIC)
+                setImage(image: Constants.FINAL_PICTURE_PIC)
                 return[self.newVC(viewController: "don't tell king"),
                     self.newVC(viewController: "tell king good news"),
                         self.newVC(viewController: "raid on covarnius 13")]
             }
             
             else if self.segueID == "skip test" {
+                removeImage(image: Constants.HYPER_GROTH_RAY_PIC)
+                
                 return [self.newVC(viewController: "raid on covarnius 9"),
                 self.newVC(viewController: "raid on covarnius 10"),
                 self.newVC(viewController: "raid on covarnius 11"),
