@@ -13,7 +13,7 @@ import CoreData
 class ViewController: ChapterViewController {
     var menuShowing = false
     static let sharedHelper = ViewController()
-    weak var delegate: DisplayViewIDDelegate?
+   // weak var delegate: DisplayViewIDDelegate?
     
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!

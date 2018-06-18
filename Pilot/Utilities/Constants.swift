@@ -65,7 +65,8 @@ struct Constants {
     static let KAYO_PIC = "Kayo.png"
     static let HYPER_GROTH_RAY_PIC = "hyper growth ray.png"
     static let FINAL_PICTURE_PIC = "Final Picture.png"
-    
+    static let GIANT_LUNA_PIC = "Giant Luna.PNG"
+    static let KORGLE_ATTACKS_PIC = "Korgle Attacks.png"
     //other constants
     static let CHAPTER_UNLOCK_MESSAGE = "You Just Unlocked A Chapter!"
     static let SUBMIT = "Great!"

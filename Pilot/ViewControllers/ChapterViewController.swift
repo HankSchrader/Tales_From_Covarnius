@@ -358,10 +358,10 @@ class ChapterViewController: UIViewController {
     }
 
 
-    override func viewWillDisappear(_ animated: Bool) {
+   /* override func viewWillDisappear(_ animated: Bool) {
 
         self.navigationController?.isNavigationBarHidden = true
-    }
+    } */
     
 
     
@@ -717,14 +717,14 @@ class ChapterViewController: UIViewController {
         // button.translatesAutoresizingMaskIntoConstraints = false */
         button.frame = CGRect(x: -100, y: 30, width: 300, height: 40)
         view.addSubview(button)
-        button.addTarget(self, action: #selector(handleMore), for:
+        button.addTarget(self, action: #selector(goToChapterSelect(_:)), for:
             UIControlEvents.touchUpInside)
         
     }
-    let chapterSelectLauncher = ChapterSelectLauncher(coder: <#NSCoder#>)
-    @objc func handleMore(sender: UIButton?)  {
+
+ /*   @objc func handleMore(sender: UIButton?)  {
         chapterSelectLauncher?.showChapters(sender: sender)
-    }
+    }*/
     
     
     @IBAction func goToChapterSelect(_ sender: Any?) {

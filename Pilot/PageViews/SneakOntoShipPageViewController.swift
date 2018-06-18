@@ -11,7 +11,7 @@ import UIKit
 class SneakOntoShipPageViewController: GenericPageViewController {
     override func viewDidLoad() {
         let segue: String? = self.segueID
-        setImage(image: Constants.LUNA_AND_AMBASSADOR_PIC)
+        
         self.orderedViewControllers =  {
             
             switch segue {
@@ -26,7 +26,7 @@ class SneakOntoShipPageViewController: GenericPageViewController {
                          self.newVC(viewController: "Chapter 6 7 Sneak Arc")]
                 
             case "sneak arc"?:
-                
+                    setImage(image: Constants.LUNA_AND_AMBASSADOR_PIC)
                     return [self.newVC(viewController: "Chapter 6 1 Sneak Arc"),
                             self.newVC(viewController: "Chapter 6 1.5 Sneak Arc")]
         

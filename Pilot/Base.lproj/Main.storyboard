@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-1E-p2b">
                                 <rect key="frame" x="16" y="89" width="288" height="29"/>
                                 <attributedString key="attributedText">
                                     <fragment content="COVARNIUS">
@@ -32,7 +32,7 @@
                                 <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-4b-1cb">
                                 <rect key="frame" x="16" y="53" width="288" height="20"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TALES FROM">
@@ -120,11 +120,11 @@
         <scene sceneID="mFr-ct-7jt">
             <objects>
                 <viewController id="cx7-q2-roP" customClass="CreditsViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yhf-P8-D2T">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Yhf-P8-D2T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-DQ-sHU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Written By:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-DQ-sHU">
                                 <rect key="frame" x="32" y="125" width="256" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -204,10 +204,6 @@
             <objects>
                 <pageViewController storyboardIdentifier="Chap1PVC" autoresizesArchivedViewToFullSize="NO" title="Chapter 1" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="GYB-hd-9Im" customClass="IntroPageViewController" customModule="Pilot" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykj-NV-NaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NeA-SO-MkN" customClass="NavButton" customModule="Pilot" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </button>
             </objects>
             <point key="canvasLocation" x="-10" y="517"/>
         </scene>
@@ -671,6 +667,7 @@ Just 7 days? That’s not too bad. You breath a small sigh of relief. A week was
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oio-qT-V0Y">
                                 <rect key="frame" x="25" y="70" width="270" height="298"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Chrono grins at you, brimming with hope. A weight appears to have been lifted off his shoulders.
 
 “You’ll help me? That’s great! So if you have no further questions, I will engage hypersleep now.” Chrono says glancing in your direction. 
@@ -685,6 +682,7 @@ Chrono looks down dejectedly. “The ship has been pre-programmed to take us bac
 
 “Why not?” You ask Chrono. “Did you crash one or something? Just how superior are these aliens anyhow? You begin to wonder. After all, they’re relying on you to save their planet. 
 </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -19466,10 +19464,10 @@ You can’t help but think perhaps you missed out on the opportunity of a lifeti
             </objects>
             <point key="canvasLocation" x="-1738.125" y="1298.2394366197184"/>
         </scene>
-        <!--View Controller-->
+        <!--Chapter View Controller-->
         <scene sceneID="dFy-gw-LEv">
             <objects>
-                <viewController storyboardIdentifier="Luna and TV" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TNU-CK-Gw0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Luna and TV" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TNU-CK-Gw0" customClass="ChapterViewController" customModule="Pilot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R4t-C7-yee">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19651,9 +19649,6 @@ Do you:
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D86-bi-rEt">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GtB-kj-bBf"/>
                     </connections>
@@ -19672,21 +19667,21 @@ Do you:
         <image name="iceray" width="834" height="1112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U32-uH-FzI"/>
-        <segue reference="0iN-CD-oRj"/>
+        <segue reference="2SN-St-die"/>
+        <segue reference="TmK-dd-ndt"/>
         <segue reference="DP0-Ef-V4N"/>
-        <segue reference="Cpv-90-8rr"/>
-        <segue reference="pZ2-f4-yno"/>
-        <segue reference="wZo-rO-d7q"/>
-        <segue reference="6es-We-obc"/>
-        <segue reference="nvl-Th-opf"/>
+        <segue reference="E0a-7V-sHG"/>
+        <segue reference="6cW-v5-1e6"/>
+        <segue reference="9Y9-jv-VoU"/>
+        <segue reference="EU2-bt-ued"/>
+        <segue reference="RCY-zu-fcZ"/>
         <segue reference="jox-Tc-HCZ"/>
         <segue reference="44a-Dl-z7T"/>
-        <segue reference="AuY-ba-zD0"/>
+        <segue reference="His-wU-R6i"/>
         <segue reference="TfN-Qd-HdO"/>
         <segue reference="dmg-3r-Uw5"/>
-        <segue reference="h7j-ZC-5Tj"/>
+        <segue reference="ijG-Ma-eQD"/>
         <segue reference="5Vr-zP-NTi"/>
-        <segue reference="wdf-hn-TO6"/>
+        <segue reference="WKD-KN-cYJ"/>
     </inferredMetricsTieBreakers>
 </document>

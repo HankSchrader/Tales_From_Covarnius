@@ -16,7 +16,7 @@ class Chapter4PageViewController: GenericPageViewController {
        
             if self.segueID == "keep going" || self.segueID == "Earth's Greatest Scientist" {
                 //MARK: Picture of King Zanarq.
-                setImage(image: Constants.KING_ZANARQ_PIC)
+     
                 return [self.newVC(viewController: "chap4_1"),
                         self.newVC(viewController: "chap4_2"),
                         self.newVC(viewController: "chap4_3"),

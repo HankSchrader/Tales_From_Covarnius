@@ -16,7 +16,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
         {
             if (self.segueID == "Raid On Covarnius" || self.segueID == "broke out of prison") {
             
-            
+            setImage(image: Constants.KORGLE_ATTACKS_PIC)
             return [
                 self.newVC(viewController: "fetch key"),
                 self.newVC(viewController: "raid on covarnius 1"),
@@ -24,6 +24,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                     self.newVC(viewController: "raid on covarnius 3"),
                     self.newVC(viewController: "raid on covarnius 3.5")] }
         else if self.segueID == "ice ray" {
+                setImage(image: Constants.KORGLE_ATTACKS_PIC)
             return [self.newVC(viewController: "ice ray"),
                     self.newVC(viewController: "no peace 2"),
                     self.newVC(viewController: "raid on covarnius 1"),
@@ -43,18 +44,20 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
                 
             }
             else if self.segueID == "murkblur" {
+                setImage(image: Constants.GIANT_LUNA_PIC)
                 return [self.newVC(viewController: "raid on covarnius 8"),
                 self.newVC(viewController: "raid on covarnius 9"),
                 self.newVC(viewController: "raid on covarnius 10"),
                 self.newVC(viewController: "raid on covarnius 11"),
                 self.newVC(viewController: "raid on covarnius 12")]
             } else if self.segueID == "Tell King Good News" {
-                removeImage(image: Constants.HYPER_GROTH_RAY_PIC)
+             
                 setImage(image: Constants.FINAL_PICTURE_PIC)
                return[ self.newVC(viewController: "tell king good news"),
                 self.newVC(viewController: "raid on covarnius 13")]
+            
             } else if self.segueID == "don't tell king" {
-                removeImage(image: Constants.HYPER_GROTH_RAY_PIC)
+               
                 setImage(image: Constants.FINAL_PICTURE_PIC)
                 return[self.newVC(viewController: "don't tell king"),
                     self.newVC(viewController: "tell king good news"),
@@ -62,13 +65,12 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
             }
             
             else if self.segueID == "skip test" {
-                removeImage(image: Constants.HYPER_GROTH_RAY_PIC)
+                setImage(image: Constants.GIANT_LUNA_PIC)
                 
                 return [self.newVC(viewController: "raid on covarnius 9"),
                 self.newVC(viewController: "raid on covarnius 10"),
                 self.newVC(viewController: "raid on covarnius 11"),
-                self.newVC(viewController: "raid on covarnius 12"),
-                self.newVC(viewController: "raid on covarnius 13")]
+                self.newVC(viewController: "raid on covarnius 12")]
             }
                 
             else if self.segueID == "ram ship" {
@@ -96,6 +98,7 @@ class RaidOnCovarniusPageViewController: GenericPageViewController {
         }
   
         else {
+                setImage(image: Constants.KORGLE_ATTACKS_PIC)
             return [
                     self.newVC(viewController: "raid on covarnius 1"),
                     self.newVC(viewController: "raid on covarnius 2"),

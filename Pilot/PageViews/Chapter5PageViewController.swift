@@ -37,7 +37,7 @@ class Chapter5PageViewController: GenericPageViewController {
                     self.newVC(viewController: "Chapter 5 5")]
             
             case "we tried"?:
-                 removeImage(image: Constants.KING_ZANARQ_PIC)
+     
                 setImage(image: Constants.CHRONO_AND_SHIP_PIC)
                 return [
                     self.newVC(viewController: "almost give up"),
@@ -47,8 +47,8 @@ class Chapter5PageViewController: GenericPageViewController {
                     
                 ]
             case "great plan"?:
-                removeImage(image: Constants.KING_ZANARQ_PIC)
-               setImage(image: Constants.CHRONO_AND_SHIP_PIC)
+
+          //     setImage(image: Constants.CHRONO_AND_SHIP_PIC)
                 return [
                     self.newVC(viewController: "Chapter 5 6"),
                     self.newVC(viewController: "Chapter 5 before7"),
